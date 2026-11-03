@@ -1,4 +1,4 @@
-# 卡点侦探 · Campus Gap Diagnoser
+# ahao-learn tool · 卡点侦探
 
 通过短测、证据卡、定点补习和独立新题复测，帮助大学生定位高数与力学中的学习卡点。
 
@@ -67,4 +67,4 @@ python tools/build_delivery.py
 
 源码题库位于tools/build_courses.py、mechanics_seeds.py、supplemental_seeds.py。修改后重建并核对资源；另写计算表达式在tools/oracles.py。build_delivery.py将发布包写入仓库外的outputs目录，可通过--output-dir指定。GitHub同步使用独立发布步骤。
 
-仓库保持私有，当前未设置开源许可证。演示案例标注为合成数据，真实试用另行记录。
+仓库已公开，当前未设置开源许可证。演示案例标注为合成数据，真实试用另行记录。
