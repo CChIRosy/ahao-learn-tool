@@ -30,7 +30,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -66,7 +66,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -102,7 +102,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -142,7 +142,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -178,7 +178,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -238,7 +238,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -274,7 +274,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -310,7 +310,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -346,7 +346,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -382,7 +382,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -446,7 +446,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -482,7 +482,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -518,7 +518,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -554,7 +554,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -590,7 +590,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -653,7 +653,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -689,7 +689,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -729,7 +729,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -765,7 +765,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [
@@ -801,7 +801,7 @@
           "requires_context": false,
           "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
           "context": {
-            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "assumptions": "按题设定义域作答",
             "units": "按题干"
           },
           "hints": [

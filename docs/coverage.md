@@ -1,10 +1,10 @@
 # 课程覆盖矩阵
 
-范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。分母为本项目拆分的主题节点，不等于教材每页、每道例题或所有学校的教学要求。
+范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。映射粒度为本项目拆分的知识主题，学校大纲可按节点调整。
 
 实际数据：15个模块、108个主题、540道原创题；每主题2道诊断、1道补习、1道迁移、1道后续复测。
 
-每个题ID均可由diagnose.py inspect --skill读取。教师审核及真实学生验证均未完成。合成流程测试按模块执行，不表示每个节点都完成真实交互验证。
+题目可通过diagnose.py inspect --skill读取。每模块已执行一条合成完整流程；各主题的题量和计算核对数量列在下表。教师与学生验证状态逐行记录。
 
 |模块|技能ID与主题|层级|前置|诊断题|补习/迁移/后续复测|独立计算核对题数|教师/学生验证|
 |---|---|---|---|---|---|---|---|
@@ -117,10 +117,10 @@
 |结构力学|structures.plastic 极限荷载与塑性机构|extension|structures.force、materials.combined|structures.plastic.1,structures.plastic.2|structures.plastic.3,structures.plastic.4,structures.plastic.5|0|未审核/未验证|
 |结构力学|structures.algebra-bridge 矩阵方程桥接基础|core|本包未指定|structures.algebra-bridge.1,structures.algebra-bridge.2|structures.algebra-bridge.3,structures.algebra-bridge.4,structures.algebra-bridge.5|2|未审核/未验证|
 
-## 深度缺口与后续工作
+## 后续验收
 
-- 主题均有起始题池，但全书逐小节/定理/题型映射尚未由教师验收；每主题五题不等于穷尽全部难度。
-- 证明与论述自动评分不支持；需宿主按评分要点复核。
-- 跨题根因诊断为可解释启发式，尚未用真实学生数据校准。
-- 已实现全部模块的流程验收；尚无真实学生迁移、保持或学习成效数据。
-- 高等数学选学、三门力学进阶主题有明确层级，复杂空间结构与非线性工程分析未纳入自动核验。
+- 请教师逐节审核知识映射、评分要点与题型深度，并扩充各主题题池。
+- 证明与论述由宿主按评分要点审核。
+- 通过真实学生作答校准诊断分支，测量迁移和后续保持。
+- 专业题按明确的平面、线性、教材模型核验；复杂空间与非线性分析需建立对应模块。
+- 统一的来源、适用范围与质量字段见references/sources-and-review.md。

@@ -7,8 +7,9 @@
   "teacher_reviewed": 0,
   "student_validated": 0,
   "failures": [],
+  "version": "0.1.1",
   "package_files": 25,
-  "uncompressed_bytes": 1008675,
-  "zip_bytes": 84966,
-  "zip_sha256": "4cc3b28a566c7f0ba7bd36b84d34188b2eafb43df1be55ee2dae6d3e7c56a0a2"
+  "uncompressed_bytes": 981839,
+  "zip_bytes": 84489,
+  "zip_sha256": "3b7abc7fe4a11ea29d998231a73aac88868a296687cba599efae1c2e7c04e22b"
 }

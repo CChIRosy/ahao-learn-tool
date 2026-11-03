@@ -12,8 +12,8 @@ def render(data):
             # User-authored text remains literal: escape HTML and Markdown block markers.
             answer=html.escape(str(ev['answer'])).replace('\n',' / ').replace('`','\\`')
             lines.append(f"\n- 证据 {ev['id']}：{ev['question_id']}；回答：{answer}；判定：{ev['verdict']}；提示层级：{ev['hint_level']}")
-    lines.append('\n未测前置：'+('、'.join(data['unmeasured_prerequisites']) or '清单内无未测前置；不代表所有知识均掌握'))
-    lines.append('\n'+data['follow_up']);lines.append('\n此报告没有设置自动提醒，也不代表经过教师审核或学习成效验证。')
+    lines.append('\n待核验的前置知识：'+('、'.join(data['unmeasured_prerequisites']) or '本轮清单中的前置知识均已有作答记录'))
+    lines.append('\n下一步：'+data['follow_up'])
     return '\n'.join(lines)+'\n'
 
 if __name__=='__main__':

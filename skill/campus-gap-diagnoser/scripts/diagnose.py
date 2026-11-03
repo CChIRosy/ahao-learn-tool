@@ -2,7 +2,6 @@
 import argparse
 import copy
 from datetime import datetime,timezone
-import hashlib
 import json
 import os
 from pathlib import Path
@@ -49,6 +48,8 @@ def status(state,sid):
     return '本轮独立完成'
 def data_path(profile,data_dir=None):
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,64}',profile):raise ValueError('档案名只用英文字母、数字、短横线或下划线')
+    if profile.upper() in {'CON','PRN','AUX','NUL'}|{f'{prefix}{i}' for prefix in ('COM','LPT') for i in range(1,10)}:
+        raise ValueError('请换一个档案名，当前名称被操作系统保留')
     base=Path(data_dir).resolve() if data_dir else Path(os.environ.get('LOCALAPPDATA',Path.home()/'.local/share'))/'campus-gap-diagnoser'
     if ROOT.resolve()==base or ROOT.resolve() in base.parents:raise ValueError('学习档案必须位于Skill包之外')
     base.mkdir(parents=True,exist_ok=True);return base/(profile+'.json')
@@ -65,9 +66,10 @@ def read_state(path):
     return load(path)
 def start(profile,target,existing=None,context=None,focus=None):
     skill(target)
-    context=context or {}
+    if context is None:context={}
+    if not isinstance(context,dict):raise ValueError('context须为JSON对象，例如 {"routing_evidence":"实际观察"}')
     if focus and focus!=target:
-        if not context.get('routing_evidence'):raise ValueError('改变起始核验点需记录已有过程证据；不是已确定的诊断结论')
+        if not context.get('routing_evidence'):raise ValueError('请提供已有解题过程中的观察，以确定起始核验点')
         allowed=set()
         def ancestors(sid):
             for parent in skill(sid)['prerequisites']:
@@ -80,11 +82,15 @@ def start(profile,target,existing=None,context=None,focus=None):
     state['return_target']=target
     return state
 def next_question(state):
+    if state['phase']=='paused':return {'phase':'paused','message':'学习已暂停，使用 resume 继续当前题。'}
+    if state['phase']=='diagnostic':
+        pending=[x['id'] for x in state['attempts'] if x['session_id']==state['session_id'] and x['phase']=='diagnostic' and x['verdict']=='pending']
+        if pending:return {'phase':'awaiting_review','attempt_ids':pending,'message':'先复核待确认的作答，再选择下一道诊断题。'}
     if state.get('current'):return public(state['current'])
     phase=state['phase']
     if phase in ('paused','complete','evidence_ready'):return {'phase':phase,'message':'可生成证据卡；补习使用 learn，迁移使用 transfer，后续复测使用 retest。'}
     if phase=='diagnostic' and state['diagnostic_count']>=6:
-        state['phase']='evidence_ready';return {'phase':state['phase'],'message':'已到本轮6题上限；保留未测部分，不继续加题。'}
+        state['phase']='evidence_ready';return {'phase':state['phase'],'message':'本轮已完成6道诊断题，现可查看证据卡并选择补习内容。'}
     candidates=[state.get('focus',state['target'])]
     if phase=='diagnostic':
         recent=[x for x in state['attempts'] if x['session_id']==state['session_id'] and not x.get('superseded') and x['phase']=='diagnostic']
@@ -97,7 +103,7 @@ def next_question(state):
                 candidates=[state['target']]+candidates
         target_events=[x for x in recent if x['skill_id']==state['target'] and x['verdict']!='skip']
         if len(target_events)>=2 and all(x['verdict']=='correct' and not x['hint_level'] for x in target_events):
-            state['phase']='evidence_ready';return {'phase':'evidence_ready','message':'本轮目标两道独立诊断题已完成；不推断所有前置技能已掌握。'}
+            state['phase']='evidence_ready';return {'phase':'evidence_ready','message':'本轮目标两道独立诊断题已完成，可进入迁移练习。'}
     for sid in dict.fromkeys(candidates):
         desired='diagnostic' if phase=='diagnostic' else phase
         for item in skill(sid)['items']:
@@ -106,7 +112,7 @@ def next_question(state):
                 state['seen'].append(item['id'])
                 return public(item)
     state['phase']='evidence_ready' if phase=='diagnostic' else 'complete'
-    return {'phase':state['phase'],'message':'当前题池没有未见题；不复用已看题冒充独立复测。'}
+    return {'phase':state['phase'],'message':'当前题池已用完。可查看已有证据，或补充审核后的新题再复测。'}
 def safe_grade(item,answer):
     try:
         result=subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts'/'grade.py')],input=json.dumps({'item':item,'answer':answer},ensure_ascii=False),capture_output=True,text=True,encoding='utf-8',timeout=4)
@@ -117,7 +123,7 @@ def submit(state,answer,skip=False):
     if state['phase']=='paused':raise ValueError('当前已暂停，请先恢复')
     item=state.get('current')
     if not item:raise ValueError('先获取当前问题')
-    result={'verdict':'skip','reason':'学生跳过，不等同于答错'} if skip else safe_grade(item,answer)
+    result={'verdict':'skip','reason':'已跳过，本题保留为未测试'} if skip else safe_grade(item,answer)
     verdict='assisted' if result['verdict']=='correct' and state['hint_level'] else result['verdict']
     event={'id':len(state['attempts'])+1,'session_id':state['session_id'],'question_id':item['id'],'skill_id':item['skill_id'],'phase':state['phase'],'answer':answer,'verdict':verdict,'reason':result['reason'],'hint_level':state['hint_level'],'at':now()}
     state['attempts'].append(event)
@@ -141,7 +147,6 @@ def amend(state,attempt_id,verdict,reason):
     effective='assisted' if verdict=='correct' and original['hint_level'] else verdict
     state['corrections'].append({'attempt_id':attempt_id,'before':copy.deepcopy(original),'verdict':effective,'reason':reason,'at':now()})
     original['verdict']=effective;original['reason']=reason
-    state['current']=None
     return original
 def learn(state,sid=None):
     selected=skill(sid or state.get('focus',state['target']))
@@ -155,8 +160,15 @@ def report(state):
     nodes=[]
     for sid in ids:
         ev=evidence(state,sid);wrong=[x for x in ev if x['verdict']=='incorrect']
-        nodes.append({'id':sid,'name':skill(sid)['name'],'status':status(state,sid),'evidence':ev,'interpretation':'重复错误支持优先补习，仍不等于已确定唯一原因' if len({x['question_id'] for x in wrong})>=2 else '本轮证据有限；保留偶发错误或其他解释'})
-    return {'profile':state['profile'],'target':state['target'],'phase':state['phase'],'nodes':nodes,'unmeasured_prerequisites':[x for x in skill(state['target'])['prerequisites'] if not evidence(state,x)],'transfer_results':[x for x in active if x['phase'] in ('transfer','retention')],'follow_up':'独立新题通过仅说明本轮表现；后续再用未见题复测。','scheduled_reminder':False}
+        pending=sum(x['verdict']=='pending' for x in ev)
+        if not ev:interpretation='该知识点尚未作答，可安排核验题。'
+        elif pending:interpretation=f'有{pending}条作答待复核，先确认这些回答，再选择补习内容。'
+        elif len({x['question_id'] for x in wrong})>=2:interpretation='两道独立题出现错误，建议优先补习，并核对共同出错的步骤。'
+        elif wrong:interpretation='本轮有一道错题，建议用另一题核对同一技能。'
+        elif any(x['hint_level'] for x in ev):interpretation='已借助提示完成练习，下一步独立完成迁移题。'
+        else:interpretation=f'本轮{len(ev)}道题独立完成，下一步进行迁移练习。'
+        nodes.append({'id':sid,'name':skill(sid)['name'],'status':status(state,sid),'evidence':ev,'interpretation':interpretation})
+    return {'profile':state['profile'],'target':state['target'],'phase':state['phase'],'nodes':nodes,'unmeasured_prerequisites':[x for x in skill(state['target'])['prerequisites'] if not evidence(state,x)],'transfer_results':[x for x in active if x['phase'] in ('transfer','retention')],'follow_up':'用未见迁移题检查当前理解，下次再记录一道复测题的表现。','scheduled_reminder':False}
 
 def main():
     p=argparse.ArgumentParser(description='卡点侦探本地诊断引擎')
@@ -168,7 +180,7 @@ def main():
     elif cmd=='search':out=search(a.query,a.course)
     elif cmd=='inspect':out=skill(a.skill)
     else:
-        if not a.profile:raise ValueError('请显式指定 --profile，不自动混用学习档案')
+        if not a.profile:raise ValueError('请用 --profile 指定本次使用的学习档案')
         path=data_path(a.profile,a.data_dir)
         if cmd=='start':
             state=start(a.profile,a.skill,load(path) if path.exists() else None,json.loads(a.context) if a.context else None,a.focus);out=next_question(state)
@@ -184,7 +196,9 @@ def main():
                 if a.return_target:state['focus']=state['return_target']
                 if a.skill:state['focus']=a.skill
                 state.update({'phase':'transfer' if cmd=='transfer' else 'retention','current':None,'hint_level':0});out=next_question(state)
-            elif cmd=='pause':state['resume_phase']=state['phase'];state['phase']='paused';out={'phase':'paused'}
+            elif cmd=='pause':
+                if state['phase']!='paused':state['resume_phase']=state['phase'];state['phase']='paused'
+                out={'phase':'paused'}
             elif cmd=='resume':
                 if state['phase']=='paused':state['phase']=state.pop('resume_phase','diagnostic')
                 out=next_question(state)
@@ -199,5 +213,5 @@ def main():
 
 if __name__=='__main__':
     try:main()
-    except (ValueError,KeyError,StopIteration,json.JSONDecodeError) as exc:
+    except (ValueError,KeyError,StopIteration,json.JSONDecodeError,OSError) as exc:
         print(json.dumps({'error':str(exc)},ensure_ascii=False));sys.exit(2)

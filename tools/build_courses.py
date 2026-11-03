@@ -24,8 +24,8 @@ def add(p,key,name,teach,rows,prereq=(),aliases=(),extended=False):
             'prompt':prompt,'answer':answer,'answer_type':kind,'requires_explanation':explanation,
             'requires_context': p['id'] in ('theory','materials','structures') and kind in ('expression','vector'),
             'domain':'按题干给出的实数域、时间范围与假设；条件不足先确认',
-            'context':{'assumptions': ' '+teach if p['id'] in ('theory','materials','structures') else '按题设定义域；不以数值抽样代替等价证明',
-                       'units':'数值题按题干单位输入，单位与模型由宿主复核' if p['id'] in ('theory','materials','structures') else '按题干'},
+            'context':{'assumptions': '按题面给定的模型、坐标和边界条件作答' if p['id'] in ('theory','materials','structures') else '按题设定义域作答',
+                       'units':'数值按题干所列单位填写' if p['id'] in ('theory','materials','structures') else '按题干'},
             'hints':['先指出本题的对象、已知量与适用条件。',teach],
             'rubric':[answer,teach,'核对方法与适用条件；合理的其他表述由宿主复核'],
             'common_errors':['忽略条件或约定','机械套用公式，未解释当前步骤'],
@@ -364,7 +364,7 @@ x^n在[0,1/2]上一致趋0吗？~是
 仅逐点收敛是否足以保证极限函数连续？~否''',prereq=['math12.power'],extended=True)
 
 def finish():
-    manifest={'version':'0.1.0','scope_basis':'同济第八版上下册与所列高校力学大纲；主题级原创题库，非整本教材逐题覆盖', 'courses':[],'skills':[]}
+    manifest={'version':'0.1.1','scope_basis':'同济第八版上下册与所列高校力学大纲；按知识主题组织原创题库', 'courses':[],'skills':[]}
     for p in PACKS:
         filename=p['id']+'.json'
         manifest['courses'].append({'id':p['id'],'name':p['name'],'file':filename,'source':p['source'],'skill_count':len(p['skills']),'question_count':sum(len(s['items']) for s in p['skills'])})
@@ -373,6 +373,7 @@ def finish():
                    'theory.force.1':'N*m','theory.force.3':'N*m','theory.balance.3':'N*m','theory.balance.4':'N','materials.moment.1':'N*m','materials.moment.4':'N*m'}
             for item in s['items']:
                 if item['id'] in units:item['unit']=units[item['id']]
+                if item['id'] in ('math08.planes.1','math08.planes.2'):item['vector_equivalence']='parallel'
             manifest['skills'].append({k:s[k] for k in ('id','name','aliases','prerequisites','tier')}|{'file':filename,'course':p['id']})
         dest=REF/'courses'/filename;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(json.dumps(p,ensure_ascii=False,indent=2),encoding='utf-8')
     (REF/'course-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
