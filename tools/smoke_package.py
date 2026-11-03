@@ -29,6 +29,9 @@ def main():
         courses = run(['courses'])
         assert len(courses) == 15
         assert any(row['id'] == 'math02.chain' for row in run(['search', '--query', '链式法则']))
+        if (root/'references/syllabus-audit.json').exists():
+            for query,expected in [('多跨静定梁','structures.gerber'),('Γ函数','math05.gamma'),('碰撞','theory.impact')]:
+                assert any(row['id']==expected for row in run(['search','--query',query]))
         profile = ['--profile', 'smoke', '--data-dir', str(data)]
         assert run(profile + ['start', '--skill', 'math02.chain'])['id'] == 'math02.chain.1'
         assert run(profile + ['answer', '--answer', 'cos(x**2)'])['verdict'] == 'incorrect'

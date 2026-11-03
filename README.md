@@ -2,11 +2,13 @@
 
 通过短测、证据卡、定点补习和独立新题复测，帮助大学生定位高数与力学中的学习卡点。
 
-0.1.1提供高数12章和理论力学、材料力学、结构力学的诊断引擎与题库，共15个数据模块、108个知识主题、540道原创题。每主题有两道诊断、一道补习例题、一道迁移和一道后续复测。范围按知识主题组织，具体节点与前置关系见[覆盖矩阵](docs/coverage.md)。
+0.2.0提供高数12章和理论力学、材料力学、结构力学的诊断引擎与题库，共15个数据模块、209个知识主题、1045道原创题。每主题有两道诊断、一道补习例题、一道迁移和一道后续复测。范围按知识主题组织，具体节点与前置关系见[覆盖矩阵](docs/coverage.md)。
+
+逐项对照见[课程大纲核查](docs/syllabus-audit.md)：高数正式教材82节、结构力学详细目录67节，以及理论力学、材料力学大纲和专项补充。0.2.0新增101个节点、505道题；更新结果见[本轮覆盖检查](docs/coverage-release.md)。
 
 ## 获取 Skill
 
-- 下载已打包的 [campus-gap-diagnoser-v0.1.1.zip](packages/campus-gap-diagnoser-v0.1.1.zip)。包根目录直接包含SKILL.md。
+- 下载已打包的 [campus-gap-diagnoser-v0.2.0.zip](packages/campus-gap-diagnoser-v0.2.0.zip)。包根目录直接包含SKILL.md。
 - 或使用源码目录 [skill/campus-gap-diagnoser](skill/campus-gap-diagnoser)。
 - 原始需求与创建提示词保留在 [PROMPT.md](PROMPT.md)。
 
@@ -51,7 +53,7 @@ python -X utf8 skill/campus-gap-diagnoser/scripts/diagnose.py --profile demo rep
 
 ## 验证与质量
 
-已完成脚本回归测试、540个答案格式检查、224道参考结果的另写计算核对，以及安装包解压运行检查。完整结果见[验证报告](docs/validation.md)和[本轮检查报告](docs/review-report.md)。
+已完成175项脚本回归测试、1045个答案格式检查、401道参考结果的另写计算核对，以及安装包解压运行检查。完整结果见[版本验证记录](docs/validation.md)和[本轮覆盖检查](docs/coverage-release.md)。
 
 验证按层记录：程序检查已完成；教师题库审核、真实学生效果验证和CodeArts/OfficeAce宿主实机验收待执行。内容采用知识主题粒度和教材理想化力学模型。逐题状态、范围与适用条件集中见[来源与审核说明](skill/campus-gap-diagnoser/references/sources-and-review.md)。
 
@@ -65,6 +67,6 @@ python -m pytest -q
 python tools/build_delivery.py
 ```
 
-源码题库位于tools/build_courses.py、mechanics_seeds.py、supplemental_seeds.py。修改后重建并核对资源；另写计算表达式在tools/oracles.py。build_delivery.py将发布包写入仓库外的outputs目录，可通过--output-dir指定。GitHub同步使用独立发布步骤。
+源码题库位于tools/build_courses.py、mechanics_seeds.py、supplemental_seeds.py、coverage_seeds.py。修改后重建并核对资源；另写计算表达式在tools/oracles.py及coverage_oracles.py。build_delivery.py将发布包写入仓库外的outputs目录，可通过--output-dir指定。GitHub同步使用独立发布步骤。
 
 仓库已公开，当前未设置开源许可证。演示案例标注为合成数据，真实试用另行记录。

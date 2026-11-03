@@ -9,9 +9,11 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output-dir');args=parser.parse_args()
     result=validate(update=True)
     if result['failures']:raise SystemExit(json.dumps(result,ensure_ascii=False))
+    from audit_syllabus import build
+    build()
     manifest=json.loads((ROOT/'references/course-manifest.json').read_text(encoding='utf-8'))
     docs=BASE/'docs';docs.mkdir(exist_ok=True)
-    lines=['# 课程覆盖矩阵','', '范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。映射粒度为本项目拆分的知识主题，学校大纲可按节点调整。', '',
+    lines=['# 课程覆盖矩阵','', '范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。逐项对照见docs/syllabus-audit.md及包内references/syllabus-audit.json。映射粒度为知识主题与起始题库。', '',
            f"实际数据：{result['modules']}个模块、{result['skills']}个主题、{result['questions']}道原创题；每主题2道诊断、1道补习、1道迁移、1道后续复测。", '',
            '题目可通过diagnose.py inspect --skill读取。每模块已执行一条合成完整流程；各主题的题量和计算核对数量列在下表。教师与学生验证状态逐行记录。', '',
            '|模块|技能ID与主题|层级|前置|诊断题|补习/迁移/后续复测|独立计算核对题数|教师/学生验证|',

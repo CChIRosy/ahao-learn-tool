@@ -3297,6 +3297,5275 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "materials.basics",
+      "name": "变形体假设、圣维南原理与失效分类",
+      "aliases": [
+        "变形体假设、圣维南原理与失效分类",
+        "basics"
+      ],
+      "prerequisites": [
+        "materials.section"
+      ],
+      "tier": "core",
+      "teaching": "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.basics.1",
+          "skill_id": "materials.basics",
+          "purpose": "diagnostic",
+          "family_id": "materials.basics.family-1",
+          "prompt": "强度、刚度、稳定性是否对应不同的验算目标？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。"
+          ],
+          "rubric": [
+            "是",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.basics.2",
+          "skill_id": "materials.basics",
+          "purpose": "diagnostic",
+          "family_id": "materials.basics.family-2",
+          "prompt": "圣维南原理允许在加载点附近任意忽略应力差别吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。"
+          ],
+          "rubric": [
+            "否",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.basics.3",
+          "skill_id": "materials.basics",
+          "purpose": "learning",
+          "family_id": "materials.basics.family-3",
+          "prompt": "线弹性叠加要求材料关系与几何响应满足线性条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。"
+          ],
+          "rubric": [
+            "是",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.basics.4",
+          "skill_id": "materials.basics",
+          "purpose": "transfer",
+          "family_id": "materials.basics.family-4",
+          "prompt": "说明各向同性与均匀性的区别。",
+          "answer": "前者指同一点各方向性质相同，后者指不同位置材料性质相同",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。"
+          ],
+          "rubric": [
+            "前者指同一点各方向性质相同，后者指不同位置材料性质相同",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.basics.5",
+          "skill_id": "materials.basics",
+          "purpose": "retention",
+          "family_id": "materials.basics.family-5",
+          "prompt": "小变形模型可任意用于大挠度屈曲后全过程吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。"
+          ],
+          "rubric": [
+            "否",
+            "连续、均匀、各向同性与小变形是分别检查的假设；圣维南原理用于远离局部载荷作用区的外效应近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "连续、均匀、各向同性与小变形是分别检查的假设。",
+        "圣维南原理用于远离局部载荷作用区的外效应近似。"
+      ]
+    },
+    {
+      "id": "materials.properties",
+      "name": "拉压试验、材料性能与安全因数",
+      "aliases": [
+        "拉压试验、材料性能与安全因数",
+        "properties"
+      ],
+      "prerequisites": [
+        "materials.axial"
+      ],
+      "tier": "core",
+      "teaching": "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.properties.1",
+          "skill_id": "materials.properties",
+          "purpose": "diagnostic",
+          "family_id": "materials.properties.family-1",
+          "prompt": "屈服强度300MPa、安全因数2，许用应力MPa。",
+          "answer": "150",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。"
+          ],
+          "rubric": [
+            "150",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.properties.2",
+          "skill_id": "materials.properties",
+          "purpose": "diagnostic",
+          "family_id": "materials.properties.family-2",
+          "prompt": "原标距100毫米、断后125毫米，伸长率小数。",
+          "answer": "1/4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。"
+          ],
+          "rubric": [
+            "1/4",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.properties.3",
+          "skill_id": "materials.properties",
+          "purpose": "learning",
+          "family_id": "materials.properties.family-3",
+          "prompt": "塑性好的材料与弹性模量大是同一概念吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。"
+          ],
+          "rubric": [
+            "否",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.properties.4",
+          "skill_id": "materials.properties",
+          "purpose": "transfer",
+          "family_id": "materials.properties.family-4",
+          "prompt": "最大载荷20000牛、原面积100平方毫米，抗拉强度MPa。",
+          "answer": "200",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。"
+          ],
+          "rubric": [
+            "200",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.properties.5",
+          "skill_id": "materials.properties",
+          "purpose": "retention",
+          "family_id": "materials.properties.family-5",
+          "prompt": "铸铁压缩与拉伸承载表现可以不区分吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。"
+          ],
+          "rubric": [
+            "否",
+            "区分比例极限、弹性极限、屈服与抗拉强度；名义应力按原截面，伸长率与断面收缩率衡量塑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "区分比例极限、弹性极限、屈服与抗拉强度。",
+        "名义应力按原截面，伸长率与断面收缩率衡量塑性。"
+      ]
+    },
+    {
+      "id": "materials.design",
+      "name": "强度校核、截面设计与载荷确定",
+      "aliases": [
+        "强度校核、截面设计与载荷确定",
+        "design"
+      ],
+      "prerequisites": [
+        "materials.axial",
+        "materials.bending"
+      ],
+      "tier": "core",
+      "teaching": "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.design.1",
+          "skill_id": "materials.design",
+          "purpose": "diagnostic",
+          "family_id": "materials.design.family-1",
+          "prompt": "轴力10000牛、许用应力100MPa，最小面积平方毫米。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。"
+          ],
+          "rubric": [
+            "100",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.design.2",
+          "skill_id": "materials.design",
+          "purpose": "diagnostic",
+          "family_id": "materials.design.family-2",
+          "prompt": "弯矩最大截面必然在任意变截面梁中具有最大正应力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。"
+          ],
+          "rubric": [
+            "否",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.design.3",
+          "skill_id": "materials.design",
+          "purpose": "learning",
+          "family_id": "materials.design.family-3",
+          "prompt": "面积200平方毫米、许用应力150MPa，允许轴力牛。",
+          "answer": "30000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。"
+          ],
+          "rubric": [
+            "30000",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.design.4",
+          "skill_id": "materials.design",
+          "purpose": "transfer",
+          "family_id": "materials.design.family-4",
+          "prompt": "矩形截面宽b高h，抗弯截面系数是否为b*h²/6？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。"
+          ],
+          "rubric": [
+            "是",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.design.5",
+          "skill_id": "materials.design",
+          "purpose": "retention",
+          "family_id": "materials.design.family-5",
+          "prompt": "安全因数可以替代对载荷、边界和失效模式的确认吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。"
+          ],
+          "rubric": [
+            "否",
+            "在给定许用值和模型下分别解应力、面积或载荷；危险截面按内力与截面共同筛选。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "在给定许用值和模型下分别解应力、面积或载荷。",
+        "危险截面按内力与截面共同筛选。"
+      ]
+    },
+    {
+      "id": "materials.thermal",
+      "name": "温度应变、装配误差与轴向超静定",
+      "aliases": [
+        "温度应变、装配误差与轴向超静定",
+        "thermal"
+      ],
+      "prerequisites": [
+        "materials.indeterminate",
+        "materials.axial"
+      ],
+      "tier": "core",
+      "teaching": "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.thermal.1",
+          "skill_id": "materials.thermal",
+          "purpose": "diagnostic",
+          "family_id": "materials.thermal.family-1",
+          "prompt": "两端完全固定均匀杆升温，E=200000MPa、alpha=0.00001/K、Delta T=20K，拉为正应力MPa。",
+          "answer": "-40",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。"
+          ],
+          "rubric": [
+            "-40",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.thermal.2",
+          "skill_id": "materials.thermal",
+          "purpose": "diagnostic",
+          "family_id": "materials.thermal.family-2",
+          "prompt": "自由杆均匀升温一定产生轴应力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。"
+          ],
+          "rubric": [
+            "否",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.thermal.3",
+          "skill_id": "materials.thermal",
+          "purpose": "learning",
+          "family_id": "materials.thermal.family-3",
+          "prompt": "自由杆长2米，alpha=0.00001/K，升温50K，伸长米。",
+          "answer": "1/1000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。"
+          ],
+          "rubric": [
+            "1/1000",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.thermal.4",
+          "skill_id": "materials.thermal",
+          "purpose": "transfer",
+          "family_id": "materials.thermal.family-4",
+          "prompt": "装配短差必须作为协调方程的初始变形处理吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。"
+          ],
+          "rubric": [
+            "是",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.thermal.5",
+          "skill_id": "materials.thermal",
+          "purpose": "retention",
+          "family_id": "materials.thermal.family-5",
+          "prompt": "说明完全约束升温与自由升温的变形差异。",
+          "answer": "自由杆产生温度伸长且可无应力；完全约束杆总伸长零，弹性压缩抵消温度伸长",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。"
+          ],
+          "rubric": [
+            "自由杆产生温度伸长且可无应力；完全约束杆总伸长零，弹性压缩抵消温度伸长",
+            "总应变分为弹性与温度等初始应变；协调给总变形，平衡给内力，两者共同确定约束力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "总应变分为弹性与温度等初始应变。",
+        "协调给总变形，平衡给内力，两者共同确定约束力。"
+      ]
+    },
+    {
+      "id": "materials.oblique",
+      "name": "拉压杆斜截面上的应力",
+      "aliases": [
+        "拉压杆斜截面上的应力",
+        "oblique"
+      ],
+      "prerequisites": [
+        "materials.axial"
+      ],
+      "tier": "core",
+      "teaching": "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.oblique.1",
+          "skill_id": "materials.oblique",
+          "purpose": "diagnostic",
+          "family_id": "materials.oblique.family-1",
+          "prompt": "单轴拉应力100MPa，斜面法线与轴线成pi/4，正应力MPa。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。"
+          ],
+          "rubric": [
+            "50",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.oblique.2",
+          "skill_id": "materials.oblique",
+          "purpose": "diagnostic",
+          "family_id": "materials.oblique.family-2",
+          "prompt": "同一斜面剪应力绝对值MPa。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。"
+          ],
+          "rubric": [
+            "50",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.oblique.3",
+          "skill_id": "materials.oblique",
+          "purpose": "learning",
+          "family_id": "materials.oblique.family-3",
+          "prompt": "单轴拉伸下最大剪应力大小为轴向正应力的一半吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。"
+          ],
+          "rubric": [
+            "是",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.oblique.4",
+          "skill_id": "materials.oblique",
+          "purpose": "transfer",
+          "family_id": "materials.oblique.family-4",
+          "prompt": "法线与轴线平行的横截面剪应力为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。"
+          ],
+          "rubric": [
+            "是",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.oblique.5",
+          "skill_id": "materials.oblique",
+          "purpose": "retention",
+          "family_id": "materials.oblique.family-5",
+          "prompt": "说明斜截面为何不能只用N除以横截面积作其法向应力。",
+          "answer": "斜面面积和合力在斜面法向的分量都发生变化，需要先分解再除以斜面面积",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。"
+          ],
+          "rubric": [
+            "斜面面积和合力在斜面法向的分量都发生变化，需要先分解再除以斜面面积",
+            "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "单轴应力在法线与轴线夹角theta的截面上分解为sigma*cos²theta及有向剪应力，保持角度与正号约定。"
+      ]
+    },
+    {
+      "id": "materials.thin-wall",
+      "name": "薄壁闭口杆扭转与开口截面比较",
+      "aliases": [
+        "薄壁闭口杆扭转与开口截面比较",
+        "thin-wall"
+      ],
+      "prerequisites": [
+        "materials.torsion"
+      ],
+      "tier": "core",
+      "teaching": "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.thin-wall.1",
+          "skill_id": "materials.thin-wall",
+          "purpose": "diagnostic",
+          "family_id": "materials.thin-wall.family-1",
+          "prompt": "单室闭口截面T=100牛米、中线包围面积0.5平方米，剪流牛/米。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。"
+          ],
+          "rubric": [
+            "100",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.thin-wall.2",
+          "skill_id": "materials.thin-wall",
+          "purpose": "diagnostic",
+          "family_id": "materials.thin-wall.family-2",
+          "prompt": "上题壁厚0.01米，剪应力Pa。",
+          "answer": "10000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。"
+          ],
+          "rubric": [
+            "10000",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.thin-wall.3",
+          "skill_id": "materials.thin-wall",
+          "purpose": "learning",
+          "family_id": "materials.thin-wall.family-3",
+          "prompt": "闭口单室薄壁杆的剪流沿周边为常量（无其他扭矩输入）吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。"
+          ],
+          "rubric": [
+            "是",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.thin-wall.4",
+          "skill_id": "materials.thin-wall",
+          "purpose": "transfer",
+          "family_id": "materials.thin-wall.family-4",
+          "prompt": "开口薄壁截面可无条件套用闭口Bredt公式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。"
+          ],
+          "rubric": [
+            "否",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.thin-wall.5",
+          "skill_id": "materials.thin-wall",
+          "purpose": "retention",
+          "family_id": "materials.thin-wall.family-5",
+          "prompt": "说明多室薄壁扭转还需哪些条件。",
+          "answer": "各室剪流的力矩平衡和单位长度扭转角协调，公共壁剪流按差值处理",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。"
+          ],
+          "rubric": [
+            "各室剪流的力矩平衡和单位长度扭转角协调，公共壁剪流按差值处理",
+            "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚；开口截面的扭转刚度需专门模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "单室薄壁闭口截面剪流T/(2*Am)，剪应力为剪流除以壁厚。",
+        "开口截面的扭转刚度需专门模型。"
+      ]
+    },
+    {
+      "id": "materials.noncircular",
+      "name": "非圆截面扭转、翘曲与近似公式",
+      "aliases": [
+        "非圆截面扭转、翘曲与近似公式",
+        "noncircular"
+      ],
+      "prerequisites": [
+        "materials.torsion",
+        "materials.thin-wall"
+      ],
+      "tier": "extension",
+      "teaching": "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.noncircular.1",
+          "skill_id": "materials.noncircular",
+          "purpose": "diagnostic",
+          "family_id": "materials.noncircular.family-1",
+          "prompt": "矩形杆扭转能直接用tau=T*r/Ip精确计算吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。"
+          ],
+          "rubric": [
+            "否",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.noncircular.2",
+          "skill_id": "materials.noncircular",
+          "purpose": "diagnostic",
+          "family_id": "materials.noncircular.family-2",
+          "prompt": "圆轴自由扭转时横截面保持平面是经典模型假设吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。"
+          ],
+          "rubric": [
+            "是",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.noncircular.3",
+          "skill_id": "materials.noncircular",
+          "purpose": "learning",
+          "family_id": "materials.noncircular.family-3",
+          "prompt": "说明约束翘曲可能增加什么应力。",
+          "answer": "轴向正应力与相应翘曲约束效应，需采用受约束扭转模型",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。"
+          ],
+          "rubric": [
+            "轴向正应力与相应翘曲约束效应，需采用受约束扭转模型",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.noncircular.4",
+          "skill_id": "materials.noncircular",
+          "purpose": "transfer",
+          "family_id": "materials.noncircular.family-4",
+          "prompt": "非圆杆自由扭转的扭转常数一般等于极惯性矩吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。"
+          ],
+          "rubric": [
+            "否",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.noncircular.5",
+          "skill_id": "materials.noncircular",
+          "purpose": "retention",
+          "family_id": "materials.noncircular.family-5",
+          "prompt": "宽窄相差很大的薄矩形自由扭转刚度与厚度三次方有关吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。"
+          ],
+          "rubric": [
+            "是",
+            "非圆截面扭转一般发生翘曲；圆轴平截面假设和极惯性矩公式按截面形状限制适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "非圆截面扭转一般发生翘曲。",
+        "圆轴平截面假设和极惯性矩公式按截面形状限制适用。"
+      ]
+    },
+    {
+      "id": "materials.unsymmetric",
+      "name": "斜弯曲与非对称弯曲",
+      "aliases": [
+        "斜弯曲与非对称弯曲",
+        "unsymmetric"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "materials.geometry"
+      ],
+      "tier": "core",
+      "teaching": "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.unsymmetric.1",
+          "skill_id": "materials.unsymmetric",
+          "purpose": "diagnostic",
+          "family_id": "materials.unsymmetric.family-1",
+          "prompt": "主轴上同一点两项弯曲正应力分别30与-10MPa，总应力MPa。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。"
+          ],
+          "rubric": [
+            "20",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.unsymmetric.2",
+          "skill_id": "materials.unsymmetric",
+          "purpose": "diagnostic",
+          "family_id": "materials.unsymmetric.family-2",
+          "prompt": "斜弯曲的中性轴总与合弯矩方向平行吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。"
+          ],
+          "rubric": [
+            "否",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.unsymmetric.3",
+          "skill_id": "materials.unsymmetric",
+          "purpose": "learning",
+          "family_id": "materials.unsymmetric.family-3",
+          "prompt": "矩形截面关于两条形心对称轴的惯性积为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。"
+          ],
+          "rubric": [
+            "是",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.unsymmetric.4",
+          "skill_id": "materials.unsymmetric",
+          "purpose": "transfer",
+          "family_id": "materials.unsymmetric.family-4",
+          "prompt": "说明用双向弯曲叠加时需先确定什么轴。",
+          "answer": "形心主惯性轴及弯矩分量与正应力的符号约定",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。"
+          ],
+          "rubric": [
+            "形心主惯性轴及弯矩分量与正应力的符号约定",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.unsymmetric.5",
+          "skill_id": "materials.unsymmetric",
+          "purpose": "retention",
+          "family_id": "materials.unsymmetric.family-5",
+          "prompt": "两个主方向的弯曲刚度相同是斜弯曲成立的必要条件吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。"
+          ],
+          "rubric": [
+            "否",
+            "沿形心主轴分解弯矩并叠加正应力；非主轴上的惯性积使弯矩与曲率耦合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "沿形心主轴分解弯矩并叠加正应力。",
+        "非主轴上的惯性积使弯矩与曲率耦合。"
+      ]
+    },
+    {
+      "id": "materials.core",
+      "name": "偏心拉压与截面核心",
+      "aliases": [
+        "偏心拉压与截面核心",
+        "core"
+      ],
+      "prerequisites": [
+        "materials.combined",
+        "materials.unsymmetric"
+      ],
+      "tier": "core",
+      "teaching": "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.core.1",
+          "skill_id": "materials.core",
+          "purpose": "diagnostic",
+          "family_id": "materials.core.family-1",
+          "prompt": "矩形截面沿高度方向的核心界限偏心距为h/6吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。"
+          ],
+          "rubric": [
+            "是",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.core.2",
+          "skill_id": "materials.core",
+          "purpose": "diagnostic",
+          "family_id": "materials.core.family-2",
+          "prompt": "轴压平均应力-10MPa、某点附加弯曲应力+15MPa，总正应力MPa。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。"
+          ],
+          "rubric": [
+            "5",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.core.3",
+          "skill_id": "materials.core",
+          "purpose": "learning",
+          "family_id": "materials.core.family-3",
+          "prompt": "偏心压力作用点落在核心内可使截面全部受压或边缘为零吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。"
+          ],
+          "rubric": [
+            "是",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.core.4",
+          "skill_id": "materials.core",
+          "purpose": "transfer",
+          "family_id": "materials.core.family-4",
+          "prompt": "矩形高度120毫米，沿该方向核心半宽毫米。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。"
+          ],
+          "rubric": [
+            "20",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.core.5",
+          "skill_id": "materials.core",
+          "purpose": "retention",
+          "family_id": "materials.core.family-5",
+          "prompt": "说明核心法用于无拉力材料时的模型前提。",
+          "answer": "按线弹性全截面应力分布判断无拉区；若已开裂或接触脱开须重新建模",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。"
+          ],
+          "rubric": [
+            "按线弹性全截面应力分布判断无拉区；若已开裂或接触脱开须重新建模",
+            "偏心轴力等效为形心轴力加弯矩；全截面不出现拉应力的压缩合力作用点区域为截面核心。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "偏心轴力等效为形心轴力加弯矩。",
+        "全截面不出现拉应力的压缩合力作用点区域为截面核心。"
+      ]
+    },
+    {
+      "id": "materials.mohr",
+      "name": "平面应力变换、莫尔圆与主应力",
+      "aliases": [
+        "平面应力变换、莫尔圆与主应力",
+        "mohr",
+        "莫尔圆",
+        "应力圆"
+      ],
+      "prerequisites": [
+        "materials.stress"
+      ],
+      "tier": "core",
+      "teaching": "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.mohr.1",
+          "skill_id": "materials.mohr",
+          "purpose": "diagnostic",
+          "family_id": "materials.mohr.family-1",
+          "prompt": "sigma_x=80,sigma_y=20,tau_xy=40MPa，主应力从大到小。",
+          "answer": "100,0",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。"
+          ],
+          "rubric": [
+            "100,0",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.mohr.2",
+          "skill_id": "materials.mohr",
+          "purpose": "diagnostic",
+          "family_id": "materials.mohr.family-2",
+          "prompt": "同一状态最大面内剪应力MPa。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。"
+          ],
+          "rubric": [
+            "50",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.mohr.3",
+          "skill_id": "materials.mohr",
+          "purpose": "learning",
+          "family_id": "materials.mohr.family-3",
+          "prompt": "纯剪tau=30MPa，两个面内主应力。",
+          "answer": "30,-30",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。"
+          ],
+          "rubric": [
+            "30,-30",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.mohr.4",
+          "skill_id": "materials.mohr",
+          "purpose": "transfer",
+          "family_id": "materials.mohr.family-4",
+          "prompt": "莫尔圆转角与实体截面转角大小相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。"
+          ],
+          "rubric": [
+            "否",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.mohr.5",
+          "skill_id": "materials.mohr",
+          "purpose": "retention",
+          "family_id": "materials.mohr.family-5",
+          "prompt": "平面应力第三主应力为0，但最大空间剪应力仍需比较三个主应力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。"
+          ],
+          "rubric": [
+            "是",
+            "圆心为平均正应力，半径由半差与剪应力平方和开根；主应力为圆心加减半径，角度映射为二倍角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "圆心为平均正应力，半径由半差与剪应力平方和开根。",
+        "主应力为圆心加减半径，角度映射为二倍角。"
+      ]
+    },
+    {
+      "id": "materials.rosette",
+      "name": "应变花、应变变换与电测",
+      "aliases": [
+        "应变花、应变变换与电测",
+        "rosette"
+      ],
+      "prerequisites": [
+        "materials.stress"
+      ],
+      "tier": "core",
+      "teaching": "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.rosette.1",
+          "skill_id": "materials.rosette",
+          "purpose": "diagnostic",
+          "family_id": "materials.rosette.family-1",
+          "prompt": "epsilon0=100,epsilon45=80,epsilon90=-20微应变，gamma_xy微应变。",
+          "answer": "80",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。"
+          ],
+          "rubric": [
+            "80",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.rosette.2",
+          "skill_id": "materials.rosette",
+          "purpose": "diagnostic",
+          "family_id": "materials.rosette.family-2",
+          "prompt": "工程剪应变gamma_xy是张量剪应变epsilon_xy的两倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。"
+          ],
+          "rubric": [
+            "是",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.rosette.3",
+          "skill_id": "materials.rosette",
+          "purpose": "learning",
+          "family_id": "materials.rosette.family-3",
+          "prompt": "0度应变片测得该方向法向应变吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。"
+          ],
+          "rubric": [
+            "是",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.rosette.4",
+          "skill_id": "materials.rosette",
+          "purpose": "transfer",
+          "family_id": "materials.rosette.family-4",
+          "prompt": "说明应变换算为应力前需确认的本构条件。",
+          "answer": "材料弹性常数、平面应力或平面应变假设，以及温度补偿与测量方向",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。"
+          ],
+          "rubric": [
+            "材料弹性常数、平面应力或平面应变假设，以及温度补偿与测量方向",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.rosette.5",
+          "skill_id": "materials.rosette",
+          "purpose": "retention",
+          "family_id": "materials.rosette.family-5",
+          "prompt": "单个应变片能独立确定任意平面应力状态全部分量吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。"
+          ],
+          "rubric": [
+            "否",
+            "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90；主应变按张量剪应变与工程剪应变转换。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "0/45/90度应变花中gamma_xy=2*epsilon45-epsilon0-epsilon90。",
+        "主应变按张量剪应变与工程剪应变转换。"
+      ]
+    },
+    {
+      "id": "materials.generalized-hooke",
+      "name": "广义虎克定律、体积应变与平面应变",
+      "aliases": [
+        "广义虎克定律、体积应变与平面应变",
+        "generalized-hooke"
+      ],
+      "prerequisites": [
+        "materials.stress"
+      ],
+      "tier": "core",
+      "teaching": "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.generalized-hooke.1",
+          "skill_id": "materials.generalized-hooke",
+          "purpose": "diagnostic",
+          "family_id": "materials.generalized-hooke.family-1",
+          "prompt": "E=210000MPa,mu=0.3，G的MPa数值。",
+          "answer": "1050000/13",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。"
+          ],
+          "rubric": [
+            "1050000/13",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.generalized-hooke.2",
+          "skill_id": "materials.generalized-hooke",
+          "purpose": "diagnostic",
+          "family_id": "materials.generalized-hooke.family-2",
+          "prompt": "sigma_x=100MPa其余应力零，E=200000MPa,mu=0.3，epsilon_y。",
+          "answer": "-3/20000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。"
+          ],
+          "rubric": [
+            "-3/20000",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.generalized-hooke.3",
+          "skill_id": "materials.generalized-hooke",
+          "purpose": "learning",
+          "family_id": "materials.generalized-hooke.family-3",
+          "prompt": "平面应变时sigma_z一定为0吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。"
+          ],
+          "rubric": [
+            "否",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.generalized-hooke.4",
+          "skill_id": "materials.generalized-hooke",
+          "purpose": "transfer",
+          "family_id": "materials.generalized-hooke.family-4",
+          "prompt": "线弹性各向同性体积模量为E/(3*(1-2*mu))吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。"
+          ],
+          "rubric": [
+            "是",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.generalized-hooke.5",
+          "skill_id": "materials.generalized-hooke",
+          "purpose": "retention",
+          "family_id": "materials.generalized-hooke.family-5",
+          "prompt": "均匀升温的自由各向同性小变形体，体积应变为3*alpha*Delta T吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。"
+          ],
+          "rubric": [
+            "是",
+            "各向同性线弹性三维正应变含泊松耦合；G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "各向同性线弹性三维正应变含泊松耦合。",
+        "G=E/(2*(1+mu))，平面应变与平面应力采用不同约束。"
+      ]
+    },
+    {
+      "id": "materials.criteria",
+      "name": "四种强度理论与相当应力",
+      "aliases": [
+        "四种强度理论与相当应力",
+        "criteria"
+      ],
+      "prerequisites": [
+        "materials.mohr",
+        "materials.combined"
+      ],
+      "tier": "core",
+      "teaching": "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.criteria.1",
+          "skill_id": "materials.criteria",
+          "purpose": "diagnostic",
+          "family_id": "materials.criteria.family-1",
+          "prompt": "单轴拉应力100MPa，von Mises相当应力MPa。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。"
+          ],
+          "rubric": [
+            "100",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.criteria.2",
+          "skill_id": "materials.criteria",
+          "purpose": "diagnostic",
+          "family_id": "materials.criteria.family-2",
+          "prompt": "纯剪tau=30MPa，von Mises相当应力MPa。",
+          "answer": "30*sqrt(3)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。"
+          ],
+          "rubric": [
+            "30*sqrt(3)",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.criteria.3",
+          "skill_id": "materials.criteria",
+          "purpose": "learning",
+          "family_id": "materials.criteria.family-3",
+          "prompt": "纯剪tau=30MPa，Tresca相当应力MPa。",
+          "answer": "60",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。"
+          ],
+          "rubric": [
+            "60",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.criteria.4",
+          "skill_id": "materials.criteria",
+          "purpose": "transfer",
+          "family_id": "materials.criteria.family-4",
+          "prompt": "静水压力下von Mises相当应力为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。"
+          ],
+          "rubric": [
+            "是",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.criteria.5",
+          "skill_id": "materials.criteria",
+          "purpose": "retention",
+          "family_id": "materials.criteria.family-5",
+          "prompt": "说明脆性材料不能一律使用延性材料屈服准则的原因。",
+          "answer": "破坏机理与拉压敏感性不同，需要选择符合材料失效模式的准则及试验参数",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。"
+          ],
+          "rubric": [
+            "破坏机理与拉压敏感性不同，需要选择符合材料失效模式的准则及试验参数",
+            "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用；Tresca与von Mises分别计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "最大拉应力、最大拉应变、最大剪应力与畸变能理论按材料和应力状态选用。",
+        "Tresca与von Mises分别计算。"
+      ]
+    },
+    {
+      "id": "materials.castigliano",
+      "name": "卡氏定理、互等与单位载荷法",
+      "aliases": [
+        "卡氏定理、互等与单位载荷法",
+        "castigliano"
+      ],
+      "prerequisites": [
+        "materials.energy",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "teaching": "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.castigliano.1",
+          "skill_id": "materials.castigliano",
+          "purpose": "diagnostic",
+          "family_id": "materials.castigliano.family-1",
+          "prompt": "U=P²*L/(2*E*A)，对P求偏导。",
+          "answer": "P*L/(E*A)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。"
+          ],
+          "rubric": [
+            "P*L/(E*A)",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.castigliano.2",
+          "skill_id": "materials.castigliano",
+          "purpose": "diagnostic",
+          "family_id": "materials.castigliano.family-2",
+          "prompt": "对力矩求应变能偏导得到对应转角吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。"
+          ],
+          "rubric": [
+            "是",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.castigliano.3",
+          "skill_id": "materials.castigliano",
+          "purpose": "learning",
+          "family_id": "materials.castigliano.family-3",
+          "prompt": "单位载荷法的虚单位力方向应与所求位移方向一致吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。"
+          ],
+          "rubric": [
+            "是",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.castigliano.4",
+          "skill_id": "materials.castigliano",
+          "purpose": "transfer",
+          "family_id": "materials.castigliano.family-4",
+          "prompt": "轴向杆L=2,E*A=100,力P=5时轴向位移。",
+          "answer": "1/10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。"
+          ],
+          "rubric": [
+            "1/10",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.castigliano.5",
+          "skill_id": "materials.castigliano",
+          "purpose": "retention",
+          "family_id": "materials.castigliano.family-5",
+          "prompt": "非线性材料可不加条件直接使用线弹性互等定理吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。"
+          ],
+          "rubric": [
+            "否",
+            "线弹性应变能对广义力偏导给对应位移；单位载荷法积分真实内力与单位内力乘积并计相应刚度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "线弹性应变能对广义力偏导给对应位移。",
+        "单位载荷法积分真实内力与单位内力乘积并计相应刚度。"
+      ]
+    },
+    {
+      "id": "materials.impact",
+      "name": "动载系数、落重冲击与惯性载荷",
+      "aliases": [
+        "动载系数、落重冲击与惯性载荷",
+        "impact"
+      ],
+      "prerequisites": [
+        "materials.energy",
+        "materials.fatigue"
+      ],
+      "tier": "core",
+      "teaching": "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.impact.1",
+          "skill_id": "materials.impact",
+          "purpose": "diagnostic",
+          "family_id": "materials.impact.family-1",
+          "prompt": "理想无阻尼线弹性系统突然施加恒载且初始静止，最大动载系数。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。"
+          ],
+          "rubric": [
+            "2",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.impact.2",
+          "skill_id": "materials.impact",
+          "purpose": "diagnostic",
+          "family_id": "materials.impact.family-2",
+          "prompt": "落高h=0是否意味着突然加载的动载系数为1？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。"
+          ],
+          "rubric": [
+            "否",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.impact.3",
+          "skill_id": "materials.impact",
+          "purpose": "learning",
+          "family_id": "materials.impact.family-3",
+          "prompt": "静变形delta_st=0.01米、落高0.04米，理想动载系数1+sqrt(1+2*h/delta_st)。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。"
+          ],
+          "rubric": [
+            "4",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.impact.4",
+          "skill_id": "materials.impact",
+          "purpose": "transfer",
+          "family_id": "materials.impact.family-4",
+          "prompt": "冲击接触时间与阻尼可影响真实峰值吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。"
+          ],
+          "rubric": [
+            "是",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.impact.5",
+          "skill_id": "materials.impact",
+          "purpose": "retention",
+          "family_id": "materials.impact.family-5",
+          "prompt": "解释落重能量法还需计入接触后的哪一段重力功。",
+          "answer": "除初始落高重力势能，还需计重物随构件继续变形下降时的重力功",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。"
+          ],
+          "rubric": [
+            "除初始落高重力势能，还需计重物随构件继续变形下降时的重力功",
+            "理想线弹性落重模型用能量平衡；忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "理想线弹性落重模型用能量平衡。",
+        "忽略系统自重、阻尼等须在题设中明确，突然施加载荷区别于缓慢静载。"
+      ]
+    },
+    {
+      "id": "materials.fatigue-detail",
+      "name": "应力循环、疲劳限与影响因素",
+      "aliases": [
+        "应力循环、疲劳限与影响因素",
+        "fatigue-detail"
+      ],
+      "prerequisites": [
+        "materials.fatigue"
+      ],
+      "tier": "core",
+      "teaching": "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.fatigue-detail.1",
+          "skill_id": "materials.fatigue-detail",
+          "purpose": "diagnostic",
+          "family_id": "materials.fatigue-detail.family-1",
+          "prompt": "sigma_max=100,sigma_min=-60MPa，应力幅MPa。",
+          "answer": "80",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。"
+          ],
+          "rubric": [
+            "80",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.fatigue-detail.2",
+          "skill_id": "materials.fatigue-detail",
+          "purpose": "diagnostic",
+          "family_id": "materials.fatigue-detail.family-2",
+          "prompt": "上述循环平均应力MPa。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。"
+          ],
+          "rubric": [
+            "20",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.fatigue-detail.3",
+          "skill_id": "materials.fatigue-detail",
+          "purpose": "learning",
+          "family_id": "materials.fatigue-detail.family-3",
+          "prompt": "上述循环应力比R。",
+          "answer": "-3/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。"
+          ],
+          "rubric": [
+            "-3/5",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.fatigue-detail.4",
+          "skill_id": "materials.fatigue-detail",
+          "purpose": "transfer",
+          "family_id": "materials.fatigue-detail.family-4",
+          "prompt": "对称循环的应力比R=-1吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。"
+          ],
+          "rubric": [
+            "是",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.fatigue-detail.5",
+          "skill_id": "materials.fatigue-detail",
+          "purpose": "retention",
+          "family_id": "materials.fatigue-detail.family-5",
+          "prompt": "疲劳极限可直接对所有材料都当成无限寿命水平平台吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。"
+          ],
+          "rubric": [
+            "否",
+            "用最大最小应力计算平均值与幅值；应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "用最大最小应力计算平均值与幅值。",
+        "应力集中、尺寸和表面状态修正疲劳强度，有限寿命采用相应S-N关系。"
+      ]
+    },
+    {
+      "id": "materials.principal-inertia",
+      "name": "静矩、惯性积与主惯性轴",
+      "aliases": [
+        "静矩、惯性积与主惯性轴",
+        "principal-inertia"
+      ],
+      "prerequisites": [
+        "materials.geometry"
+      ],
+      "tier": "core",
+      "teaching": "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.principal-inertia.1",
+          "skill_id": "materials.principal-inertia",
+          "purpose": "diagnostic",
+          "family_id": "materials.principal-inertia.family-1",
+          "prompt": "矩形b=2,h=4，关于形心水平轴惯性矩。",
+          "answer": "32/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。"
+          ],
+          "rubric": [
+            "32/3",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.principal-inertia.2",
+          "skill_id": "materials.principal-inertia",
+          "purpose": "diagnostic",
+          "family_id": "materials.principal-inertia.family-2",
+          "prompt": "面积3、形心轴惯性矩2、移轴距离2，新轴惯性矩。",
+          "answer": "14",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。"
+          ],
+          "rubric": [
+            "14",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.principal-inertia.3",
+          "skill_id": "materials.principal-inertia",
+          "purpose": "learning",
+          "family_id": "materials.principal-inertia.family-3",
+          "prompt": "截面对某形心轴对称时相关惯性积为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。"
+          ],
+          "rubric": [
+            "是",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.principal-inertia.4",
+          "skill_id": "materials.principal-inertia",
+          "purpose": "transfer",
+          "family_id": "materials.principal-inertia.family-4",
+          "prompt": "极惯性矩是否等于同点两正交平面轴惯性矩之和？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。"
+          ],
+          "rubric": [
+            "是",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.principal-inertia.5",
+          "skill_id": "materials.principal-inertia",
+          "purpose": "retention",
+          "family_id": "materials.principal-inertia.family-5",
+          "prompt": "说明挖孔截面叠加时面积和惯性矩符号。",
+          "answer": "把孔视为负面积，先统一参考轴，孔的静矩和移轴惯性矩按负贡献相减",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。"
+          ],
+          "rubric": [
+            "把孔视为负面积，先统一参考轴，孔的静矩和移轴惯性矩按负贡献相减",
+            "静矩定位形心；惯性积随轴旋转变化；形心对称轴为主轴，组合截面先移轴再叠加。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "静矩定位形心。",
+        "惯性积随轴旋转变化。",
+        "形心对称轴为主轴，组合截面先移轴再叠加。"
+      ]
+    },
+    {
+      "id": "materials.experiments",
+      "name": "材料力学实验、读数与误差",
+      "aliases": [
+        "材料力学实验、读数与误差",
+        "experiments"
+      ],
+      "prerequisites": [
+        "materials.properties",
+        "materials.rosette"
+      ],
+      "tier": "core",
+      "teaching": "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.experiments.1",
+          "skill_id": "materials.experiments",
+          "purpose": "diagnostic",
+          "family_id": "materials.experiments.family-1",
+          "prompt": "拉伸试验用原始面积计算名义应力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。"
+          ],
+          "rubric": [
+            "是",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.experiments.2",
+          "skill_id": "materials.experiments",
+          "purpose": "diagnostic",
+          "family_id": "materials.experiments.family-2",
+          "prompt": "扭转试验由扭矩-转角关系反求G时需知道试样长度和截面几何吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。"
+          ],
+          "rubric": [
+            "是",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.experiments.3",
+          "skill_id": "materials.experiments",
+          "purpose": "learning",
+          "family_id": "materials.experiments.family-3",
+          "prompt": "100毫米标距伸长0.05毫米，轴向应变。",
+          "answer": "1/2000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。"
+          ],
+          "rubric": [
+            "1/2000",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.experiments.4",
+          "skill_id": "materials.experiments",
+          "purpose": "transfer",
+          "family_id": "materials.experiments.family-4",
+          "prompt": "纯弯曲电测中温度漂移可忽略且永远不影响应变读数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。"
+          ],
+          "rubric": [
+            "否",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.experiments.5",
+          "skill_id": "materials.experiments",
+          "purpose": "retention",
+          "family_id": "materials.experiments.family-5",
+          "prompt": "解释比较理论应变与实测值时应检查哪些因素。",
+          "answer": "单位和位置方向、加载与边界、尺寸误差、仪器校准、温度补偿以及材料模型",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。"
+          ],
+          "rubric": [
+            "单位和位置方向、加载与边界、尺寸误差、仪器校准、温度补偿以及材料模型",
+            "拉伸、扭转、纯弯与电测实验先校准与对中；记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "拉伸、扭转、纯弯与电测实验先校准与对中。",
+        "记录原始尺寸与载荷，区分仪器读数、换算量和模型拟合。"
+      ]
+    },
+    {
+      "id": "materials.concentration",
+      "name": "局部应力集中与合理构件设计",
+      "aliases": [
+        "局部应力集中与合理构件设计",
+        "concentration"
+      ],
+      "prerequisites": [
+        "materials.design",
+        "materials.fatigue-detail"
+      ],
+      "tier": "core",
+      "teaching": "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.concentration.1",
+          "skill_id": "materials.concentration",
+          "purpose": "diagnostic",
+          "family_id": "materials.concentration.family-1",
+          "prompt": "名义应力20MPa、理论集中系数3，弹性峰值应力MPa。",
+          "answer": "60",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。"
+          ],
+          "rubric": [
+            "60",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.concentration.2",
+          "skill_id": "materials.concentration",
+          "purpose": "diagnostic",
+          "family_id": "materials.concentration.family-2",
+          "prompt": "理论应力集中系数永远等于有效疲劳缺口系数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。"
+          ],
+          "rubric": [
+            "否",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.concentration.3",
+          "skill_id": "materials.concentration",
+          "purpose": "learning",
+          "family_id": "materials.concentration.family-3",
+          "prompt": "平滑过渡通常有助于减轻几何应力集中吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。"
+          ],
+          "rubric": [
+            "是",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.concentration.4",
+          "skill_id": "materials.concentration",
+          "purpose": "transfer",
+          "family_id": "materials.concentration.family-4",
+          "prompt": "远离局部加载区的圣维南近似能替代缺口峰值验算吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。"
+          ],
+          "rubric": [
+            "否",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.concentration.5",
+          "skill_id": "materials.concentration",
+          "purpose": "retention",
+          "family_id": "materials.concentration.family-5",
+          "prompt": "说明用等强度设计优化截面时应兼顾什么。",
+          "answer": "刚度、稳定、疲劳、连接和加工约束，不能只令名义应力处处相同",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。"
+          ],
+          "rubric": [
+            "刚度、稳定、疲劳、连接和加工约束，不能只令名义应力处处相同",
+            "几何突变引起局部应力集中；名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "几何突变引起局部应力集中。",
+        "名义应力与峰值分开，疲劳敏感性、塑性重分布和缺口半径影响评价。"
+      ]
+    },
+    {
+      "id": "materials.brittle-criteria",
+      "name": "最大正应力与最大伸长应变理论",
+      "aliases": [
+        "最大正应力与最大伸长应变理论",
+        "brittle-criteria"
+      ],
+      "prerequisites": [
+        "materials.criteria",
+        "materials.generalized-hooke"
+      ],
+      "tier": "core",
+      "teaching": "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.brittle-criteria.1",
+          "skill_id": "materials.brittle-criteria",
+          "purpose": "diagnostic",
+          "family_id": "materials.brittle-criteria.family-1",
+          "prompt": "主应力80,20,0MPa，按最大拉应力理论的拉应力指标MPa。",
+          "answer": "80",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。"
+          ],
+          "rubric": [
+            "80",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.brittle-criteria.2",
+          "skill_id": "materials.brittle-criteria",
+          "purpose": "diagnostic",
+          "family_id": "materials.brittle-criteria.family-2",
+          "prompt": "主应力80,20,0MPa，mu=0.3，按最大主伸长指标sigma1-mu*(sigma2+sigma3)的MPa值。",
+          "answer": "74",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。"
+          ],
+          "rubric": [
+            "74",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.brittle-criteria.3",
+          "skill_id": "materials.brittle-criteria",
+          "purpose": "learning",
+          "family_id": "materials.brittle-criteria.family-3",
+          "prompt": "脆性材料拉压许用强度可以未经试验总取相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。"
+          ],
+          "rubric": [
+            "否",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.brittle-criteria.4",
+          "skill_id": "materials.brittle-criteria",
+          "purpose": "transfer",
+          "family_id": "materials.brittle-criteria.family-4",
+          "prompt": "第二理论需要泊松比参与主应变换算吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.brittle-criteria.5",
+          "skill_id": "materials.brittle-criteria",
+          "purpose": "retention",
+          "family_id": "materials.brittle-criteria.family-5",
+          "prompt": "说明纯静水拉伸与Mises指标之间为何需要区分失效目标。",
+          "answer": "Mises衡量畸变屈服且静水应力不给该指标贡献，但脆性拉伸断裂可能仍受静水拉应力影响",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。"
+          ],
+          "rubric": [
+            "Mises衡量畸变屈服且静水应力不给该指标贡献，但脆性拉伸断裂可能仍受静水拉应力影响",
+            "第一理论比较最大拉应力及必要的压应力限值；第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "第一理论比较最大拉应力及必要的压应力限值。",
+        "第二理论用sigma1-mu*(sigma2+sigma3)对应主伸长，材料拉压强度分别核对。"
+      ]
+    },
+    {
+      "id": "materials.shear-flow",
+      "name": "梁剪应力、薄壁剪流与剪切中心",
+      "aliases": [
+        "梁剪应力、薄壁剪流与剪切中心",
+        "shear-flow"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "materials.thin-wall"
+      ],
+      "tier": "core",
+      "teaching": "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.shear-flow.1",
+          "skill_id": "materials.shear-flow",
+          "purpose": "diagnostic",
+          "family_id": "materials.shear-flow.family-1",
+          "prompt": "矩形截面V=100牛、A=20平方毫米，最大剪应力MPa。",
+          "answer": "15/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。"
+          ],
+          "rubric": [
+            "15/2",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.shear-flow.2",
+          "skill_id": "materials.shear-flow",
+          "purpose": "diagnostic",
+          "family_id": "materials.shear-flow.family-2",
+          "prompt": "矩形截面中性轴处横向剪应力最大吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。"
+          ],
+          "rubric": [
+            "是",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.shear-flow.3",
+          "skill_id": "materials.shear-flow",
+          "purpose": "learning",
+          "family_id": "materials.shear-flow.family-3",
+          "prompt": "剪流100牛/米、壁厚0.01米，剪应力Pa。",
+          "answer": "10000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。"
+          ],
+          "rubric": [
+            "10000",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.shear-flow.4",
+          "skill_id": "materials.shear-flow",
+          "purpose": "transfer",
+          "family_id": "materials.shear-flow.family-4",
+          "prompt": "开口槽形截面的剪切中心必与形心重合吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。"
+          ],
+          "rubric": [
+            "否",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.shear-flow.5",
+          "skill_id": "materials.shear-flow",
+          "purpose": "retention",
+          "family_id": "materials.shear-flow.family-5",
+          "prompt": "说明V*S/(I*b)中S与b的含义。",
+          "answer": "S为切线一侧部分面积对中性轴的静矩，b为所求层处截面有效宽度或相应薄壁厚度",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。"
+          ],
+          "rubric": [
+            "S为切线一侧部分面积对中性轴的静矩，b为所求层处截面有效宽度或相应薄壁厚度",
+            "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求；薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "梁剪应力tau=V*S/(I*b)按横向剪切梁模型求。",
+        "薄壁剪流为tau*t，剪切中心是横向力不引起附加扭转的作用点。"
+      ]
+    },
+    {
+      "id": "materials.stability-design",
+      "name": "柔度、经验临界应力与稳定设计",
+      "aliases": [
+        "柔度、经验临界应力与稳定设计",
+        "stability-design"
+      ],
+      "prerequisites": [
+        "materials.stability",
+        "materials.design"
+      ],
+      "tier": "core",
+      "teaching": "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.stability-design.1",
+          "skill_id": "materials.stability-design",
+          "purpose": "diagnostic",
+          "family_id": "materials.stability-design.family-1",
+          "prompt": "有效长度2000毫米、回转半径20毫米，柔度。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。"
+          ],
+          "rubric": [
+            "100",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.stability-design.2",
+          "skill_id": "materials.stability-design",
+          "purpose": "diagnostic",
+          "family_id": "materials.stability-design.family-2",
+          "prompt": "欧拉临界应力为pi²*E/lambda²吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。"
+          ],
+          "rubric": [
+            "是",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stability-design.3",
+          "skill_id": "materials.stability-design",
+          "purpose": "learning",
+          "family_id": "materials.stability-design.family-3",
+          "prompt": "临界载荷100千牛、稳定安全因数2，许用轴力千牛。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。"
+          ],
+          "rubric": [
+            "50",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.stability-design.4",
+          "skill_id": "materials.stability-design",
+          "purpose": "transfer",
+          "family_id": "materials.stability-design.family-4",
+          "prompt": "中柔度杆可以无条件按欧拉弹性公式精确确定临界应力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。"
+          ],
+          "rubric": [
+            "否",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stability-design.5",
+          "skill_id": "materials.stability-design",
+          "purpose": "retention",
+          "family_id": "materials.stability-design.family-5",
+          "prompt": "说明组合压杆选择回转半径时的原则。",
+          "answer": "分别核对可能屈曲方向的有效长度与惯性特征，必要时计入分肢和缀材剪切柔度",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。"
+          ],
+          "rubric": [
+            "分别核对可能屈曲方向的有效长度与惯性特征，必要时计入分肢和缀材剪切柔度",
+            "柔度为有效长度除以回转半径；按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "柔度为有效长度除以回转半径。",
+        "按材料与柔度区间选择欧拉或经验公式，稳定安全因数与截面强度分别验算。"
+      ]
+    },
+    {
+      "id": "materials.shaft-power",
+      "name": "传动轴功率、扭矩与扭转设计",
+      "aliases": [
+        "传动轴功率、扭矩与扭转设计",
+        "shaft-power"
+      ],
+      "prerequisites": [
+        "materials.torsion",
+        "materials.design"
+      ],
+      "tier": "core",
+      "teaching": "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.shaft-power.1",
+          "skill_id": "materials.shaft-power",
+          "purpose": "diagnostic",
+          "family_id": "materials.shaft-power.family-1",
+          "prompt": "功率1000瓦、角速度100弧度/秒，扭矩牛米。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。"
+          ],
+          "rubric": [
+            "10",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.shaft-power.2",
+          "skill_id": "materials.shaft-power",
+          "purpose": "diagnostic",
+          "family_id": "materials.shaft-power.family-2",
+          "prompt": "半径r实心圆轴的抗扭截面系数。",
+          "answer": "pi*r**3/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。"
+          ],
+          "rubric": [
+            "pi*r**3/2",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.shaft-power.3",
+          "skill_id": "materials.shaft-power",
+          "purpose": "learning",
+          "family_id": "materials.shaft-power.family-3",
+          "prompt": "强度满足就必然满足扭转刚度要求吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。"
+          ],
+          "rubric": [
+            "否",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.shaft-power.4",
+          "skill_id": "materials.shaft-power",
+          "purpose": "transfer",
+          "family_id": "materials.shaft-power.family-4",
+          "prompt": "转速60转/分，对应角速度弧度/秒。",
+          "answer": "2*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。"
+          ],
+          "rubric": [
+            "2*pi",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.shaft-power.5",
+          "skill_id": "materials.shaft-power",
+          "purpose": "retention",
+          "family_id": "materials.shaft-power.family-5",
+          "prompt": "同一实心圆轴直径加倍、扭矩不变，最大剪应力变为原来的1/8吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。"
+          ],
+          "rubric": [
+            "是",
+            "机械功率为扭矩乘角速度；扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "机械功率为扭矩乘角速度。",
+        "扭转强度按抗扭截面系数，刚度按允许扭转角或单位长度转角核验。"
+      ]
+    },
+    {
+      "id": "materials.pressure-vessels",
+      "name": "薄壁容器的环向与轴向应力",
+      "aliases": [
+        "薄壁容器的环向与轴向应力",
+        "pressure-vessels"
+      ],
+      "prerequisites": [
+        "materials.stress",
+        "materials.criteria"
+      ],
+      "tier": "extension",
+      "teaching": "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.pressure-vessels.1",
+          "skill_id": "materials.pressure-vessels",
+          "purpose": "diagnostic",
+          "family_id": "materials.pressure-vessels.family-1",
+          "prompt": "薄壁封闭圆筒p=2MPa,r=100毫米,t=5毫米，环向应力MPa。",
+          "answer": "40",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。"
+          ],
+          "rubric": [
+            "40",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.pressure-vessels.2",
+          "skill_id": "materials.pressure-vessels",
+          "purpose": "diagnostic",
+          "family_id": "materials.pressure-vessels.family-2",
+          "prompt": "同题轴向应力MPa。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。"
+          ],
+          "rubric": [
+            "20",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.pressure-vessels.3",
+          "skill_id": "materials.pressure-vessels",
+          "purpose": "learning",
+          "family_id": "materials.pressure-vessels.family-3",
+          "prompt": "无端盖圆筒的轴向应力也必由端盖内压平衡产生吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。"
+          ],
+          "rubric": [
+            "否",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.pressure-vessels.4",
+          "skill_id": "materials.pressure-vessels",
+          "purpose": "transfer",
+          "family_id": "materials.pressure-vessels.family-4",
+          "prompt": "球形薄壁容器膜应力为p*r/(2*t)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。"
+          ],
+          "rubric": [
+            "是",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.pressure-vessels.5",
+          "skill_id": "materials.pressure-vessels",
+          "purpose": "retention",
+          "family_id": "materials.pressure-vessels.family-5",
+          "prompt": "厚壁圆筒可以不检查壁厚比而直接套薄壁应力公式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。"
+          ],
+          "rubric": [
+            "否",
+            "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)；忽略径向应力须有薄壁条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "薄壁圆筒在均匀内压下环向应力p*r/t，封闭端轴向应力p*r/(2*t)。",
+        "忽略径向应力须有薄壁条件。"
+      ]
     }
   ]
 }

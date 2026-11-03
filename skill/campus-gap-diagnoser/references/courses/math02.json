@@ -1,7 +1,7 @@
 {
   "id": "math02",
   "name": "导数与微分",
-  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
   "skills": [
     {
       "id": "math02.definition",
@@ -1456,6 +1456,872 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math02.inverse-derivative",
+      "name": "反函数求导与对数求导",
+      "aliases": [
+        "反函数求导与对数求导",
+        "inverse-derivative"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math01.inverse"
+      ],
+      "tier": "core",
+      "teaching": "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.inverse-derivative.1",
+          "skill_id": "math02.inverse-derivative",
+          "purpose": "diagnostic",
+          "family_id": "math02.inverse-derivative.family-1",
+          "prompt": "arcsin(x)在(-1,1)的导数。",
+          "answer": "1/sqrt(1-x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。"
+          ],
+          "rubric": [
+            "1/sqrt(1-x**2)",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.inverse-derivative.2",
+          "skill_id": "math02.inverse-derivative",
+          "purpose": "diagnostic",
+          "family_id": "math02.inverse-derivative.family-2",
+          "prompt": "arctan(x)的导数。",
+          "answer": "1/(1+x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。"
+          ],
+          "rubric": [
+            "1/(1+x**2)",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.inverse-derivative.3",
+          "skill_id": "math02.inverse-derivative",
+          "purpose": "learning",
+          "family_id": "math02.inverse-derivative.family-3",
+          "prompt": "x>0时x^x的导数。",
+          "answer": "x**x*(log(x)+1)，对数求导并确认x>0",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。"
+          ],
+          "rubric": [
+            "x**x*(log(x)+1)，对数求导并确认x>0",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.inverse-derivative.4",
+          "skill_id": "math02.inverse-derivative",
+          "purpose": "transfer",
+          "family_id": "math02.inverse-derivative.family-4",
+          "prompt": "f(x)=x^3，反函数在y=8处的导数。",
+          "answer": "1/12",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。"
+          ],
+          "rubric": [
+            "1/12",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.inverse-derivative.5",
+          "skill_id": "math02.inverse-derivative",
+          "purpose": "retention",
+          "family_id": "math02.inverse-derivative.family-5",
+          "prompt": "原函数在对应点导数为0，还能直接使用倒数公式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。"
+          ],
+          "rubric": [
+            "否",
+            "反函数导数为原导数倒数，要求原导数非零；对数求导先确认函数符号与定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "反函数导数为原导数倒数，要求原导数非零。",
+        "对数求导先确认函数符号与定义域。"
+      ]
+    },
+    {
+      "id": "math02.related-rates",
+      "name": "相关变化率",
+      "aliases": [
+        "相关变化率",
+        "related-rates"
+      ],
+      "prerequisites": [
+        "math02.implicit"
+      ],
+      "tier": "core",
+      "teaching": "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.related-rates.1",
+          "skill_id": "math02.related-rates",
+          "purpose": "diagnostic",
+          "family_id": "math02.related-rates.family-1",
+          "prompt": "圆半径以2厘米/秒增长，r=3厘米时面积变化率数值（平方厘米/秒）。",
+          "answer": "12*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。"
+          ],
+          "rubric": [
+            "12*pi",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.related-rates.2",
+          "skill_id": "math02.related-rates",
+          "purpose": "diagnostic",
+          "family_id": "math02.related-rates.family-2",
+          "prompt": "x^2+y^2=25，x=3,y=4,dx/dt=2，求dy/dt。",
+          "answer": "-3/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。"
+          ],
+          "rubric": [
+            "-3/2",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.related-rates.3",
+          "skill_id": "math02.related-rates",
+          "purpose": "learning",
+          "family_id": "math02.related-rates.family-3",
+          "prompt": "V=4*pi*r^3/3，dV/dt与dr/dt关系是否还含当前半径r？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。"
+          ],
+          "rubric": [
+            "是",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.related-rates.4",
+          "skill_id": "math02.related-rates",
+          "purpose": "transfer",
+          "family_id": "math02.related-rates.family-4",
+          "prompt": "正方形边长3米，以1米/秒增加，面积变化率。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。"
+          ],
+          "rubric": [
+            "6",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.related-rates.5",
+          "skill_id": "math02.related-rates",
+          "purpose": "retention",
+          "family_id": "math02.related-rates.family-5",
+          "prompt": "相关变化率中可把当前长度值先代入约束再对时间求导吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。"
+          ],
+          "rubric": [
+            "否",
+            "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "把几何或物理约束写成随时间成立的关系，再对时间求导并代入当前状态。"
+      ]
+    },
+    {
+      "id": "math02.differentials",
+      "name": "微分、线性近似与误差",
+      "aliases": [
+        "微分、线性近似与误差",
+        "differentials"
+      ],
+      "prerequisites": [
+        "math02.definition",
+        "math02.basic"
+      ],
+      "tier": "core",
+      "teaching": "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.differentials.1",
+          "skill_id": "math02.differentials",
+          "purpose": "diagnostic",
+          "family_id": "math02.differentials.family-1",
+          "prompt": "用x0=4处线性近似计算sqrt(4.04)。",
+          "answer": "2.01",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。"
+          ],
+          "rubric": [
+            "2.01",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.differentials.2",
+          "skill_id": "math02.differentials",
+          "purpose": "diagnostic",
+          "family_id": "math02.differentials.family-2",
+          "prompt": "y=x^2，x=3,dx=0.02，dy。",
+          "answer": "0.12",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。"
+          ],
+          "rubric": [
+            "0.12",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.differentials.3",
+          "skill_id": "math02.differentials",
+          "purpose": "learning",
+          "family_id": "math02.differentials.family-3",
+          "prompt": "dy与实际增量Delta y对任意有限dx都严格相等吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。"
+          ],
+          "rubric": [
+            "否",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.differentials.4",
+          "skill_id": "math02.differentials",
+          "purpose": "transfer",
+          "family_id": "math02.differentials.family-4",
+          "prompt": "球体体积相对微分dV/V是否为3dr/r？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。"
+          ],
+          "rubric": [
+            "是",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.differentials.5",
+          "skill_id": "math02.differentials",
+          "purpose": "retention",
+          "family_id": "math02.differentials.family-5",
+          "prompt": "解释一阶近似的使用前提。",
+          "answer": "在可微点附近取足够小增量并根据二阶或更高余项评估误差",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。"
+          ],
+          "rubric": [
+            "在可微点附近取足够小增量并根据二阶或更高余项评估误差",
+            "dy=f'(x)dx是局部线性主部；实际增量通常还含高阶余项，相对误差按量值归一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "dy=f'(x)dx是局部线性主部。",
+        "实际增量通常还含高阶余项，相对误差按量值归一。"
+      ]
+    },
+    {
+      "id": "math02.parametric-second",
+      "name": "参数方程的二阶导数与切线",
+      "aliases": [
+        "参数方程的二阶导数与切线",
+        "parametric-second"
+      ],
+      "prerequisites": [
+        "math02.implicit",
+        "math02.higher"
+      ],
+      "tier": "core",
+      "teaching": "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.parametric-second.1",
+          "skill_id": "math02.parametric-second",
+          "purpose": "diagnostic",
+          "family_id": "math02.parametric-second.family-1",
+          "prompt": "x=t^2,y=t^3,t>0，d²y/dx²。",
+          "answer": "3/(4*t)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。"
+          ],
+          "rubric": [
+            "3/(4*t)",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.parametric-second.2",
+          "skill_id": "math02.parametric-second",
+          "purpose": "diagnostic",
+          "family_id": "math02.parametric-second.family-2",
+          "prompt": "x=t,y=t^2，t=2处切线斜率。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。"
+          ],
+          "rubric": [
+            "4",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.parametric-second.3",
+          "skill_id": "math02.parametric-second",
+          "purpose": "learning",
+          "family_id": "math02.parametric-second.family-3",
+          "prompt": "对dy/dx直接对t求导就一定是d²y/dx²吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。"
+          ],
+          "rubric": [
+            "否",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.parametric-second.4",
+          "skill_id": "math02.parametric-second",
+          "purpose": "transfer",
+          "family_id": "math02.parametric-second.family-4",
+          "prompt": "x=cos(t),y=sin(t)，t=pi/2处切线斜率。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。"
+          ],
+          "rubric": [
+            "0",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.parametric-second.5",
+          "skill_id": "math02.parametric-second",
+          "purpose": "retention",
+          "family_id": "math02.parametric-second.family-5",
+          "prompt": "x_t=0时能继续直接除以x_t吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。"
+          ],
+          "rubric": [
+            "否",
+            "先算dy/dx=y_t/x_t；再次对t求导后还需除以x_t，竖切线单独判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "先算dy/dx=y_t/x_t。",
+        "再次对t求导后还需除以x_t，竖切线单独判断。"
+      ]
     }
   ]
 }

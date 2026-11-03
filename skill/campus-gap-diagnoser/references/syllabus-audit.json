@@ -1,0 +1,2670 @@
+{
+  "version": "0.2.0",
+  "checked_at": "2026-11-03",
+  "basis": "出版社逐节目录及所列高校大纲的知识主题映射；星号节纳入，题型深度逐项保留审核状态",
+  "sources": {
+    "math-upper": {
+      "name": "同济高等数学第八版上册出版社目录",
+      "url": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "scope": "第1—7章全部46节，含星号节；附录按工具基础补充"
+    },
+    "math-lower": {
+      "name": "同济高等数学第八版下册出版社目录",
+      "url": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
+      "scope": "第8—12章全部36节，含星号节"
+    },
+    "theory": {
+      "name": "复旦大学理论力学范围",
+      "url": "https://aero-mech.fudan.edu.cn/1b/8a/c26484a465802/page.htm",
+      "scope": "静力学、运动学、牛顿动力学、分析力学"
+    },
+    "theory-czu": {
+      "name": "常州工学院课程大纲中的理论力学章节",
+      "url": "https://tjxy.czu.cn/_upload/article/files/ae/f3/a23c80de499191499ecd231b4c02/5419a14d-f6b0-40e8-8fb0-dca6eccd31ad.pdf",
+      "scope": "PDF印刷页44—46的课程内容；平面空间力系、摩擦与运动学"
+    },
+    "materials": {
+      "name": "北方工业大学材料力学课程及实验大纲",
+      "url": "https://jwc.ncut.edu.cn/DG7204311.pdf",
+      "scope": "8个理论教学单元及实验项目；能量、疲劳等另列专项扩展"
+    },
+    "structures": {
+      "name": "清华大学出版社Structural Mechanics详细目录",
+      "url": "https://www.tup.tsinghua.edu.cn/booksCenter/bookcatalog?id=10424501",
+      "scope": "公开详细目录第1—11章；按全部小节建立对应资源"
+    }
+  },
+  "entries": [
+    {
+      "id": "math.1.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "映射与函数",
+      "skills": [
+        "math01.function",
+        "math01.inverse",
+        "math01.function-properties"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "数列的收敛定义和性质",
+      "skills": [
+        "math01.sequence",
+        "math01.quantifiers"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "函数极限及其性质",
+      "skills": [
+        "math01.limit",
+        "math01.quantifiers"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.4",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "无穷小和无穷大",
+      "skills": [
+        "math01.infinitesimal",
+        "math01.limit-laws"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.5",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "极限运算",
+      "skills": [
+        "math01.limit-laws"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.6",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "存在准则和重要极限",
+      "skills": [
+        "math01.sequence",
+        "math01.limit",
+        "math01.infinitesimal",
+        "math01.limit-laws"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.7",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "无穷小阶比较",
+      "skills": [
+        "math01.infinitesimal"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.8",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "连续与间断",
+      "skills": [
+        "math01.continuity"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.9",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "连续性运算",
+      "skills": [
+        "math01.continuity",
+        "math01.uniform-continuity"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.1.10",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "闭区间性质与一致连续",
+      "skills": [
+        "math01.continuity",
+        "math01.uniform-continuity"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.2.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "导数含义和存在条件",
+      "skills": [
+        "math02.definition"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.2.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "求导法则含反函数",
+      "skills": [
+        "math02.rules",
+        "math02.chain",
+        "math02.basic",
+        "math02.inverse-derivative"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.2.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "高阶导数",
+      "skills": [
+        "math02.higher"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.2.4",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "隐式参数求导与相关速率",
+      "skills": [
+        "math02.implicit",
+        "math02.related-rates",
+        "math02.parametric-second"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.2.5",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "微分与近似",
+      "skills": [
+        "math02.differentials"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "三类中值定理",
+      "skills": [
+        "math03.mvt",
+        "math03.proof"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "不定式求极限",
+      "skills": [
+        "math03.lhopital"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "泰勒展开与余项",
+      "skills": [
+        "math03.taylor",
+        "math03.remainders"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.4",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "单调凹凸",
+      "skills": [
+        "math03.extrema",
+        "math03.curvature"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.5",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "极值和最值",
+      "skills": [
+        "math03.extrema"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.6",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "函数图形",
+      "skills": [
+        "math03.asymptote"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.7",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "曲率及相关几何",
+      "skills": [
+        "math03.curvature",
+        "math03.evolute"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.3.8",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "方程数值求根",
+      "skills": [
+        "math03.root-finding"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.4.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "原函数与不定积分",
+      "skills": [
+        "math04.primitive"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.4.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "换元",
+      "skills": [
+        "math04.substitution"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.4.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "分部",
+      "skills": [
+        "math04.parts"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.4.4",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "有理化积分",
+      "skills": [
+        "math04.rational",
+        "math04.trig-rational"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.4.5",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "查表和校验",
+      "skills": [
+        "math04.integral-table"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.5.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "积分定义性质与近似",
+      "skills": [
+        "math05.definition",
+        "math05.riemann",
+        "math05.quadrature"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.5.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "微积分基本关系",
+      "skills": [
+        "math05.ftc"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.5.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "积分计算方法",
+      "skills": [
+        "math05.methods"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.5.4",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "反常积分",
+      "skills": [
+        "math05.improper"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.5.5",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "积分判敛与Gamma",
+      "skills": [
+        "math05.gamma"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.6.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "微元建模",
+      "skills": [
+        "math06.area"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.6.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "面积体积和弧长",
+      "skills": [
+        "math06.area",
+        "math06.volume",
+        "math06.arc"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.6.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "功压力和引力",
+      "skills": [
+        "math06.physics"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.1",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "方程解与初值",
+      "skills": [
+        "math07.concept"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.2",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "变量分离",
+      "skills": [
+        "math07.separable"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.3",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "一阶齐次型及转化",
+      "skills": [
+        "math07.separable",
+        "math07.homogeneous-reducible"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.4",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "线性与伯努利",
+      "skills": [
+        "math07.linear",
+        "math07.bernoulli"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.5",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "高阶方程降阶",
+      "skills": [
+        "math07.reduction"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.6",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "线性解结构与变易法",
+      "skills": [
+        "math07.order",
+        "math07.variation-systems"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.7",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "常系数齐次",
+      "skills": [
+        "math07.order"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.8",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "常系数非齐次",
+      "skills": [
+        "math07.nonhomogeneous"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.9",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "欧拉型",
+      "skills": [
+        "math07.exact-euler"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.7.10",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "常系数系统",
+      "skills": [
+        "math07.variation-systems"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.8.1",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "向量线性计算",
+      "skills": [
+        "math08.vectors"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.8.2",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "三类向量乘积",
+      "skills": [
+        "math08.products",
+        "math08.mixed"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.8.3",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "空间平面",
+      "skills": [
+        "math08.planes"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.8.4",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "空间直线与距离角度",
+      "skills": [
+        "math08.planes",
+        "math08.metric"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.8.5",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "曲面",
+      "skills": [
+        "math08.surfaces"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.8.6",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "空间曲线与投影",
+      "skills": [
+        "math08.surfaces",
+        "math08.mixed"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.1",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "多元极限和点集",
+      "skills": [
+        "math09.limits"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.2",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "偏导",
+      "skills": [
+        "math09.partial"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.3",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "全微分",
+      "skills": [
+        "math09.partial",
+        "math09.differentiability"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.4",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "多元复合求导",
+      "skills": [
+        "math09.chain"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.5",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "隐函数与方程组",
+      "skills": [
+        "math09.chain",
+        "math09.normal",
+        "math09.implicit-systems"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.6",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "空间微分几何",
+      "skills": [
+        "math09.geometry",
+        "math09.vector-curves"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.7",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "方向导数梯度",
+      "skills": [
+        "math09.geometry"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.8",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "无约束和约束极值",
+      "skills": [
+        "math09.extrema"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.9",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "二元泰勒",
+      "skills": [
+        "math09.taylor"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.9.10",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "最小二乘",
+      "skills": [
+        "math09.least-squares"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.10.1",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "二重积分性质",
+      "skills": [
+        "math10.double"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.10.2",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "二重积分计算与换元",
+      "skills": [
+        "math10.double",
+        "math10.polar"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.10.3",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "三重积分",
+      "skills": [
+        "math10.triple"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.10.4",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "几何物理应用",
+      "skills": [
+        "math10.applications",
+        "math10.surface-gravity"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.10.5",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "参数积分",
+      "skills": [
+        "math10.parameter"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.1",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "弧长积分",
+      "skills": [
+        "math11.line1"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.2",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "有向线积分与两类联系",
+      "skills": [
+        "math11.line2",
+        "math11.line-connections"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.3",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "格林公式与势函数",
+      "skills": [
+        "math11.potential"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.4",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "面积积分",
+      "skills": [
+        "math11.surface1"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.5",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "定向面积积分与两类联系",
+      "skills": [
+        "math11.surface-orientation"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.6",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "高斯与散度",
+      "skills": [
+        "math11.gauss"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.11.7",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "斯托克斯与旋度",
+      "skills": [
+        "math11.stokes",
+        "math11.line-connections"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.1",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "常数项级数及柯西准则",
+      "skills": [
+        "math12.series",
+        "math12.cauchy"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.2",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "常数项判敛",
+      "skills": [
+        "math12.positive",
+        "math12.alternating"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.3",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "幂级数域与运算",
+      "skills": [
+        "math12.power"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.4",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "展开",
+      "skills": [
+        "math12.expansion"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.5",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "近似方程级数解和欧拉公式",
+      "skills": [
+        "math12.power-applications"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.6",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "一致收敛",
+      "skills": [
+        "math12.uniform"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.7",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "傅里叶与半区间展开",
+      "skills": [
+        "math12.fourier",
+        "math12.half-range"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "math.12.8",
+      "subject": "math",
+      "source": "math-lower",
+      "outcome": "一般周期与复形式",
+      "skills": [
+        "math12.fourier",
+        "math12.half-range"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.1.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录1.1：结构计算模型、杆系分类与荷载分类",
+      "skills": [
+        "structures.overview"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.1.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录1.2：结构计算模型、杆系分类与荷载分类",
+      "skills": [
+        "structures.overview"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.1.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录1.3：结构计算模型、杆系分类与荷载分类",
+      "skills": [
+        "structures.overview"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.1.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录1.4：结构计算模型、杆系分类与荷载分类",
+      "skills": [
+        "structures.overview"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.2.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录2.1：几何组成、约束与计算简图",
+      "skills": [
+        "structures.geometry"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.2.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录2.2：几何组成规则、瞬变体系与自由度",
+      "skills": [
+        "structures.geometry-rules"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.2.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录2.3：几何组成规则、瞬变体系与自由度",
+      "skills": [
+        "structures.geometry-rules"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.2.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录2.4：几何组成、约束与计算简图；力法、基本体系与协调方程",
+      "skills": [
+        "structures.geometry",
+        "structures.force"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.3.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录3.1：静定梁、刚架与内力校核",
+      "skills": [
+        "structures.determinate"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.3.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录3.2：多跨静定梁、内铰与分层传力",
+      "skills": [
+        "structures.gerber"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.3.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录3.3：静定刚架的分段内力与节点平衡",
+      "skills": [
+        "structures.frame"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.3.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录3.4：桁架节点法、截面法与零杆",
+      "skills": [
+        "structures.truss-methods"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.3.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录3.5：三铰拱、水平推力与合理拱轴",
+      "skills": [
+        "structures.arch"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.3.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录3.6：组合结构与静定结构特性",
+      "skills": [
+        "structures.mixed"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.4.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录4.1：虚功、位移计算与互等定理",
+      "skills": [
+        "structures.virtual"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.4.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录4.2：虚功、位移计算与互等定理",
+      "skills": [
+        "structures.virtual"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.4.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录4.3：虚功、位移计算与互等定理；单位荷载法、图乘法与弯矩面积",
+      "skills": [
+        "structures.virtual",
+        "structures.diagram-product"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.4.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录4.4：单位荷载法、图乘法与弯矩面积",
+      "skills": [
+        "structures.diagram-product"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.4.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录4.5：温度、支座移动与非荷载作用",
+      "skills": [
+        "structures.loads"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.4.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录4.6：功、位移、反力与柔度互等",
+      "skills": [
+        "structures.reciprocity"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.1：影响线、移动荷载与包络",
+      "skills": [
+        "structures.influence"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.2：影响线、移动荷载与包络",
+      "skills": [
+        "structures.influence"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.3：间接荷载、桁架与结点荷载影响线",
+      "skills": [
+        "structures.indirect-influence"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.4：间接荷载、桁架与结点荷载影响线",
+      "skills": [
+        "structures.indirect-influence"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.5：机动法、最不利布载与绝对最大弯矩",
+      "skills": [
+        "structures.muller"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.6：机动法、最不利布载与绝对最大弯矩",
+      "skills": [
+        "structures.muller"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.5.7",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录5.7：机动法、最不利布载与绝对最大弯矩",
+      "skills": [
+        "structures.muller"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.1：力法、基本体系与协调方程",
+      "skills": [
+        "structures.force"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.2：力法、基本体系与协调方程",
+      "skills": [
+        "structures.force"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.3：力法协调、对称性与内力校核",
+      "skills": [
+        "structures.force-details"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.4：力法协调、对称性与内力校核",
+      "skills": [
+        "structures.force-details"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.5：温度、支座移动与非荷载作用；力法协调、对称性与内力校核",
+      "skills": [
+        "structures.loads",
+        "structures.force-details"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.6：力法协调、对称性与内力校核",
+      "skills": [
+        "structures.force-details"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.7",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.7：力法协调、对称性与内力校核",
+      "skills": [
+        "structures.force-details"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.8",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.8：力法协调、对称性与内力校核",
+      "skills": [
+        "structures.force-details"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.6.9",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录6.9：转角位移方程、固端弯矩与杆端刚度",
+      "skills": [
+        "structures.slope-deflection"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.7.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录7.1：位移法与转角位移方程",
+      "skills": [
+        "structures.displacement"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.7.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录7.2：位移法与转角位移方程；位移法基本未知量、侧移与对称简化",
+      "skills": [
+        "structures.displacement",
+        "structures.sway"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.7.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录7.3：位移法与转角位移方程；转角位移方程、固端弯矩与杆端刚度",
+      "skills": [
+        "structures.displacement",
+        "structures.slope-deflection"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.7.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录7.4：位移法与转角位移方程；位移法基本未知量、侧移与对称简化",
+      "skills": [
+        "structures.displacement",
+        "structures.sway"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.8.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录8.1：矩阵位移法与线性代数桥接",
+      "skills": [
+        "structures.matrix"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.8.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录8.2：单元刚度、坐标变换、组装与边界",
+      "skills": [
+        "structures.matrix-assembly"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.8.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录8.3：单元刚度、坐标变换、组装与边界",
+      "skills": [
+        "structures.matrix-assembly"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.8.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录8.4：单元刚度、坐标变换、组装与边界",
+      "skills": [
+        "structures.matrix-assembly"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.8.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录8.5：单元刚度、坐标变换、组装与边界",
+      "skills": [
+        "structures.matrix-assembly"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.8.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录8.6：单元刚度、坐标变换、组装与边界",
+      "skills": [
+        "structures.matrix-assembly"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.1：结构动力与单自由度响应",
+      "skills": [
+        "structures.dynamics"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.2：结构动力与单自由度响应",
+      "skills": [
+        "structures.dynamics"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.3：结构动力与单自由度响应",
+      "skills": [
+        "structures.dynamics"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.4：阻尼受迫响应、振型分解与参与系数",
+      "skills": [
+        "structures.forced-modal"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.5：多自由度自由振动、频率与振型",
+      "skills": [
+        "structures.modal"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.6：阻尼受迫响应、振型分解与参与系数",
+      "skills": [
+        "structures.forced-modal"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.7",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.7：阻尼受迫响应、振型分解与参与系数",
+      "skills": [
+        "structures.forced-modal"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.9.8",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录9.8：瑞利法、集中质量与频率近似",
+      "skills": [
+        "structures.rayleigh"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.10.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录10.1：极限荷载与塑性机构",
+      "skills": [
+        "structures.plastic"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.10.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录10.2：塑性铰、极限分析上下限定理",
+      "skills": [
+        "structures.plastic-bounds"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.10.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录10.3：梁、连续梁与刚架的塑性机构",
+      "skills": [
+        "structures.plastic-mechanisms"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.10.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录10.4：塑性铰、极限分析上下限定理",
+      "skills": [
+        "structures.plastic-bounds"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.10.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录10.5：梁、连续梁与刚架的塑性机构",
+      "skills": [
+        "structures.plastic-mechanisms"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.10.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录10.6：梁、连续梁与刚架的塑性机构",
+      "skills": [
+        "structures.plastic-mechanisms"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.1",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.1：结构稳定与临界荷载",
+      "skills": [
+        "structures.stability"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.2",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.2：结构稳定的静力法、能量法与弹性支承",
+      "skills": [
+        "structures.elastic-stability"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.3",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.3：结构稳定的静力法、能量法与弹性支承",
+      "skills": [
+        "structures.elastic-stability"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.4",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.4：结构稳定的静力法、能量法与弹性支承",
+      "skills": [
+        "structures.elastic-stability"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.5",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.5：变截面、剪切影响与组合压杆稳定",
+      "skills": [
+        "structures.advanced-buckling"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.6",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.6：变截面、剪切影响与组合压杆稳定",
+      "skills": [
+        "structures.advanced-buckling"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "structures.11.7",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "目录11.7：变截面、剪切影响与组合压杆稳定",
+      "skills": [
+        "structures.advanced-buckling"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.1",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "静力学公理、等效和各类平面力系",
+      "skills": [
+        "theory.force-systems",
+        "theory.model",
+        "theory.force",
+        "theory.balance"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.2",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "空间力系、主矢主矩与空间平衡",
+      "skills": [
+        "theory.space"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.3",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "物体系受力与约束、支反力",
+      "skills": [
+        "theory.model",
+        "theory.balance"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.4",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "摩擦、摩擦角、自锁及滚动摩阻",
+      "skills": [
+        "theory.friction",
+        "theory.friction-angle"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.5",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "重心与组合体",
+      "skills": [
+        "theory.centroid"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.6",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "点的位置速度加速度、自然与极坐标",
+      "skills": [
+        "theory.point",
+        "theory.polar"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.7",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "刚体平动和定轴转动",
+      "skills": [
+        "theory.rigid"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.8",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "平面刚体基点法、瞬心及加速度",
+      "skills": [
+        "theory.rigid",
+        "theory.planar-acceleration"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.9",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "点合成运动及科氏项",
+      "skills": [
+        "theory.relative",
+        "theory.coriolis"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.10",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "惯性与非惯性系质点动力学",
+      "skills": [
+        "theory.newton",
+        "theory.relative-dynamics"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.11",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "质点系动量、冲量与质心运动",
+      "skills": [
+        "theory.momentum",
+        "theory.newton"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.12",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "动量矩、冲量矩及定轴动力学",
+      "skills": [
+        "theory.angular",
+        "theory.rigid-dynamics"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.13",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "质量转动惯量与惯性积",
+      "skills": [
+        "theory.inertia"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.14",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "功、势能、动能与柯尼希分解",
+      "skills": [
+        "theory.energy",
+        "theory.konig"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.15",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "刚体平面动力学与普遍定理综合",
+      "skills": [
+        "theory.rigid-dynamics"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.16",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "碰撞与恢复系数",
+      "skills": [
+        "theory.impact"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.17",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "动静法和轴承动反力",
+      "skills": [
+        "theory.dalembert",
+        "theory.rotor-balance"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.18",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "完整非完整约束、自由度与广义坐标",
+      "skills": [
+        "theory.constraints"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.19",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "虚位移、理想约束与广义力",
+      "skills": [
+        "theory.virtual-work"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.20",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "拉格朗日第二类方程及首次积分",
+      "skills": [
+        "theory.lagrange"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.21",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "平衡位置稳定性和单自由度振动",
+      "skills": [
+        "theory.equilibrium-stability",
+        "theory.analytical",
+        "theory.damped-forced"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.22",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "定点转动与陀螺入门扩展",
+      "skills": [
+        "theory.gyroscope"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "theory.unit.23",
+      "subject": "theory",
+      "source": "theory",
+      "outcome": "变质量动力学扩展",
+      "skills": [
+        "theory.variable-mass"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.1",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "变形体基本假设与三类设计目标",
+      "skills": [
+        "materials.basics",
+        "materials.section"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.2",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "拉压内力、斜截面应力与弹性变形",
+      "skills": [
+        "materials.axial",
+        "materials.oblique"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.3",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "材料性能、拉压试验及安全系数",
+      "skills": [
+        "materials.properties",
+        "materials.design"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.4",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "剪切与挤压连接",
+      "skills": [
+        "materials.shear"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.5",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "圆轴与薄壁圆筒扭转、功率及刚度",
+      "skills": [
+        "materials.torsion",
+        "materials.thin-wall",
+        "materials.shaft-power"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.6",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "梁剪力弯矩与正剪应力分布",
+      "skills": [
+        "materials.moment",
+        "materials.bending",
+        "materials.shear-flow"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.7",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "梁挠度、转角、积分法与刚度",
+      "skills": [
+        "materials.deflection",
+        "materials.boundary"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.8",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "平面空间应力、应变与强度准则",
+      "skills": [
+        "materials.stress",
+        "materials.mohr",
+        "materials.generalized-hooke",
+        "materials.criteria",
+        "materials.brittle-criteria"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.9",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "拉弯、弯扭、斜弯与偏心核心",
+      "skills": [
+        "materials.combined",
+        "materials.unsymmetric",
+        "materials.core"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.10",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "欧拉、柔度区间和稳定设计",
+      "skills": [
+        "materials.stability",
+        "materials.stability-design"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.11",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "拉伸扭转和弯曲实验与电测",
+      "skills": [
+        "materials.experiments",
+        "materials.rosette"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.12",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "截面静矩、惯性积、主轴和平行轴",
+      "skills": [
+        "materials.geometry",
+        "materials.principal-inertia"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.13",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "能量法、卡氏定理与单位载荷",
+      "skills": [
+        "materials.energy",
+        "materials.castigliano"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.14",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "超静定、温度和装配协调",
+      "skills": [
+        "materials.indeterminate",
+        "materials.thermal"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.15",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "落重、动载、疲劳循环与缺口",
+      "skills": [
+        "materials.fatigue",
+        "materials.impact",
+        "materials.fatigue-detail",
+        "materials.concentration"
+      ],
+      "before": "partial",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.16",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "非圆及开口翘曲、多室薄壁扩展",
+      "skills": [
+        "materials.noncircular",
+        "materials.thin-wall"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "materials.unit.17",
+      "subject": "materials",
+      "source": "materials",
+      "outcome": "薄壁容器与强度应用扩展",
+      "skills": [
+        "materials.pressure-vessels"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "specialist.math02.composition",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "专项补充：复合函数结构识别",
+      "skills": [
+        "math02.composition"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "specialist.math06.revolution-area",
+      "subject": "math",
+      "source": "math-upper",
+      "outcome": "专项补充：旋转曲面的面积",
+      "skills": [
+        "math06.revolution-area"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "specialist.structures.truss",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "专项补充：桁架与拱",
+      "skills": [
+        "structures.truss"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "specialist.structures.distribution",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "专项补充：力矩分配、分配系数与传递",
+      "skills": [
+        "structures.distribution"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "specialist.structures.algebra-bridge",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "专项补充：矩阵方程桥接基础",
+      "skills": [
+        "structures.algebra-bridge"
+      ],
+      "before": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "specialist.structures.distribution-details",
+      "subject": "structures",
+      "source": "structures",
+      "outcome": "专项补充：力矩分配、传递系数与迭代收敛",
+      "skills": [
+        "structures.distribution-details"
+      ],
+      "before": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    }
+  ],
+  "counts": {
+    "checklist_entries": 195,
+    "math_publisher_sections": 82,
+    "before_mapped": 70,
+    "before_partial": 52,
+    "before_missing": 73,
+    "after_unmapped": 0,
+    "skills": 209,
+    "added_skills": 101
+  }
+}

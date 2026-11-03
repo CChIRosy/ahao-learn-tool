@@ -1058,6 +1058,220 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math08.metric",
+      "name": "空间距离、夹角与投影计算",
+      "aliases": [
+        "空间距离、夹角与投影计算",
+        "metric"
+      ],
+      "prerequisites": [
+        "math08.planes",
+        "math08.mixed"
+      ],
+      "tier": "core",
+      "teaching": "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math08.metric.1",
+          "skill_id": "math08.metric",
+          "purpose": "diagnostic",
+          "family_id": "math08.metric.family-1",
+          "prompt": "点(1,2,3)到x轴的距离。",
+          "answer": "sqrt(13)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。"
+          ],
+          "rubric": [
+            "sqrt(13)",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.metric.2",
+          "skill_id": "math08.metric",
+          "purpose": "diagnostic",
+          "family_id": "math08.metric.family-2",
+          "prompt": "平面x=0与x=3的距离。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。"
+          ],
+          "rubric": [
+            "3",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.metric.3",
+          "skill_id": "math08.metric",
+          "purpose": "learning",
+          "family_id": "math08.metric.family-3",
+          "prompt": "方向向量(1,0,0)与(1,1,0)两直线的锐夹角（弧度）。",
+          "answer": "pi/4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。"
+          ],
+          "rubric": [
+            "pi/4",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.metric.4",
+          "skill_id": "math08.metric",
+          "purpose": "transfer",
+          "family_id": "math08.metric.family-4",
+          "prompt": "z轴与平面z=0的夹角（弧度）。",
+          "answer": "pi/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。"
+          ],
+          "rubric": [
+            "pi/2",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.metric.5",
+          "skill_id": "math08.metric",
+          "purpose": "retention",
+          "family_id": "math08.metric.family-5",
+          "prompt": "异面直线的距离可用两任意选点的距离代替吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。"
+          ],
+          "rubric": [
+            "否",
+            "用法向或方向向量求角度；点线距离取叉积模除以方向模，异面直线距离用混合积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "用法向或方向向量求角度。",
+        "点线距离取叉积模除以方向模，异面直线距离用混合积。"
+      ]
     }
   ]
 }

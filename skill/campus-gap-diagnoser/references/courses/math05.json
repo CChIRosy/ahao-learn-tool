@@ -1,7 +1,7 @@
 {
   "id": "math05",
   "name": "定积分",
-  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
   "skills": [
     {
       "id": "math05.definition",
@@ -834,6 +834,662 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math05.riemann",
+      "name": "黎曼和、可积条件与积分中值",
+      "aliases": [
+        "黎曼和、可积条件与积分中值",
+        "riemann"
+      ],
+      "prerequisites": [
+        "math05.definition"
+      ],
+      "tier": "core",
+      "teaching": "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.riemann.1",
+          "skill_id": "math05.riemann",
+          "purpose": "diagnostic",
+          "family_id": "math05.riemann.family-1",
+          "prompt": "求lim n趋无穷，(1/n)*sum(k/n,k=1..n)。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。"
+          ],
+          "rubric": [
+            "1/2",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.riemann.2",
+          "skill_id": "math05.riemann",
+          "purpose": "diagnostic",
+          "family_id": "math05.riemann.family-2",
+          "prompt": "闭区间连续函数必黎曼可积吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。"
+          ],
+          "rubric": [
+            "是",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math05.riemann.3",
+          "skill_id": "math05.riemann",
+          "purpose": "learning",
+          "family_id": "math05.riemann.family-3",
+          "prompt": "f(x)=x^2在[0,1]的积分平均值。",
+          "answer": "1/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。"
+          ],
+          "rubric": [
+            "1/3",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.riemann.4",
+          "skill_id": "math05.riemann",
+          "purpose": "transfer",
+          "family_id": "math05.riemann.family-4",
+          "prompt": "f(x)=2*x在[0,2]，积分中值点c。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。"
+          ],
+          "rubric": [
+            "1",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.riemann.5",
+          "skill_id": "math05.riemann",
+          "purpose": "retention",
+          "family_id": "math05.riemann.family-5",
+          "prompt": "闭区间上有界就一定黎曼可积吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。"
+          ],
+          "rubric": [
+            "否",
+            "定积分是分割和的极限；有界是黎曼可积的必要条件，连续是充分条件；连续函数满足积分中值定理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "定积分是分割和的极限。",
+        "有界是黎曼可积的必要条件，连续是充分条件。",
+        "连续函数满足积分中值定理。"
+      ]
+    },
+    {
+      "id": "math05.quadrature",
+      "name": "定积分的数值近似",
+      "aliases": [
+        "定积分的数值近似",
+        "quadrature"
+      ],
+      "prerequisites": [
+        "math05.definition",
+        "math03.taylor"
+      ],
+      "tier": "core",
+      "teaching": "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.quadrature.1",
+          "skill_id": "math05.quadrature",
+          "purpose": "diagnostic",
+          "family_id": "math05.quadrature.family-1",
+          "prompt": "对x^2在[0,1]用单梯形公式近似。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。"
+          ],
+          "rubric": [
+            "1/2",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.quadrature.2",
+          "skill_id": "math05.quadrature",
+          "purpose": "diagnostic",
+          "family_id": "math05.quadrature.family-2",
+          "prompt": "对x^2在[0,1]用单面板辛普森公式近似。",
+          "answer": "1/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。"
+          ],
+          "rubric": [
+            "1/3",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.quadrature.3",
+          "skill_id": "math05.quadrature",
+          "purpose": "learning",
+          "family_id": "math05.quadrature.family-3",
+          "prompt": "复合辛普森公式通常要求等分数为偶数吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。"
+          ],
+          "rubric": [
+            "是",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math05.quadrature.4",
+          "skill_id": "math05.quadrature",
+          "purpose": "transfer",
+          "family_id": "math05.quadrature.family-4",
+          "prompt": "对常数3在[0,2]用梯形公式。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。"
+          ],
+          "rubric": [
+            "6",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.quadrature.5",
+          "skill_id": "math05.quadrature",
+          "purpose": "retention",
+          "family_id": "math05.quadrature.family-5",
+          "prompt": "只增加采样点就能无条件解决任意奇点积分的误差问题吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。"
+          ],
+          "rubric": [
+            "否",
+            "梯形与辛普森公式按等距节点和相应光滑性使用；误差估计与实际精确积分分别记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "梯形与辛普森公式按等距节点和相应光滑性使用。",
+        "误差估计与实际精确积分分别记录。"
+      ]
+    },
+    {
+      "id": "math05.gamma",
+      "name": "反常积分审敛与Gamma函数",
+      "aliases": [
+        "反常积分审敛与Gamma函数",
+        "gamma",
+        "Γ函数",
+        "伽马函数"
+      ],
+      "prerequisites": [
+        "math05.improper",
+        "math12.positive"
+      ],
+      "tier": "extension",
+      "teaching": "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.gamma.1",
+          "skill_id": "math05.gamma",
+          "purpose": "diagnostic",
+          "family_id": "math05.gamma.family-1",
+          "prompt": "Gamma(1)的值。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。"
+          ],
+          "rubric": [
+            "1",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.gamma.2",
+          "skill_id": "math05.gamma",
+          "purpose": "diagnostic",
+          "family_id": "math05.gamma.family-2",
+          "prompt": "Gamma(5)的值。",
+          "answer": "24",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。"
+          ],
+          "rubric": [
+            "24",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.gamma.3",
+          "skill_id": "math05.gamma",
+          "purpose": "learning",
+          "family_id": "math05.gamma.family-3",
+          "prompt": "Gamma(1/2)的值。",
+          "answer": "sqrt(pi)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。"
+          ],
+          "rubric": [
+            "sqrt(pi)",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.gamma.4",
+          "skill_id": "math05.gamma",
+          "purpose": "transfer",
+          "family_id": "math05.gamma.family-4",
+          "prompt": "积分1到无穷x^(-p) dx在p>1时收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。"
+          ],
+          "rubric": [
+            "是",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math05.gamma.5",
+          "skill_id": "math05.gamma",
+          "purpose": "retention",
+          "family_id": "math05.gamma.family-5",
+          "prompt": "积分0到1 x^(-p) dx在p<1时收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。"
+          ],
+          "rubric": [
+            "是",
+            "比较与极限比较先保证非负等适用条件；Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "比较与极限比较先保证非负等适用条件。",
+        "Gamma(s)=积分0到无穷t^(s-1)*exp(-t)dt在s>0收敛，满足递推。"
+      ]
     }
   ]
 }

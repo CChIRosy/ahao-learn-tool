@@ -67,3 +67,7 @@ python -X utf8 scripts/diagnose.py --profile demo transfer --return-target
 ## 支持范围与质量
 
 目录位于[course-manifest.json](references/course-manifest.json)：高数12章及三门力学的主题级资源。按清单中的`file`读取相应`courses/`数据包。题目核对状态逐题记录；来源、覆盖粒度和验证状态集中见[sources-and-review.md](references/sources-and-review.md)。
+
+需要按教材章节检查范围时读取[syllabus-audit.json](references/syllabus-audit.json)：高数上下册82节、力学大纲与专项条目逐项映射到节点。`mapped_starter_bank`表示已有讲解和五阶段起始题；教学深度与教师验收逐项另记。
+
+专项路由示例：多跨静定梁与内铰用`structures.gerber`，碰撞用`theory.impact`，应变花用`materials.rosette`，隐函数组用`math09.implicit-systems`，多自由度振动用`structures.modal`。节点的`learning_steps`按题意选读；保留同一档案的历史与已见题。

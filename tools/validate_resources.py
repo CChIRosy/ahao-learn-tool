@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 import sympy as s
 from oracles import calculations
+from coverage_oracles import calculations as coverage_calculations
 
 BASE=Path(__file__).resolve().parents[1];ROOT=BASE/'skill/campus-gap-diagnoser';REF=ROOT/'references'
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -39,7 +40,7 @@ def validate(update=False):
         for parent in skills[sid]['prerequisites']:visit(parent)
         stack.remove(sid);visited.add(sid)
     for sid in skills:visit(sid)
-    for qid,value in calculations().items():
+    for qid,value in (calculations() | coverage_calculations()).items():
         if qid not in items:fail.append((qid,'missing','oracle has no item'));continue
         item=items[qid]
         try:

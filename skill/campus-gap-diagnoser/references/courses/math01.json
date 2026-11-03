@@ -1,7 +1,7 @@
 {
   "id": "math01",
   "name": "函数与极限",
-  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
   "skills": [
     {
       "id": "math01.function",
@@ -1281,6 +1281,894 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math01.quantifiers",
+      "name": "极限的精确定义与量词",
+      "aliases": [
+        "极限的精确定义与量词",
+        "quantifiers"
+      ],
+      "prerequisites": [
+        "math01.limit",
+        "math01.sequence"
+      ],
+      "tier": "core",
+      "teaching": "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.quantifiers.1",
+          "skill_id": "math01.quantifiers",
+          "purpose": "diagnostic",
+          "family_id": "math01.quantifiers.family-1",
+          "prompt": "数列极限定义中，N可依赖给定的epsilon吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。"
+          ],
+          "rubric": [
+            "是",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.quantifiers.2",
+          "skill_id": "math01.quantifiers",
+          "purpose": "diagnostic",
+          "family_id": "math01.quantifiers.family-2",
+          "prompt": "函数在x0的极限存在，是否必须先定义f(x0)？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。"
+          ],
+          "rubric": [
+            "否",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.quantifiers.3",
+          "skill_id": "math01.quantifiers",
+          "purpose": "learning",
+          "family_id": "math01.quantifiers.family-3",
+          "prompt": "解释数列极限中“对一切n>N”的作用。",
+          "answer": "控制整个尾部，排除只存在某个接近极限的子列",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。"
+          ],
+          "rubric": [
+            "控制整个尾部，排除只存在某个接近极限的子列",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.quantifiers.4",
+          "skill_id": "math01.quantifiers",
+          "purpose": "transfer",
+          "family_id": "math01.quantifiers.family-4",
+          "prompt": "证明1/n趋0时取N>1/epsilon是否足够？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。"
+          ],
+          "rubric": [
+            "是",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.quantifiers.5",
+          "skill_id": "math01.quantifiers",
+          "purpose": "retention",
+          "family_id": "math01.quantifiers.family-5",
+          "prompt": "说明有界但不收敛的一个数列。",
+          "answer": "例如(-1)^n，两个子列极限分别为1和-1",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。"
+          ],
+          "rubric": [
+            "例如(-1)^n，两个子列极限分别为1和-1",
+            "给定任意正误差后选择邻域或项号；极限条件考察去心邻域，一致控制与逐点控制须区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "给定任意正误差后选择邻域或项号。",
+        "极限条件考察去心邻域，一致控制与逐点控制须区分。"
+      ]
+    },
+    {
+      "id": "math01.limit-laws",
+      "name": "极限运算、无穷大与存在准则",
+      "aliases": [
+        "极限运算、无穷大与存在准则",
+        "limit-laws"
+      ],
+      "prerequisites": [
+        "math01.sequence",
+        "math01.limit"
+      ],
+      "tier": "core",
+      "teaching": "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.limit-laws.1",
+          "skill_id": "math01.limit-laws",
+          "purpose": "diagnostic",
+          "family_id": "math01.limit-laws.family-1",
+          "prompt": "x趋0时(1+2*x)/(3+x)的极限。",
+          "answer": "1/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。"
+          ],
+          "rubric": [
+            "1/3",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.limit-laws.2",
+          "skill_id": "math01.limit-laws",
+          "purpose": "diagnostic",
+          "family_id": "math01.limit-laws.family-2",
+          "prompt": "无穷大在极限运算中可当普通实数任意约分吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。"
+          ],
+          "rubric": [
+            "否",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.limit-laws.3",
+          "skill_id": "math01.limit-laws",
+          "purpose": "learning",
+          "family_id": "math01.limit-laws.family-3",
+          "prompt": "若a_n递增且有上界，能由单调有界准则判收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。"
+          ],
+          "rubric": [
+            "是",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.limit-laws.4",
+          "skill_id": "math01.limit-laws",
+          "purpose": "transfer",
+          "family_id": "math01.limit-laws.family-4",
+          "prompt": "x趋0时(1+x)^(1/x)的极限。",
+          "answer": "exp(1)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。"
+          ],
+          "rubric": [
+            "exp(1)",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.limit-laws.5",
+          "skill_id": "math01.limit-laws",
+          "purpose": "retention",
+          "family_id": "math01.limit-laws.family-5",
+          "prompt": "x趋0时x*sin(1/x)的极限。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。"
+          ],
+          "rubric": [
+            "0",
+            "有限极限的四则运算按条件进行；无穷大描述无界趋向；用夹逼或单调有界证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "有限极限的四则运算按条件进行。",
+        "无穷大描述无界趋向。",
+        "用夹逼或单调有界证明存在。"
+      ]
+    },
+    {
+      "id": "math01.uniform-continuity",
+      "name": "连续运算与一致连续性",
+      "aliases": [
+        "连续运算与一致连续性",
+        "uniform-continuity"
+      ],
+      "prerequisites": [
+        "math01.continuity"
+      ],
+      "tier": "extension",
+      "teaching": "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.uniform-continuity.1",
+          "skill_id": "math01.uniform-continuity",
+          "purpose": "diagnostic",
+          "family_id": "math01.uniform-continuity.family-1",
+          "prompt": "f在闭区间连续，必一致连续吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。"
+          ],
+          "rubric": [
+            "是",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.uniform-continuity.2",
+          "skill_id": "math01.uniform-continuity",
+          "purpose": "diagnostic",
+          "family_id": "math01.uniform-continuity.family-2",
+          "prompt": "1/x在(0,1)上一致连续吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。"
+          ],
+          "rubric": [
+            "否",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.uniform-continuity.3",
+          "skill_id": "math01.uniform-continuity",
+          "purpose": "learning",
+          "family_id": "math01.uniform-continuity.family-3",
+          "prompt": "解释逐点连续与一致连续的delta依赖区别。",
+          "answer": "逐点连续的delta可依赖点，一致连续用同一个delta控制所有点",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。"
+          ],
+          "rubric": [
+            "逐点连续的delta可依赖点，一致连续用同一个delta控制所有点",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.uniform-continuity.4",
+          "skill_id": "math01.uniform-continuity",
+          "purpose": "transfer",
+          "family_id": "math01.uniform-continuity.family-4",
+          "prompt": "sin(x)在实数轴上一致连续吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。"
+          ],
+          "rubric": [
+            "是",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.uniform-continuity.5",
+          "skill_id": "math01.uniform-continuity",
+          "purpose": "retention",
+          "family_id": "math01.uniform-continuity.family-5",
+          "prompt": "两个连续函数的商在分母为0处必连续吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。"
+          ],
+          "rubric": [
+            "否",
+            "复合连续要求内层值落在外层连续域；一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "复合连续要求内层值落在外层连续域。",
+        "一致连续的delta只依赖epsilon，闭区间连续可推出一致连续。"
+      ]
+    },
+    {
+      "id": "math01.function-properties",
+      "name": "函数有界性、单调性、奇偶性与周期性",
+      "aliases": [
+        "函数有界性、单调性、奇偶性与周期性",
+        "function-properties"
+      ],
+      "prerequisites": [
+        "math01.function",
+        "math01.inverse"
+      ],
+      "tier": "core",
+      "teaching": "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.function-properties.1",
+          "skill_id": "math01.function-properties",
+          "purpose": "diagnostic",
+          "family_id": "math01.function-properties.family-1",
+          "prompt": "f(x)=x^3在实数轴是奇函数吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。"
+          ],
+          "rubric": [
+            "是",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.function-properties.2",
+          "skill_id": "math01.function-properties",
+          "purpose": "diagnostic",
+          "family_id": "math01.function-properties.family-2",
+          "prompt": "f(x)=sin(x)+2的最小正周期。",
+          "answer": "2*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。"
+          ],
+          "rubric": [
+            "2*pi",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.function-properties.3",
+          "skill_id": "math01.function-properties",
+          "purpose": "learning",
+          "family_id": "math01.function-properties.family-3",
+          "prompt": "1/x在(0,1)上有界吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。"
+          ],
+          "rubric": [
+            "否",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.function-properties.4",
+          "skill_id": "math01.function-properties",
+          "purpose": "transfer",
+          "family_id": "math01.function-properties.family-4",
+          "prompt": "解释为何只检查几个点不能证明函数为偶函数。",
+          "answer": "偶性要求定义域对称并对所有定义域内x满足f(-x)=f(x)，有限点验证不足",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。"
+          ],
+          "rubric": [
+            "偶性要求定义域对称并对所有定义域内x满足f(-x)=f(x)，有限点验证不足",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.function-properties.5",
+          "skill_id": "math01.function-properties",
+          "purpose": "retention",
+          "family_id": "math01.function-properties.family-5",
+          "prompt": "函数x^2在整个实数轴严格单调吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。"
+          ],
+          "rubric": [
+            "否",
+            "各性质先确认定义域；奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "各性质先确认定义域。",
+        "奇偶性要求定义域关于原点对称，周期需对全域满足平移等式，复合和反函数按条件判断。"
+      ]
     }
   ]
 }

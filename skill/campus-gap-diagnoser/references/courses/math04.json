@@ -1,7 +1,7 @@
 {
   "id": "math04",
   "name": "不定积分",
-  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
   "skills": [
     {
       "id": "math04.primitive",
@@ -836,6 +836,445 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math04.trig-rational",
+      "name": "三角有理式与简单无理式积分",
+      "aliases": [
+        "三角有理式与简单无理式积分",
+        "trig-rational"
+      ],
+      "prerequisites": [
+        "math04.rational"
+      ],
+      "tier": "core",
+      "teaching": "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math04.trig-rational.1",
+          "skill_id": "math04.trig-rational",
+          "purpose": "diagnostic",
+          "family_id": "math04.trig-rational.family-1",
+          "prompt": "t=tan(x/2)时sin(x)是否等于2*t/(1+t^2)？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。"
+          ],
+          "rubric": [
+            "是",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math04.trig-rational.2",
+          "skill_id": "math04.trig-rational",
+          "purpose": "diagnostic",
+          "family_id": "math04.trig-rational.family-2",
+          "prompt": "忽略常数，在x>0求积分1/(sqrt(x)*(1+x)) dx。",
+          "answer": "2*atan(sqrt(x))",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。"
+          ],
+          "rubric": [
+            "2*atan(sqrt(x))",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.trig-rational.3",
+          "skill_id": "math04.trig-rational",
+          "purpose": "learning",
+          "family_id": "math04.trig-rational.family-3",
+          "prompt": "t=tan(x/2)时dx/dt。",
+          "answer": "2/(1+t**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。"
+          ],
+          "rubric": [
+            "2/(1+t**2)",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.trig-rational.4",
+          "skill_id": "math04.trig-rational",
+          "purpose": "transfer",
+          "family_id": "math04.trig-rational.family-4",
+          "prompt": "忽略常数，积分sin(x)*cos(x) dx。",
+          "answer": "sin(x)**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。"
+          ],
+          "rubric": [
+            "sin(x)**2/2",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.trig-rational.5",
+          "skill_id": "math04.trig-rational",
+          "purpose": "retention",
+          "family_id": "math04.trig-rational.family-5",
+          "prompt": "根式换元后可以忽略平方根的正负分支条件吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。"
+          ],
+          "rubric": [
+            "否",
+            "三角有理式可作万能代换t=tan(x/2)；根式换元同时控制定义域并回代。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "三角有理式可作万能代换t=tan(x/2)。",
+        "根式换元同时控制定义域并回代。"
+      ]
+    },
+    {
+      "id": "math04.integral-table",
+      "name": "积分表、公式匹配与回代校验",
+      "aliases": [
+        "积分表、公式匹配与回代校验",
+        "integral-table"
+      ],
+      "prerequisites": [
+        "math04.primitive",
+        "math04.substitution"
+      ],
+      "tier": "core",
+      "teaching": "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math04.integral-table.1",
+          "skill_id": "math04.integral-table",
+          "purpose": "diagnostic",
+          "family_id": "math04.integral-table.family-1",
+          "prompt": "表中积分1/(1+u²) du=atan(u)+C，积分1/(1+4*x²) dx忽略常数。",
+          "answer": "atan(2*x)/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。"
+          ],
+          "rubric": [
+            "atan(2*x)/2",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.integral-table.2",
+          "skill_id": "math04.integral-table",
+          "purpose": "diagnostic",
+          "family_id": "math04.integral-table.family-2",
+          "prompt": "查表代u=3*x时du=3*dx吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。"
+          ],
+          "rubric": [
+            "是",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math04.integral-table.3",
+          "skill_id": "math04.integral-table",
+          "purpose": "learning",
+          "family_id": "math04.integral-table.family-3",
+          "prompt": "候选原函数求导与原被积函数相同可用于校核吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。"
+          ],
+          "rubric": [
+            "是",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math04.integral-table.4",
+          "skill_id": "math04.integral-table",
+          "purpose": "transfer",
+          "family_id": "math04.integral-table.family-4",
+          "prompt": "积分exp(5*x) dx忽略常数。",
+          "answer": "exp(5*x)/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。"
+          ],
+          "rubric": [
+            "exp(5*x)/5",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.integral-table.5",
+          "skill_id": "math04.integral-table",
+          "purpose": "retention",
+          "family_id": "math04.integral-table.family-5",
+          "prompt": "积分表中的参数限制与定义域可以全部忽略吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。"
+          ],
+          "rubric": [
+            "否",
+            "查表先把积分化成表中结构并核对参数、微分因子和定义域；对候选原函数求导检验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "查表先把积分化成表中结构并核对参数、微分因子和定义域。",
+        "对候选原函数求导检验。"
+      ]
     }
   ]
 }

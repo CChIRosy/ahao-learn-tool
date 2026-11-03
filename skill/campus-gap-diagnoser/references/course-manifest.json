@@ -1,126 +1,126 @@
 {
-  "version": "0.1.1",
-  "scope_basis": "同济第八版上下册与所列高校力学大纲；按知识主题组织原创题库",
+  "version": "0.2.0",
+  "scope_basis": "同济第八版上下册及references/syllabus-audit.json所列力学范围；逐项映射知识主题与起始题",
   "courses": [
     {
       "id": "math01",
       "name": "函数与极限",
       "file": "math01.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 6,
-      "question_count": 30
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 10,
+      "question_count": 50
     },
     {
       "id": "math02",
       "name": "导数与微分",
       "file": "math02.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 7,
-      "question_count": 35
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 11,
+      "question_count": 55
     },
     {
       "id": "math03",
       "name": "微分中值定理与导数应用",
       "file": "math03.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 7,
-      "question_count": 35
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 10,
+      "question_count": 50
     },
     {
       "id": "math04",
       "name": "不定积分",
       "file": "math04.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 4,
-      "question_count": 20
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 6,
+      "question_count": 30
     },
     {
       "id": "math05",
       "name": "定积分",
       "file": "math05.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 4,
-      "question_count": 20
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 7,
+      "question_count": 35
     },
     {
       "id": "math06",
       "name": "定积分应用",
       "file": "math06.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 4,
-      "question_count": 20
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 5,
+      "question_count": 25
     },
     {
       "id": "math07",
       "name": "微分方程",
       "file": "math07.json",
-      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
-      "skill_count": 6,
-      "question_count": 30
+      "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
+      "skill_count": 10,
+      "question_count": 50
     },
     {
       "id": "math08",
       "name": "向量代数与空间解析几何",
       "file": "math08.json",
       "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
-      "skill_count": 5,
-      "question_count": 25
+      "skill_count": 6,
+      "question_count": 30
     },
     {
       "id": "math09",
       "name": "多元函数微分法及其应用",
       "file": "math09.json",
       "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
-      "skill_count": 6,
-      "question_count": 30
+      "skill_count": 11,
+      "question_count": 55
     },
     {
       "id": "math10",
       "name": "重积分",
       "file": "math10.json",
       "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
-      "skill_count": 4,
-      "question_count": 20
+      "skill_count": 6,
+      "question_count": 30
     },
     {
       "id": "math11",
       "name": "曲线积分与曲面积分",
       "file": "math11.json",
       "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
-      "skill_count": 6,
-      "question_count": 30
+      "skill_count": 8,
+      "question_count": 40
     },
     {
       "id": "math12",
       "name": "无穷级数",
       "file": "math12.json",
       "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
-      "skill_count": 7,
-      "question_count": 35
+      "skill_count": 10,
+      "question_count": 50
     },
     {
       "id": "theory",
       "name": "理论力学",
       "file": "theory.json",
       "source": "https://aero-mech.fudan.edu.cn/1b/8a/c26484a465802/page.htm",
-      "skill_count": 13,
-      "question_count": 65
+      "skill_count": 33,
+      "question_count": 165
     },
     {
       "id": "materials",
       "name": "材料力学",
       "file": "materials.json",
       "source": "https://me.sjtu.edu.cn/bkjx/upload/file/20220926/20220926103825.pdf",
-      "skill_count": 15,
-      "question_count": 75
+      "skill_count": 39,
+      "question_count": 195
     },
     {
       "id": "structures",
       "name": "结构力学",
       "file": "structures.json",
       "source": "https://cec.hrbeu.edu.cn/_upload/article/files/4a/00/2bbccea0465ea0f94fe98f8a1a6a/3a639add-0f08-449e-ad50-1bbf1b9c19f4.pdf",
-      "skill_count": 14,
-      "question_count": 70
+      "skill_count": 37,
+      "question_count": 185
     }
   ],
   "skills": [
@@ -194,6 +194,65 @@
       ],
       "prerequisites": [
         "math01.function"
+      ],
+      "tier": "core",
+      "file": "math01.json",
+      "course": "math01"
+    },
+    {
+      "id": "math01.quantifiers",
+      "name": "极限的精确定义与量词",
+      "aliases": [
+        "极限的精确定义与量词",
+        "quantifiers"
+      ],
+      "prerequisites": [
+        "math01.limit",
+        "math01.sequence"
+      ],
+      "tier": "core",
+      "file": "math01.json",
+      "course": "math01"
+    },
+    {
+      "id": "math01.limit-laws",
+      "name": "极限运算、无穷大与存在准则",
+      "aliases": [
+        "极限运算、无穷大与存在准则",
+        "limit-laws"
+      ],
+      "prerequisites": [
+        "math01.sequence",
+        "math01.limit"
+      ],
+      "tier": "core",
+      "file": "math01.json",
+      "course": "math01"
+    },
+    {
+      "id": "math01.uniform-continuity",
+      "name": "连续运算与一致连续性",
+      "aliases": [
+        "连续运算与一致连续性",
+        "uniform-continuity"
+      ],
+      "prerequisites": [
+        "math01.continuity"
+      ],
+      "tier": "extension",
+      "file": "math01.json",
+      "course": "math01"
+    },
+    {
+      "id": "math01.function-properties",
+      "name": "函数有界性、单调性、奇偶性与周期性",
+      "aliases": [
+        "函数有界性、单调性、奇偶性与周期性",
+        "function-properties"
+      ],
+      "prerequisites": [
+        "math01.function",
+        "math01.inverse"
       ],
       "tier": "core",
       "file": "math01.json",
@@ -300,6 +359,65 @@
       "course": "math02"
     },
     {
+      "id": "math02.inverse-derivative",
+      "name": "反函数求导与对数求导",
+      "aliases": [
+        "反函数求导与对数求导",
+        "inverse-derivative"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math01.inverse"
+      ],
+      "tier": "core",
+      "file": "math02.json",
+      "course": "math02"
+    },
+    {
+      "id": "math02.related-rates",
+      "name": "相关变化率",
+      "aliases": [
+        "相关变化率",
+        "related-rates"
+      ],
+      "prerequisites": [
+        "math02.implicit"
+      ],
+      "tier": "core",
+      "file": "math02.json",
+      "course": "math02"
+    },
+    {
+      "id": "math02.differentials",
+      "name": "微分、线性近似与误差",
+      "aliases": [
+        "微分、线性近似与误差",
+        "differentials"
+      ],
+      "prerequisites": [
+        "math02.definition",
+        "math02.basic"
+      ],
+      "tier": "core",
+      "file": "math02.json",
+      "course": "math02"
+    },
+    {
+      "id": "math02.parametric-second",
+      "name": "参数方程的二阶导数与切线",
+      "aliases": [
+        "参数方程的二阶导数与切线",
+        "parametric-second"
+      ],
+      "prerequisites": [
+        "math02.implicit",
+        "math02.higher"
+      ],
+      "tier": "core",
+      "file": "math02.json",
+      "course": "math02"
+    },
+    {
       "id": "math03.mvt",
       "name": "罗尔、拉格朗日与柯西中值定理",
       "aliases": [
@@ -397,6 +515,49 @@
       "course": "math03"
     },
     {
+      "id": "math03.root-finding",
+      "name": "二分法、牛顿法与割线法",
+      "aliases": [
+        "二分法、牛顿法与割线法",
+        "root-finding"
+      ],
+      "prerequisites": [
+        "math03.mvt",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "file": "math03.json",
+      "course": "math03"
+    },
+    {
+      "id": "math03.evolute",
+      "name": "曲率半径、曲率圆与曲率中心",
+      "aliases": [
+        "曲率半径、曲率圆与曲率中心",
+        "evolute"
+      ],
+      "prerequisites": [
+        "math03.curvature"
+      ],
+      "tier": "extension",
+      "file": "math03.json",
+      "course": "math03"
+    },
+    {
+      "id": "math03.remainders",
+      "name": "佩亚诺与拉格朗日余项、误差阶",
+      "aliases": [
+        "佩亚诺与拉格朗日余项、误差阶",
+        "remainders"
+      ],
+      "prerequisites": [
+        "math03.taylor"
+      ],
+      "tier": "core",
+      "file": "math03.json",
+      "course": "math03"
+    },
+    {
       "id": "math04.primitive",
       "name": "原函数与基本积分",
       "aliases": [
@@ -444,6 +605,35 @@
         "rational"
       ],
       "prerequisites": [
+        "math04.substitution"
+      ],
+      "tier": "core",
+      "file": "math04.json",
+      "course": "math04"
+    },
+    {
+      "id": "math04.trig-rational",
+      "name": "三角有理式与简单无理式积分",
+      "aliases": [
+        "三角有理式与简单无理式积分",
+        "trig-rational"
+      ],
+      "prerequisites": [
+        "math04.rational"
+      ],
+      "tier": "core",
+      "file": "math04.json",
+      "course": "math04"
+    },
+    {
+      "id": "math04.integral-table",
+      "name": "积分表、公式匹配与回代校验",
+      "aliases": [
+        "积分表、公式匹配与回代校验",
+        "integral-table"
+      ],
+      "prerequisites": [
+        "math04.primitive",
         "math04.substitution"
       ],
       "tier": "core",
@@ -507,6 +697,52 @@
       "course": "math05"
     },
     {
+      "id": "math05.riemann",
+      "name": "黎曼和、可积条件与积分中值",
+      "aliases": [
+        "黎曼和、可积条件与积分中值",
+        "riemann"
+      ],
+      "prerequisites": [
+        "math05.definition"
+      ],
+      "tier": "core",
+      "file": "math05.json",
+      "course": "math05"
+    },
+    {
+      "id": "math05.quadrature",
+      "name": "定积分的数值近似",
+      "aliases": [
+        "定积分的数值近似",
+        "quadrature"
+      ],
+      "prerequisites": [
+        "math05.definition",
+        "math03.taylor"
+      ],
+      "tier": "core",
+      "file": "math05.json",
+      "course": "math05"
+    },
+    {
+      "id": "math05.gamma",
+      "name": "反常积分审敛与Gamma函数",
+      "aliases": [
+        "反常积分审敛与Gamma函数",
+        "gamma",
+        "Γ函数",
+        "伽马函数"
+      ],
+      "prerequisites": [
+        "math05.improper",
+        "math12.positive"
+      ],
+      "tier": "extension",
+      "file": "math05.json",
+      "course": "math05"
+    },
+    {
       "id": "math06.area",
       "name": "微元法与平面面积",
       "aliases": [
@@ -556,6 +792,20 @@
       "prerequisites": [
         "math06.area",
         "math05.ftc"
+      ],
+      "tier": "core",
+      "file": "math06.json",
+      "course": "math06"
+    },
+    {
+      "id": "math06.revolution-area",
+      "name": "旋转曲面的面积",
+      "aliases": [
+        "旋转曲面的面积",
+        "revolution-area"
+      ],
+      "prerequisites": [
+        "math06.arc"
       ],
       "tier": "core",
       "file": "math06.json",
@@ -642,6 +892,64 @@
       "course": "math07"
     },
     {
+      "id": "math07.bernoulli",
+      "name": "伯努利方程与变量代换",
+      "aliases": [
+        "伯努利方程与变量代换",
+        "bernoulli"
+      ],
+      "prerequisites": [
+        "math07.linear"
+      ],
+      "tier": "core",
+      "file": "math07.json",
+      "course": "math07"
+    },
+    {
+      "id": "math07.reduction",
+      "name": "可降阶方程与解的结构",
+      "aliases": [
+        "可降阶方程与解的结构",
+        "reduction"
+      ],
+      "prerequisites": [
+        "math07.order"
+      ],
+      "tier": "core",
+      "file": "math07.json",
+      "course": "math07"
+    },
+    {
+      "id": "math07.variation-systems",
+      "name": "常数变易法与常系数方程组",
+      "aliases": [
+        "常数变易法与常系数方程组",
+        "variation-systems"
+      ],
+      "prerequisites": [
+        "math07.order",
+        "math07.linear"
+      ],
+      "tier": "core",
+      "file": "math07.json",
+      "course": "math07"
+    },
+    {
+      "id": "math07.homogeneous-reducible",
+      "name": "齐次型方程与可化齐次的平移代换",
+      "aliases": [
+        "齐次型方程与可化齐次的平移代换",
+        "homogeneous-reducible"
+      ],
+      "prerequisites": [
+        "math07.separable",
+        "math07.linear"
+      ],
+      "tier": "core",
+      "file": "math07.json",
+      "course": "math07"
+    },
+    {
       "id": "math08.vectors",
       "name": "向量线性运算、模与投影",
       "aliases": [
@@ -700,6 +1008,21 @@
       "prerequisites": [
         "math08.products",
         "math08.planes"
+      ],
+      "tier": "core",
+      "file": "math08.json",
+      "course": "math08"
+    },
+    {
+      "id": "math08.metric",
+      "name": "空间距离、夹角与投影计算",
+      "aliases": [
+        "空间距离、夹角与投影计算",
+        "metric"
+      ],
+      "prerequisites": [
+        "math08.planes",
+        "math08.mixed"
       ],
       "tier": "core",
       "file": "math08.json",
@@ -788,6 +1111,81 @@
       "course": "math09"
     },
     {
+      "id": "math09.differentiability",
+      "name": "多元可微性、偏导连续与近似",
+      "aliases": [
+        "多元可微性、偏导连续与近似",
+        "differentiability"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "math09.limits"
+      ],
+      "tier": "core",
+      "file": "math09.json",
+      "course": "math09"
+    },
+    {
+      "id": "math09.vector-curves",
+      "name": "向量值函数、空间切线与法平面",
+      "aliases": [
+        "向量值函数、空间切线与法平面",
+        "vector-curves"
+      ],
+      "prerequisites": [
+        "math08.vectors",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "file": "math09.json",
+      "course": "math09"
+    },
+    {
+      "id": "math09.taylor",
+      "name": "二元泰勒展开与二次型判别",
+      "aliases": [
+        "二元泰勒展开与二次型判别",
+        "taylor"
+      ],
+      "prerequisites": [
+        "math09.extrema",
+        "math03.taylor"
+      ],
+      "tier": "extension",
+      "file": "math09.json",
+      "course": "math09"
+    },
+    {
+      "id": "math09.least-squares",
+      "name": "最小二乘拟合与正规方程",
+      "aliases": [
+        "最小二乘拟合与正规方程",
+        "least-squares"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "structures.algebra-bridge"
+      ],
+      "tier": "extension",
+      "file": "math09.json",
+      "course": "math09"
+    },
+    {
+      "id": "math09.implicit-systems",
+      "name": "隐函数组、雅可比与联立求导",
+      "aliases": [
+        "隐函数组、雅可比与联立求导",
+        "implicit-systems"
+      ],
+      "prerequisites": [
+        "math09.chain",
+        "structures.algebra-bridge"
+      ],
+      "tier": "core",
+      "file": "math09.json",
+      "course": "math09"
+    },
+    {
       "id": "math10.double",
       "name": "二重积分、区域与换序",
       "aliases": [
@@ -835,6 +1233,36 @@
       ],
       "prerequisites": [
         "math10.double"
+      ],
+      "tier": "core",
+      "file": "math10.json",
+      "course": "math10"
+    },
+    {
+      "id": "math10.parameter",
+      "name": "含参积分、求导与参数边界",
+      "aliases": [
+        "含参积分、求导与参数边界",
+        "parameter"
+      ],
+      "prerequisites": [
+        "math05.ftc",
+        "math09.partial"
+      ],
+      "tier": "extension",
+      "file": "math10.json",
+      "course": "math10"
+    },
+    {
+      "id": "math10.surface-gravity",
+      "name": "重积分中的曲面面积与引力分量",
+      "aliases": [
+        "重积分中的曲面面积与引力分量",
+        "surface-gravity"
+      ],
+      "prerequisites": [
+        "math10.applications",
+        "math11.surface1"
       ],
       "tier": "core",
       "file": "math10.json",
@@ -918,6 +1346,36 @@
       "prerequisites": [
         "math11.line2",
         "math11.gauss"
+      ],
+      "tier": "core",
+      "file": "math11.json",
+      "course": "math11"
+    },
+    {
+      "id": "math11.surface-orientation",
+      "name": "曲面积分的投影计算与两类积分联系",
+      "aliases": [
+        "曲面积分的投影计算与两类积分联系",
+        "surface-orientation"
+      ],
+      "prerequisites": [
+        "math11.surface1",
+        "math11.gauss"
+      ],
+      "tier": "core",
+      "file": "math11.json",
+      "course": "math11"
+    },
+    {
+      "id": "math11.line-connections",
+      "name": "曲线积分的定向、两类联系与空间势函数",
+      "aliases": [
+        "曲线积分的定向、两类联系与空间势函数",
+        "line-connections"
+      ],
+      "prerequisites": [
+        "math11.potential",
+        "math11.stokes"
       ],
       "tier": "core",
       "file": "math11.json",
@@ -1014,6 +1472,49 @@
         "math12.power"
       ],
       "tier": "extension",
+      "file": "math12.json",
+      "course": "math12"
+    },
+    {
+      "id": "math12.cauchy",
+      "name": "级数的柯西准则与绝对收敛性质",
+      "aliases": [
+        "级数的柯西准则与绝对收敛性质",
+        "cauchy"
+      ],
+      "prerequisites": [
+        "math12.alternating"
+      ],
+      "tier": "extension",
+      "file": "math12.json",
+      "course": "math12"
+    },
+    {
+      "id": "math12.power-applications",
+      "name": "幂级数的近似、微分方程与欧拉公式",
+      "aliases": [
+        "幂级数的近似、微分方程与欧拉公式",
+        "power-applications"
+      ],
+      "prerequisites": [
+        "math12.expansion",
+        "math07.order"
+      ],
+      "tier": "core",
+      "file": "math12.json",
+      "course": "math12"
+    },
+    {
+      "id": "math12.half-range",
+      "name": "正弦级数、余弦级数与复数傅里叶形式",
+      "aliases": [
+        "正弦级数、余弦级数与复数傅里叶形式",
+        "half-range"
+      ],
+      "prerequisites": [
+        "math12.fourier"
+      ],
+      "tier": "core",
       "file": "math12.json",
       "course": "math12"
     },
@@ -1197,6 +1698,305 @@
       "prerequisites": [
         "theory.energy",
         "math07.order"
+      ],
+      "tier": "extension",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.force-systems",
+      "name": "静力学公理、汇交与平行力系",
+      "aliases": [
+        "静力学公理、汇交与平行力系",
+        "force-systems"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "theory.force"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.space",
+      "name": "空间力系、主矢主矩与力螺旋",
+      "aliases": [
+        "空间力系、主矢主矩与力螺旋",
+        "space"
+      ],
+      "prerequisites": [
+        "theory.force",
+        "math08.products"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.centroid",
+      "name": "重心、形心与组合体",
+      "aliases": [
+        "重心、形心与组合体",
+        "centroid"
+      ],
+      "prerequisites": [
+        "theory.balance",
+        "math10.applications"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.friction-angle",
+      "name": "摩擦角、摩擦锥、自锁与滚动摩阻",
+      "aliases": [
+        "摩擦角、摩擦锥、自锁与滚动摩阻",
+        "friction-angle"
+      ],
+      "prerequisites": [
+        "theory.friction"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.polar",
+      "name": "自然坐标与极坐标运动学",
+      "aliases": [
+        "自然坐标与极坐标运动学",
+        "polar"
+      ],
+      "prerequisites": [
+        "theory.point"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.planar-acceleration",
+      "name": "刚体平面运动的基点法与瞬心",
+      "aliases": [
+        "刚体平面运动的基点法与瞬心",
+        "planar-acceleration"
+      ],
+      "prerequisites": [
+        "theory.rigid"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.coriolis",
+      "name": "牵连运动与科氏加速度计算",
+      "aliases": [
+        "牵连运动与科氏加速度计算",
+        "coriolis"
+      ],
+      "prerequisites": [
+        "theory.relative",
+        "math08.products"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.relative-dynamics",
+      "name": "非惯性系中的质点动力学",
+      "aliases": [
+        "非惯性系中的质点动力学",
+        "relative-dynamics"
+      ],
+      "prerequisites": [
+        "theory.coriolis",
+        "theory.newton"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.inertia",
+      "name": "质量转动惯量、平行轴与惯性积",
+      "aliases": [
+        "质量转动惯量、平行轴与惯性积",
+        "inertia"
+      ],
+      "prerequisites": [
+        "theory.angular",
+        "math10.applications"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.konig",
+      "name": "质心运动与柯尼希动能分解",
+      "aliases": [
+        "质心运动与柯尼希动能分解",
+        "konig"
+      ],
+      "prerequisites": [
+        "theory.energy",
+        "theory.inertia"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.rigid-dynamics",
+      "name": "刚体平面动力学与普遍定理综合",
+      "aliases": [
+        "刚体平面动力学与普遍定理综合",
+        "rigid-dynamics"
+      ],
+      "prerequisites": [
+        "theory.konig",
+        "theory.angular"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.impact",
+      "name": "碰撞、恢复系数与冲量矩",
+      "aliases": [
+        "碰撞、恢复系数与冲量矩",
+        "impact",
+        "恢复系数",
+        "碰撞"
+      ],
+      "prerequisites": [
+        "theory.momentum",
+        "theory.energy"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.constraints",
+      "name": "约束分类、自由度与广义坐标",
+      "aliases": [
+        "约束分类、自由度与广义坐标",
+        "constraints"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "theory.analytical"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.virtual-work",
+      "name": "虚位移原理与广义力",
+      "aliases": [
+        "虚位移原理与广义力",
+        "virtual-work"
+      ],
+      "prerequisites": [
+        "theory.dalembert",
+        "theory.constraints"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.lagrange",
+      "name": "拉格朗日方程、循环坐标与首次积分",
+      "aliases": [
+        "拉格朗日方程、循环坐标与首次积分",
+        "lagrange"
+      ],
+      "prerequisites": [
+        "theory.constraints",
+        "theory.energy"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.equilibrium-stability",
+      "name": "平衡位置、势能与小振动",
+      "aliases": [
+        "平衡位置、势能与小振动",
+        "equilibrium-stability"
+      ],
+      "prerequisites": [
+        "theory.lagrange",
+        "math03.extrema"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.rotor-balance",
+      "name": "转子静平衡、动平衡与轴承动反力",
+      "aliases": [
+        "转子静平衡、动平衡与轴承动反力",
+        "rotor-balance"
+      ],
+      "prerequisites": [
+        "theory.inertia",
+        "theory.dalembert"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.damped-forced",
+      "name": "单自由度阻尼与受迫振动",
+      "aliases": [
+        "单自由度阻尼与受迫振动",
+        "damped-forced"
+      ],
+      "prerequisites": [
+        "theory.analytical",
+        "math07.nonhomogeneous"
+      ],
+      "tier": "core",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.gyroscope",
+      "name": "定点转动、欧拉方程与陀螺效应",
+      "aliases": [
+        "定点转动、欧拉方程与陀螺效应",
+        "gyroscope"
+      ],
+      "prerequisites": [
+        "theory.inertia",
+        "theory.angular"
+      ],
+      "tier": "extension",
+      "file": "theory.json",
+      "course": "theory"
+    },
+    {
+      "id": "theory.variable-mass",
+      "name": "变质量系统与动量通量",
+      "aliases": [
+        "变质量系统与动量通量",
+        "variable-mass"
+      ],
+      "prerequisites": [
+        "theory.momentum",
+        "theory.newton"
       ],
       "tier": "extension",
       "file": "theory.json",
@@ -1425,6 +2225,359 @@
       "course": "materials"
     },
     {
+      "id": "materials.basics",
+      "name": "变形体假设、圣维南原理与失效分类",
+      "aliases": [
+        "变形体假设、圣维南原理与失效分类",
+        "basics"
+      ],
+      "prerequisites": [
+        "materials.section"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.properties",
+      "name": "拉压试验、材料性能与安全因数",
+      "aliases": [
+        "拉压试验、材料性能与安全因数",
+        "properties"
+      ],
+      "prerequisites": [
+        "materials.axial"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.design",
+      "name": "强度校核、截面设计与载荷确定",
+      "aliases": [
+        "强度校核、截面设计与载荷确定",
+        "design"
+      ],
+      "prerequisites": [
+        "materials.axial",
+        "materials.bending"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.thermal",
+      "name": "温度应变、装配误差与轴向超静定",
+      "aliases": [
+        "温度应变、装配误差与轴向超静定",
+        "thermal"
+      ],
+      "prerequisites": [
+        "materials.indeterminate",
+        "materials.axial"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.oblique",
+      "name": "拉压杆斜截面上的应力",
+      "aliases": [
+        "拉压杆斜截面上的应力",
+        "oblique"
+      ],
+      "prerequisites": [
+        "materials.axial"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.thin-wall",
+      "name": "薄壁闭口杆扭转与开口截面比较",
+      "aliases": [
+        "薄壁闭口杆扭转与开口截面比较",
+        "thin-wall"
+      ],
+      "prerequisites": [
+        "materials.torsion"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.noncircular",
+      "name": "非圆截面扭转、翘曲与近似公式",
+      "aliases": [
+        "非圆截面扭转、翘曲与近似公式",
+        "noncircular"
+      ],
+      "prerequisites": [
+        "materials.torsion",
+        "materials.thin-wall"
+      ],
+      "tier": "extension",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.unsymmetric",
+      "name": "斜弯曲与非对称弯曲",
+      "aliases": [
+        "斜弯曲与非对称弯曲",
+        "unsymmetric"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "materials.geometry"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.core",
+      "name": "偏心拉压与截面核心",
+      "aliases": [
+        "偏心拉压与截面核心",
+        "core"
+      ],
+      "prerequisites": [
+        "materials.combined",
+        "materials.unsymmetric"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.mohr",
+      "name": "平面应力变换、莫尔圆与主应力",
+      "aliases": [
+        "平面应力变换、莫尔圆与主应力",
+        "mohr",
+        "莫尔圆",
+        "应力圆"
+      ],
+      "prerequisites": [
+        "materials.stress"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.rosette",
+      "name": "应变花、应变变换与电测",
+      "aliases": [
+        "应变花、应变变换与电测",
+        "rosette"
+      ],
+      "prerequisites": [
+        "materials.stress"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.generalized-hooke",
+      "name": "广义虎克定律、体积应变与平面应变",
+      "aliases": [
+        "广义虎克定律、体积应变与平面应变",
+        "generalized-hooke"
+      ],
+      "prerequisites": [
+        "materials.stress"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.criteria",
+      "name": "四种强度理论与相当应力",
+      "aliases": [
+        "四种强度理论与相当应力",
+        "criteria"
+      ],
+      "prerequisites": [
+        "materials.mohr",
+        "materials.combined"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.castigliano",
+      "name": "卡氏定理、互等与单位载荷法",
+      "aliases": [
+        "卡氏定理、互等与单位载荷法",
+        "castigliano"
+      ],
+      "prerequisites": [
+        "materials.energy",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.impact",
+      "name": "动载系数、落重冲击与惯性载荷",
+      "aliases": [
+        "动载系数、落重冲击与惯性载荷",
+        "impact"
+      ],
+      "prerequisites": [
+        "materials.energy",
+        "materials.fatigue"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.fatigue-detail",
+      "name": "应力循环、疲劳限与影响因素",
+      "aliases": [
+        "应力循环、疲劳限与影响因素",
+        "fatigue-detail"
+      ],
+      "prerequisites": [
+        "materials.fatigue"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.principal-inertia",
+      "name": "静矩、惯性积与主惯性轴",
+      "aliases": [
+        "静矩、惯性积与主惯性轴",
+        "principal-inertia"
+      ],
+      "prerequisites": [
+        "materials.geometry"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.experiments",
+      "name": "材料力学实验、读数与误差",
+      "aliases": [
+        "材料力学实验、读数与误差",
+        "experiments"
+      ],
+      "prerequisites": [
+        "materials.properties",
+        "materials.rosette"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.concentration",
+      "name": "局部应力集中与合理构件设计",
+      "aliases": [
+        "局部应力集中与合理构件设计",
+        "concentration"
+      ],
+      "prerequisites": [
+        "materials.design",
+        "materials.fatigue-detail"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.brittle-criteria",
+      "name": "最大正应力与最大伸长应变理论",
+      "aliases": [
+        "最大正应力与最大伸长应变理论",
+        "brittle-criteria"
+      ],
+      "prerequisites": [
+        "materials.criteria",
+        "materials.generalized-hooke"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.shear-flow",
+      "name": "梁剪应力、薄壁剪流与剪切中心",
+      "aliases": [
+        "梁剪应力、薄壁剪流与剪切中心",
+        "shear-flow"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "materials.thin-wall"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.stability-design",
+      "name": "柔度、经验临界应力与稳定设计",
+      "aliases": [
+        "柔度、经验临界应力与稳定设计",
+        "stability-design"
+      ],
+      "prerequisites": [
+        "materials.stability",
+        "materials.design"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.shaft-power",
+      "name": "传动轴功率、扭矩与扭转设计",
+      "aliases": [
+        "传动轴功率、扭矩与扭转设计",
+        "shaft-power"
+      ],
+      "prerequisites": [
+        "materials.torsion",
+        "materials.design"
+      ],
+      "tier": "core",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
+      "id": "materials.pressure-vessels",
+      "name": "薄壁容器的环向与轴向应力",
+      "aliases": [
+        "薄壁容器的环向与轴向应力",
+        "pressure-vessels"
+      ],
+      "prerequisites": [
+        "materials.stress",
+        "materials.criteria"
+      ],
+      "tier": "extension",
+      "file": "materials.json",
+      "course": "materials"
+    },
+    {
       "id": "structures.geometry",
       "name": "几何组成、约束与计算简图",
       "aliases": [
@@ -1617,6 +2770,349 @@
       ],
       "prerequisites": [],
       "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.overview",
+      "name": "结构计算模型、杆系分类与荷载分类",
+      "aliases": [
+        "结构计算模型、杆系分类与荷载分类",
+        "overview"
+      ],
+      "prerequisites": [
+        "theory.model"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.geometry-rules",
+      "name": "几何组成规则、瞬变体系与自由度",
+      "aliases": [
+        "几何组成规则、瞬变体系与自由度",
+        "geometry-rules"
+      ],
+      "prerequisites": [
+        "structures.geometry"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.gerber",
+      "name": "多跨静定梁、内铰与分层传力",
+      "aliases": [
+        "多跨静定梁、内铰与分层传力",
+        "gerber",
+        "多跨静定梁",
+        "分层法",
+        "内铰",
+        "基本部分",
+        "附属部分"
+      ],
+      "prerequisites": [
+        "structures.determinate",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.frame",
+      "name": "静定刚架的分段内力与节点平衡",
+      "aliases": [
+        "静定刚架的分段内力与节点平衡",
+        "frame"
+      ],
+      "prerequisites": [
+        "structures.determinate"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.truss-methods",
+      "name": "桁架节点法、截面法与零杆",
+      "aliases": [
+        "桁架节点法、截面法与零杆",
+        "truss-methods"
+      ],
+      "prerequisites": [
+        "structures.truss"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.arch",
+      "name": "三铰拱、水平推力与合理拱轴",
+      "aliases": [
+        "三铰拱、水平推力与合理拱轴",
+        "arch"
+      ],
+      "prerequisites": [
+        "structures.truss",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.mixed",
+      "name": "组合结构与静定结构特性",
+      "aliases": [
+        "组合结构与静定结构特性",
+        "mixed"
+      ],
+      "prerequisites": [
+        "structures.frame",
+        "structures.truss-methods"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.diagram-product",
+      "name": "单位荷载法、图乘法与弯矩面积",
+      "aliases": [
+        "单位荷载法、图乘法与弯矩面积",
+        "diagram-product"
+      ],
+      "prerequisites": [
+        "structures.virtual",
+        "materials.castigliano"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.reciprocity",
+      "name": "功、位移、反力与柔度互等",
+      "aliases": [
+        "功、位移、反力与柔度互等",
+        "reciprocity"
+      ],
+      "prerequisites": [
+        "structures.virtual"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.force-details",
+      "name": "力法协调、对称性与内力校核",
+      "aliases": [
+        "力法协调、对称性与内力校核",
+        "force-details"
+      ],
+      "prerequisites": [
+        "structures.force",
+        "structures.reciprocity"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.slope-deflection",
+      "name": "转角位移方程、固端弯矩与杆端刚度",
+      "aliases": [
+        "转角位移方程、固端弯矩与杆端刚度",
+        "slope-deflection"
+      ],
+      "prerequisites": [
+        "structures.displacement"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.sway",
+      "name": "位移法基本未知量、侧移与对称简化",
+      "aliases": [
+        "位移法基本未知量、侧移与对称简化",
+        "sway"
+      ],
+      "prerequisites": [
+        "structures.slope-deflection",
+        "structures.geometry-rules"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.distribution-details",
+      "name": "力矩分配、传递系数与迭代收敛",
+      "aliases": [
+        "力矩分配、传递系数与迭代收敛",
+        "distribution-details"
+      ],
+      "prerequisites": [
+        "structures.distribution",
+        "structures.slope-deflection"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.matrix-assembly",
+      "name": "单元刚度、坐标变换、组装与边界",
+      "aliases": [
+        "单元刚度、坐标变换、组装与边界",
+        "matrix-assembly"
+      ],
+      "prerequisites": [
+        "structures.matrix",
+        "structures.slope-deflection"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.indirect-influence",
+      "name": "间接荷载、桁架与结点荷载影响线",
+      "aliases": [
+        "间接荷载、桁架与结点荷载影响线",
+        "indirect-influence"
+      ],
+      "prerequisites": [
+        "structures.influence",
+        "structures.truss-methods"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.muller",
+      "name": "机动法、最不利布载与绝对最大弯矩",
+      "aliases": [
+        "机动法、最不利布载与绝对最大弯矩",
+        "muller"
+      ],
+      "prerequisites": [
+        "structures.influence",
+        "structures.virtual"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.modal",
+      "name": "多自由度自由振动、频率与振型",
+      "aliases": [
+        "多自由度自由振动、频率与振型",
+        "modal",
+        "多自由度振动",
+        "振型"
+      ],
+      "prerequisites": [
+        "structures.dynamics",
+        "structures.matrix-assembly"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.forced-modal",
+      "name": "阻尼受迫响应、振型分解与参与系数",
+      "aliases": [
+        "阻尼受迫响应、振型分解与参与系数",
+        "forced-modal"
+      ],
+      "prerequisites": [
+        "structures.modal",
+        "theory.damped-forced"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.rayleigh",
+      "name": "瑞利法、集中质量与频率近似",
+      "aliases": [
+        "瑞利法、集中质量与频率近似",
+        "rayleigh"
+      ],
+      "prerequisites": [
+        "structures.modal",
+        "structures.virtual"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.plastic-bounds",
+      "name": "塑性铰、极限分析上下限定理",
+      "aliases": [
+        "塑性铰、极限分析上下限定理",
+        "plastic-bounds"
+      ],
+      "prerequisites": [
+        "structures.plastic"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.plastic-mechanisms",
+      "name": "梁、连续梁与刚架的塑性机构",
+      "aliases": [
+        "梁、连续梁与刚架的塑性机构",
+        "plastic-mechanisms"
+      ],
+      "prerequisites": [
+        "structures.plastic-bounds"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.elastic-stability",
+      "name": "结构稳定的静力法、能量法与弹性支承",
+      "aliases": [
+        "结构稳定的静力法、能量法与弹性支承",
+        "elastic-stability"
+      ],
+      "prerequisites": [
+        "structures.stability",
+        "materials.stability"
+      ],
+      "tier": "core",
+      "file": "structures.json",
+      "course": "structures"
+    },
+    {
+      "id": "structures.advanced-buckling",
+      "name": "变截面、剪切影响与组合压杆稳定",
+      "aliases": [
+        "变截面、剪切影响与组合压杆稳定",
+        "advanced-buckling"
+      ],
+      "prerequisites": [
+        "structures.elastic-stability"
+      ],
+      "tier": "extension",
       "file": "structures.json",
       "course": "structures"
     }

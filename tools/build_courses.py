@@ -36,7 +36,7 @@ def add(p,key,name,teach,rows,prereq=(),aliases=(),extended=False):
         'misconceptions':['需通过两条独立证据区分偶发失误与规则理解问题'],
         'items':items,'quality':{'scope_mapped':True,'bank_available':True,'teacher_reviewed':False,'student_validated':False}})
 
-UPPER='https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745'
+UPPER='https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1'
 LOWER='https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7'
 
 p=pack('math01','函数与极限',UPPER)
@@ -364,7 +364,7 @@ x^n在[0,1/2]上一致趋0吗？~是
 仅逐点收敛是否足以保证极限函数连续？~否''',prereq=['math12.power'],extended=True)
 
 def finish():
-    manifest={'version':'0.1.1','scope_basis':'同济第八版上下册与所列高校力学大纲；按知识主题组织原创题库', 'courses':[],'skills':[]}
+    manifest={'version':'0.2.0','scope_basis':'同济第八版上下册及references/syllabus-audit.json所列力学范围；逐项映射知识主题与起始题', 'courses':[],'skills':[]}
     for p in PACKS:
         filename=p['id']+'.json'
         manifest['courses'].append({'id':p['id'],'name':p['name'],'file':filename,'source':p['source'],'skill_count':len(p['skills']),'question_count':sum(len(s['items']) for s in p['skills'])})
@@ -373,7 +373,7 @@ def finish():
                    'theory.force.1':'N*m','theory.force.3':'N*m','theory.balance.3':'N*m','theory.balance.4':'N','materials.moment.1':'N*m','materials.moment.4':'N*m'}
             for item in s['items']:
                 if item['id'] in units:item['unit']=units[item['id']]
-                if item['id'] in ('math08.planes.1','math08.planes.2'):item['vector_equivalence']='parallel'
+                if item['id'] in ('math08.planes.1','math08.planes.2','math09.vector-curves.1','math09.vector-curves.3'):item['vector_equivalence']='parallel'
             manifest['skills'].append({k:s[k] for k in ('id','name','aliases','prerequisites','tier')}|{'file':filename,'course':p['id']})
         dest=REF/'courses'/filename;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(json.dumps(p,ensure_ascii=False,indent=2),encoding='utf-8')
     (REF/'course-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -384,5 +384,9 @@ if __name__=='__main__':
     mechanics_seeds.populate(pack,add)
     import supplemental_seeds
     supplemental_seeds.populate(PACKS,add)
+    import coverage_seeds
+    coverage_seeds.populate(PACKS,add)
     print(json.dumps({'modules':len(PACKS),'skills':sum(len(p['skills']) for p in PACKS),'questions':sum(len(s['items']) for p in PACKS for s in p['skills'])}))
     finish()
+    import audit_syllabus
+    audit_syllabus.build()

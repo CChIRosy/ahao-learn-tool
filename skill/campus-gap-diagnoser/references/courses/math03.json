@@ -1,7 +1,7 @@
 {
   "id": "math03",
   "name": "微分中值定理与导数应用",
-  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
   "skills": [
     {
       "id": "math03.mvt",
@@ -1481,6 +1481,659 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math03.root-finding",
+      "name": "二分法、牛顿法与割线法",
+      "aliases": [
+        "二分法、牛顿法与割线法",
+        "root-finding"
+      ],
+      "prerequisites": [
+        "math03.mvt",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "teaching": "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.root-finding.1",
+          "skill_id": "math03.root-finding",
+          "purpose": "diagnostic",
+          "family_id": "math03.root-finding.family-1",
+          "prompt": "用牛顿法求x^2-2=0，从x0=1迭代一次。",
+          "answer": "3/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。"
+          ],
+          "rubric": [
+            "3/2",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.root-finding.2",
+          "skill_id": "math03.root-finding",
+          "purpose": "diagnostic",
+          "family_id": "math03.root-finding.family-2",
+          "prompt": "连续函数在[a,b]端点异号，二分后保留含异号端点的半区间吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。"
+          ],
+          "rubric": [
+            "是",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.root-finding.3",
+          "skill_id": "math03.root-finding",
+          "purpose": "learning",
+          "family_id": "math03.root-finding.family-3",
+          "prompt": "二分10次后初始长度1的区间长度。",
+          "answer": "1/1024",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。"
+          ],
+          "rubric": [
+            "1/1024",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.root-finding.4",
+          "skill_id": "math03.root-finding",
+          "purpose": "transfer",
+          "family_id": "math03.root-finding.family-4",
+          "prompt": "用割线法求x^2-2=0，初值1与2，下一迭代值。",
+          "answer": "4/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。"
+          ],
+          "rubric": [
+            "4/3",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.root-finding.5",
+          "skill_id": "math03.root-finding",
+          "purpose": "retention",
+          "family_id": "math03.root-finding.family-5",
+          "prompt": "牛顿法对任意初值都收敛到指定根吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。"
+          ],
+          "rubric": [
+            "否",
+            "二分法保持连续异号区间；牛顿用切线迭代，割线用差商；分别检查停止准则与收敛条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "二分法保持连续异号区间。",
+        "牛顿用切线迭代，割线用差商。",
+        "分别检查停止准则与收敛条件。"
+      ]
+    },
+    {
+      "id": "math03.evolute",
+      "name": "曲率半径、曲率圆与曲率中心",
+      "aliases": [
+        "曲率半径、曲率圆与曲率中心",
+        "evolute"
+      ],
+      "prerequisites": [
+        "math03.curvature"
+      ],
+      "tier": "extension",
+      "teaching": "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.evolute.1",
+          "skill_id": "math03.evolute",
+          "purpose": "diagnostic",
+          "family_id": "math03.evolute.family-1",
+          "prompt": "y=x^2在原点的曲率半径。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。"
+          ],
+          "rubric": [
+            "1/2",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.evolute.2",
+          "skill_id": "math03.evolute",
+          "purpose": "diagnostic",
+          "family_id": "math03.evolute.family-2",
+          "prompt": "半径3圆的曲率。",
+          "answer": "1/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。"
+          ],
+          "rubric": [
+            "1/3",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.evolute.3",
+          "skill_id": "math03.evolute",
+          "purpose": "learning",
+          "family_id": "math03.evolute.family-3",
+          "prompt": "y=x^2在原点的曲率中心坐标。",
+          "answer": "0,1/2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。"
+          ],
+          "rubric": [
+            "0,1/2",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.evolute.4",
+          "skill_id": "math03.evolute",
+          "purpose": "transfer",
+          "family_id": "math03.evolute.family-4",
+          "prompt": "直线的曲率为0时有有限曲率半径吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。"
+          ],
+          "rubric": [
+            "否",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.evolute.5",
+          "skill_id": "math03.evolute",
+          "purpose": "retention",
+          "family_id": "math03.evolute.family-5",
+          "prompt": "说明渐屈线与渐伸线的几何含义。",
+          "answer": "渐屈线是曲率中心轨迹；渐伸线可看作绷紧细线从原曲线展开时线端轨迹，按光滑正则条件讨论",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。"
+          ],
+          "rubric": [
+            "渐屈线是曲率中心轨迹；渐伸线可看作绷紧细线从原曲线展开时线端轨迹，按光滑正则条件讨论",
+            "曲率半径为非零曲率倒数；曲率中心沿主法线定位，参数曲线按相应公式计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "曲率半径为非零曲率倒数。",
+        "曲率中心沿主法线定位，参数曲线按相应公式计算。"
+      ]
+    },
+    {
+      "id": "math03.remainders",
+      "name": "佩亚诺与拉格朗日余项、误差阶",
+      "aliases": [
+        "佩亚诺与拉格朗日余项、误差阶",
+        "remainders"
+      ],
+      "prerequisites": [
+        "math03.taylor"
+      ],
+      "tier": "core",
+      "teaching": "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.remainders.1",
+          "skill_id": "math03.remainders",
+          "purpose": "diagnostic",
+          "family_id": "math03.remainders.family-1",
+          "prompt": "exp(x)在0的一阶展开中拉格朗日余项形式为exp(c)*x²/2吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。"
+          ],
+          "rubric": [
+            "是",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.remainders.2",
+          "skill_id": "math03.remainders",
+          "purpose": "diagnostic",
+          "family_id": "math03.remainders.family-2",
+          "prompt": "o(x²)一定也是O(x²)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。"
+          ],
+          "rubric": [
+            "是",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.remainders.3",
+          "skill_id": "math03.remainders",
+          "purpose": "learning",
+          "family_id": "math03.remainders.family-3",
+          "prompt": "O(x²)一定也是o(x²)吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。"
+          ],
+          "rubric": [
+            "否",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.remainders.4",
+          "skill_id": "math03.remainders",
+          "purpose": "transfer",
+          "family_id": "math03.remainders.family-4",
+          "prompt": "用sin(x)约为x，在|x|<=0.1时按三阶导数界给误差上界。",
+          "answer": "1/6000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。"
+          ],
+          "rubric": [
+            "1/6000",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.remainders.5",
+          "skill_id": "math03.remainders",
+          "purpose": "retention",
+          "family_id": "math03.remainders.family-5",
+          "prompt": "说明有全部阶导数为何仍不能直接等同泰勒级数。",
+          "answer": "还需证明相应余项在所讨论范围趋于0，光滑性本身不足",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。"
+          ],
+          "rubric": [
+            "还需证明相应余项在所讨论范围趋于0，光滑性本身不足",
+            "佩亚诺余项刻画局部高阶无穷小；拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "佩亚诺余项刻画局部高阶无穷小。",
+        "拉格朗日余项用区间导数界给误差，展开点、阶数与控制范围一致。"
+      ]
     }
   ]
 }

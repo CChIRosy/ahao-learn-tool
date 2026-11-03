@@ -1,7 +1,7 @@
 {
   "id": "math07",
   "name": "微分方程",
-  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62cdab46938b7cc2960eedb1",
   "skills": [
     {
       "id": "math07.concept",
@@ -1286,6 +1286,893 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math07.bernoulli",
+      "name": "伯努利方程与变量代换",
+      "aliases": [
+        "伯努利方程与变量代换",
+        "bernoulli"
+      ],
+      "prerequisites": [
+        "math07.linear"
+      ],
+      "tier": "core",
+      "teaching": "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.bernoulli.1",
+          "skill_id": "math07.bernoulli",
+          "purpose": "diagnostic",
+          "family_id": "math07.bernoulli.family-1",
+          "prompt": "y'+y=y^2，令z=1/y，所得方程为z'-z=-1吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。"
+          ],
+          "rubric": [
+            "是",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.bernoulli.2",
+          "skill_id": "math07.bernoulli",
+          "purpose": "diagnostic",
+          "family_id": "math07.bernoulli.family-2",
+          "prompt": "y'=y^2,y(0)=1，在含0且x<1的解。",
+          "answer": "1/(1-x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。"
+          ],
+          "rubric": [
+            "1/(1-x)",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.bernoulli.3",
+          "skill_id": "math07.bernoulli",
+          "purpose": "learning",
+          "family_id": "math07.bernoulli.family-3",
+          "prompt": "伯努利变换除以y时应单独核验y=0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。"
+          ],
+          "rubric": [
+            "是",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.bernoulli.4",
+          "skill_id": "math07.bernoulli",
+          "purpose": "transfer",
+          "family_id": "math07.bernoulli.family-4",
+          "prompt": "y'+y=y^2的常数解y=1成立吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。"
+          ],
+          "rubric": [
+            "是",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.bernoulli.5",
+          "skill_id": "math07.bernoulli",
+          "purpose": "retention",
+          "family_id": "math07.bernoulli.family-5",
+          "prompt": "n=1时伯努利方程本来就是一阶线性方程吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。"
+          ],
+          "rubric": [
+            "是",
+            "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性；除以y前保留零解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "y'+P*y=Q*y^n且n不为0或1时令z=y^(1-n)化为线性。",
+        "除以y前保留零解。"
+      ]
+    },
+    {
+      "id": "math07.reduction",
+      "name": "可降阶方程与解的结构",
+      "aliases": [
+        "可降阶方程与解的结构",
+        "reduction"
+      ],
+      "prerequisites": [
+        "math07.order"
+      ],
+      "tier": "core",
+      "teaching": "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.reduction.1",
+          "skill_id": "math07.reduction",
+          "purpose": "diagnostic",
+          "family_id": "math07.reduction.family-1",
+          "prompt": "y''=6*x且y(0)=0,y'(0)=0，求y。",
+          "answer": "x**3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。"
+          ],
+          "rubric": [
+            "x**3",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.reduction.2",
+          "skill_id": "math07.reduction",
+          "purpose": "diagnostic",
+          "family_id": "math07.reduction.family-2",
+          "prompt": "缺x并令p(y)=y'时y''=p*dp/dy吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。"
+          ],
+          "rubric": [
+            "是",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.reduction.3",
+          "skill_id": "math07.reduction",
+          "purpose": "learning",
+          "family_id": "math07.reduction.family-3",
+          "prompt": "y''=2且y(0)=1,y'(0)=0，求y。",
+          "answer": "1+x**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。"
+          ],
+          "rubric": [
+            "1+x**2",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.reduction.4",
+          "skill_id": "math07.reduction",
+          "purpose": "transfer",
+          "family_id": "math07.reduction.family-4",
+          "prompt": "两个非齐次方程同一右端的解相加一般仍是同一方程的解吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。"
+          ],
+          "rubric": [
+            "否",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.reduction.5",
+          "skill_id": "math07.reduction",
+          "purpose": "retention",
+          "family_id": "math07.reduction.family-5",
+          "prompt": "两个同一非齐次线性方程解之差满足对应齐次方程吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。"
+          ],
+          "rubric": [
+            "是",
+            "缺y时令p=y'；缺x时用y''=p*dp/dy；齐次线性解的线性组合与非齐次叠加分别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "缺y时令p=y'。",
+        "缺x时用y''=p*dp/dy。",
+        "齐次线性解的线性组合与非齐次叠加分别处理。"
+      ]
+    },
+    {
+      "id": "math07.variation-systems",
+      "name": "常数变易法与常系数方程组",
+      "aliases": [
+        "常数变易法与常系数方程组",
+        "variation-systems"
+      ],
+      "prerequisites": [
+        "math07.order",
+        "math07.linear"
+      ],
+      "tier": "core",
+      "teaching": "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.variation-systems.1",
+          "skill_id": "math07.variation-systems",
+          "purpose": "diagnostic",
+          "family_id": "math07.variation-systems.family-1",
+          "prompt": "y'=y,y(0)=1的解。",
+          "answer": "exp(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。"
+          ],
+          "rubric": [
+            "exp(x)",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.variation-systems.2",
+          "skill_id": "math07.variation-systems",
+          "purpose": "diagnostic",
+          "family_id": "math07.variation-systems.family-2",
+          "prompt": "系统x'=x,y'=2*y且x(0)=y(0)=1，求x+y。",
+          "answer": "exp(t)+exp(2*t)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。"
+          ],
+          "rubric": [
+            "exp(t)+exp(2*t)",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.variation-systems.3",
+          "skill_id": "math07.variation-systems",
+          "purpose": "learning",
+          "family_id": "math07.variation-systems.family-3",
+          "prompt": "方程组消元后所得高阶解还需代回另一方程吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。"
+          ],
+          "rubric": [
+            "是",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.variation-systems.4",
+          "skill_id": "math07.variation-systems",
+          "purpose": "transfer",
+          "family_id": "math07.variation-systems.family-4",
+          "prompt": "y'+y=exp(x),y(0)=0，求y。",
+          "answer": "(exp(x)-exp(-x))/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。"
+          ],
+          "rubric": [
+            "(exp(x)-exp(-x))/2",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.variation-systems.5",
+          "skill_id": "math07.variation-systems",
+          "purpose": "retention",
+          "family_id": "math07.variation-systems.family-5",
+          "prompt": "常数变易法只适用于常系数线性方程吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。"
+          ],
+          "rubric": [
+            "否",
+            "将齐次常数换成函数并列附加条件；线性系统可用消元或特征向量，重复根需检查独立解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "将齐次常数换成函数并列附加条件。",
+        "线性系统可用消元或特征向量，重复根需检查独立解。"
+      ]
+    },
+    {
+      "id": "math07.homogeneous-reducible",
+      "name": "齐次型方程与可化齐次的平移代换",
+      "aliases": [
+        "齐次型方程与可化齐次的平移代换",
+        "homogeneous-reducible"
+      ],
+      "prerequisites": [
+        "math07.separable",
+        "math07.linear"
+      ],
+      "tier": "core",
+      "teaching": "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.homogeneous-reducible.1",
+          "skill_id": "math07.homogeneous-reducible",
+          "purpose": "diagnostic",
+          "family_id": "math07.homogeneous-reducible.family-1",
+          "prompt": "y'=1+y/x，令y=u*x，x不为0时u'。",
+          "answer": "1/x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。"
+          ],
+          "rubric": [
+            "1/x",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.homogeneous-reducible.2",
+          "skill_id": "math07.homogeneous-reducible",
+          "purpose": "diagnostic",
+          "family_id": "math07.homogeneous-reducible.family-2",
+          "prompt": "方程y'=(x+y+1)/(x-y+3)，平移中心应取两条分子分母直线的交点吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。"
+          ],
+          "rubric": [
+            "是",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.homogeneous-reducible.3",
+          "skill_id": "math07.homogeneous-reducible",
+          "purpose": "learning",
+          "family_id": "math07.homogeneous-reducible.family-3",
+          "prompt": "上述平移中心坐标。",
+          "answer": "-2,1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。"
+          ],
+          "rubric": [
+            "-2,1",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.homogeneous-reducible.4",
+          "skill_id": "math07.homogeneous-reducible",
+          "purpose": "transfer",
+          "family_id": "math07.homogeneous-reducible.family-4",
+          "prompt": "两条线性式系数成比例时总能求到唯一交点再平移吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。"
+          ],
+          "rubric": [
+            "否",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.homogeneous-reducible.5",
+          "skill_id": "math07.homogeneous-reducible",
+          "purpose": "retention",
+          "family_id": "math07.homogeneous-reducible.family-5",
+          "prompt": "y'=y/x在x>0的解y=3*x成立吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。"
+          ],
+          "rubric": [
+            "是",
+            "y'=F(y/x)令y=u*x；含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "y'=F(y/x)令y=u*x。",
+        "含线性式比值时先求两直线交点平移，平行退化情形改用线性组合变量。"
+      ]
     }
   ]
 }

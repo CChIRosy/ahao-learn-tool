@@ -2,6 +2,8 @@
 
 日期：2026-11-03。环境：Windows、Python 3.13、SymPy 1.14.0、pytest 9.2.0。本页记录本地程序与合成流程检查；本轮改动和最终结果见[review-report.md](review-report.md)。
 
+0.2.0课程覆盖扩展结果见[coverage-release.md](coverage-release.md)：209个节点、1045题、175项测试通过。0.1.1语言与运行修复记录保留在review-report.md。
+
 ## 0.1.0 已执行
 
 1. `python tools/build_courses.py`：15个数据包，108个主题，540道题。

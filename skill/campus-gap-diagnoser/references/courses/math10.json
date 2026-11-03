@@ -839,6 +839,438 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math10.parameter",
+      "name": "含参积分、求导与参数边界",
+      "aliases": [
+        "含参积分、求导与参数边界",
+        "parameter"
+      ],
+      "prerequisites": [
+        "math05.ftc",
+        "math09.partial"
+      ],
+      "tier": "extension",
+      "teaching": "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math10.parameter.1",
+          "skill_id": "math10.parameter",
+          "purpose": "diagnostic",
+          "family_id": "math10.parameter.family-1",
+          "prompt": "F(t)=积分0到1 exp(t*x) dx，求F'(0)。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。"
+          ],
+          "rubric": [
+            "1/2",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.parameter.2",
+          "skill_id": "math10.parameter",
+          "purpose": "diagnostic",
+          "family_id": "math10.parameter.family-2",
+          "prompt": "F(t)=积分0到t x^2 dx，求F'(t)。",
+          "answer": "t**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。"
+          ],
+          "rubric": [
+            "t**2",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.parameter.3",
+          "skill_id": "math10.parameter",
+          "purpose": "learning",
+          "family_id": "math10.parameter.family-3",
+          "prompt": "积分区域边界变化时只求被积函数偏导就总是完整吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。"
+          ],
+          "rubric": [
+            "否",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.parameter.4",
+          "skill_id": "math10.parameter",
+          "purpose": "transfer",
+          "family_id": "math10.parameter.family-4",
+          "prompt": "F(t)=积分t到2*t x dx，求F'(t)。",
+          "answer": "3*t",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。"
+          ],
+          "rubric": [
+            "3*t",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.parameter.5",
+          "skill_id": "math10.parameter",
+          "purpose": "retention",
+          "family_id": "math10.parameter.family-5",
+          "prompt": "解释含参反常积分交换求导与积分应检查什么。",
+          "answer": "检查参数邻域的可微性与可积控制或相应一致收敛条件",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。"
+          ],
+          "rubric": [
+            "检查参数邻域的可微性与可积控制或相应一致收敛条件",
+            "积分号下求导须有连续或控制条件；上下限随参数变化时计入端点项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "积分号下求导须有连续或控制条件。",
+        "上下限随参数变化时计入端点项。"
+      ]
+    },
+    {
+      "id": "math10.surface-gravity",
+      "name": "重积分中的曲面面积与引力分量",
+      "aliases": [
+        "重积分中的曲面面积与引力分量",
+        "surface-gravity"
+      ],
+      "prerequisites": [
+        "math10.applications",
+        "math11.surface1"
+      ],
+      "tier": "core",
+      "teaching": "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math10.surface-gravity.1",
+          "skill_id": "math10.surface-gravity",
+          "purpose": "diagnostic",
+          "family_id": "math10.surface-gravity.family-1",
+          "prompt": "z=x+y在[0,2]乘[0,1]上的曲面面积。",
+          "answer": "2*sqrt(3)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。"
+          ],
+          "rubric": [
+            "2*sqrt(3)",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.surface-gravity.2",
+          "skill_id": "math10.surface-gravity",
+          "purpose": "diagnostic",
+          "family_id": "math10.surface-gravity.family-2",
+          "prompt": "均匀单位球对球心质点的合引力为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。"
+          ],
+          "rubric": [
+            "是",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.surface-gravity.3",
+          "skill_id": "math10.surface-gravity",
+          "purpose": "learning",
+          "family_id": "math10.surface-gravity.family-3",
+          "prompt": "均匀矩形[0,2]乘[0,4]的质心坐标。",
+          "answer": "1,2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。"
+          ],
+          "rubric": [
+            "1,2",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.surface-gravity.4",
+          "skill_id": "math10.surface-gravity",
+          "purpose": "transfer",
+          "family_id": "math10.surface-gravity.family-4",
+          "prompt": "引力矢量各分量能否仅用各力大小相加替代？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。"
+          ],
+          "rubric": [
+            "否",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.surface-gravity.5",
+          "skill_id": "math10.surface-gravity",
+          "purpose": "retention",
+          "family_id": "math10.surface-gravity.family-5",
+          "prompt": "均匀单位立方体对z轴的转动惯量，密度1。",
+          "answer": "2/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。"
+          ],
+          "rubric": [
+            "2/3",
+            "曲面面积积累图形面积元；引力先写方向分量再积分，对称性只能消去成对抵消的分量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "曲面面积积累图形面积元。",
+        "引力先写方向分量再积分，对称性只能消去成对抵消的分量。"
+      ]
     }
   ]
 }

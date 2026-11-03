@@ -1,15 +1,15 @@
 {
   "modules": 15,
-  "skills": 108,
-  "questions": 540,
-  "parsed_keys": 540,
-  "independent_calculations": 224,
+  "skills": 209,
+  "questions": 1045,
+  "parsed_keys": 1045,
+  "independent_calculations": 401,
   "teacher_reviewed": 0,
   "student_validated": 0,
   "failures": [],
-  "version": "0.1.1",
-  "package_files": 25,
-  "uncompressed_bytes": 981839,
-  "zip_bytes": 84489,
-  "zip_sha256": "3b7abc7fe4a11ea29d998231a73aac88868a296687cba599efae1c2e7c04e22b"
+  "version": "0.2.0",
+  "package_files": 26,
+  "uncompressed_bytes": 2027312,
+  "zip_bytes": 150553,
+  "zip_sha256": "625ce2f6b5918272bbbf6a8e3419ae3017957d337bf1d3c838ea688e86e93371"
 }

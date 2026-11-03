@@ -1284,6 +1284,1098 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math09.differentiability",
+      "name": "多元可微性、偏导连续与近似",
+      "aliases": [
+        "多元可微性、偏导连续与近似",
+        "differentiability"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "math09.limits"
+      ],
+      "tier": "core",
+      "teaching": "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.differentiability.1",
+          "skill_id": "math09.differentiability",
+          "purpose": "diagnostic",
+          "family_id": "math09.differentiability.family-1",
+          "prompt": "二元函数两个偏导存在就一定连续吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。"
+          ],
+          "rubric": [
+            "否",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.differentiability.2",
+          "skill_id": "math09.differentiability",
+          "purpose": "diagnostic",
+          "family_id": "math09.differentiability.family-2",
+          "prompt": "邻域内偏导连续是否是可微的充分条件？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。"
+          ],
+          "rubric": [
+            "是",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.differentiability.3",
+          "skill_id": "math09.differentiability",
+          "purpose": "learning",
+          "family_id": "math09.differentiability.family-3",
+          "prompt": "f=x^2+y^2在(1,2)处全微分对dx,dy的系数。",
+          "answer": "2,4",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。"
+          ],
+          "rubric": [
+            "2,4",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.differentiability.4",
+          "skill_id": "math09.differentiability",
+          "purpose": "transfer",
+          "family_id": "math09.differentiability.family-4",
+          "prompt": "说明检验不可微可采用的路径反例思路。",
+          "answer": "检查函数连续性或余项除以增量长度沿不同路径的极限",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。"
+          ],
+          "rubric": [
+            "检查函数连续性或余项除以增量长度沿不同路径的极限",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.differentiability.5",
+          "skill_id": "math09.differentiability",
+          "purpose": "retention",
+          "family_id": "math09.differentiability.family-5",
+          "prompt": "f=x*y在(1,1)，dx=0.01,dy=0.02时线性增量。",
+          "answer": "0.03",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。"
+          ],
+          "rubric": [
+            "0.03",
+            "全微分要求增量减线性主部为高阶无穷小；偏导存在不足以保证可微，邻域偏导连续可保证可微。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "全微分要求增量减线性主部为高阶无穷小。",
+        "偏导存在不足以保证可微，邻域偏导连续可保证可微。"
+      ]
+    },
+    {
+      "id": "math09.vector-curves",
+      "name": "向量值函数、空间切线与法平面",
+      "aliases": [
+        "向量值函数、空间切线与法平面",
+        "vector-curves"
+      ],
+      "prerequisites": [
+        "math08.vectors",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "teaching": "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.vector-curves.1",
+          "skill_id": "math09.vector-curves",
+          "purpose": "diagnostic",
+          "family_id": "math09.vector-curves.family-1",
+          "prompt": "r(t)=(t,t^2,t^3)，t=1处切向量。",
+          "answer": "1,2,3",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。"
+          ],
+          "rubric": [
+            "1,2,3",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "vector_equivalence": "parallel"
+        },
+        {
+          "id": "math09.vector-curves.2",
+          "skill_id": "math09.vector-curves",
+          "purpose": "diagnostic",
+          "family_id": "math09.vector-curves.family-2",
+          "prompt": "r(t)=(cos(t),sin(t),t)的速率。",
+          "answer": "sqrt(2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。"
+          ],
+          "rubric": [
+            "sqrt(2)",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.vector-curves.3",
+          "skill_id": "math09.vector-curves",
+          "purpose": "learning",
+          "family_id": "math09.vector-curves.family-3",
+          "prompt": "r(t)=(t,2*t,3*t)在0处法平面的一个法向量。",
+          "answer": "1,2,3",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。"
+          ],
+          "rubric": [
+            "1,2,3",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "vector_equivalence": "parallel"
+        },
+        {
+          "id": "math09.vector-curves.4",
+          "skill_id": "math09.vector-curves",
+          "purpose": "transfer",
+          "family_id": "math09.vector-curves.family-4",
+          "prompt": "曲线切向量为零时能直接使用该向量确定唯一切线吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。"
+          ],
+          "rubric": [
+            "否",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.vector-curves.5",
+          "skill_id": "math09.vector-curves",
+          "purpose": "retention",
+          "family_id": "math09.vector-curves.family-5",
+          "prompt": "空间曲线的法平面垂直于该点切线吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。"
+          ],
+          "rubric": [
+            "是",
+            "向量函数逐分量求导；非零切向量给切线方向，也给法平面的法向量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "向量函数逐分量求导。",
+        "非零切向量给切线方向，也给法平面的法向量。"
+      ]
+    },
+    {
+      "id": "math09.taylor",
+      "name": "二元泰勒展开与二次型判别",
+      "aliases": [
+        "二元泰勒展开与二次型判别",
+        "taylor"
+      ],
+      "prerequisites": [
+        "math09.extrema",
+        "math03.taylor"
+      ],
+      "tier": "extension",
+      "teaching": "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.taylor.1",
+          "skill_id": "math09.taylor",
+          "purpose": "diagnostic",
+          "family_id": "math09.taylor.family-1",
+          "prompt": "exp(x+y)在(0,0)的二阶多项式。",
+          "answer": "1+x+y+(x+y)**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。"
+          ],
+          "rubric": [
+            "1+x+y+(x+y)**2/2",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.taylor.2",
+          "skill_id": "math09.taylor",
+          "purpose": "diagnostic",
+          "family_id": "math09.taylor.family-2",
+          "prompt": "f=x^2+2*x*y+3*y^2在原点的混合二阶偏导。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。"
+          ],
+          "rubric": [
+            "2",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.taylor.3",
+          "skill_id": "math09.taylor",
+          "purpose": "learning",
+          "family_id": "math09.taylor.family-3",
+          "prompt": "二阶型判别式为0时能直接判定为极小值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。"
+          ],
+          "rubric": [
+            "否",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.taylor.4",
+          "skill_id": "math09.taylor",
+          "purpose": "transfer",
+          "family_id": "math09.taylor.family-4",
+          "prompt": "x^2+y^2在原点的Hessian行列式。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。"
+          ],
+          "rubric": [
+            "4",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.taylor.5",
+          "skill_id": "math09.taylor",
+          "purpose": "retention",
+          "family_id": "math09.taylor.family-5",
+          "prompt": "x^2-y^2在原点为鞍点吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。"
+          ],
+          "rubric": [
+            "是",
+            "保留展开点、混合项和余项；二阶型正定或负定给驻点充分判别，退化时继续分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "保留展开点、混合项和余项。",
+        "二阶型正定或负定给驻点充分判别，退化时继续分析。"
+      ]
+    },
+    {
+      "id": "math09.least-squares",
+      "name": "最小二乘拟合与正规方程",
+      "aliases": [
+        "最小二乘拟合与正规方程",
+        "least-squares"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "structures.algebra-bridge"
+      ],
+      "tier": "extension",
+      "teaching": "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.least-squares.1",
+          "skill_id": "math09.least-squares",
+          "purpose": "diagnostic",
+          "family_id": "math09.least-squares.family-1",
+          "prompt": "用常数c拟合观测1、2、3，平方和最小时c。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。"
+          ],
+          "rubric": [
+            "2",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.least-squares.2",
+          "skill_id": "math09.least-squares",
+          "purpose": "diagnostic",
+          "family_id": "math09.least-squares.family-2",
+          "prompt": "用y=a*x过原点拟合(1,2),(2,3)，求a。",
+          "answer": "8/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。"
+          ],
+          "rubric": [
+            "8/5",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.least-squares.3",
+          "skill_id": "math09.least-squares",
+          "purpose": "learning",
+          "family_id": "math09.least-squares.family-3",
+          "prompt": "常数拟合的最小二乘解是观测平均值吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。"
+          ],
+          "rubric": [
+            "是",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.least-squares.4",
+          "skill_id": "math09.least-squares",
+          "purpose": "transfer",
+          "family_id": "math09.least-squares.family-4",
+          "prompt": "设计矩阵秩亏时参数必唯一吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。"
+          ],
+          "rubric": [
+            "否",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.least-squares.5",
+          "skill_id": "math09.least-squares",
+          "purpose": "retention",
+          "family_id": "math09.least-squares.family-5",
+          "prompt": "用y=a*x+b精确拟合(0,1),(1,3)，给a,b。",
+          "answer": "2,1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。"
+          ],
+          "rubric": [
+            "2,1",
+            "将残差平方和对参数求偏导得到正规方程；列满秩时参数唯一，秩亏时需额外约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "将残差平方和对参数求偏导得到正规方程。",
+        "列满秩时参数唯一，秩亏时需额外约束。"
+      ]
+    },
+    {
+      "id": "math09.implicit-systems",
+      "name": "隐函数组、雅可比与联立求导",
+      "aliases": [
+        "隐函数组、雅可比与联立求导",
+        "implicit-systems"
+      ],
+      "prerequisites": [
+        "math09.chain",
+        "structures.algebra-bridge"
+      ],
+      "tier": "core",
+      "teaching": "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.implicit-systems.1",
+          "skill_id": "math09.implicit-systems",
+          "purpose": "diagnostic",
+          "family_id": "math09.implicit-systems.family-1",
+          "prompt": "u+v=x，u-v=x²，求du/dx。",
+          "answer": "1/2+x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。"
+          ],
+          "rubric": [
+            "1/2+x",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.implicit-systems.2",
+          "skill_id": "math09.implicit-systems",
+          "purpose": "diagnostic",
+          "family_id": "math09.implicit-systems.family-2",
+          "prompt": "同一方程组求dv/dx。",
+          "answer": "1/2-x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。"
+          ],
+          "rubric": [
+            "1/2-x",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.implicit-systems.3",
+          "skill_id": "math09.implicit-systems",
+          "purpose": "learning",
+          "family_id": "math09.implicit-systems.family-3",
+          "prompt": "隐函数组雅可比行列式非零是常用局部可解充分条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。"
+          ],
+          "rubric": [
+            "是",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.implicit-systems.4",
+          "skill_id": "math09.implicit-systems",
+          "purpose": "transfer",
+          "family_id": "math09.implicit-systems.family-4",
+          "prompt": "F=x+y+z,G=y-z，对y,z的雅可比行列式。",
+          "answer": "-2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。"
+          ],
+          "rubric": [
+            "-2",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.implicit-systems.5",
+          "skill_id": "math09.implicit-systems",
+          "purpose": "retention",
+          "family_id": "math09.implicit-systems.family-5",
+          "prompt": "雅可比行列式为0时就能直接断言所有隐函数不存在吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。"
+          ],
+          "rubric": [
+            "否",
+            "函数组的从属变量雅可比可逆时局部可求隐函数；对自变量求导后联立线性方程，先核验系数行列式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "函数组的从属变量雅可比可逆时局部可求隐函数。",
+        "对自变量求导后联立线性方程，先核验系数行列式。"
+      ]
     }
   ]
 }

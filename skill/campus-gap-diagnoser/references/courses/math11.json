@@ -1277,6 +1277,438 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "math11.surface-orientation",
+      "name": "曲面积分的投影计算与两类积分联系",
+      "aliases": [
+        "曲面积分的投影计算与两类积分联系",
+        "surface-orientation"
+      ],
+      "prerequisites": [
+        "math11.surface1",
+        "math11.gauss"
+      ],
+      "tier": "core",
+      "teaching": "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.surface-orientation.1",
+          "skill_id": "math11.surface-orientation",
+          "purpose": "diagnostic",
+          "family_id": "math11.surface-orientation.family-1",
+          "prompt": "向上定向z=x+y，F=(0,0,1)，投影为单位正方形，通量。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。"
+          ],
+          "rubric": [
+            "1",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.surface-orientation.2",
+          "skill_id": "math11.surface-orientation",
+          "purpose": "diagnostic",
+          "family_id": "math11.surface-orientation.family-2",
+          "prompt": "上述曲面第一类积分积分1 dS。",
+          "answer": "sqrt(3)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。"
+          ],
+          "rubric": [
+            "sqrt(3)",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.surface-orientation.3",
+          "skill_id": "math11.surface-orientation",
+          "purpose": "learning",
+          "family_id": "math11.surface-orientation.family-3",
+          "prompt": "向下定向同一曲面，上述通量。",
+          "answer": "-1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。"
+          ],
+          "rubric": [
+            "-1",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.surface-orientation.4",
+          "skill_id": "math11.surface-orientation",
+          "purpose": "transfer",
+          "family_id": "math11.surface-orientation.family-4",
+          "prompt": "通量中能把带方向的法向面积元一律换成其绝对值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。"
+          ],
+          "rubric": [
+            "否",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.surface-orientation.5",
+          "skill_id": "math11.surface-orientation",
+          "purpose": "retention",
+          "family_id": "math11.surface-orientation.family-5",
+          "prompt": "F=(1,0,0)穿过向上定向z=x+y的单位投影曲面通量。",
+          "answer": "-1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。"
+          ],
+          "rubric": [
+            "-1",
+            "定向通量用F点乘单位法向乘dS；投影公式按法向分量及定向符号，第一类积分使用正面积元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "定向通量用F点乘单位法向乘dS。",
+        "投影公式按法向分量及定向符号，第一类积分使用正面积元。"
+      ]
+    },
+    {
+      "id": "math11.line-connections",
+      "name": "曲线积分的定向、两类联系与空间势函数",
+      "aliases": [
+        "曲线积分的定向、两类联系与空间势函数",
+        "line-connections"
+      ],
+      "prerequisites": [
+        "math11.potential",
+        "math11.stokes"
+      ],
+      "tier": "core",
+      "teaching": "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.line-connections.1",
+          "skill_id": "math11.line-connections",
+          "purpose": "diagnostic",
+          "family_id": "math11.line-connections.family-1",
+          "prompt": "F=(1,0)，沿x轴从0到2的功。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。"
+          ],
+          "rubric": [
+            "2",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line-connections.2",
+          "skill_id": "math11.line-connections",
+          "purpose": "diagnostic",
+          "family_id": "math11.line-connections.family-2",
+          "prompt": "反向走同一路径，上述功。",
+          "answer": "-2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。"
+          ],
+          "rubric": [
+            "-2",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line-connections.3",
+          "skill_id": "math11.line-connections",
+          "purpose": "learning",
+          "family_id": "math11.line-connections.family-3",
+          "prompt": "第一类曲线积分反向后数值变号吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。"
+          ],
+          "rubric": [
+            "否",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.line-connections.4",
+          "skill_id": "math11.line-connections",
+          "purpose": "transfer",
+          "family_id": "math11.line-connections.family-4",
+          "prompt": "F=(2*x,2*y,2*z)从原点到(1,1,1)的线积分。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。"
+          ],
+          "rubric": [
+            "3",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line-connections.5",
+          "skill_id": "math11.line-connections",
+          "purpose": "retention",
+          "family_id": "math11.line-connections.family-5",
+          "prompt": "旋度为零但定义域有孔时，可省略全局路径核验吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域作答",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。"
+          ],
+          "rubric": [
+            "否",
+            "第二类积分是力场沿单位切向的分量乘ds；空间势函数需核对定义域与全局路径条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "第二类积分是力场沿单位切向的分量乘ds。",
+        "空间势函数需核对定义域与全局路径条件。"
+      ]
     }
   ]
 }

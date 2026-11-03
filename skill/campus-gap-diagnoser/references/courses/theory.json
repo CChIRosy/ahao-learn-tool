@@ -2817,6 +2817,4399 @@
         "teacher_reviewed": false,
         "student_validated": false
       }
+    },
+    {
+      "id": "theory.force-systems",
+      "name": "静力学公理、汇交与平行力系",
+      "aliases": [
+        "静力学公理、汇交与平行力系",
+        "force-systems"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "theory.force"
+      ],
+      "tier": "core",
+      "teaching": "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.force-systems.1",
+          "skill_id": "theory.force-systems",
+          "purpose": "diagnostic",
+          "family_id": "theory.force-systems.family-1",
+          "prompt": "两个相互垂直的力3牛与4牛，合力大小。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。"
+          ],
+          "rubric": [
+            "5",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.force-systems.2",
+          "skill_id": "theory.force-systems",
+          "purpose": "diagnostic",
+          "family_id": "theory.force-systems.family-2",
+          "prompt": "一对作用力与反作用力画在同一物体上就总能作为平衡力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。"
+          ],
+          "rubric": [
+            "否",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.force-systems.3",
+          "skill_id": "theory.force-systems",
+          "purpose": "learning",
+          "family_id": "theory.force-systems.family-3",
+          "prompt": "同向平行力2牛与6牛分别作用于x=0和x=4米，合力作用点x。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。"
+          ],
+          "rubric": [
+            "3",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.force-systems.4",
+          "skill_id": "theory.force-systems",
+          "purpose": "transfer",
+          "family_id": "theory.force-systems.family-4",
+          "prompt": "刚体上的力沿自身作用线移动保持刚体外效应吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。"
+          ],
+          "rubric": [
+            "是",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.force-systems.5",
+          "skill_id": "theory.force-systems",
+          "purpose": "retention",
+          "family_id": "theory.force-systems.family-5",
+          "prompt": "说明合力为零与力系平衡的关系。",
+          "answer": "还需合力矩为零，纯力偶的合力为零但不平衡",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。"
+          ],
+          "rubric": [
+            "还需合力矩为零，纯力偶的合力为零但不平衡",
+            "在刚体模型下应用力的可传性；汇交力系按分量合成，平行力系还须由合矩确定作用线。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "在刚体模型下应用力的可传性。",
+        "汇交力系按分量合成，平行力系还须由合矩确定作用线。"
+      ]
+    },
+    {
+      "id": "theory.space",
+      "name": "空间力系、主矢主矩与力螺旋",
+      "aliases": [
+        "空间力系、主矢主矩与力螺旋",
+        "space"
+      ],
+      "prerequisites": [
+        "theory.force",
+        "math08.products"
+      ],
+      "tier": "core",
+      "teaching": "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.space.1",
+          "skill_id": "theory.space",
+          "purpose": "diagnostic",
+          "family_id": "theory.space.family-1",
+          "prompt": "r=(1,0,0)米，F=(0,2,3)牛，关于原点的力矩向量。",
+          "answer": "0,-3,2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。"
+          ],
+          "rubric": [
+            "0,-3,2",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.space.2",
+          "skill_id": "theory.space",
+          "purpose": "diagnostic",
+          "family_id": "theory.space.family-2",
+          "prompt": "空间一般力系平衡一般需要六个独立标量条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。"
+          ],
+          "rubric": [
+            "是",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.space.3",
+          "skill_id": "theory.space",
+          "purpose": "learning",
+          "family_id": "theory.space.family-3",
+          "prompt": "主矢为零时，主矩是否随简化点改变？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。"
+          ],
+          "rubric": [
+            "否",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.space.4",
+          "skill_id": "theory.space",
+          "purpose": "transfer",
+          "family_id": "theory.space.family-4",
+          "prompt": "解释力螺旋的合力和力偶方向关系。",
+          "answer": "简化为沿中心轴的合力和与该轴平行的力偶，纯力偶等退化情形另论",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。"
+          ],
+          "rubric": [
+            "简化为沿中心轴的合力和与该轴平行的力偶，纯力偶等退化情形另论",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.space.5",
+          "skill_id": "theory.space",
+          "purpose": "retention",
+          "family_id": "theory.space.family-5",
+          "prompt": "关于z轴的矩等于对原点矩的z分量吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。"
+          ],
+          "rubric": [
+            "是",
+            "空间一般力系用三力分量与三矩分量平衡；主矩随简化点改变，力对轴矩取对点矩的轴投影。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "空间一般力系用三力分量与三矩分量平衡。",
+        "主矩随简化点改变，力对轴矩取对点矩的轴投影。"
+      ]
+    },
+    {
+      "id": "theory.centroid",
+      "name": "重心、形心与组合体",
+      "aliases": [
+        "重心、形心与组合体",
+        "centroid"
+      ],
+      "prerequisites": [
+        "theory.balance",
+        "math10.applications"
+      ],
+      "tier": "core",
+      "teaching": "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.centroid.1",
+          "skill_id": "theory.centroid",
+          "purpose": "diagnostic",
+          "family_id": "theory.centroid.family-1",
+          "prompt": "1千克质点在x=0，3千克质点在x=4米，重心x。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。"
+          ],
+          "rubric": [
+            "3",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.centroid.2",
+          "skill_id": "theory.centroid",
+          "purpose": "diagnostic",
+          "family_id": "theory.centroid.family-2",
+          "prompt": "均匀三角薄板的形心距底边为高的三分之一吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。"
+          ],
+          "rubric": [
+            "是",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.centroid.3",
+          "skill_id": "theory.centroid",
+          "purpose": "learning",
+          "family_id": "theory.centroid.family-3",
+          "prompt": "均匀半径r半圆弧的形心距圆心。",
+          "answer": "2*r/pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。"
+          ],
+          "rubric": [
+            "2*r/pi",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.centroid.4",
+          "skill_id": "theory.centroid",
+          "purpose": "transfer",
+          "family_id": "theory.centroid.family-4",
+          "prompt": "同一几何形状在非均匀密度下形心必等于重心吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。"
+          ],
+          "rubric": [
+            "否",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.centroid.5",
+          "skill_id": "theory.centroid",
+          "purpose": "retention",
+          "family_id": "theory.centroid.family-5",
+          "prompt": "均匀半径r半圆薄板形心距直径。",
+          "answer": "4*r/(3*pi)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。"
+          ],
+          "rubric": [
+            "4*r/(3*pi)",
+            "均匀重力场用重量加权重心；均匀薄板可用面积加权形心，挖孔作为负面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "均匀重力场用重量加权重心。",
+        "均匀薄板可用面积加权形心，挖孔作为负面积。"
+      ]
+    },
+    {
+      "id": "theory.friction-angle",
+      "name": "摩擦角、摩擦锥、自锁与滚动摩阻",
+      "aliases": [
+        "摩擦角、摩擦锥、自锁与滚动摩阻",
+        "friction-angle"
+      ],
+      "prerequisites": [
+        "theory.friction"
+      ],
+      "tier": "core",
+      "teaching": "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.friction-angle.1",
+          "skill_id": "theory.friction-angle",
+          "purpose": "diagnostic",
+          "family_id": "theory.friction-angle.family-1",
+          "prompt": "mu=1时摩擦角（弧度）。",
+          "answer": "pi/4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。"
+          ],
+          "rubric": [
+            "pi/4",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.friction-angle.2",
+          "skill_id": "theory.friction-angle",
+          "purpose": "diagnostic",
+          "family_id": "theory.friction-angle.family-2",
+          "prompt": "斜面角小于摩擦角且无其他外力时，静止块可自锁吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。"
+          ],
+          "rubric": [
+            "是",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.friction-angle.3",
+          "skill_id": "theory.friction-angle",
+          "purpose": "learning",
+          "family_id": "theory.friction-angle.family-3",
+          "prompt": "滚动摩阻力矩M=N*delta，N=100牛、delta=0.002米，M数值。",
+          "answer": "1/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。"
+          ],
+          "rubric": [
+            "1/5",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.friction-angle.4",
+          "skill_id": "theory.friction-angle",
+          "purpose": "transfer",
+          "family_id": "theory.friction-angle.family-4",
+          "prompt": "把滚动摩阻系数长度delta直接当无量纲滑动系数mu使用正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。"
+          ],
+          "rubric": [
+            "否",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.friction-angle.5",
+          "skill_id": "theory.friction-angle",
+          "purpose": "retention",
+          "family_id": "theory.friction-angle.family-5",
+          "prompt": "说明摩擦锥内合反力的物理含义。",
+          "answer": "其切向分量未超过静摩擦极限，满足相应接触和法向非负条件时可保持不滑动",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。"
+          ],
+          "rubric": [
+            "其切向分量未超过静摩擦极限，满足相应接触和法向非负条件时可保持不滑动",
+            "极限摩擦角满足tan(phi)=mu；自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "极限摩擦角满足tan(phi)=mu。",
+        "自锁取决于几何与摩擦，滚动摩阻是阻碍转动的力矩模型。"
+      ]
+    },
+    {
+      "id": "theory.polar",
+      "name": "自然坐标与极坐标运动学",
+      "aliases": [
+        "自然坐标与极坐标运动学",
+        "polar"
+      ],
+      "prerequisites": [
+        "theory.point"
+      ],
+      "tier": "core",
+      "teaching": "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.polar.1",
+          "skill_id": "theory.polar",
+          "purpose": "diagnostic",
+          "family_id": "theory.polar.family-1",
+          "prompt": "速率4米/秒、曲率半径2米，法向加速度。",
+          "answer": "8",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。"
+          ],
+          "rubric": [
+            "8",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.polar.2",
+          "skill_id": "theory.polar",
+          "purpose": "diagnostic",
+          "family_id": "theory.polar.family-2",
+          "prompt": "r=2米恒定、theta'=3弧度/秒，径向加速度。",
+          "answer": "-18",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。"
+          ],
+          "rubric": [
+            "-18",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.polar.3",
+          "skill_id": "theory.polar",
+          "purpose": "learning",
+          "family_id": "theory.polar.family-3",
+          "prompt": "r'=1、theta'=2、theta''=0，横向加速度。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。"
+          ],
+          "rubric": [
+            "4",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.polar.4",
+          "skill_id": "theory.polar",
+          "purpose": "transfer",
+          "family_id": "theory.polar.family-4",
+          "prompt": "曲线运动速率恒定能推出切向加速度为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。"
+          ],
+          "rubric": [
+            "是",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.polar.5",
+          "skill_id": "theory.polar",
+          "purpose": "retention",
+          "family_id": "theory.polar.family-5",
+          "prompt": "径向加速度永远等于r''吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。"
+          ],
+          "rubric": [
+            "否",
+            "自然坐标分切向dv/dt与法向v²/rho；极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "自然坐标分切向dv/dt与法向v²/rho。",
+        "极坐标加速度含r''-r*theta'^2和r*theta''+2*r'*theta'。"
+      ]
+    },
+    {
+      "id": "theory.planar-acceleration",
+      "name": "刚体平面运动的基点法与瞬心",
+      "aliases": [
+        "刚体平面运动的基点法与瞬心",
+        "planar-acceleration"
+      ],
+      "prerequisites": [
+        "theory.rigid"
+      ],
+      "tier": "core",
+      "teaching": "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.planar-acceleration.1",
+          "skill_id": "theory.planar-acceleration",
+          "purpose": "diagnostic",
+          "family_id": "theory.planar-acceleration.family-1",
+          "prompt": "vA=0，rBA=(2,0)，omega=3逆时针，vB的平面分量。",
+          "answer": "0,6",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。"
+          ],
+          "rubric": [
+            "0,6",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.planar-acceleration.2",
+          "skill_id": "theory.planar-acceleration",
+          "purpose": "diagnostic",
+          "family_id": "theory.planar-acceleration.family-2",
+          "prompt": "aA=0,alpha=0，rBA=(2,0)，omega=3，aB分量。",
+          "answer": "-18,0",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。"
+          ],
+          "rubric": [
+            "-18,0",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.planar-acceleration.3",
+          "skill_id": "theory.planar-acceleration",
+          "purpose": "learning",
+          "family_id": "theory.planar-acceleration.family-3",
+          "prompt": "瞬心速度为0就必有加速度0吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。"
+          ],
+          "rubric": [
+            "否",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.planar-acceleration.4",
+          "skill_id": "theory.planar-acceleration",
+          "purpose": "transfer",
+          "family_id": "theory.planar-acceleration.family-4",
+          "prompt": "纯滚动圆轮轮心速率v，最高点速率。",
+          "answer": "2*v",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。"
+          ],
+          "rubric": [
+            "2*v",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.planar-acceleration.5",
+          "skill_id": "theory.planar-acceleration",
+          "purpose": "retention",
+          "family_id": "theory.planar-acceleration.family-5",
+          "prompt": "两个点速度投影到连线方向相等是刚体运动的约束吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。"
+          ],
+          "rubric": [
+            "是",
+            "速度用vB=vA+omega叉rBA；加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "速度用vB=vA+omega叉rBA。",
+        "加速度另含角加速度切向项与向心项，瞬时速度中心通常有加速度。"
+      ]
+    },
+    {
+      "id": "theory.coriolis",
+      "name": "牵连运动与科氏加速度计算",
+      "aliases": [
+        "牵连运动与科氏加速度计算",
+        "coriolis"
+      ],
+      "prerequisites": [
+        "theory.relative",
+        "math08.products"
+      ],
+      "tier": "core",
+      "teaching": "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.coriolis.1",
+          "skill_id": "theory.coriolis",
+          "purpose": "diagnostic",
+          "family_id": "theory.coriolis.family-1",
+          "prompt": "omega=(0,0,2)，vrel=(3,0,0)，科氏加速度分量。",
+          "answer": "0,12,0",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。"
+          ],
+          "rubric": [
+            "0,12,0",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.coriolis.2",
+          "skill_id": "theory.coriolis",
+          "purpose": "diagnostic",
+          "family_id": "theory.coriolis.family-2",
+          "prompt": "动系只作平动，科氏项为零吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。"
+          ],
+          "rubric": [
+            "是",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.coriolis.3",
+          "skill_id": "theory.coriolis",
+          "purpose": "learning",
+          "family_id": "theory.coriolis.family-3",
+          "prompt": "omega与vrel平行时科氏项为零吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。"
+          ],
+          "rubric": [
+            "是",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.coriolis.4",
+          "skill_id": "theory.coriolis",
+          "purpose": "transfer",
+          "family_id": "theory.coriolis.family-4",
+          "prompt": "旋转动系中即使相对速度为0，牵连加速度仍可能非零吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。"
+          ],
+          "rubric": [
+            "是",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.coriolis.5",
+          "skill_id": "theory.coriolis",
+          "purpose": "retention",
+          "family_id": "theory.coriolis.family-5",
+          "prompt": "说明先选动系再列合成公式的原因。",
+          "answer": "相对和牵连运动均依赖动系，选定后才能正确划分运动和计算各项",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。"
+          ],
+          "rubric": [
+            "相对和牵连运动均依赖动系，选定后才能正确划分运动和计算各项",
+            "先选动系，再分相对、牵连及科氏项；科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "先选动系，再分相对、牵连及科氏项。",
+        "科氏项为2*omega叉vrel，平行动系转轴的相对速度使该项为零。"
+      ]
+    },
+    {
+      "id": "theory.relative-dynamics",
+      "name": "非惯性系中的质点动力学",
+      "aliases": [
+        "非惯性系中的质点动力学",
+        "relative-dynamics"
+      ],
+      "prerequisites": [
+        "theory.coriolis",
+        "theory.newton"
+      ],
+      "tier": "core",
+      "teaching": "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.relative-dynamics.1",
+          "skill_id": "theory.relative-dynamics",
+          "purpose": "diagnostic",
+          "family_id": "theory.relative-dynamics.family-1",
+          "prompt": "质量2千克，动系向右加速度3米/秒²，平移惯性力向右分量。",
+          "answer": "-6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。"
+          ],
+          "rubric": [
+            "-6",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.relative-dynamics.2",
+          "skill_id": "theory.relative-dynamics",
+          "purpose": "diagnostic",
+          "family_id": "theory.relative-dynamics.family-2",
+          "prompt": "匀速平移动系仍为惯性系吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。"
+          ],
+          "rubric": [
+            "是",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.relative-dynamics.3",
+          "skill_id": "theory.relative-dynamics",
+          "purpose": "learning",
+          "family_id": "theory.relative-dynamics.family-3",
+          "prompt": "旋转系中的离心惯性力沿远离转轴方向吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。"
+          ],
+          "rubric": [
+            "是",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.relative-dynamics.4",
+          "skill_id": "theory.relative-dynamics",
+          "purpose": "transfer",
+          "family_id": "theory.relative-dynamics.family-4",
+          "prompt": "质量1千克、omega=2弧度/秒、r=3米，离心惯性力大小。",
+          "answer": "12",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。"
+          ],
+          "rubric": [
+            "12",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.relative-dynamics.5",
+          "skill_id": "theory.relative-dynamics",
+          "purpose": "retention",
+          "family_id": "theory.relative-dynamics.family-5",
+          "prompt": "在旋转系中可以只列真实力等于相对质量加速度而省略惯性项吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。"
+          ],
+          "rubric": [
+            "否",
+            "在平动或转动系中加入对应惯性项；离心、科氏等项源于坐标系运动，需与真实相互作用力区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "在平动或转动系中加入对应惯性项。",
+        "离心、科氏等项源于坐标系运动，需与真实相互作用力区分。"
+      ]
+    },
+    {
+      "id": "theory.inertia",
+      "name": "质量转动惯量、平行轴与惯性积",
+      "aliases": [
+        "质量转动惯量、平行轴与惯性积",
+        "inertia"
+      ],
+      "prerequisites": [
+        "theory.angular",
+        "math10.applications"
+      ],
+      "tier": "core",
+      "teaching": "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.inertia.1",
+          "skill_id": "theory.inertia",
+          "purpose": "diagnostic",
+          "family_id": "theory.inertia.family-1",
+          "prompt": "细杆质量3千克、长2米，绕中点垂直杆轴的转动惯量。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。"
+          ],
+          "rubric": [
+            "1",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.inertia.2",
+          "skill_id": "theory.inertia",
+          "purpose": "diagnostic",
+          "family_id": "theory.inertia.family-2",
+          "prompt": "上述细杆绕端点垂直杆轴的转动惯量。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。"
+          ],
+          "rubric": [
+            "4",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.inertia.3",
+          "skill_id": "theory.inertia",
+          "purpose": "learning",
+          "family_id": "theory.inertia.family-3",
+          "prompt": "两平行轴距离d时平行轴公式要求其中一轴过质心吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。"
+          ],
+          "rubric": [
+            "是",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.inertia.4",
+          "skill_id": "theory.inertia",
+          "purpose": "transfer",
+          "family_id": "theory.inertia.family-4",
+          "prompt": "薄板对垂直板面的z轴，是否有Jz=Jx+Jy（x,y轴在板内交于同点）？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。"
+          ],
+          "rubric": [
+            "是",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.inertia.5",
+          "skill_id": "theory.inertia",
+          "purpose": "retention",
+          "family_id": "theory.inertia.family-5",
+          "prompt": "质量转动惯量单位是千克米²吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。"
+          ],
+          "rubric": [
+            "是",
+            "J=积分到轴距离平方乘dm；平行轴加m*d²；惯性张量的非对角元与惯性积符号约定对应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "J=积分到轴距离平方乘dm。",
+        "平行轴加m*d²。",
+        "惯性张量的非对角元与惯性积符号约定对应。"
+      ]
+    },
+    {
+      "id": "theory.konig",
+      "name": "质心运动与柯尼希动能分解",
+      "aliases": [
+        "质心运动与柯尼希动能分解",
+        "konig"
+      ],
+      "prerequisites": [
+        "theory.energy",
+        "theory.inertia"
+      ],
+      "tier": "core",
+      "teaching": "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.konig.1",
+          "skill_id": "theory.konig",
+          "purpose": "diagnostic",
+          "family_id": "theory.konig.family-1",
+          "prompt": "m=2,vC=3,JC=1,omega=2，平面刚体总动能。",
+          "answer": "11",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。"
+          ],
+          "rubric": [
+            "11",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.konig.2",
+          "skill_id": "theory.konig",
+          "purpose": "diagnostic",
+          "family_id": "theory.konig.family-2",
+          "prompt": "纯滚动实心圆盘的动能为3*m*vC²/4吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。"
+          ],
+          "rubric": [
+            "是",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.konig.3",
+          "skill_id": "theory.konig",
+          "purpose": "learning",
+          "family_id": "theory.konig.family-3",
+          "prompt": "动能分解能把JC任意换成另一平行轴惯量而不改其余项吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。"
+          ],
+          "rubric": [
+            "否",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.konig.4",
+          "skill_id": "theory.konig",
+          "purpose": "transfer",
+          "family_id": "theory.konig.family-4",
+          "prompt": "m=4,vC=2且刚体纯平动，动能。",
+          "answer": "8",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。"
+          ],
+          "rubric": [
+            "8",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.konig.5",
+          "skill_id": "theory.konig",
+          "purpose": "retention",
+          "family_id": "theory.konig.family-5",
+          "prompt": "说明质心平动系中各质点相对动量总和。",
+          "answer": "为零，因为各质点相对质心的位置质量加权和及其时间导数为零",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。"
+          ],
+          "rubric": [
+            "为零，因为各质点相对质心的位置质量加权和及其时间导数为零",
+            "质点系动能分成质心平动与相对质心运动两部分；平面刚体用m*vC²/2+JC*omega²/2。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "质点系动能分成质心平动与相对质心运动两部分。",
+        "平面刚体用m*vC²/2+JC*omega²/2。"
+      ]
+    },
+    {
+      "id": "theory.rigid-dynamics",
+      "name": "刚体平面动力学与普遍定理综合",
+      "aliases": [
+        "刚体平面动力学与普遍定理综合",
+        "rigid-dynamics"
+      ],
+      "prerequisites": [
+        "theory.konig",
+        "theory.angular"
+      ],
+      "tier": "core",
+      "teaching": "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.rigid-dynamics.1",
+          "skill_id": "theory.rigid-dynamics",
+          "purpose": "diagnostic",
+          "family_id": "theory.rigid-dynamics.family-1",
+          "prompt": "实心圆盘在角theta斜面无滑动滚下，加速度沿斜面为2*g*sin(theta)/3吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。"
+          ],
+          "rubric": [
+            "是",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.rigid-dynamics.2",
+          "skill_id": "theory.rigid-dynamics",
+          "purpose": "diagnostic",
+          "family_id": "theory.rigid-dynamics.family-2",
+          "prompt": "m=2,aC=3时合外力大小。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。"
+          ],
+          "rubric": [
+            "6",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.rigid-dynamics.3",
+          "skill_id": "theory.rigid-dynamics",
+          "purpose": "learning",
+          "family_id": "theory.rigid-dynamics.family-3",
+          "prompt": "JC=4,alpha=2时绕质心合外力矩。",
+          "answer": "8",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。"
+          ],
+          "rubric": [
+            "8",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.rigid-dynamics.4",
+          "skill_id": "theory.rigid-dynamics",
+          "purpose": "transfer",
+          "family_id": "theory.rigid-dynamics.family-4",
+          "prompt": "纯滚动时接触点静摩擦必恒等于mu*N吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。"
+          ],
+          "rubric": [
+            "否",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.rigid-dynamics.5",
+          "skill_id": "theory.rigid-dynamics",
+          "purpose": "retention",
+          "family_id": "theory.rigid-dynamics.family-5",
+          "prompt": "解释平面刚体动力学中为何一般同时需要平动与转动方程。",
+          "answer": "平动确定质心加速度，转动确定角加速度，两者由接触或连接约束耦合",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。"
+          ],
+          "rubric": [
+            "平动确定质心加速度，转动确定角加速度，两者由接触或连接约束耦合",
+            "对质心列合力方程与绕质心动量矩方程；滚动问题同时加入无滑动约束，先检查静摩擦是否足够。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "对质心列合力方程与绕质心动量矩方程。",
+        "滚动问题同时加入无滑动约束，先检查静摩擦是否足够。"
+      ]
+    },
+    {
+      "id": "theory.impact",
+      "name": "碰撞、恢复系数与冲量矩",
+      "aliases": [
+        "碰撞、恢复系数与冲量矩",
+        "impact",
+        "恢复系数",
+        "碰撞"
+      ],
+      "prerequisites": [
+        "theory.momentum",
+        "theory.energy"
+      ],
+      "tier": "core",
+      "teaching": "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.impact.1",
+          "skill_id": "theory.impact",
+          "purpose": "diagnostic",
+          "family_id": "theory.impact.family-1",
+          "prompt": "等质量球一维完全非弹性碰撞，初速4与0米/秒，碰后共同速度。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。"
+          ],
+          "rubric": [
+            "2",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.impact.2",
+          "skill_id": "theory.impact",
+          "purpose": "diagnostic",
+          "family_id": "theory.impact.family-2",
+          "prompt": "等质量球正碰，e=1，初速3与0，碰后速度v1,v2。",
+          "answer": "0,3",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。"
+          ],
+          "rubric": [
+            "0,3",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.impact.3",
+          "skill_id": "theory.impact",
+          "purpose": "learning",
+          "family_id": "theory.impact.family-3",
+          "prompt": "完全非弹性碰撞总动能一般守恒吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。"
+          ],
+          "rubric": [
+            "否",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.impact.4",
+          "skill_id": "theory.impact",
+          "purpose": "transfer",
+          "family_id": "theory.impact.family-4",
+          "prompt": "恢复系数e=0表示法向分离相对速度为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。"
+          ],
+          "rubric": [
+            "是",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.impact.5",
+          "skill_id": "theory.impact",
+          "purpose": "retention",
+          "family_id": "theory.impact.family-5",
+          "prompt": "单位质量两球初速2与0，完全非弹性碰后损失动能。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。"
+          ],
+          "rubric": [
+            "1",
+            "沿碰撞法线使用相对分离速度与接近速度之比；忽略外冲量时保动量，恢复系数决定动能损失。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "沿碰撞法线使用相对分离速度与接近速度之比。",
+        "忽略外冲量时保动量，恢复系数决定动能损失。"
+      ]
+    },
+    {
+      "id": "theory.constraints",
+      "name": "约束分类、自由度与广义坐标",
+      "aliases": [
+        "约束分类、自由度与广义坐标",
+        "constraints"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "theory.analytical"
+      ],
+      "tier": "core",
+      "teaching": "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.constraints.1",
+          "skill_id": "theory.constraints",
+          "purpose": "diagnostic",
+          "family_id": "theory.constraints.family-1",
+          "prompt": "平面自由刚体的自由度数。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。"
+          ],
+          "rubric": [
+            "3",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.constraints.2",
+          "skill_id": "theory.constraints",
+          "purpose": "diagnostic",
+          "family_id": "theory.constraints.family-2",
+          "prompt": "空间自由刚体的自由度数。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。"
+          ],
+          "rubric": [
+            "6",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.constraints.3",
+          "skill_id": "theory.constraints",
+          "purpose": "learning",
+          "family_id": "theory.constraints.family-3",
+          "prompt": "长度固定的理想平面单摆需要一个独立坐标吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。"
+          ],
+          "rubric": [
+            "是",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.constraints.4",
+          "skill_id": "theory.constraints",
+          "purpose": "transfer",
+          "family_id": "theory.constraints.family-4",
+          "prompt": "速度约束都可积分成完整约束吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。"
+          ],
+          "rubric": [
+            "否",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.constraints.5",
+          "skill_id": "theory.constraints",
+          "purpose": "retention",
+          "family_id": "theory.constraints.family-5",
+          "prompt": "解释虚位移中为何固定时间。",
+          "answer": "虚位移比较同一时刻的容许构形，因此dt=0并满足当时的几何约束",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。"
+          ],
+          "rubric": [
+            "虚位移比较同一时刻的容许构形，因此dt=0并满足当时的几何约束",
+            "完整约束可写成坐标与时间关系；定常约束不显含时间；广义坐标需独立并足以描述构形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "完整约束可写成坐标与时间关系。",
+        "定常约束不显含时间。",
+        "广义坐标需独立并足以描述构形。"
+      ]
+    },
+    {
+      "id": "theory.virtual-work",
+      "name": "虚位移原理与广义力",
+      "aliases": [
+        "虚位移原理与广义力",
+        "virtual-work"
+      ],
+      "prerequisites": [
+        "theory.dalembert",
+        "theory.constraints"
+      ],
+      "tier": "core",
+      "teaching": "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.virtual-work.1",
+          "skill_id": "theory.virtual-work",
+          "purpose": "diagnostic",
+          "family_id": "theory.virtual-work.family-1",
+          "prompt": "F=3牛与同向虚位移delta x=0.02米，虚功数值。",
+          "answer": "0.06",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。"
+          ],
+          "rubric": [
+            "0.06",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.virtual-work.2",
+          "skill_id": "theory.virtual-work",
+          "purpose": "diagnostic",
+          "family_id": "theory.virtual-work.family-2",
+          "prompt": "理想固定铰约束反力在容许虚位移中的虚功为零吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。"
+          ],
+          "rubric": [
+            "是",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.virtual-work.3",
+          "skill_id": "theory.virtual-work",
+          "purpose": "learning",
+          "family_id": "theory.virtual-work.family-3",
+          "prompt": "虚位移必须等于真实运动过程中的位移吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。"
+          ],
+          "rubric": [
+            "否",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.virtual-work.4",
+          "skill_id": "theory.virtual-work",
+          "purpose": "transfer",
+          "family_id": "theory.virtual-work.family-4",
+          "prompt": "力矩5牛米与虚转角0.1弧度同向，虚功。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。"
+          ],
+          "rubric": [
+            "1/2",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.virtual-work.5",
+          "skill_id": "theory.virtual-work",
+          "purpose": "retention",
+          "family_id": "theory.virtual-work.family-5",
+          "prompt": "说明如何从delta W=Q*delta q=0得到平衡条件。",
+          "answer": "在独立任意容许虚位移下，对应的广义力系数Q必须为零",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。"
+          ],
+          "rubric": [
+            "在独立任意容许虚位移下，对应的广义力系数Q必须为零",
+            "理想约束平衡时主动力虚功总和为零；用独立虚坐标系数建立广义平衡方程，先满足约束。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "理想约束平衡时主动力虚功总和为零。",
+        "用独立虚坐标系数建立广义平衡方程，先满足约束。"
+      ]
+    },
+    {
+      "id": "theory.lagrange",
+      "name": "拉格朗日方程、循环坐标与首次积分",
+      "aliases": [
+        "拉格朗日方程、循环坐标与首次积分",
+        "lagrange"
+      ],
+      "prerequisites": [
+        "theory.constraints",
+        "theory.energy"
+      ],
+      "tier": "core",
+      "teaching": "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.lagrange.1",
+          "skill_id": "theory.lagrange",
+          "purpose": "diagnostic",
+          "family_id": "theory.lagrange.family-1",
+          "prompt": "L=m*qdot²/2-k*q²/2导出的方程为m*q''+k*q=0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。"
+          ],
+          "rubric": [
+            "是",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.lagrange.2",
+          "skill_id": "theory.lagrange",
+          "purpose": "diagnostic",
+          "family_id": "theory.lagrange.family-2",
+          "prompt": "m=2,k=18时固有角频率。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。"
+          ],
+          "rubric": [
+            "3",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.lagrange.3",
+          "skill_id": "theory.lagrange",
+          "purpose": "learning",
+          "family_id": "theory.lagrange.family-3",
+          "prompt": "坐标q不显含于L时，对应广义动量守恒吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。"
+          ],
+          "rubric": [
+            "是",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.lagrange.4",
+          "skill_id": "theory.lagrange",
+          "purpose": "transfer",
+          "family_id": "theory.lagrange.family-4",
+          "prompt": "定常保守系统的能量首次积分可用T+V=常数吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。"
+          ],
+          "rubric": [
+            "是",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.lagrange.5",
+          "skill_id": "theory.lagrange",
+          "purpose": "retention",
+          "family_id": "theory.lagrange.family-5",
+          "prompt": "解释非保守广义力应放在拉格朗日方程的何处。",
+          "answer": "作为右端广义力，避免把已计入势能的保守力重复计入",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。"
+          ],
+          "rubric": [
+            "作为右端广义力，避免把已计入势能的保守力重复计入",
+            "完整理想约束用d/dt(T_qdot)-T_q=Q；保守系统可写L=T-V，循环坐标对应广义动量守恒。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "完整理想约束用d/dt(T_qdot)-T_q=Q。",
+        "保守系统可写L=T-V，循环坐标对应广义动量守恒。"
+      ]
+    },
+    {
+      "id": "theory.equilibrium-stability",
+      "name": "平衡位置、势能与小振动",
+      "aliases": [
+        "平衡位置、势能与小振动",
+        "equilibrium-stability"
+      ],
+      "prerequisites": [
+        "theory.lagrange",
+        "math03.extrema"
+      ],
+      "tier": "core",
+      "teaching": "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.equilibrium-stability.1",
+          "skill_id": "theory.equilibrium-stability",
+          "purpose": "diagnostic",
+          "family_id": "theory.equilibrium-stability.family-1",
+          "prompt": "V=k*x²/2且k>0，原点稳定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。"
+          ],
+          "rubric": [
+            "是",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.equilibrium-stability.2",
+          "skill_id": "theory.equilibrium-stability",
+          "purpose": "diagnostic",
+          "family_id": "theory.equilibrium-stability.family-2",
+          "prompt": "V=-x²，原点稳定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。"
+          ],
+          "rubric": [
+            "否",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.equilibrium-stability.3",
+          "skill_id": "theory.equilibrium-stability",
+          "purpose": "learning",
+          "family_id": "theory.equilibrium-stability.family-3",
+          "prompt": "V''(q0)=8，等效质量2，小振动角频率。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。"
+          ],
+          "rubric": [
+            "2",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.equilibrium-stability.4",
+          "skill_id": "theory.equilibrium-stability",
+          "purpose": "transfer",
+          "family_id": "theory.equilibrium-stability.family-4",
+          "prompt": "V''=0时能直接判定稳定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。"
+          ],
+          "rubric": [
+            "否",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.equilibrium-stability.5",
+          "skill_id": "theory.equilibrium-stability",
+          "purpose": "retention",
+          "family_id": "theory.equilibrium-stability.family-5",
+          "prompt": "理想单摆长度L、重力加速度a，小振动角频率。",
+          "answer": "sqrt(a/L)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。"
+          ],
+          "rubric": [
+            "sqrt(a/L)",
+            "保守系统在势能驻点平衡；非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "保守系统在势能驻点平衡。",
+        "非退化极小值稳定，线性化后的有效刚度与质量给小振动频率。"
+      ]
+    },
+    {
+      "id": "theory.rotor-balance",
+      "name": "转子静平衡、动平衡与轴承动反力",
+      "aliases": [
+        "转子静平衡、动平衡与轴承动反力",
+        "rotor-balance"
+      ],
+      "prerequisites": [
+        "theory.inertia",
+        "theory.dalembert"
+      ],
+      "tier": "core",
+      "teaching": "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.rotor-balance.1",
+          "skill_id": "theory.rotor-balance",
+          "purpose": "diagnostic",
+          "family_id": "theory.rotor-balance.family-1",
+          "prompt": "转子质心在轴上就必动平衡吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。"
+          ],
+          "rubric": [
+            "否",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.rotor-balance.2",
+          "skill_id": "theory.rotor-balance",
+          "purpose": "diagnostic",
+          "family_id": "theory.rotor-balance.family-2",
+          "prompt": "偏心质量2千克、偏心距0.1米、角速度10弧度/秒，离心惯性力大小。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。"
+          ],
+          "rubric": [
+            "20",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.rotor-balance.3",
+          "skill_id": "theory.rotor-balance",
+          "purpose": "learning",
+          "family_id": "theory.rotor-balance.family-3",
+          "prompt": "静不平衡量的量纲是质量乘长度吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。"
+          ],
+          "rubric": [
+            "是",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.rotor-balance.4",
+          "skill_id": "theory.rotor-balance",
+          "purpose": "transfer",
+          "family_id": "theory.rotor-balance.family-4",
+          "prompt": "说明一般刚性转子为何常需两个校正平面。",
+          "answer": "分别平衡合惯性力与合惯性力偶，一个平面一般不能同时满足两项",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。"
+          ],
+          "rubric": [
+            "分别平衡合惯性力与合惯性力偶，一个平面一般不能同时满足两项",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.rotor-balance.5",
+          "skill_id": "theory.rotor-balance",
+          "purpose": "retention",
+          "family_id": "theory.rotor-balance.family-5",
+          "prompt": "绕固定轴转动轴承动反力一定为0吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。"
+          ],
+          "rubric": [
+            "否",
+            "静平衡要求质心在转轴上；动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "静平衡要求质心在转轴上。",
+        "动平衡还需转轴为惯性主轴，惯性力与惯性力偶都要平衡。"
+      ]
+    },
+    {
+      "id": "theory.damped-forced",
+      "name": "单自由度阻尼与受迫振动",
+      "aliases": [
+        "单自由度阻尼与受迫振动",
+        "damped-forced"
+      ],
+      "prerequisites": [
+        "theory.analytical",
+        "math07.nonhomogeneous"
+      ],
+      "tier": "core",
+      "teaching": "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.damped-forced.1",
+          "skill_id": "theory.damped-forced",
+          "purpose": "diagnostic",
+          "family_id": "theory.damped-forced.family-1",
+          "prompt": "m=1,k=4,c=2，阻尼比。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。"
+          ],
+          "rubric": [
+            "1/2",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.damped-forced.2",
+          "skill_id": "theory.damped-forced",
+          "purpose": "diagnostic",
+          "family_id": "theory.damped-forced.family-2",
+          "prompt": "无阻尼共振时稳态有限幅值公式还能给出有限振幅吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。"
+          ],
+          "rubric": [
+            "否",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.damped-forced.3",
+          "skill_id": "theory.damped-forced",
+          "purpose": "learning",
+          "family_id": "theory.damped-forced.family-3",
+          "prompt": "m=1,k=4,c=0，F0=3，激励频率1，稳态振幅。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。"
+          ],
+          "rubric": [
+            "1",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.damped-forced.4",
+          "skill_id": "theory.damped-forced",
+          "purpose": "transfer",
+          "family_id": "theory.damped-forced.family-4",
+          "prompt": "欠阻尼自由振动的包络按指数衰减吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。"
+          ],
+          "rubric": [
+            "是",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.damped-forced.5",
+          "skill_id": "theory.damped-forced",
+          "purpose": "retention",
+          "family_id": "theory.damped-forced.family-5",
+          "prompt": "临界阻尼的阻尼比。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。"
+          ],
+          "rubric": [
+            "1",
+            "m*x''+c*x'+k*x=F0*cos(omega*t)；阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "m*x''+c*x'+k*x=F0*cos(omega*t)。",
+        "阻尼比c/(2*sqrt(k*m))，稳态幅值与频率比和阻尼共同决定。"
+      ]
+    },
+    {
+      "id": "theory.gyroscope",
+      "name": "定点转动、欧拉方程与陀螺效应",
+      "aliases": [
+        "定点转动、欧拉方程与陀螺效应",
+        "gyroscope"
+      ],
+      "prerequisites": [
+        "theory.inertia",
+        "theory.angular"
+      ],
+      "tier": "extension",
+      "teaching": "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.gyroscope.1",
+          "skill_id": "theory.gyroscope",
+          "purpose": "diagnostic",
+          "family_id": "theory.gyroscope.family-1",
+          "prompt": "一般非球对称刚体的角动量必与角速度平行吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。"
+          ],
+          "rubric": [
+            "否",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.gyroscope.2",
+          "skill_id": "theory.gyroscope",
+          "purpose": "diagnostic",
+          "family_id": "theory.gyroscope.family-2",
+          "prompt": "球对称惯量J=2、omega=3时角动量大小。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。"
+          ],
+          "rubric": [
+            "6",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.gyroscope.3",
+          "skill_id": "theory.gyroscope",
+          "purpose": "learning",
+          "family_id": "theory.gyroscope.family-3",
+          "prompt": "稳态快陀螺近似中进动角速度大小可由力矩除自旋角动量估计吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。"
+          ],
+          "rubric": [
+            "是",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.gyroscope.4",
+          "skill_id": "theory.gyroscope",
+          "purpose": "transfer",
+          "family_id": "theory.gyroscope.family-4",
+          "prompt": "说明无力矩定点运动仍可能出现角速度方向变化的原因。",
+          "answer": "角动量在惯性系守恒，但各主惯量不同使角速度与角动量不共线并随体轴姿态变化",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。"
+          ],
+          "rubric": [
+            "角动量在惯性系守恒，但各主惯量不同使角速度与角动量不共线并随体轴姿态变化",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.gyroscope.5",
+          "skill_id": "theory.gyroscope",
+          "purpose": "retention",
+          "family_id": "theory.gyroscope.family-5",
+          "prompt": "无外力矩时惯性系中的总角动量守恒吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。"
+          ],
+          "rubric": [
+            "是",
+            "用惯性主轴分量写刚体定点转动欧拉方程；外力矩改变角动量方向，角速度与角动量一般不平行。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "用惯性主轴分量写刚体定点转动欧拉方程。",
+        "外力矩改变角动量方向，角速度与角动量一般不平行。"
+      ]
+    },
+    {
+      "id": "theory.variable-mass",
+      "name": "变质量系统与动量通量",
+      "aliases": [
+        "变质量系统与动量通量",
+        "variable-mass"
+      ],
+      "prerequisites": [
+        "theory.momentum",
+        "theory.newton"
+      ],
+      "tier": "extension",
+      "teaching": "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "theory.variable-mass.1",
+          "skill_id": "theory.variable-mass",
+          "purpose": "diagnostic",
+          "family_id": "theory.variable-mass.family-1",
+          "prompt": "理想火箭无外力、喷气相对速率u不变，速度增量是否为u*log(m0/m1)？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。"
+          ],
+          "rubric": [
+            "是",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.variable-mass.2",
+          "skill_id": "theory.variable-mass",
+          "purpose": "diagnostic",
+          "family_id": "theory.variable-mass.family-2",
+          "prompt": "u=100，初末质量比2，速度增量。",
+          "answer": "100*log(2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。"
+          ],
+          "rubric": [
+            "100*log(2)",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.variable-mass.3",
+          "skill_id": "theory.variable-mass",
+          "purpose": "learning",
+          "family_id": "theory.variable-mass.family-3",
+          "prompt": "只要质量变化就能直接把外力写为m*a而忽略喷流吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。"
+          ],
+          "rubric": [
+            "否",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "theory.variable-mass.4",
+          "skill_id": "theory.variable-mass",
+          "purpose": "transfer",
+          "family_id": "theory.variable-mass.family-4",
+          "prompt": "喷流相对速率10米/秒、质量流率2千克/秒，理想推力大小。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。"
+          ],
+          "rubric": [
+            "20",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "theory.variable-mass.5",
+          "skill_id": "theory.variable-mass",
+          "purpose": "retention",
+          "family_id": "theory.variable-mass.family-5",
+          "prompt": "说明变质量问题需先区分哪些速度。",
+          "answer": "明确质量流入流出的绝对速度与相对主体速度，统一惯性参考系和流率符号",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。"
+          ],
+          "rubric": [
+            "明确质量流入流出的绝对速度与相对主体速度，统一惯性参考系和流率符号",
+            "明确系统边界与喷流相对速度，将质量流动的动量通量计入；固定质量系统的F=m*a不可直接套给开系统。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.2.0",
+      "learning_steps": [
+        "明确系统边界与喷流相对速度，将质量流动的动量通量计入。",
+        "固定质量系统的F=m*a不可直接套给开系统。"
+      ]
     }
   ]
 }
