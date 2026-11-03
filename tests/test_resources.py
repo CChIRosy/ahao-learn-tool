@@ -6,7 +6,7 @@ import diagnose as d
 def test_resource_graph_and_independent_math_calculations():
     result=validate()
     assert not result['failures']
-    assert result['modules']==15 and result['parsed_keys']==result['questions']
+    assert result['modules']==19 and result['parsed_keys']==result['questions']
     assert result['independent_calculations']>200
 
 def test_course_ambiguity_and_key_skills():

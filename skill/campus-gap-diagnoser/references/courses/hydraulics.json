@@ -1,0 +1,4041 @@
+{
+  "id": "hydraulics",
+  "name": "河海工程·水力学基础",
+  "source": "https://zh.ujn.edu.cn/info/1079/4725.htm",
+  "skills": [
+    {
+      "id": "hydraulics.properties",
+      "name": "流体密度、黏性、压缩性与连续介质",
+      "aliases": [
+        "流体密度、黏性、压缩性与连续介质",
+        "properties"
+      ],
+      "prerequisites": [
+        "materials.basics"
+      ],
+      "tier": "core",
+      "teaching": "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.properties.1",
+          "skill_id": "hydraulics.properties",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.properties.family-1",
+          "prompt": "动力黏度0.001Pa秒、密度1000千克/立方米，运动黏度平方米/秒。",
+          "answer": "1/1000000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。"
+          ],
+          "rubric": [
+            "1/1000000",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.properties.2",
+          "skill_id": "hydraulics.properties",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.properties.family-2",
+          "prompt": "不可压流体的密度在模型中保持不变吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。"
+          ],
+          "rubric": [
+            "是",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.properties.3",
+          "skill_id": "hydraulics.properties",
+          "purpose": "learning",
+          "family_id": "hydraulics.properties.family-3",
+          "prompt": "动力黏度与运动黏度量纲相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。"
+          ],
+          "rubric": [
+            "否",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.properties.4",
+          "skill_id": "hydraulics.properties",
+          "purpose": "transfer",
+          "family_id": "hydraulics.properties.family-4",
+          "prompt": "表面张力主要在较小尺度界面现象中可能重要吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。"
+          ],
+          "rubric": [
+            "是",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.properties.5",
+          "skill_id": "hydraulics.properties",
+          "purpose": "retention",
+          "family_id": "hydraulics.properties.family-5",
+          "prompt": "说明给出水的黏度时为何要记录温度。",
+          "answer": "黏度随温度改变，影响雷诺数、阻力与泥沙沉降等计算",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。"
+          ],
+          "rubric": [
+            "黏度随温度改变，影响雷诺数、阻力与泥沙沉降等计算",
+            "先统一单位并区分动力黏度与运动黏度；连续介质、不可压与牛顿流体各是独立模型假设。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "先统一单位并区分动力黏度与运动黏度。",
+        "连续介质、不可压与牛顿流体各是独立模型假设。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.hydrostatics",
+      "name": "静水压强、测压管与压强基准",
+      "aliases": [
+        "静水压强、测压管与压强基准",
+        "hydrostatics"
+      ],
+      "prerequisites": [
+        "hydraulics.properties",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "teaching": "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.hydrostatics.1",
+          "skill_id": "hydraulics.hydrostatics",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.hydrostatics.family-1",
+          "prompt": "水密度1000、g=10，水下3米处表压Pa。",
+          "answer": "30000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。"
+          ],
+          "rubric": [
+            "30000",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.hydrostatics.2",
+          "skill_id": "hydraulics.hydrostatics",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.hydrostatics.family-2",
+          "prompt": "表压为0必表示绝对真空吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。"
+          ],
+          "rubric": [
+            "否",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.hydrostatics.3",
+          "skill_id": "hydraulics.hydrostatics",
+          "purpose": "learning",
+          "family_id": "hydraulics.hydrostatics.family-3",
+          "prompt": "表压20000Pa、大气压100000Pa，绝对压Pa。",
+          "answer": "120000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。"
+          ],
+          "rubric": [
+            "120000",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.hydrostatics.4",
+          "skill_id": "hydraulics.hydrostatics",
+          "purpose": "transfer",
+          "family_id": "hydraulics.hydrostatics.family-4",
+          "prompt": "同一静止连通均匀液体内同高程压强相同吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。"
+          ],
+          "rubric": [
+            "是",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.hydrostatics.5",
+          "skill_id": "hydraulics.hydrostatics",
+          "purpose": "retention",
+          "family_id": "hydraulics.hydrostatics.family-5",
+          "prompt": "测压管水头p/(rho*g)+z在同一静水体内恒定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。"
+          ],
+          "rubric": [
+            "是",
+            "静水中p增加量等于rho*g*深度增加量；区分表压与绝对压，先选同一高程和压强基准。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "静水中p增加量等于rho*g*深度增加量。",
+        "区分表压与绝对压，先选同一高程和压强基准。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.surface-pressure",
+      "name": "静水总压力、压力中心与浮力",
+      "aliases": [
+        "静水总压力、压力中心与浮力",
+        "surface-pressure"
+      ],
+      "prerequisites": [
+        "hydraulics.hydrostatics",
+        "math06.physics"
+      ],
+      "tier": "core",
+      "teaching": "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.surface-pressure.1",
+          "skill_id": "hydraulics.surface-pressure",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.surface-pressure.family-1",
+          "prompt": "竖直矩形闸门宽2米高3米，上缘在自由面，rho=1000,g=10，总压力牛。",
+          "answer": "90000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。"
+          ],
+          "rubric": [
+            "90000",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.surface-pressure.2",
+          "skill_id": "hydraulics.surface-pressure",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.surface-pressure.family-2",
+          "prompt": "同题压力中心距水面米。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。"
+          ],
+          "rubric": [
+            "2",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.surface-pressure.3",
+          "skill_id": "hydraulics.surface-pressure",
+          "purpose": "learning",
+          "family_id": "hydraulics.surface-pressure.family-3",
+          "prompt": "排水体积0.2立方米、rho=1000,g=10，浮力牛。",
+          "answer": "2000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。"
+          ],
+          "rubric": [
+            "2000",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.surface-pressure.4",
+          "skill_id": "hydraulics.surface-pressure",
+          "purpose": "transfer",
+          "family_id": "hydraulics.surface-pressure.family-4",
+          "prompt": "压力中心在所有受压平面上都与形心重合吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。"
+          ],
+          "rubric": [
+            "否",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.surface-pressure.5",
+          "skill_id": "hydraulics.surface-pressure",
+          "purpose": "retention",
+          "family_id": "hydraulics.surface-pressure.family-5",
+          "prompt": "说明曲面总水压力的计算步骤。",
+          "answer": "分别求水平与竖直分量、方向及作用线，结合曲面几何和流体所在侧组合",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。"
+          ],
+          "rubric": [
+            "分别求水平与竖直分量、方向及作用线，结合曲面几何和流体所在侧组合",
+            "平面静水压力积分可由形心深度求合力，压力中心由力矩求；曲面分量分别积分，浮力等于排开流体重量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "平面静水压力积分可由形心深度求合力，压力中心由力矩求。",
+        "曲面分量分别积分，浮力等于排开流体重量。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.kinematics",
+      "name": "流线、迹线、恒定流与流场描述",
+      "aliases": [
+        "流线、迹线、恒定流与流场描述",
+        "kinematics"
+      ],
+      "prerequisites": [
+        "theory.point",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "teaching": "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.kinematics.1",
+          "skill_id": "hydraulics.kinematics",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.kinematics.family-1",
+          "prompt": "恒定流要求固定点流动参数不随时间改变吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。"
+          ],
+          "rubric": [
+            "是",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.kinematics.2",
+          "skill_id": "hydraulics.kinematics",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.kinematics.family-2",
+          "prompt": "恒定流一定沿程均匀吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。"
+          ],
+          "rubric": [
+            "否",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.kinematics.3",
+          "skill_id": "hydraulics.kinematics",
+          "purpose": "learning",
+          "family_id": "hydraulics.kinematics.family-3",
+          "prompt": "速度场u=2*x,v=-2*y的二维散度。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。"
+          ],
+          "rubric": [
+            "0",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.kinematics.4",
+          "skill_id": "hydraulics.kinematics",
+          "purpose": "transfer",
+          "family_id": "hydraulics.kinematics.family-4",
+          "prompt": "恒定流条件下流线与迹线在相应正则区域可重合吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。"
+          ],
+          "rubric": [
+            "是",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.kinematics.5",
+          "skill_id": "hydraulics.kinematics",
+          "purpose": "retention",
+          "family_id": "hydraulics.kinematics.family-5",
+          "prompt": "说明用平均流速不能唯一恢复断面速度分布的原因。",
+          "answer": "平均值只给通量的面积归一，许多不同速度分布具有相同平均值",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。"
+          ],
+          "rubric": [
+            "平均值只给通量的面积归一，许多不同速度分布具有相同平均值",
+            "欧拉场按位置时间描述，拉格朗日跟踪质点；恒定与均匀、流线与迹线分别区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "欧拉场按位置时间描述，拉格朗日跟踪质点。",
+        "恒定与均匀、流线与迹线分别区分。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.continuity",
+      "name": "连续方程、流量与控制体",
+      "aliases": [
+        "连续方程、流量与控制体",
+        "continuity"
+      ],
+      "prerequisites": [
+        "hydraulics.kinematics",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.continuity.1",
+          "skill_id": "hydraulics.continuity",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.continuity.family-1",
+          "prompt": "流量6立方米/秒、面积2平方米，断面平均流速米/秒。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。"
+          ],
+          "rubric": [
+            "3",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.continuity.2",
+          "skill_id": "hydraulics.continuity",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.continuity.family-2",
+          "prompt": "同一恒定不可压无旁流管流，面积减半时平均流速加倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。"
+          ],
+          "rubric": [
+            "是",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.continuity.3",
+          "skill_id": "hydraulics.continuity",
+          "purpose": "learning",
+          "family_id": "hydraulics.continuity.family-3",
+          "prompt": "入流5、出流3立方米/秒，储水体积增长率立方米/秒。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。"
+          ],
+          "rubric": [
+            "2",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.continuity.4",
+          "skill_id": "hydraulics.continuity",
+          "purpose": "transfer",
+          "family_id": "hydraulics.continuity.family-4",
+          "prompt": "非恒定水库可无条件用入流等于出流吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。"
+          ],
+          "rubric": [
+            "否",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.continuity.5",
+          "skill_id": "hydraulics.continuity",
+          "purpose": "retention",
+          "family_id": "hydraulics.continuity.family-5",
+          "prompt": "说明可压缩流量守恒应使用什么量。",
+          "answer": "质量流率rho*A*v并在控制体内计质量储量，体积流量可随密度改变",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。"
+          ],
+          "rubric": [
+            "质量流率rho*A*v并在控制体内计质量储量，体积流量可随密度改变",
+            "质量守恒先选控制体；恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "质量守恒先选控制体。",
+        "恒定不可压总流Q=A*v，多入口出口按方向求和，非恒定还计储量变化。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.energy",
+      "name": "伯努利、总流能量方程与水头线",
+      "aliases": [
+        "伯努利、总流能量方程与水头线",
+        "energy"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "theory.energy"
+      ],
+      "tier": "core",
+      "teaching": "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.energy.1",
+          "skill_id": "hydraulics.energy",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.energy.family-1",
+          "prompt": "g=10、平均流速4米/秒，速度水头v²/(2*g)米。",
+          "answer": "4/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。"
+          ],
+          "rubric": [
+            "4/5",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.energy.2",
+          "skill_id": "hydraulics.energy",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.energy.family-2",
+          "prompt": "无泵无轮实际管流沿程总水头可因损失而下降吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。"
+          ],
+          "rubric": [
+            "是",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.energy.3",
+          "skill_id": "hydraulics.energy",
+          "purpose": "learning",
+          "family_id": "hydraulics.energy.family-3",
+          "prompt": "上游总水头10米、下游7米，无泵轮，损失米。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。"
+          ],
+          "rubric": [
+            "3",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.energy.4",
+          "skill_id": "hydraulics.energy",
+          "purpose": "transfer",
+          "family_id": "hydraulics.energy.family-4",
+          "prompt": "理想伯努利方程能在有黏性损失时直接省略损失仍作精确式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。"
+          ],
+          "rubric": [
+            "否",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.energy.5",
+          "skill_id": "hydraulics.energy",
+          "purpose": "retention",
+          "family_id": "hydraulics.energy.family-5",
+          "prompt": "说明总水头线与测压管水头线的差。",
+          "answer": "对应速度水头及采用的动能修正系数，统一压强与高程基准",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。"
+          ],
+          "rubric": [
+            "对应速度水头及采用的动能修正系数，统一压强与高程基准",
+            "按基准高程、压强水头和速度水头列能量平衡；实际流加入损失及泵轮做功，先核验流线或总流适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按基准高程、压强水头和速度水头列能量平衡。",
+        "实际流加入损失及泵轮做功，先核验流线或总流适用条件。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.momentum",
+      "name": "动量方程、水流作用力与修正系数",
+      "aliases": [
+        "动量方程、水流作用力与修正系数",
+        "momentum"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "theory.momentum"
+      ],
+      "tier": "core",
+      "teaching": "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.momentum.1",
+          "skill_id": "hydraulics.momentum",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.momentum.family-1",
+          "prompt": "理想水平射流质量流率10千克/秒，速度从向右5变0，流体对挡板向右力牛。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。"
+          ],
+          "rubric": [
+            "50",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.momentum.2",
+          "skill_id": "hydraulics.momentum",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.momentum.family-2",
+          "prompt": "弯管受力可只计算动量变化而永远忽略端面压力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。"
+          ],
+          "rubric": [
+            "否",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.momentum.3",
+          "skill_id": "hydraulics.momentum",
+          "purpose": "learning",
+          "family_id": "hydraulics.momentum.family-3",
+          "prompt": "同速射流理想反向180度，质量流率10、速度5，挡板受力大小牛。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。"
+          ],
+          "rubric": [
+            "100",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.momentum.4",
+          "skill_id": "hydraulics.momentum",
+          "purpose": "transfer",
+          "family_id": "hydraulics.momentum.family-4",
+          "prompt": "动量修正系数反映断面速度分布的影响吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。"
+          ],
+          "rubric": [
+            "是",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.momentum.5",
+          "skill_id": "hydraulics.momentum",
+          "purpose": "retention",
+          "family_id": "hydraulics.momentum.family-5",
+          "prompt": "说明用控制体求弯管支撑力应列哪些外力。",
+          "answer": "进出口压力、流体重力、壁面对流体作用力及其他实际外力，并统一方向",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。"
+          ],
+          "rubric": [
+            "进出口压力、流体重力、壁面对流体作用力及其他实际外力，并统一方向",
+            "控制体动量变化等于外力合计；区分流体受力与流体对构筑物反力，计压力、重力及动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "控制体动量变化等于外力合计。",
+        "区分流体受力与流体对构筑物反力，计压力、重力及动量通量。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.similarity",
+      "name": "量纲分析、雷诺弗劳德与模型相似",
+      "aliases": [
+        "量纲分析、雷诺弗劳德与模型相似",
+        "similarity"
+      ],
+      "prerequisites": [
+        "hydraulics.properties",
+        "math08.vectors"
+      ],
+      "tier": "core",
+      "teaching": "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.similarity.1",
+          "skill_id": "hydraulics.similarity",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.similarity.family-1",
+          "prompt": "v=2米/秒,L=0.1米,nu=0.000001平方米/秒，Re。",
+          "answer": "200000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。"
+          ],
+          "rubric": [
+            "200000",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.similarity.2",
+          "skill_id": "hydraulics.similarity",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.similarity.family-2",
+          "prompt": "v=2,g=10,水力深度0.4米，Fr。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。"
+          ],
+          "rubric": [
+            "1",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.similarity.3",
+          "skill_id": "hydraulics.similarity",
+          "purpose": "learning",
+          "family_id": "hydraulics.similarity.family-3",
+          "prompt": "重力模型几何原型/模型比25，弗劳德相似下速度比。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。"
+          ],
+          "rubric": [
+            "5",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.similarity.4",
+          "skill_id": "hydraulics.similarity",
+          "purpose": "transfer",
+          "family_id": "hydraulics.similarity.family-4",
+          "prompt": "同种流体缩尺模型能一般同时严格满足Re与Fr相似吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。"
+          ],
+          "rubric": [
+            "否",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.similarity.5",
+          "skill_id": "hydraulics.similarity",
+          "purpose": "retention",
+          "family_id": "hydraulics.similarity.family-5",
+          "prompt": "量纲齐次是经验公式成立的充分证明吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。"
+          ],
+          "rubric": [
+            "否",
+            "量纲分析先选控制量；重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "量纲分析先选控制量。",
+        "重力主导用弗劳德相似，黏性主导关注雷诺相似，多个准则难同时满足时评估尺度效应。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.resistance",
+      "name": "层紊流、沿程局部损失与边界层",
+      "aliases": [
+        "层紊流、沿程局部损失与边界层",
+        "resistance"
+      ],
+      "prerequisites": [
+        "hydraulics.similarity",
+        "hydraulics.energy"
+      ],
+      "tier": "core",
+      "teaching": "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.resistance.1",
+          "skill_id": "hydraulics.resistance",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.resistance.family-1",
+          "prompt": "给定圆管层流Re=1000，达西摩阻系数64/Re。",
+          "answer": "8/125",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。"
+          ],
+          "rubric": [
+            "8/125",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.resistance.2",
+          "skill_id": "hydraulics.resistance",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.resistance.family-2",
+          "prompt": "给定达西系数0.02,L/D=100,v=2,g=10，沿程损失米。",
+          "answer": "2/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。"
+          ],
+          "rubric": [
+            "2/5",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.resistance.3",
+          "skill_id": "hydraulics.resistance",
+          "purpose": "learning",
+          "family_id": "hydraulics.resistance.family-3",
+          "prompt": "局部损失系数2,v=3,g=10，局部损失米。",
+          "answer": "9/10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。"
+          ],
+          "rubric": [
+            "9/10",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.resistance.4",
+          "skill_id": "hydraulics.resistance",
+          "purpose": "transfer",
+          "family_id": "hydraulics.resistance.family-4",
+          "prompt": "达西摩阻系数与范宁摩阻系数数值总相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。"
+          ],
+          "rubric": [
+            "否",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.resistance.5",
+          "skill_id": "hydraulics.resistance",
+          "purpose": "retention",
+          "family_id": "hydraulics.resistance.family-5",
+          "prompt": "紊流摩阻系数能对所有Re与粗糙度取同一个常数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。"
+          ],
+          "rubric": [
+            "否",
+            "按Re、相对粗糙度和流态选阻力模型；达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按Re、相对粗糙度和流态选阻力模型。",
+        "达西系数与范宁系数区分，局部系数对应指定速度，边界层分离与压强梯度有关。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.pipes",
+      "name": "长短管、串并联管网与泵工况",
+      "aliases": [
+        "长短管、串并联管网与泵工况",
+        "pipes"
+      ],
+      "prerequisites": [
+        "hydraulics.resistance",
+        "hydraulics.continuity"
+      ],
+      "tier": "core",
+      "teaching": "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.pipes.1",
+          "skill_id": "hydraulics.pipes",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.pipes.family-1",
+          "prompt": "串联两管损失2米和3米，总损失米。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。"
+          ],
+          "rubric": [
+            "5",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.pipes.2",
+          "skill_id": "hydraulics.pipes",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.pipes.family-2",
+          "prompt": "两根并联管的公共节点间水头差相同吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。"
+          ],
+          "rubric": [
+            "是",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.pipes.3",
+          "skill_id": "hydraulics.pipes",
+          "purpose": "learning",
+          "family_id": "hydraulics.pipes.family-3",
+          "prompt": "并联两管流量2和3立方米/秒，总流量。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。"
+          ],
+          "rubric": [
+            "5",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.pipes.4",
+          "skill_id": "hydraulics.pipes",
+          "purpose": "transfer",
+          "family_id": "hydraulics.pipes.family-4",
+          "prompt": "并联管直径和粗糙度不同就必流量相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。"
+          ],
+          "rubric": [
+            "否",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.pipes.5",
+          "skill_id": "hydraulics.pipes",
+          "purpose": "retention",
+          "family_id": "hydraulics.pipes.family-5",
+          "prompt": "说明泵额定流量能否直接等同于任意系统实际流量。",
+          "answer": "不能；实际工况由泵曲线和系统扬程曲线交点及运行约束确定",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。"
+          ],
+          "rubric": [
+            "不能；实际工况由泵曲线和系统扬程曲线交点及运行约束确定",
+            "串联流量相同且损失累加；并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "串联流量相同且损失累加。",
+        "并联两公共节点间水头差相同，按连续与能量联立，泵工况由泵与系统曲线共同决定。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.open-uniform",
+      "name": "明渠均匀流、曼宁与最佳断面",
+      "aliases": [
+        "明渠均匀流、曼宁与最佳断面",
+        "open-uniform"
+      ],
+      "prerequisites": [
+        "hydraulics.resistance"
+      ],
+      "tier": "core",
+      "teaching": "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.open-uniform.1",
+          "skill_id": "hydraulics.open-uniform",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.open-uniform.family-1",
+          "prompt": "矩形渠宽4米水深2米，水力半径米。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。"
+          ],
+          "rubric": [
+            "1",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.open-uniform.2",
+          "skill_id": "hydraulics.open-uniform",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.open-uniform.family-2",
+          "prompt": "题给曼宁n=0.02,R=1米,坡度0.0004，均匀流速米/秒。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。"
+          ],
+          "rubric": [
+            "1",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.open-uniform.3",
+          "skill_id": "hydraulics.open-uniform",
+          "purpose": "learning",
+          "family_id": "hydraulics.open-uniform.family-3",
+          "prompt": "矩形水力最佳断面在给定面积下宽为水深两倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。"
+          ],
+          "rubric": [
+            "是",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.open-uniform.4",
+          "skill_id": "hydraulics.open-uniform",
+          "purpose": "transfer",
+          "family_id": "hydraulics.open-uniform.family-4",
+          "prompt": "明渠一定露天无顶盖吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。"
+          ],
+          "rubric": [
+            "否",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.open-uniform.5",
+          "skill_id": "hydraulics.open-uniform",
+          "purpose": "retention",
+          "family_id": "hydraulics.open-uniform.family-5",
+          "prompt": "复式断面可以不加区分地用单一糙率代替各滩槽吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。"
+          ],
+          "rubric": [
+            "否",
+            "用过水面积、湿周和水力半径列均匀流关系；均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "用过水面积、湿周和水力半径列均匀流关系。",
+        "均匀流能坡底坡一致，曼宁系数取值须有题设或可靠依据。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.critical",
+      "name": "断面比能、临界水深与水流分区",
+      "aliases": [
+        "断面比能、临界水深与水流分区",
+        "critical"
+      ],
+      "prerequisites": [
+        "hydraulics.energy",
+        "hydraulics.open-uniform"
+      ],
+      "tier": "core",
+      "teaching": "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.critical.1",
+          "skill_id": "hydraulics.critical",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.critical.family-1",
+          "prompt": "矩形渠单宽流量2立方米/秒/米，g=10，临界水深米。",
+          "answer": "(2/5)**(1/3)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。"
+          ],
+          "rubric": [
+            "(2/5)**(1/3)",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.critical.2",
+          "skill_id": "hydraulics.critical",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.critical.family-2",
+          "prompt": "Fr小于1为缓流吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。"
+          ],
+          "rubric": [
+            "是",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.critical.3",
+          "skill_id": "hydraulics.critical",
+          "purpose": "learning",
+          "family_id": "hydraulics.critical.family-3",
+          "prompt": "矩形渠临界水深1米，最小比能米。",
+          "answer": "3/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。"
+          ],
+          "rubric": [
+            "3/2",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.critical.4",
+          "skill_id": "hydraulics.critical",
+          "purpose": "transfer",
+          "family_id": "hydraulics.critical.family-4",
+          "prompt": "同一给定比能和单宽流量可能有急缓两种交替水深吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。"
+          ],
+          "rubric": [
+            "是",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.critical.5",
+          "skill_id": "hydraulics.critical",
+          "purpose": "retention",
+          "family_id": "hydraulics.critical.family-5",
+          "prompt": "临界水深由底坡单独决定而与流量无关吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。"
+          ],
+          "rubric": [
+            "否",
+            "水力深度A/顶宽用于Fr；给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "水力深度A/顶宽用于Fr。",
+        "给定流量下比能极小为临界状态，矩形渠yc=(单宽流量²/g)^(1/3)。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.gradually-varied",
+      "name": "渐变流水面线与边界控制",
+      "aliases": [
+        "渐变流水面线与边界控制",
+        "gradually-varied"
+      ],
+      "prerequisites": [
+        "hydraulics.critical"
+      ],
+      "tier": "core",
+      "teaching": "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.gradually-varied.1",
+          "skill_id": "hydraulics.gradually-varied",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.gradually-varied.family-1",
+          "prompt": "S0=0.001,Sf=0.0005,Fr²=0.5，dy/dx。",
+          "answer": "1/1000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。"
+          ],
+          "rubric": [
+            "1/1000",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.gradually-varied.2",
+          "skill_id": "hydraulics.gradually-varied",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.gradually-varied.family-2",
+          "prompt": "缓流中的下游水位可向上游影响水面吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。"
+          ],
+          "rubric": [
+            "是",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.gradually-varied.3",
+          "skill_id": "hydraulics.gradually-varied",
+          "purpose": "learning",
+          "family_id": "hydraulics.gradually-varied.family-3",
+          "prompt": "Fr趋近1时可无条件用原微分式跨过奇异点积分吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。"
+          ],
+          "rubric": [
+            "否",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.gradually-varied.4",
+          "skill_id": "hydraulics.gradually-varied",
+          "purpose": "transfer",
+          "family_id": "hydraulics.gradually-varied.family-4",
+          "prompt": "说明分析水面曲线前需确认哪些水深与坡型。",
+          "answer": "正常水深、临界水深、实际水深位置、底坡类别及上下游控制条件",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。"
+          ],
+          "rubric": [
+            "正常水深、临界水深、实际水深位置、底坡类别及上下游控制条件",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.gradually-varied.5",
+          "skill_id": "hydraulics.gradually-varied",
+          "purpose": "retention",
+          "family_id": "hydraulics.gradually-varied.family-5",
+          "prompt": "渐变流假设适用于任意强烈水跃内部吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。"
+          ],
+          "rubric": [
+            "否",
+            "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)；由正常水深、临界水深与边界分区，临界附近需专门处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "缓变一维棱柱渠dy/dx=(S0-Sf)/(1-Fr²)。",
+        "由正常水深、临界水深与边界分区，临界附近需专门处理。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.jump",
+      "name": "水跃、共轭水深与消能",
+      "aliases": [
+        "水跃、共轭水深与消能",
+        "jump"
+      ],
+      "prerequisites": [
+        "hydraulics.momentum",
+        "hydraulics.critical"
+      ],
+      "tier": "core",
+      "teaching": "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.jump.1",
+          "skill_id": "hydraulics.jump",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.jump.family-1",
+          "prompt": "水平矩形水跃Fr1=2，y2/y1=(sqrt(1+8*Fr1²)-1)/2，求比值。",
+          "answer": "(sqrt(33)-1)/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。"
+          ],
+          "rubric": [
+            "(sqrt(33)-1)/2",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.jump.2",
+          "skill_id": "hydraulics.jump",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.jump.family-2",
+          "prompt": "y1=1米,y2=3米，按损失(y2-y1)^3/(4*y1*y2)求米。",
+          "answer": "2/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。"
+          ],
+          "rubric": [
+            "2/3",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.jump.3",
+          "skill_id": "hydraulics.jump",
+          "purpose": "learning",
+          "family_id": "hydraulics.jump.family-3",
+          "prompt": "水跃前后总机械能一般守恒吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。"
+          ],
+          "rubric": [
+            "否",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.jump.4",
+          "skill_id": "hydraulics.jump",
+          "purpose": "transfer",
+          "family_id": "hydraulics.jump.family-4",
+          "prompt": "共轭水深与同一比能的交替水深是同一对水深吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。"
+          ],
+          "rubric": [
+            "否",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.jump.5",
+          "skill_id": "hydraulics.jump",
+          "purpose": "retention",
+          "family_id": "hydraulics.jump.family-5",
+          "prompt": "说明消力池设计为何还需检查尾水。",
+          "answer": "尾水与所需共轭水深关系影响水跃位置和淹没状态，还需检查长度、防冲和运行范围",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。"
+          ],
+          "rubric": [
+            "尾水与所需共轭水深关系影响水跃位置和淹没状态，还需检查长度、防冲和运行范围",
+            "水平矩形短水跃近似以动量守恒求共轭水深；机械能有损失，不能用无损能量式代替。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "水平矩形短水跃近似以动量守恒求共轭水深。",
+        "机械能有损失，不能用无损能量式代替。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.weir-orifice",
+      "name": "孔口、管嘴、堰流与闸孔",
+      "aliases": [
+        "孔口、管嘴、堰流与闸孔",
+        "weir-orifice"
+      ],
+      "prerequisites": [
+        "hydraulics.energy",
+        "hydraulics.critical"
+      ],
+      "tier": "core",
+      "teaching": "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.weir-orifice.1",
+          "skill_id": "hydraulics.weir-orifice",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.weir-orifice.family-1",
+          "prompt": "题给Cd=0.6,A=0.1平方米,g=10,H=5米，孔口流量立方米/秒。",
+          "answer": "3/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。"
+          ],
+          "rubric": [
+            "3/5",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.weir-orifice.2",
+          "skill_id": "hydraulics.weir-orifice",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.weir-orifice.family-2",
+          "prompt": "自由出流与淹没出流可无条件用相同有效水头吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。"
+          ],
+          "rubric": [
+            "否",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.weir-orifice.3",
+          "skill_id": "hydraulics.weir-orifice",
+          "purpose": "learning",
+          "family_id": "hydraulics.weir-orifice.family-3",
+          "prompt": "题给矩形堰Q=C*b*H^(3/2)，C=2,b=3,H=1，Q。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。"
+          ],
+          "rubric": [
+            "6",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.weir-orifice.4",
+          "skill_id": "hydraulics.weir-orifice",
+          "purpose": "transfer",
+          "family_id": "hydraulics.weir-orifice.family-4",
+          "prompt": "宽顶堰适当条件下堰顶可形成临界控制吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。"
+          ],
+          "rubric": [
+            "是",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.weir-orifice.5",
+          "skill_id": "hydraulics.weir-orifice",
+          "purpose": "retention",
+          "family_id": "hydraulics.weir-orifice.family-5",
+          "prompt": "说明堰闸公式中的系数为何不能跨公式直接移用。",
+          "answer": "系数可能已包含重力、收缩或单位体系等因子，定义和适用范围必须一致",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。"
+          ],
+          "rubric": [
+            "系数可能已包含重力、收缩或单位体系等因子，定义和适用范围必须一致",
+            "按流态和收缩淹没条件选公式；孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按流态和收缩淹没条件选公式。",
+        "孔口常用Q=Cd*A*sqrt(2*g*H)，堰流系数的定义须与公式一致。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.seepage",
+      "name": "达西渗流、渗透系数与地下水",
+      "aliases": [
+        "达西渗流、渗透系数与地下水",
+        "seepage"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity"
+      ],
+      "tier": "core",
+      "teaching": "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.seepage.1",
+          "skill_id": "hydraulics.seepage",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.seepage.family-1",
+          "prompt": "k=0.001米/秒,水力坡度0.2，达西流速米/秒。",
+          "answer": "1/5000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。"
+          ],
+          "rubric": [
+            "1/5000",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.seepage.2",
+          "skill_id": "hydraulics.seepage",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.seepage.family-2",
+          "prompt": "上述达西流速、孔隙率0.25，孔隙平均速度米/秒。",
+          "answer": "1/1250",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。"
+          ],
+          "rubric": [
+            "1/1250",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.seepage.3",
+          "skill_id": "hydraulics.seepage",
+          "purpose": "learning",
+          "family_id": "hydraulics.seepage.family-3",
+          "prompt": "达西流速与孔隙实际平均速度一般相等吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。"
+          ],
+          "rubric": [
+            "否",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.seepage.4",
+          "skill_id": "hydraulics.seepage",
+          "purpose": "transfer",
+          "family_id": "hydraulics.seepage.family-4",
+          "prompt": "渗透系数会受流体黏度和土体特征影响吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。"
+          ],
+          "rubric": [
+            "是",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.seepage.5",
+          "skill_id": "hydraulics.seepage",
+          "purpose": "retention",
+          "family_id": "hydraulics.seepage.family-5",
+          "prompt": "说明承压井或无压井计算前应确认的模型条件。",
+          "answer": "含水层几何、边界水头、渗透性、井穿透条件、稳态或非稳态及抽水量",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。"
+          ],
+          "rubric": [
+            "含水层几何、边界水头、渗透性、井穿透条件、稳态或非稳态及抽水量",
+            "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率；线性达西定律需相应流态与介质条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "达西流速为过水面积平均流量密度，孔隙实际平均速度还除孔隙率。",
+        "线性达西定律需相应流态与介质条件。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.transient",
+      "name": "非恒定流、水击与圣维南方程",
+      "aliases": [
+        "非恒定流、水击与圣维南方程",
+        "transient"
+      ],
+      "prerequisites": [
+        "hydraulics.momentum",
+        "math07.concept"
+      ],
+      "tier": "core",
+      "teaching": "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.transient.1",
+          "skill_id": "hydraulics.transient",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.transient.family-1",
+          "prompt": "rho=1000千克/立方米，波速1000米/秒，突然减速1米/秒，压强上升Pa。",
+          "answer": "1000000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。"
+          ],
+          "rubric": [
+            "1000000",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.transient.2",
+          "skill_id": "hydraulics.transient",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.transient.family-2",
+          "prompt": "快速水击可以始终用不可压刚性无储能模型求传播波速吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。"
+          ],
+          "rubric": [
+            "否",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.transient.3",
+          "skill_id": "hydraulics.transient",
+          "purpose": "learning",
+          "family_id": "hydraulics.transient.family-3",
+          "prompt": "管长1000米、波速1000米/秒，往返波时间秒。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。"
+          ],
+          "rubric": [
+            "2",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.transient.4",
+          "skill_id": "hydraulics.transient",
+          "purpose": "transfer",
+          "family_id": "hydraulics.transient.family-4",
+          "prompt": "明渠洪水演算需要初始与边界条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。"
+          ],
+          "rubric": [
+            "是",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.transient.5",
+          "skill_id": "hydraulics.transient",
+          "purpose": "retention",
+          "family_id": "hydraulics.transient.family-5",
+          "prompt": "说明闭阀时间与波往返时间比较的作用。",
+          "answer": "用于区分快速与较缓关闭对水击传播和峰值计算的影响，按具体系统模型处理",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。"
+          ],
+          "rubric": [
+            "用于区分快速与较缓关闭对水击传播和峰值计算的影响，按具体系统模型处理",
+            "水击涉及可压流体与管壁弹性；快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "水击涉及可压流体与管壁弹性。",
+        "快速速度变化用给定波速的Joukowsky关系，明渠洪水用连续动量方程及初边值。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "hydraulics.measurement",
+      "name": "水位、流速流量与水力实验",
+      "aliases": [
+        "水位、流速流量与水力实验",
+        "measurement"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "hydraulics.similarity"
+      ],
+      "tier": "core",
+      "teaching": "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "hydraulics.measurement.1",
+          "skill_id": "hydraulics.measurement",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.measurement.family-1",
+          "prompt": "两分区面积1和2平方米，平均速度2和3米/秒，总流量立方米/秒。",
+          "answer": "8",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。"
+          ],
+          "rubric": [
+            "8",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.measurement.2",
+          "skill_id": "hydraulics.measurement",
+          "purpose": "diagnostic",
+          "family_id": "hydraulics.measurement.family-2",
+          "prompt": "水位数值没有高程基准就能直接与另一站比较吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。"
+          ],
+          "rubric": [
+            "否",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.measurement.3",
+          "skill_id": "hydraulics.measurement",
+          "purpose": "learning",
+          "family_id": "hydraulics.measurement.family-3",
+          "prompt": "模型中有尺差、仪器误差与相似失真等不同误差来源吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。"
+          ],
+          "rubric": [
+            "是",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "hydraulics.measurement.4",
+          "skill_id": "hydraulics.measurement",
+          "purpose": "transfer",
+          "family_id": "hydraulics.measurement.family-4",
+          "prompt": "说明流量测量应保留哪些原始记录。",
+          "answer": "断面位置与几何、水位基准、流速测点和时段、仪器校准及积分或分区方法",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。"
+          ],
+          "rubric": [
+            "断面位置与几何、水位基准、流速测点和时段、仪器校准及积分或分区方法",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "hydraulics.measurement.5",
+          "skill_id": "hydraulics.measurement",
+          "purpose": "retention",
+          "family_id": "hydraulics.measurement.family-5",
+          "prompt": "用单点最大流速乘全断面面积总是等于真实流量吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。"
+          ],
+          "rubric": [
+            "否",
+            "量测先记录基准、测点和校准；断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "量测先记录基准、测点和校准。",
+        "断面流量由速度面积积分或分区累加，误差和模型尺度效应分别评估。"
+      ],
+      "source_scope": {
+        "source": "hydraulics",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    }
+  ]
+}

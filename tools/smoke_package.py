@@ -27,10 +27,14 @@ def main():
             return json.loads(result.stdout)
 
         courses = run(['courses'])
-        assert len(courses) == 15
+        manifest=json.loads((root/'references/course-manifest.json').read_text(encoding='utf-8'))
+        assert {row['id'] for row in courses}=={row['id'] for row in manifest['courses']}
         assert any(row['id'] == 'math02.chain' for row in run(['search', '--query', '链式法则']))
         if (root/'references/syllabus-audit.json').exists():
             for query,expected in [('多跨静定梁','structures.gerber'),('Γ函数','math05.gamma'),('碰撞','theory.impact')]:
+                assert any(row['id']==expected for row in run(['search','--query',query]))
+        if any(row['id']=='steel' for row in courses):
+            for query,expected in [('角焊缝','steel.fillet-weld'),('水跃','hydraulics.jump'),('Shields','river.bed-shear'),('靠泊','coastal.mooring')]:
                 assert any(row['id']==expected for row in run(['search','--query',query]))
         profile = ['--profile', 'smoke', '--data-dir', str(data)]
         assert run(profile + ['start', '--skill', 'math02.chain'])['id'] == 'math02.chain.1'

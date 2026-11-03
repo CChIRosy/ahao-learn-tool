@@ -13,7 +13,7 @@ def main():
     build()
     manifest=json.loads((ROOT/'references/course-manifest.json').read_text(encoding='utf-8'))
     docs=BASE/'docs';docs.mkdir(exist_ok=True)
-    lines=['# 课程覆盖矩阵','', '范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。逐项对照见docs/syllabus-audit.md及包内references/syllabus-audit.json。映射粒度为知识主题与起始题库。', '',
+    lines=['# 课程覆盖矩阵','', '范围基准：同济高数、三门力学、钢结构与用户确认的河流海岸工程；来源见references/sources-and-review.md。逐项对照见docs/syllabus-audit.md及包内references/syllabus-audit.json。映射粒度为知识主题与起始题库。', '',
            f"实际数据：{result['modules']}个模块、{result['skills']}个主题、{result['questions']}道原创题；每主题2道诊断、1道补习、1道迁移、1道后续复测。", '',
            '题目可通过diagnose.py inspect --skill读取。每模块已执行一条合成完整流程；各主题的题量和计算核对数量列在下表。教师与学生验证状态逐行记录。', '',
            '|模块|技能ID与主题|层级|前置|诊断题|补习/迁移/后续复测|独立计算核对题数|教师/学生验证|',
@@ -22,7 +22,7 @@ def main():
         pack=json.loads((ROOT/'references/courses'/meta['file']).read_text(encoding='utf-8'))
         for node in pack['skills']:
             q=node['items'];lines.append('|'+ '|'.join([meta['name'],node['id']+' '+node['name'],node['tier'],'、'.join(node['prerequisites']) or '本包未指定',','.join(x['id'] for x in q[:2]),','.join(x['id'] for x in q[2:]),str(sum(x['verification']['independent_oracle'] for x in q)),'未审核/未验证'])+'|')
-    lines+=['','## 后续验收','','- 请教师逐节审核知识映射、评分要点与题型深度，并扩充各主题题池。', '- 证明与论述由宿主按评分要点审核。', '- 通过真实学生作答校准诊断分支，测量迁移和后续保持。', '- 专业题按明确的平面、线性、教材模型核验；复杂空间与非线性分析需建立对应模块。', '- 统一的来源、适用范围与质量字段见references/sources-and-review.md。']
+    lines+=['','## 后续验收','','- 请教师逐节审核知识映射、评分要点与题型深度，并扩充各主题题池。', '- 证明与论述由宿主按评分要点审核。', '- 通过真实学生作答校准诊断分支，测量迁移和后续保持。', '- 专业题按题设模型、单位、边界和公式适用范围核验；规范查表需记录版本和依据。', '- 统一的来源、适用范围与质量字段见references/sources-and-review.md。']
     (docs/'coverage.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     # Package allowlist: no caches, archives, real profiles, secrets, or local environments.
     files=sorted(p for p in ROOT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc')

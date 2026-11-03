@@ -1,8 +1,8 @@
 # 课程覆盖矩阵
 
-范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。逐项对照见docs/syllabus-audit.md及包内references/syllabus-audit.json。映射粒度为知识主题与起始题库。
+范围基准：同济高数、三门力学、钢结构与用户确认的河流海岸工程；来源见references/sources-and-review.md。逐项对照见docs/syllabus-audit.md及包内references/syllabus-audit.json。映射粒度为知识主题与起始题库。
 
-实际数据：15个模块、209个主题、1045道原创题；每主题2道诊断、1道补习、1道迁移、1道后续复测。
+实际数据：19个模块、286个主题、1430道原创题；每主题2道诊断、1道补习、1道迁移、1道后续复测。
 
 题目可通过diagnose.py inspect --skill读取。每模块已执行一条合成完整流程；各主题的题量和计算核对数量列在下表。教师与学生验证状态逐行记录。
 
@@ -217,11 +217,88 @@
 |结构力学|structures.plastic-mechanisms 梁、连续梁与刚架的塑性机构|core|structures.plastic-bounds|structures.plastic-mechanisms.1,structures.plastic-mechanisms.2|structures.plastic-mechanisms.3,structures.plastic-mechanisms.4,structures.plastic-mechanisms.5|0|未审核/未验证|
 |结构力学|structures.elastic-stability 结构稳定的静力法、能量法与弹性支承|core|structures.stability、materials.stability|structures.elastic-stability.1,structures.elastic-stability.2|structures.elastic-stability.3,structures.elastic-stability.4,structures.elastic-stability.5|0|未审核/未验证|
 |结构力学|structures.advanced-buckling 变截面、剪切影响与组合压杆稳定|extension|structures.elastic-stability|structures.advanced-buckling.1,structures.advanced-buckling.2|structures.advanced-buckling.3,structures.advanced-buckling.4,structures.advanced-buckling.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.design 钢结构体系、极限状态与设计原则|core|structures.overview、materials.design|steel.design.1,steel.design.2|steel.design.3,steel.design.4,steel.design.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.materials 钢材应力应变、韧性与疲劳性能|core|materials.properties、materials.concentration|steel.materials.1,steel.materials.2|steel.materials.3,steel.materials.4,steel.materials.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.selection 钢材选用、厚度效应与质量保证|core|steel.materials|steel.selection.1,steel.selection.2|steel.selection.3,steel.selection.4,steel.selection.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.welding 焊缝形式、焊接缺陷与残余应力|core|steel.materials、materials.concentration|steel.welding.1,steel.welding.2|steel.welding.3,steel.welding.4,steel.welding.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.butt-weld 对接焊缝的有效截面与验算|core|steel.welding、materials.combined|steel.butt-weld.1,steel.butt-weld.2|steel.butt-weld.3,steel.butt-weld.4,steel.butt-weld.5|2|未审核/未验证|
+|钢结构基本原理与应用|steel.fillet-weld 角焊缝有效焊喉与强度|core|steel.welding、materials.shear|steel.fillet-weld.1,steel.fillet-weld.2|steel.fillet-weld.3,steel.fillet-weld.4,steel.fillet-weld.5|3|未审核/未验证|
+|钢结构基本原理与应用|steel.weld-group 偏心焊缝群的力与力矩分配|core|steel.fillet-weld、theory.force|steel.weld-group.1,steel.weld-group.2|steel.weld-group.3,steel.weld-group.4,steel.weld-group.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.bearing-bolts 普通螺栓剪切、承压与净截面|core|materials.shear、steel.design|steel.bearing-bolts.1,steel.bearing-bolts.2|steel.bearing-bolts.3,steel.bearing-bolts.4,steel.bearing-bolts.5|2|未审核/未验证|
+|钢结构基本原理与应用|steel.friction-bolts 高强螺栓摩擦型、承压型与预拉力|core|steel.bearing-bolts|steel.friction-bolts.1,steel.friction-bolts.2|steel.friction-bolts.3,steel.friction-bolts.4,steel.friction-bolts.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.bolt-group 受拉与偏心螺栓群、连接撬力|core|steel.bearing-bolts、steel.weld-group|steel.bolt-group.1,steel.bolt-group.2|steel.bolt-group.3,steel.bolt-group.4,steel.bolt-group.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.tension 轴心受拉构件、剪滞与块体剪切|core|steel.bearing-bolts、materials.axial|steel.tension.1,steel.tension.2|steel.tension.3,steel.tension.4,steel.tension.5|2|未审核/未验证|
+|钢结构基本原理与应用|steel.column 轴心受压构件、整体稳定与柱曲线|core|materials.stability-design、steel.materials|steel.column.1,steel.column.2|steel.column.3,steel.column.4,steel.column.5|2|未审核/未验证|
+|钢结构基本原理与应用|steel.builtup 格构柱、缀条缀板与分肢稳定|core|steel.column、structures.truss-methods|steel.builtup.1,steel.builtup.2|steel.builtup.3,steel.builtup.4,steel.builtup.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.local-buckling 板件局部屈曲、宽厚比与有效截面|core|steel.column、materials.basics|steel.local-buckling.1,steel.local-buckling.2|steel.local-buckling.3,steel.local-buckling.4,steel.local-buckling.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.beam-strength 钢梁抗弯、抗剪、局压与正常使用|core|materials.bending、steel.design|steel.beam-strength.1,steel.beam-strength.2|steel.beam-strength.3,steel.beam-strength.4,steel.beam-strength.5|2|未审核/未验证|
+|钢结构基本原理与应用|steel.beam-stability 钢梁侧扭屈曲与侧向支承|core|steel.local-buckling、structures.elastic-stability|steel.beam-stability.1,steel.beam-stability.2|steel.beam-stability.3,steel.beam-stability.4,steel.beam-stability.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.plate-girder 组合钢梁腹板、加劲肋与拼接|core|steel.beam-strength、steel.local-buckling|steel.plate-girder.1,steel.plate-girder.2|steel.plate-girder.3,steel.plate-girder.4,steel.plate-girder.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.beam-column 拉弯压弯、二阶效应与双向受力|core|steel.column、steel.beam-strength、structures.sway|steel.beam-column.1,steel.beam-column.2|steel.beam-column.3,steel.beam-column.4,steel.beam-column.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.truss 钢屋架、腹杆弦杆与支撑体系|core|structures.truss-methods、steel.tension、steel.column|steel.truss.1,steel.truss.2|steel.truss.3,steel.truss.4,steel.truss.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.joints 梁柱节点、节点板与连接刚度|core|steel.bolt-group、steel.weld-group、structures.frame|steel.joints.1,steel.joints.2|steel.joints.3,steel.joints.4,steel.joints.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.bases 柱脚、底板承压与锚栓|core|steel.beam-column、steel.bolt-group|steel.bases.1,steel.bases.2|steel.bases.3,steel.bases.4,steel.bases.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.industrial 单层厂房、吊车梁与空间支撑|core|steel.truss、steel.plate-girder|steel.industrial.1,steel.industrial.2|steel.industrial.3,steel.industrial.4,steel.industrial.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.portal 门式刚架、檩条与围护协同|core|steel.beam-column、steel.local-buckling|steel.portal.1,steel.portal.2|steel.portal.3,steel.portal.4,steel.portal.5|0|未审核/未验证|
+|钢结构基本原理与应用|steel.fatigue 钢结构疲劳、细节分类与断裂|core|materials.fatigue-detail、steel.welding|steel.fatigue.1,steel.fatigue.2|steel.fatigue.3,steel.fatigue.4,steel.fatigue.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.fire-corrosion 钢结构防火、防腐与全寿命维护|core|steel.materials、steel.design|steel.fire-corrosion.1,steel.fire-corrosion.2|steel.fire-corrosion.3,steel.fire-corrosion.4,steel.fire-corrosion.5|1|未审核/未验证|
+|钢结构基本原理与应用|steel.fabrication 制造安装、误差、检验与临时稳定|core|steel.welding、steel.truss|steel.fabrication.1,steel.fabrication.2|steel.fabrication.3,steel.fabrication.4,steel.fabrication.5|0|未审核/未验证|
+|河海工程·水力学基础|hydraulics.properties 流体密度、黏性、压缩性与连续介质|core|materials.basics|hydraulics.properties.1,hydraulics.properties.2|hydraulics.properties.3,hydraulics.properties.4,hydraulics.properties.5|1|未审核/未验证|
+|河海工程·水力学基础|hydraulics.hydrostatics 静水压强、测压管与压强基准|core|hydraulics.properties、theory.balance|hydraulics.hydrostatics.1,hydraulics.hydrostatics.2|hydraulics.hydrostatics.3,hydraulics.hydrostatics.4,hydraulics.hydrostatics.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.surface-pressure 静水总压力、压力中心与浮力|core|hydraulics.hydrostatics、math06.physics|hydraulics.surface-pressure.1,hydraulics.surface-pressure.2|hydraulics.surface-pressure.3,hydraulics.surface-pressure.4,hydraulics.surface-pressure.5|3|未审核/未验证|
+|河海工程·水力学基础|hydraulics.kinematics 流线、迹线、恒定流与流场描述|core|theory.point、math09.partial|hydraulics.kinematics.1,hydraulics.kinematics.2|hydraulics.kinematics.3,hydraulics.kinematics.4,hydraulics.kinematics.5|1|未审核/未验证|
+|河海工程·水力学基础|hydraulics.continuity 连续方程、流量与控制体|core|hydraulics.kinematics、math05.ftc|hydraulics.continuity.1,hydraulics.continuity.2|hydraulics.continuity.3,hydraulics.continuity.4,hydraulics.continuity.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.energy 伯努利、总流能量方程与水头线|core|hydraulics.continuity、theory.energy|hydraulics.energy.1,hydraulics.energy.2|hydraulics.energy.3,hydraulics.energy.4,hydraulics.energy.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.momentum 动量方程、水流作用力与修正系数|core|hydraulics.continuity、theory.momentum|hydraulics.momentum.1,hydraulics.momentum.2|hydraulics.momentum.3,hydraulics.momentum.4,hydraulics.momentum.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.similarity 量纲分析、雷诺弗劳德与模型相似|core|hydraulics.properties、math08.vectors|hydraulics.similarity.1,hydraulics.similarity.2|hydraulics.similarity.3,hydraulics.similarity.4,hydraulics.similarity.5|3|未审核/未验证|
+|河海工程·水力学基础|hydraulics.resistance 层紊流、沿程局部损失与边界层|core|hydraulics.similarity、hydraulics.energy|hydraulics.resistance.1,hydraulics.resistance.2|hydraulics.resistance.3,hydraulics.resistance.4,hydraulics.resistance.5|3|未审核/未验证|
+|河海工程·水力学基础|hydraulics.pipes 长短管、串并联管网与泵工况|core|hydraulics.resistance、hydraulics.continuity|hydraulics.pipes.1,hydraulics.pipes.2|hydraulics.pipes.3,hydraulics.pipes.4,hydraulics.pipes.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.open-uniform 明渠均匀流、曼宁与最佳断面|core|hydraulics.resistance|hydraulics.open-uniform.1,hydraulics.open-uniform.2|hydraulics.open-uniform.3,hydraulics.open-uniform.4,hydraulics.open-uniform.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.critical 断面比能、临界水深与水流分区|core|hydraulics.energy、hydraulics.open-uniform|hydraulics.critical.1,hydraulics.critical.2|hydraulics.critical.3,hydraulics.critical.4,hydraulics.critical.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.gradually-varied 渐变流水面线与边界控制|core|hydraulics.critical|hydraulics.gradually-varied.1,hydraulics.gradually-varied.2|hydraulics.gradually-varied.3,hydraulics.gradually-varied.4,hydraulics.gradually-varied.5|1|未审核/未验证|
+|河海工程·水力学基础|hydraulics.jump 水跃、共轭水深与消能|core|hydraulics.momentum、hydraulics.critical|hydraulics.jump.1,hydraulics.jump.2|hydraulics.jump.3,hydraulics.jump.4,hydraulics.jump.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.weir-orifice 孔口、管嘴、堰流与闸孔|core|hydraulics.energy、hydraulics.critical|hydraulics.weir-orifice.1,hydraulics.weir-orifice.2|hydraulics.weir-orifice.3,hydraulics.weir-orifice.4,hydraulics.weir-orifice.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.seepage 达西渗流、渗透系数与地下水|core|hydraulics.continuity|hydraulics.seepage.1,hydraulics.seepage.2|hydraulics.seepage.3,hydraulics.seepage.4,hydraulics.seepage.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.transient 非恒定流、水击与圣维南方程|core|hydraulics.momentum、math07.concept|hydraulics.transient.1,hydraulics.transient.2|hydraulics.transient.3,hydraulics.transient.4,hydraulics.transient.5|2|未审核/未验证|
+|河海工程·水力学基础|hydraulics.measurement 水位、流速流量与水力实验|core|hydraulics.continuity、hydraulics.similarity|hydraulics.measurement.1,hydraulics.measurement.2|hydraulics.measurement.3,hydraulics.measurement.4,hydraulics.measurement.5|1|未审核/未验证|
+|河海工程·河流与泥沙|river.sediment-properties 泥沙粒径、密度、级配与床沙孔隙|core|hydraulics.properties|river.sediment-properties.1,river.sediment-properties.2|river.sediment-properties.3,river.sediment-properties.4,river.sediment-properties.5|2|未审核/未验证|
+|河海工程·河流与泥沙|river.settling 泥沙沉速、颗粒雷诺数与絮凝|core|river.sediment-properties、hydraulics.resistance|river.settling.1,river.settling.2|river.settling.3,river.settling.4,river.settling.5|2|未审核/未验证|
+|河海工程·河流与泥沙|river.bed-shear 床面切应力、摩阻流速与Shields参数|core|hydraulics.open-uniform、river.sediment-properties|river.bed-shear.1,river.bed-shear.2|river.bed-shear.3,river.bed-shear.4,river.bed-shear.5|3|未审核/未验证|
+|河海工程·河流与泥沙|river.entrainment 泥沙起动、临界切应力与起动流速|core|river.bed-shear|river.entrainment.1,river.entrainment.2|river.entrainment.3,river.entrainment.4,river.entrainment.5|1|未审核/未验证|
+|河海工程·河流与泥沙|river.bedload 推移质、单宽输沙率与经验适用域|core|river.entrainment|river.bedload.1,river.bedload.2|river.bedload.3,river.bedload.4,river.bedload.5|2|未审核/未验证|
+|河海工程·河流与泥沙|river.suspended 悬移质、含沙量、扩散与Rouse分布|core|river.settling、river.bed-shear|river.suspended.1,river.suspended.2|river.suspended.3,river.suspended.4,river.suspended.5|2|未审核/未验证|
+|河海工程·河流与泥沙|river.sediment-continuity 泥沙连续、Exner方程与冲淤|core|river.bedload、river.suspended、math09.partial|river.sediment-continuity.1,river.sediment-continuity.2|river.sediment-continuity.3,river.sediment-continuity.4,river.sediment-continuity.5|2|未审核/未验证|
+|河海工程·河流与泥沙|river.bedforms 沙纹沙垄、平床与水沙阻力|core|river.bedload、hydraulics.resistance|river.bedforms.1,river.bedforms.2|river.bedforms.3,river.bedforms.4,river.bedforms.5|0|未审核/未验证|
+|河海工程·河流与泥沙|river.channel-evolution 河床演变、弯道、分汊与河型|core|river.sediment-continuity、river.bedforms|river.channel-evolution.1,river.channel-evolution.2|river.channel-evolution.3,river.channel-evolution.4,river.channel-evolution.5|0|未审核/未验证|
+|河海工程·河流与泥沙|river.regulation 河道整治、护岸、丁坝与桥墩冲刷|core|river.channel-evolution、hydraulics.gradually-varied|river.regulation.1,river.regulation.2|river.regulation.3,river.regulation.4,river.regulation.5|0|未审核/未验证|
+|河海工程·河流与泥沙|river.density-current 异重流、分层、掺混与水库泥沙|core|hydraulics.momentum、river.suspended|river.density-current.1,river.density-current.2|river.density-current.3,river.density-current.4,river.density-current.5|1|未审核/未验证|
+|河海工程·河流与泥沙|river.estuary 河口径流潮汐、盐水入侵与最大浑浊带|core|river.density-current、river.channel-evolution|river.estuary.1,river.estuary.2|river.estuary.3,river.estuary.4,river.estuary.5|0|未审核/未验证|
+|河海工程·海岸与港航|coastal.wave-linear 波高周期波长与线性波理论|core|hydraulics.energy、math02.rules|coastal.wave-linear.1,coastal.wave-linear.2|coastal.wave-linear.3,coastal.wave-linear.4,coastal.wave-linear.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.dispersion 色散、深浅水与相位群速度|core|coastal.wave-linear|coastal.dispersion.1,coastal.dispersion.2|coastal.dispersion.3,coastal.dispersion.4,coastal.dispersion.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.energy 波能密度、能流与辐射应力|core|coastal.dispersion、hydraulics.momentum|coastal.energy.1,coastal.energy.2|coastal.energy.3,coastal.energy.4,coastal.energy.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.transform 浅化、折射、绕射与反射|core|coastal.energy|coastal.transform.1,coastal.transform.2|coastal.transform.3,coastal.transform.4,coastal.transform.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.breaking 破波、爬高、越浪与增水|core|coastal.transform|coastal.breaking.1,coastal.breaking.2|coastal.breaking.3,coastal.breaking.4,coastal.breaking.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.random-waves 随机波、波谱与有效波高|core|coastal.wave-linear、math05.definition|coastal.random-waves.1,coastal.random-waves.2|coastal.random-waves.3,coastal.random-waves.4,coastal.random-waves.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.tides 天文潮、潮差、潮流与潮量|core|hydraulics.continuity、math05.ftc|coastal.tides.1,coastal.tides.2|coastal.tides.3,coastal.tides.4,coastal.tides.5|3|未审核/未验证|
+|河海工程·海岸与港航|coastal.surge-currents 风暴潮、近岸流、离岸流与波流作用|core|coastal.energy、coastal.tides|coastal.surge-currents.1,coastal.surge-currents.2|coastal.surge-currents.3,coastal.surge-currents.4,coastal.surge-currents.5|0|未审核/未验证|
+|河海工程·海岸与港航|coastal.coast-sediment 波流输沙、岸滩剖面与海岸演变|core|river.suspended、coastal.surge-currents|coastal.coast-sediment.1,coastal.coast-sediment.2|coastal.coast-sediment.3,coastal.coast-sediment.4,coastal.coast-sediment.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.wave-loads 波浪荷载、Morison与绕射适用性|core|coastal.wave-linear、hydraulics.momentum、steel.design|coastal.wave-loads.1,coastal.wave-loads.2|coastal.wave-loads.3,coastal.wave-loads.4,coastal.wave-loads.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.breakwater 斜坡式与直立式防波堤、稳定与消浪|core|coastal.breaking、coastal.wave-loads|coastal.breakwater.1,coastal.breakwater.2|coastal.breakwater.3,coastal.breakwater.4,coastal.breakwater.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.revetment 海堤、护岸、反滤与堤脚防冲|core|coastal.breaking、hydraulics.seepage|coastal.revetment.1,coastal.revetment.2|coastal.revetment.3,coastal.revetment.4,coastal.revetment.5|0|未审核/未验证|
+|河海工程·海岸与港航|coastal.harbor-layout 港口选址、总平面与港池静稳|core|coastal.transform、coastal.coast-sediment|coastal.harbor-layout.1,coastal.harbor-layout.2|coastal.harbor-layout.3,coastal.harbor-layout.4,coastal.harbor-layout.5|0|未审核/未验证|
+|河海工程·海岸与港航|coastal.navigation 航道水深、富裕水深、宽度与通航|core|coastal.tides、hydraulics.continuity|coastal.navigation.1,coastal.navigation.2|coastal.navigation.3,coastal.navigation.4,coastal.navigation.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.gravity-quay 重力式码头、土压力与基底受力|core|hydraulics.surface-pressure、structures.determinate|coastal.gravity-quay.1,coastal.gravity-quay.2|coastal.gravity-quay.3,coastal.gravity-quay.4,coastal.gravity-quay.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.piled-quay 高桩码头、桩台与空间传力|core|structures.frame、coastal.gravity-quay|coastal.piled-quay.1,coastal.piled-quay.2|coastal.piled-quay.3,coastal.piled-quay.4,coastal.piled-quay.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.sheet-pile 板桩码头、锚拉与嵌固深度|core|materials.bending、coastal.gravity-quay|coastal.sheet-pile.1,coastal.sheet-pile.2|coastal.sheet-pile.3,coastal.sheet-pile.4,coastal.sheet-pile.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.mooring 系泊、靠泊能量与护舷|core|theory.energy、coastal.harbor-layout|coastal.mooring.1,coastal.mooring.2|coastal.mooring.3,coastal.mooring.4,coastal.mooring.5|1|未审核/未验证|
+|河海工程·海岸与港航|coastal.dredging 疏浚、回淤、工程量与维护|core|coastal.navigation、river.sediment-continuity|coastal.dredging.1,coastal.dredging.2|coastal.dredging.3,coastal.dredging.4,coastal.dredging.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.physical-models 河口海岸物理模型与数值模型核验|core|hydraulics.similarity、river.entrainment、coastal.dispersion|coastal.physical-models.1,coastal.physical-models.2|coastal.physical-models.3,coastal.physical-models.4,coastal.physical-models.5|2|未审核/未验证|
+|河海工程·海岸与港航|coastal.environment 河海工程生态、监测与不确定性|core|river.estuary、coastal.dredging|coastal.environment.1,coastal.environment.2|coastal.environment.3,coastal.environment.4,coastal.environment.5|0|未审核/未验证|
 
 ## 后续验收
 
 - 请教师逐节审核知识映射、评分要点与题型深度，并扩充各主题题池。
 - 证明与论述由宿主按评分要点审核。
 - 通过真实学生作答校准诊断分支，测量迁移和后续保持。
-- 专业题按明确的平面、线性、教材模型核验；复杂空间与非线性分析需建立对应模块。
+- 专业题按题设模型、单位、边界和公式适用范围核验；规范查表需记录版本和依据。
 - 统一的来源、适用范围与质量字段见references/sources-and-review.md。

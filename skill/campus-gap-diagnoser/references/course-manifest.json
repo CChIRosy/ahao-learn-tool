@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
-  "scope_basis": "同济第八版上下册及references/syllabus-audit.json所列力学范围；逐项映射知识主题与起始题",
+  "version": "0.3.0",
+  "scope_basis": "同济高数、三门力学、钢结构与用户确认的河流海岸工程范围；来源与主题映射见references/syllabus-audit.json",
   "courses": [
     {
       "id": "math01",
@@ -121,6 +121,38 @@
       "source": "https://cec.hrbeu.edu.cn/_upload/article/files/4a/00/2bbccea0465ea0f94fe98f8a1a6a/3a639add-0f08-449e-ad50-1bbf1b9c19f4.pdf",
       "skill_count": 37,
       "question_count": 185
+    },
+    {
+      "id": "steel",
+      "name": "钢结构基本原理与应用",
+      "file": "steel.json",
+      "source": "https://ce.hnu.edu.cn/info/1025/1809.htm",
+      "skill_count": 26,
+      "question_count": 130
+    },
+    {
+      "id": "hydraulics",
+      "name": "河海工程·水力学基础",
+      "file": "hydraulics.json",
+      "source": "https://zh.ujn.edu.cn/info/1079/4725.htm",
+      "skill_count": 18,
+      "question_count": 90
+    },
+    {
+      "id": "river",
+      "name": "河海工程·河流与泥沙",
+      "file": "river.json",
+      "source": "https://www.icourse163.org/spoc/course/HHU-1461704163?tid=1462484444",
+      "skill_count": 12,
+      "question_count": 60
+    },
+    {
+      "id": "coastal",
+      "name": "河海工程·海岸与港航",
+      "file": "coastal.json",
+      "source": "https://www.icourse163.org/course/HHU-1206808802?tid=1476735446",
+      "skill_count": 21,
+      "question_count": 105
     }
   ],
   "skills": [
@@ -3115,6 +3147,1155 @@
       "tier": "extension",
       "file": "structures.json",
       "course": "structures"
+    },
+    {
+      "id": "steel.design",
+      "name": "钢结构体系、极限状态与设计原则",
+      "aliases": [
+        "钢结构体系、极限状态与设计原则",
+        "design"
+      ],
+      "prerequisites": [
+        "structures.overview",
+        "materials.design"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.materials",
+      "name": "钢材应力应变、韧性与疲劳性能",
+      "aliases": [
+        "钢材应力应变、韧性与疲劳性能",
+        "materials"
+      ],
+      "prerequisites": [
+        "materials.properties",
+        "materials.concentration"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.selection",
+      "name": "钢材选用、厚度效应与质量保证",
+      "aliases": [
+        "钢材选用、厚度效应与质量保证",
+        "selection"
+      ],
+      "prerequisites": [
+        "steel.materials"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.welding",
+      "name": "焊缝形式、焊接缺陷与残余应力",
+      "aliases": [
+        "焊缝形式、焊接缺陷与残余应力",
+        "welding"
+      ],
+      "prerequisites": [
+        "steel.materials",
+        "materials.concentration"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.butt-weld",
+      "name": "对接焊缝的有效截面与验算",
+      "aliases": [
+        "对接焊缝的有效截面与验算",
+        "butt-weld"
+      ],
+      "prerequisites": [
+        "steel.welding",
+        "materials.combined"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.fillet-weld",
+      "name": "角焊缝有效焊喉与强度",
+      "aliases": [
+        "角焊缝有效焊喉与强度",
+        "fillet-weld"
+      ],
+      "prerequisites": [
+        "steel.welding",
+        "materials.shear"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.weld-group",
+      "name": "偏心焊缝群的力与力矩分配",
+      "aliases": [
+        "偏心焊缝群的力与力矩分配",
+        "weld-group"
+      ],
+      "prerequisites": [
+        "steel.fillet-weld",
+        "theory.force"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.bearing-bolts",
+      "name": "普通螺栓剪切、承压与净截面",
+      "aliases": [
+        "普通螺栓剪切、承压与净截面",
+        "bearing-bolts"
+      ],
+      "prerequisites": [
+        "materials.shear",
+        "steel.design"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.friction-bolts",
+      "name": "高强螺栓摩擦型、承压型与预拉力",
+      "aliases": [
+        "高强螺栓摩擦型、承压型与预拉力",
+        "friction-bolts"
+      ],
+      "prerequisites": [
+        "steel.bearing-bolts"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.bolt-group",
+      "name": "受拉与偏心螺栓群、连接撬力",
+      "aliases": [
+        "受拉与偏心螺栓群、连接撬力",
+        "bolt-group"
+      ],
+      "prerequisites": [
+        "steel.bearing-bolts",
+        "steel.weld-group"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.tension",
+      "name": "轴心受拉构件、剪滞与块体剪切",
+      "aliases": [
+        "轴心受拉构件、剪滞与块体剪切",
+        "tension"
+      ],
+      "prerequisites": [
+        "steel.bearing-bolts",
+        "materials.axial"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.column",
+      "name": "轴心受压构件、整体稳定与柱曲线",
+      "aliases": [
+        "轴心受压构件、整体稳定与柱曲线",
+        "column"
+      ],
+      "prerequisites": [
+        "materials.stability-design",
+        "steel.materials"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.builtup",
+      "name": "格构柱、缀条缀板与分肢稳定",
+      "aliases": [
+        "格构柱、缀条缀板与分肢稳定",
+        "builtup"
+      ],
+      "prerequisites": [
+        "steel.column",
+        "structures.truss-methods"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.local-buckling",
+      "name": "板件局部屈曲、宽厚比与有效截面",
+      "aliases": [
+        "板件局部屈曲、宽厚比与有效截面",
+        "local-buckling"
+      ],
+      "prerequisites": [
+        "steel.column",
+        "materials.basics"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.beam-strength",
+      "name": "钢梁抗弯、抗剪、局压与正常使用",
+      "aliases": [
+        "钢梁抗弯、抗剪、局压与正常使用",
+        "beam-strength"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "steel.design"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.beam-stability",
+      "name": "钢梁侧扭屈曲与侧向支承",
+      "aliases": [
+        "钢梁侧扭屈曲与侧向支承",
+        "beam-stability"
+      ],
+      "prerequisites": [
+        "steel.local-buckling",
+        "structures.elastic-stability"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.plate-girder",
+      "name": "组合钢梁腹板、加劲肋与拼接",
+      "aliases": [
+        "组合钢梁腹板、加劲肋与拼接",
+        "plate-girder"
+      ],
+      "prerequisites": [
+        "steel.beam-strength",
+        "steel.local-buckling"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.beam-column",
+      "name": "拉弯压弯、二阶效应与双向受力",
+      "aliases": [
+        "拉弯压弯、二阶效应与双向受力",
+        "beam-column"
+      ],
+      "prerequisites": [
+        "steel.column",
+        "steel.beam-strength",
+        "structures.sway"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.truss",
+      "name": "钢屋架、腹杆弦杆与支撑体系",
+      "aliases": [
+        "钢屋架、腹杆弦杆与支撑体系",
+        "truss"
+      ],
+      "prerequisites": [
+        "structures.truss-methods",
+        "steel.tension",
+        "steel.column"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.joints",
+      "name": "梁柱节点、节点板与连接刚度",
+      "aliases": [
+        "梁柱节点、节点板与连接刚度",
+        "joints"
+      ],
+      "prerequisites": [
+        "steel.bolt-group",
+        "steel.weld-group",
+        "structures.frame"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.bases",
+      "name": "柱脚、底板承压与锚栓",
+      "aliases": [
+        "柱脚、底板承压与锚栓",
+        "bases"
+      ],
+      "prerequisites": [
+        "steel.beam-column",
+        "steel.bolt-group"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.industrial",
+      "name": "单层厂房、吊车梁与空间支撑",
+      "aliases": [
+        "单层厂房、吊车梁与空间支撑",
+        "industrial"
+      ],
+      "prerequisites": [
+        "steel.truss",
+        "steel.plate-girder"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.portal",
+      "name": "门式刚架、檩条与围护协同",
+      "aliases": [
+        "门式刚架、檩条与围护协同",
+        "portal"
+      ],
+      "prerequisites": [
+        "steel.beam-column",
+        "steel.local-buckling"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.fatigue",
+      "name": "钢结构疲劳、细节分类与断裂",
+      "aliases": [
+        "钢结构疲劳、细节分类与断裂",
+        "fatigue"
+      ],
+      "prerequisites": [
+        "materials.fatigue-detail",
+        "steel.welding"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.fire-corrosion",
+      "name": "钢结构防火、防腐与全寿命维护",
+      "aliases": [
+        "钢结构防火、防腐与全寿命维护",
+        "fire-corrosion"
+      ],
+      "prerequisites": [
+        "steel.materials",
+        "steel.design"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "steel.fabrication",
+      "name": "制造安装、误差、检验与临时稳定",
+      "aliases": [
+        "制造安装、误差、检验与临时稳定",
+        "fabrication"
+      ],
+      "prerequisites": [
+        "steel.welding",
+        "steel.truss"
+      ],
+      "tier": "core",
+      "file": "steel.json",
+      "course": "steel"
+    },
+    {
+      "id": "hydraulics.properties",
+      "name": "流体密度、黏性、压缩性与连续介质",
+      "aliases": [
+        "流体密度、黏性、压缩性与连续介质",
+        "properties"
+      ],
+      "prerequisites": [
+        "materials.basics"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.hydrostatics",
+      "name": "静水压强、测压管与压强基准",
+      "aliases": [
+        "静水压强、测压管与压强基准",
+        "hydrostatics"
+      ],
+      "prerequisites": [
+        "hydraulics.properties",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.surface-pressure",
+      "name": "静水总压力、压力中心与浮力",
+      "aliases": [
+        "静水总压力、压力中心与浮力",
+        "surface-pressure"
+      ],
+      "prerequisites": [
+        "hydraulics.hydrostatics",
+        "math06.physics"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.kinematics",
+      "name": "流线、迹线、恒定流与流场描述",
+      "aliases": [
+        "流线、迹线、恒定流与流场描述",
+        "kinematics"
+      ],
+      "prerequisites": [
+        "theory.point",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.continuity",
+      "name": "连续方程、流量与控制体",
+      "aliases": [
+        "连续方程、流量与控制体",
+        "continuity"
+      ],
+      "prerequisites": [
+        "hydraulics.kinematics",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.energy",
+      "name": "伯努利、总流能量方程与水头线",
+      "aliases": [
+        "伯努利、总流能量方程与水头线",
+        "energy"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "theory.energy"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.momentum",
+      "name": "动量方程、水流作用力与修正系数",
+      "aliases": [
+        "动量方程、水流作用力与修正系数",
+        "momentum"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "theory.momentum"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.similarity",
+      "name": "量纲分析、雷诺弗劳德与模型相似",
+      "aliases": [
+        "量纲分析、雷诺弗劳德与模型相似",
+        "similarity"
+      ],
+      "prerequisites": [
+        "hydraulics.properties",
+        "math08.vectors"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.resistance",
+      "name": "层紊流、沿程局部损失与边界层",
+      "aliases": [
+        "层紊流、沿程局部损失与边界层",
+        "resistance"
+      ],
+      "prerequisites": [
+        "hydraulics.similarity",
+        "hydraulics.energy"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.pipes",
+      "name": "长短管、串并联管网与泵工况",
+      "aliases": [
+        "长短管、串并联管网与泵工况",
+        "pipes"
+      ],
+      "prerequisites": [
+        "hydraulics.resistance",
+        "hydraulics.continuity"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.open-uniform",
+      "name": "明渠均匀流、曼宁与最佳断面",
+      "aliases": [
+        "明渠均匀流、曼宁与最佳断面",
+        "open-uniform"
+      ],
+      "prerequisites": [
+        "hydraulics.resistance"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.critical",
+      "name": "断面比能、临界水深与水流分区",
+      "aliases": [
+        "断面比能、临界水深与水流分区",
+        "critical"
+      ],
+      "prerequisites": [
+        "hydraulics.energy",
+        "hydraulics.open-uniform"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.gradually-varied",
+      "name": "渐变流水面线与边界控制",
+      "aliases": [
+        "渐变流水面线与边界控制",
+        "gradually-varied"
+      ],
+      "prerequisites": [
+        "hydraulics.critical"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.jump",
+      "name": "水跃、共轭水深与消能",
+      "aliases": [
+        "水跃、共轭水深与消能",
+        "jump"
+      ],
+      "prerequisites": [
+        "hydraulics.momentum",
+        "hydraulics.critical"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.weir-orifice",
+      "name": "孔口、管嘴、堰流与闸孔",
+      "aliases": [
+        "孔口、管嘴、堰流与闸孔",
+        "weir-orifice"
+      ],
+      "prerequisites": [
+        "hydraulics.energy",
+        "hydraulics.critical"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.seepage",
+      "name": "达西渗流、渗透系数与地下水",
+      "aliases": [
+        "达西渗流、渗透系数与地下水",
+        "seepage"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.transient",
+      "name": "非恒定流、水击与圣维南方程",
+      "aliases": [
+        "非恒定流、水击与圣维南方程",
+        "transient"
+      ],
+      "prerequisites": [
+        "hydraulics.momentum",
+        "math07.concept"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "hydraulics.measurement",
+      "name": "水位、流速流量与水力实验",
+      "aliases": [
+        "水位、流速流量与水力实验",
+        "measurement"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "hydraulics.similarity"
+      ],
+      "tier": "core",
+      "file": "hydraulics.json",
+      "course": "hydraulics"
+    },
+    {
+      "id": "river.sediment-properties",
+      "name": "泥沙粒径、密度、级配与床沙孔隙",
+      "aliases": [
+        "泥沙粒径、密度、级配与床沙孔隙",
+        "sediment-properties"
+      ],
+      "prerequisites": [
+        "hydraulics.properties"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.settling",
+      "name": "泥沙沉速、颗粒雷诺数与絮凝",
+      "aliases": [
+        "泥沙沉速、颗粒雷诺数与絮凝",
+        "settling"
+      ],
+      "prerequisites": [
+        "river.sediment-properties",
+        "hydraulics.resistance"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.bed-shear",
+      "name": "床面切应力、摩阻流速与Shields参数",
+      "aliases": [
+        "床面切应力、摩阻流速与Shields参数",
+        "bed-shear"
+      ],
+      "prerequisites": [
+        "hydraulics.open-uniform",
+        "river.sediment-properties"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.entrainment",
+      "name": "泥沙起动、临界切应力与起动流速",
+      "aliases": [
+        "泥沙起动、临界切应力与起动流速",
+        "entrainment"
+      ],
+      "prerequisites": [
+        "river.bed-shear"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.bedload",
+      "name": "推移质、单宽输沙率与经验适用域",
+      "aliases": [
+        "推移质、单宽输沙率与经验适用域",
+        "bedload"
+      ],
+      "prerequisites": [
+        "river.entrainment"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.suspended",
+      "name": "悬移质、含沙量、扩散与Rouse分布",
+      "aliases": [
+        "悬移质、含沙量、扩散与Rouse分布",
+        "suspended"
+      ],
+      "prerequisites": [
+        "river.settling",
+        "river.bed-shear"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.sediment-continuity",
+      "name": "泥沙连续、Exner方程与冲淤",
+      "aliases": [
+        "泥沙连续、Exner方程与冲淤",
+        "sediment-continuity"
+      ],
+      "prerequisites": [
+        "river.bedload",
+        "river.suspended",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.bedforms",
+      "name": "沙纹沙垄、平床与水沙阻力",
+      "aliases": [
+        "沙纹沙垄、平床与水沙阻力",
+        "bedforms"
+      ],
+      "prerequisites": [
+        "river.bedload",
+        "hydraulics.resistance"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.channel-evolution",
+      "name": "河床演变、弯道、分汊与河型",
+      "aliases": [
+        "河床演变、弯道、分汊与河型",
+        "channel-evolution"
+      ],
+      "prerequisites": [
+        "river.sediment-continuity",
+        "river.bedforms"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.regulation",
+      "name": "河道整治、护岸、丁坝与桥墩冲刷",
+      "aliases": [
+        "河道整治、护岸、丁坝与桥墩冲刷",
+        "regulation"
+      ],
+      "prerequisites": [
+        "river.channel-evolution",
+        "hydraulics.gradually-varied"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.density-current",
+      "name": "异重流、分层、掺混与水库泥沙",
+      "aliases": [
+        "异重流、分层、掺混与水库泥沙",
+        "density-current"
+      ],
+      "prerequisites": [
+        "hydraulics.momentum",
+        "river.suspended"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "river.estuary",
+      "name": "河口径流潮汐、盐水入侵与最大浑浊带",
+      "aliases": [
+        "河口径流潮汐、盐水入侵与最大浑浊带",
+        "estuary"
+      ],
+      "prerequisites": [
+        "river.density-current",
+        "river.channel-evolution"
+      ],
+      "tier": "core",
+      "file": "river.json",
+      "course": "river"
+    },
+    {
+      "id": "coastal.wave-linear",
+      "name": "波高周期波长与线性波理论",
+      "aliases": [
+        "波高周期波长与线性波理论",
+        "wave-linear"
+      ],
+      "prerequisites": [
+        "hydraulics.energy",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.dispersion",
+      "name": "色散、深浅水与相位群速度",
+      "aliases": [
+        "色散、深浅水与相位群速度",
+        "dispersion"
+      ],
+      "prerequisites": [
+        "coastal.wave-linear"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.energy",
+      "name": "波能密度、能流与辐射应力",
+      "aliases": [
+        "波能密度、能流与辐射应力",
+        "energy"
+      ],
+      "prerequisites": [
+        "coastal.dispersion",
+        "hydraulics.momentum"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.transform",
+      "name": "浅化、折射、绕射与反射",
+      "aliases": [
+        "浅化、折射、绕射与反射",
+        "transform"
+      ],
+      "prerequisites": [
+        "coastal.energy"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.breaking",
+      "name": "破波、爬高、越浪与增水",
+      "aliases": [
+        "破波、爬高、越浪与增水",
+        "breaking"
+      ],
+      "prerequisites": [
+        "coastal.transform"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.random-waves",
+      "name": "随机波、波谱与有效波高",
+      "aliases": [
+        "随机波、波谱与有效波高",
+        "random-waves"
+      ],
+      "prerequisites": [
+        "coastal.wave-linear",
+        "math05.definition"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.tides",
+      "name": "天文潮、潮差、潮流与潮量",
+      "aliases": [
+        "天文潮、潮差、潮流与潮量",
+        "tides"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.surge-currents",
+      "name": "风暴潮、近岸流、离岸流与波流作用",
+      "aliases": [
+        "风暴潮、近岸流、离岸流与波流作用",
+        "surge-currents"
+      ],
+      "prerequisites": [
+        "coastal.energy",
+        "coastal.tides"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.coast-sediment",
+      "name": "波流输沙、岸滩剖面与海岸演变",
+      "aliases": [
+        "波流输沙、岸滩剖面与海岸演变",
+        "coast-sediment"
+      ],
+      "prerequisites": [
+        "river.suspended",
+        "coastal.surge-currents"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.wave-loads",
+      "name": "波浪荷载、Morison与绕射适用性",
+      "aliases": [
+        "波浪荷载、Morison与绕射适用性",
+        "wave-loads"
+      ],
+      "prerequisites": [
+        "coastal.wave-linear",
+        "hydraulics.momentum",
+        "steel.design"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.breakwater",
+      "name": "斜坡式与直立式防波堤、稳定与消浪",
+      "aliases": [
+        "斜坡式与直立式防波堤、稳定与消浪",
+        "breakwater"
+      ],
+      "prerequisites": [
+        "coastal.breaking",
+        "coastal.wave-loads"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.revetment",
+      "name": "海堤、护岸、反滤与堤脚防冲",
+      "aliases": [
+        "海堤、护岸、反滤与堤脚防冲",
+        "revetment"
+      ],
+      "prerequisites": [
+        "coastal.breaking",
+        "hydraulics.seepage"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.harbor-layout",
+      "name": "港口选址、总平面与港池静稳",
+      "aliases": [
+        "港口选址、总平面与港池静稳",
+        "harbor-layout"
+      ],
+      "prerequisites": [
+        "coastal.transform",
+        "coastal.coast-sediment"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.navigation",
+      "name": "航道水深、富裕水深、宽度与通航",
+      "aliases": [
+        "航道水深、富裕水深、宽度与通航",
+        "navigation"
+      ],
+      "prerequisites": [
+        "coastal.tides",
+        "hydraulics.continuity"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.gravity-quay",
+      "name": "重力式码头、土压力与基底受力",
+      "aliases": [
+        "重力式码头、土压力与基底受力",
+        "gravity-quay"
+      ],
+      "prerequisites": [
+        "hydraulics.surface-pressure",
+        "structures.determinate"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.piled-quay",
+      "name": "高桩码头、桩台与空间传力",
+      "aliases": [
+        "高桩码头、桩台与空间传力",
+        "piled-quay"
+      ],
+      "prerequisites": [
+        "structures.frame",
+        "coastal.gravity-quay"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.sheet-pile",
+      "name": "板桩码头、锚拉与嵌固深度",
+      "aliases": [
+        "板桩码头、锚拉与嵌固深度",
+        "sheet-pile"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "coastal.gravity-quay"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.mooring",
+      "name": "系泊、靠泊能量与护舷",
+      "aliases": [
+        "系泊、靠泊能量与护舷",
+        "mooring"
+      ],
+      "prerequisites": [
+        "theory.energy",
+        "coastal.harbor-layout"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.dredging",
+      "name": "疏浚、回淤、工程量与维护",
+      "aliases": [
+        "疏浚、回淤、工程量与维护",
+        "dredging"
+      ],
+      "prerequisites": [
+        "coastal.navigation",
+        "river.sediment-continuity"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.physical-models",
+      "name": "河口海岸物理模型与数值模型核验",
+      "aliases": [
+        "河口海岸物理模型与数值模型核验",
+        "physical-models"
+      ],
+      "prerequisites": [
+        "hydraulics.similarity",
+        "river.entrainment",
+        "coastal.dispersion"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
+    },
+    {
+      "id": "coastal.environment",
+      "name": "河海工程生态、监测与不确定性",
+      "aliases": [
+        "河海工程生态、监测与不确定性",
+        "environment"
+      ],
+      "prerequisites": [
+        "river.estuary",
+        "coastal.dredging"
+      ],
+      "tier": "core",
+      "file": "coastal.json",
+      "course": "coastal"
     }
   ]
 }

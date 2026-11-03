@@ -1,7 +1,8 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "previous_version": "0.2.0",
   "checked_at": "2026-11-03",
-  "basis": "出版社逐节目录及所列高校大纲的知识主题映射；星号节纳入，题型深度逐项保留审核状态",
+  "basis": "原课程目录映射加钢结构与用户确认的水力、泥沙、河口、波浪、港航主题；题型深度独立审核",
   "sources": {
     "math-upper": {
       "name": "同济高等数学第八版上册出版社目录",
@@ -32,6 +33,36 @@
       "name": "清华大学出版社Structural Mechanics详细目录",
       "url": "https://www.tup.tsinghua.edu.cn/booksCenter/bookcatalog?id=10424501",
       "scope": "公开详细目录第1—11章；按全部小节建立对应资源"
+    },
+    "steel": {
+      "name": "湖南大学钢结构设计原理课程大纲",
+      "url": "https://ce.hnu.edu.cn/info/1025/1809.htm",
+      "scope": "材料、设计原理、连接、基本构件和普通钢屋架；体系、耐久与施工列为应用补充"
+    },
+    "steel-mooc": {
+      "name": "同济团队钢结构基本原理课程介绍",
+      "url": "https://dxs.moe.gov.cn/zx/a/kskt_dxmk/240307/1746933.shtml",
+      "scope": "材料、构件、连接与节点的工作性能和设计原理"
+    },
+    "hydraulics": {
+      "name": "济南大学水力学教学大纲",
+      "url": "https://zh.ujn.edu.cn/info/1079/4725.htm",
+      "scope": "水静力、运动学、三大方程、阻力管流、明渠、堰闸、渗流及模型"
+    },
+    "river": {
+      "name": "河海大学河流动力学课程团队大纲",
+      "url": "https://www.icourse163.org/spoc/course/HHU-1461704163?tid=1462484444",
+      "scope": "泥沙特性、起动、推移悬移、异重流、河床与河口演变"
+    },
+    "coastal": {
+      "name": "河海大学海岸动力学课程团队大纲",
+      "url": "https://www.icourse163.org/course/HHU-1206808802?tid=1476735446",
+      "scope": "波浪、近岸流、海岸泥沙和岸滩变化；波浪相互作用与防护列应用节点"
+    },
+    "port": {
+      "name": "河海大学港口水工建筑物课程团队大纲",
+      "url": "https://www.icourse163.org/course/HHU-1206790814?tid=1473313475",
+      "scope": "码头作用、重力式、高桩式、板桩式码头；布置、航道和疏浚列基础应用"
     }
   },
   "entries": [
@@ -46,6 +77,7 @@
         "math01.function-properties"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -60,6 +92,7 @@
         "math01.quantifiers"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -74,6 +107,7 @@
         "math01.quantifiers"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -88,6 +122,7 @@
         "math01.limit-laws"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -101,6 +136,7 @@
         "math01.limit-laws"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -117,6 +153,7 @@
         "math01.limit-laws"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -130,6 +167,7 @@
         "math01.infinitesimal"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -143,6 +181,7 @@
         "math01.continuity"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -157,6 +196,7 @@
         "math01.uniform-continuity"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -171,6 +211,7 @@
         "math01.uniform-continuity"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -184,6 +225,7 @@
         "math02.definition"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -200,6 +242,7 @@
         "math02.inverse-derivative"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -213,6 +256,7 @@
         "math02.higher"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -228,6 +272,7 @@
         "math02.parametric-second"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -241,6 +286,7 @@
         "math02.differentials"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -255,6 +301,7 @@
         "math03.proof"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -268,6 +315,7 @@
         "math03.lhopital"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -282,6 +330,7 @@
         "math03.remainders"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -296,6 +345,7 @@
         "math03.curvature"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -309,6 +359,7 @@
         "math03.extrema"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -322,6 +373,7 @@
         "math03.asymptote"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -336,6 +388,7 @@
         "math03.evolute"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -349,6 +402,7 @@
         "math03.root-finding"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -362,6 +416,7 @@
         "math04.primitive"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -375,6 +430,7 @@
         "math04.substitution"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -388,6 +444,7 @@
         "math04.parts"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -402,6 +459,7 @@
         "math04.trig-rational"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -415,6 +473,7 @@
         "math04.integral-table"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -430,6 +489,7 @@
         "math05.quadrature"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -443,6 +503,7 @@
         "math05.ftc"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -456,6 +517,7 @@
         "math05.methods"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -469,6 +531,7 @@
         "math05.improper"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -482,6 +545,7 @@
         "math05.gamma"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -495,6 +559,7 @@
         "math06.area"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -510,6 +575,7 @@
         "math06.arc"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -523,6 +589,7 @@
         "math06.physics"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -536,6 +603,7 @@
         "math07.concept"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -549,6 +617,7 @@
         "math07.separable"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -563,6 +632,7 @@
         "math07.homogeneous-reducible"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -577,6 +647,7 @@
         "math07.bernoulli"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -590,6 +661,7 @@
         "math07.reduction"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -604,6 +676,7 @@
         "math07.variation-systems"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -617,6 +690,7 @@
         "math07.order"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -630,6 +704,7 @@
         "math07.nonhomogeneous"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -643,6 +718,7 @@
         "math07.exact-euler"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -656,6 +732,7 @@
         "math07.variation-systems"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -669,6 +746,7 @@
         "math08.vectors"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -683,6 +761,7 @@
         "math08.mixed"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -696,6 +775,7 @@
         "math08.planes"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -710,6 +790,7 @@
         "math08.metric"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -723,6 +804,7 @@
         "math08.surfaces"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -737,6 +819,7 @@
         "math08.mixed"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -750,6 +833,7 @@
         "math09.limits"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -763,6 +847,7 @@
         "math09.partial"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -777,6 +862,7 @@
         "math09.differentiability"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -790,6 +876,7 @@
         "math09.chain"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -805,6 +892,7 @@
         "math09.implicit-systems"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -819,6 +907,7 @@
         "math09.vector-curves"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -832,6 +921,7 @@
         "math09.geometry"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -845,6 +935,7 @@
         "math09.extrema"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -858,6 +949,7 @@
         "math09.taylor"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -871,6 +963,7 @@
         "math09.least-squares"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -884,6 +977,7 @@
         "math10.double"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -898,6 +992,7 @@
         "math10.polar"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -911,6 +1006,7 @@
         "math10.triple"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -925,6 +1021,7 @@
         "math10.surface-gravity"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -938,6 +1035,7 @@
         "math10.parameter"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -951,6 +1049,7 @@
         "math11.line1"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -965,6 +1064,7 @@
         "math11.line-connections"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -978,6 +1078,7 @@
         "math11.potential"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -991,6 +1092,7 @@
         "math11.surface1"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1004,6 +1106,7 @@
         "math11.surface-orientation"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1017,6 +1120,7 @@
         "math11.gauss"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1031,6 +1135,7 @@
         "math11.line-connections"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1045,6 +1150,7 @@
         "math12.cauchy"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1059,6 +1165,7 @@
         "math12.alternating"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1072,6 +1179,7 @@
         "math12.power"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1085,6 +1193,7 @@
         "math12.expansion"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1098,6 +1207,7 @@
         "math12.power-applications"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1111,6 +1221,7 @@
         "math12.uniform"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1125,6 +1236,7 @@
         "math12.half-range"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1139,6 +1251,7 @@
         "math12.half-range"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1152,6 +1265,7 @@
         "structures.overview"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1165,6 +1279,7 @@
         "structures.overview"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1178,6 +1293,7 @@
         "structures.overview"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1191,6 +1307,7 @@
         "structures.overview"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1204,6 +1321,7 @@
         "structures.geometry"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1217,6 +1335,7 @@
         "structures.geometry-rules"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1230,6 +1349,7 @@
         "structures.geometry-rules"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1244,6 +1364,7 @@
         "structures.force"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1257,6 +1378,7 @@
         "structures.determinate"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1270,6 +1392,7 @@
         "structures.gerber"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1283,6 +1406,7 @@
         "structures.frame"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1296,6 +1420,7 @@
         "structures.truss-methods"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1309,6 +1434,7 @@
         "structures.arch"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1322,6 +1448,7 @@
         "structures.mixed"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1335,6 +1462,7 @@
         "structures.virtual"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1348,6 +1476,7 @@
         "structures.virtual"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1362,6 +1491,7 @@
         "structures.diagram-product"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1375,6 +1505,7 @@
         "structures.diagram-product"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1388,6 +1519,7 @@
         "structures.loads"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1401,6 +1533,7 @@
         "structures.reciprocity"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1414,6 +1547,7 @@
         "structures.influence"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1427,6 +1561,7 @@
         "structures.influence"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1440,6 +1575,7 @@
         "structures.indirect-influence"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1453,6 +1589,7 @@
         "structures.indirect-influence"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1466,6 +1603,7 @@
         "structures.muller"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1479,6 +1617,7 @@
         "structures.muller"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1492,6 +1631,7 @@
         "structures.muller"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1505,6 +1645,7 @@
         "structures.force"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1518,6 +1659,7 @@
         "structures.force"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1531,6 +1673,7 @@
         "structures.force-details"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1544,6 +1687,7 @@
         "structures.force-details"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1558,6 +1702,7 @@
         "structures.force-details"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1571,6 +1716,7 @@
         "structures.force-details"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1584,6 +1730,7 @@
         "structures.force-details"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1597,6 +1744,7 @@
         "structures.force-details"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1610,6 +1758,7 @@
         "structures.slope-deflection"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1623,6 +1772,7 @@
         "structures.displacement"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1637,6 +1787,7 @@
         "structures.sway"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1651,6 +1802,7 @@
         "structures.slope-deflection"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1665,6 +1817,7 @@
         "structures.sway"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1678,6 +1831,7 @@
         "structures.matrix"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1691,6 +1845,7 @@
         "structures.matrix-assembly"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1704,6 +1859,7 @@
         "structures.matrix-assembly"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1717,6 +1873,7 @@
         "structures.matrix-assembly"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1730,6 +1887,7 @@
         "structures.matrix-assembly"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1743,6 +1901,7 @@
         "structures.matrix-assembly"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1756,6 +1915,7 @@
         "structures.dynamics"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1769,6 +1929,7 @@
         "structures.dynamics"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1782,6 +1943,7 @@
         "structures.dynamics"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1795,6 +1957,7 @@
         "structures.forced-modal"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1808,6 +1971,7 @@
         "structures.modal"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1821,6 +1985,7 @@
         "structures.forced-modal"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1834,6 +1999,7 @@
         "structures.forced-modal"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1847,6 +2013,7 @@
         "structures.rayleigh"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1860,6 +2027,7 @@
         "structures.plastic"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1873,6 +2041,7 @@
         "structures.plastic-bounds"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1886,6 +2055,7 @@
         "structures.plastic-mechanisms"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1899,6 +2069,7 @@
         "structures.plastic-bounds"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1912,6 +2083,7 @@
         "structures.plastic-mechanisms"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1925,6 +2097,7 @@
         "structures.plastic-mechanisms"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1938,6 +2111,7 @@
         "structures.stability"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1951,6 +2125,7 @@
         "structures.elastic-stability"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1964,6 +2139,7 @@
         "structures.elastic-stability"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1977,6 +2153,7 @@
         "structures.elastic-stability"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -1990,6 +2167,7 @@
         "structures.advanced-buckling"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2003,6 +2181,7 @@
         "structures.advanced-buckling"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2016,6 +2195,7 @@
         "structures.advanced-buckling"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2032,6 +2212,7 @@
         "theory.balance"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2045,6 +2226,7 @@
         "theory.space"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2059,6 +2241,7 @@
         "theory.balance"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2073,6 +2256,7 @@
         "theory.friction-angle"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2086,6 +2270,7 @@
         "theory.centroid"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2100,6 +2285,7 @@
         "theory.polar"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2113,6 +2299,7 @@
         "theory.rigid"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2127,6 +2314,7 @@
         "theory.planar-acceleration"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2141,6 +2329,7 @@
         "theory.coriolis"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2155,6 +2344,7 @@
         "theory.relative-dynamics"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2169,6 +2359,7 @@
         "theory.newton"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2183,6 +2374,7 @@
         "theory.rigid-dynamics"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2196,6 +2388,7 @@
         "theory.inertia"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2210,6 +2403,7 @@
         "theory.konig"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2223,6 +2417,7 @@
         "theory.rigid-dynamics"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2236,6 +2431,7 @@
         "theory.impact"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2250,6 +2446,7 @@
         "theory.rotor-balance"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2263,6 +2460,7 @@
         "theory.constraints"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2276,6 +2474,7 @@
         "theory.virtual-work"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2289,6 +2488,7 @@
         "theory.lagrange"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2304,6 +2504,7 @@
         "theory.damped-forced"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2317,6 +2518,7 @@
         "theory.gyroscope"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2330,6 +2532,7 @@
         "theory.variable-mass"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2344,6 +2547,7 @@
         "materials.section"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2358,6 +2562,7 @@
         "materials.oblique"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2372,6 +2577,7 @@
         "materials.design"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2385,6 +2591,7 @@
         "materials.shear"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2400,6 +2607,7 @@
         "materials.shaft-power"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2415,6 +2623,7 @@
         "materials.shear-flow"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2429,6 +2638,7 @@
         "materials.boundary"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2446,6 +2656,7 @@
         "materials.brittle-criteria"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2461,6 +2672,7 @@
         "materials.core"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2475,6 +2687,7 @@
         "materials.stability-design"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2489,6 +2702,7 @@
         "materials.rosette"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2503,6 +2717,7 @@
         "materials.principal-inertia"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2517,6 +2732,7 @@
         "materials.castigliano"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2531,6 +2747,7 @@
         "materials.thermal"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2547,6 +2764,7 @@
         "materials.concentration"
       ],
       "before": "partial",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2561,6 +2779,7 @@
         "materials.thin-wall"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2574,6 +2793,1085 @@
         "materials.pressure-vessels"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.design",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢结构体系、极限状态与设计原则",
+      "skills": [
+        "steel.design"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.materials",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢材应力应变、韧性与疲劳性能",
+      "skills": [
+        "steel.materials"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.selection",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢材选用、厚度效应与质量保证",
+      "skills": [
+        "steel.selection"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.welding",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "焊缝形式、焊接缺陷与残余应力",
+      "skills": [
+        "steel.welding"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.butt-weld",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "对接焊缝的有效截面与验算",
+      "skills": [
+        "steel.butt-weld"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.fillet-weld",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "角焊缝有效焊喉与强度",
+      "skills": [
+        "steel.fillet-weld"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.weld-group",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "偏心焊缝群的力与力矩分配",
+      "skills": [
+        "steel.weld-group"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.bearing-bolts",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "普通螺栓剪切、承压与净截面",
+      "skills": [
+        "steel.bearing-bolts"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.friction-bolts",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "高强螺栓摩擦型、承压型与预拉力",
+      "skills": [
+        "steel.friction-bolts"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.bolt-group",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "受拉与偏心螺栓群、连接撬力",
+      "skills": [
+        "steel.bolt-group"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.tension",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "轴心受拉构件、剪滞与块体剪切",
+      "skills": [
+        "steel.tension"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.column",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "轴心受压构件、整体稳定与柱曲线",
+      "skills": [
+        "steel.column"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.builtup",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "格构柱、缀条缀板与分肢稳定",
+      "skills": [
+        "steel.builtup"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.local-buckling",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "板件局部屈曲、宽厚比与有效截面",
+      "skills": [
+        "steel.local-buckling"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.beam-strength",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢梁抗弯、抗剪、局压与正常使用",
+      "skills": [
+        "steel.beam-strength"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.beam-stability",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢梁侧扭屈曲与侧向支承",
+      "skills": [
+        "steel.beam-stability"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.plate-girder",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "组合钢梁腹板、加劲肋与拼接",
+      "skills": [
+        "steel.plate-girder"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.beam-column",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "拉弯压弯、二阶效应与双向受力",
+      "skills": [
+        "steel.beam-column"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.truss",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢屋架、腹杆弦杆与支撑体系",
+      "skills": [
+        "steel.truss"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.joints",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "梁柱节点、节点板与连接刚度",
+      "skills": [
+        "steel.joints"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.bases",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "柱脚、底板承压与锚栓",
+      "skills": [
+        "steel.bases"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.industrial",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "单层厂房、吊车梁与空间支撑",
+      "skills": [
+        "steel.industrial"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.portal",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "门式刚架、檩条与围护协同",
+      "skills": [
+        "steel.portal"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.fatigue",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢结构疲劳、细节分类与断裂",
+      "skills": [
+        "steel.fatigue"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.fire-corrosion",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "钢结构防火、防腐与全寿命维护",
+      "skills": [
+        "steel.fire-corrosion"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.steel.fabrication",
+      "subject": "steel",
+      "source": "steel",
+      "outcome": "制造安装、误差、检验与临时稳定",
+      "skills": [
+        "steel.fabrication"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.properties",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "流体密度、黏性、压缩性与连续介质",
+      "skills": [
+        "hydraulics.properties"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.hydrostatics",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "静水压强、测压管与压强基准",
+      "skills": [
+        "hydraulics.hydrostatics"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.surface-pressure",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "静水总压力、压力中心与浮力",
+      "skills": [
+        "hydraulics.surface-pressure"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.kinematics",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "流线、迹线、恒定流与流场描述",
+      "skills": [
+        "hydraulics.kinematics"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.continuity",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "连续方程、流量与控制体",
+      "skills": [
+        "hydraulics.continuity"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.energy",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "伯努利、总流能量方程与水头线",
+      "skills": [
+        "hydraulics.energy"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.momentum",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "动量方程、水流作用力与修正系数",
+      "skills": [
+        "hydraulics.momentum"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.similarity",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "量纲分析、雷诺弗劳德与模型相似",
+      "skills": [
+        "hydraulics.similarity"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.resistance",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "层紊流、沿程局部损失与边界层",
+      "skills": [
+        "hydraulics.resistance"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.pipes",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "长短管、串并联管网与泵工况",
+      "skills": [
+        "hydraulics.pipes"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.open-uniform",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "明渠均匀流、曼宁与最佳断面",
+      "skills": [
+        "hydraulics.open-uniform"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.critical",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "断面比能、临界水深与水流分区",
+      "skills": [
+        "hydraulics.critical"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.gradually-varied",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "渐变流水面线与边界控制",
+      "skills": [
+        "hydraulics.gradually-varied"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.jump",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "水跃、共轭水深与消能",
+      "skills": [
+        "hydraulics.jump"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.weir-orifice",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "孔口、管嘴、堰流与闸孔",
+      "skills": [
+        "hydraulics.weir-orifice"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.seepage",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "达西渗流、渗透系数与地下水",
+      "skills": [
+        "hydraulics.seepage"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.transient",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "非恒定流、水击与圣维南方程",
+      "skills": [
+        "hydraulics.transient"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.hydraulics.measurement",
+      "subject": "hydraulics",
+      "source": "hydraulics",
+      "outcome": "水位、流速流量与水力实验",
+      "skills": [
+        "hydraulics.measurement"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.sediment-properties",
+      "subject": "river",
+      "source": "river",
+      "outcome": "泥沙粒径、密度、级配与床沙孔隙",
+      "skills": [
+        "river.sediment-properties"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.settling",
+      "subject": "river",
+      "source": "river",
+      "outcome": "泥沙沉速、颗粒雷诺数与絮凝",
+      "skills": [
+        "river.settling"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.bed-shear",
+      "subject": "river",
+      "source": "river",
+      "outcome": "床面切应力、摩阻流速与Shields参数",
+      "skills": [
+        "river.bed-shear"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.entrainment",
+      "subject": "river",
+      "source": "river",
+      "outcome": "泥沙起动、临界切应力与起动流速",
+      "skills": [
+        "river.entrainment"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.bedload",
+      "subject": "river",
+      "source": "river",
+      "outcome": "推移质、单宽输沙率与经验适用域",
+      "skills": [
+        "river.bedload"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.suspended",
+      "subject": "river",
+      "source": "river",
+      "outcome": "悬移质、含沙量、扩散与Rouse分布",
+      "skills": [
+        "river.suspended"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.sediment-continuity",
+      "subject": "river",
+      "source": "river",
+      "outcome": "泥沙连续、Exner方程与冲淤",
+      "skills": [
+        "river.sediment-continuity"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.bedforms",
+      "subject": "river",
+      "source": "river",
+      "outcome": "沙纹沙垄、平床与水沙阻力",
+      "skills": [
+        "river.bedforms"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.channel-evolution",
+      "subject": "river",
+      "source": "river",
+      "outcome": "河床演变、弯道、分汊与河型",
+      "skills": [
+        "river.channel-evolution"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.regulation",
+      "subject": "river",
+      "source": "river",
+      "outcome": "河道整治、护岸、丁坝与桥墩冲刷",
+      "skills": [
+        "river.regulation"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.density-current",
+      "subject": "river",
+      "source": "river",
+      "outcome": "异重流、分层、掺混与水库泥沙",
+      "skills": [
+        "river.density-current"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.river.estuary",
+      "subject": "river",
+      "source": "river",
+      "outcome": "河口径流潮汐、盐水入侵与最大浑浊带",
+      "skills": [
+        "river.estuary"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.wave-linear",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "波高周期波长与线性波理论",
+      "skills": [
+        "coastal.wave-linear"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.dispersion",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "色散、深浅水与相位群速度",
+      "skills": [
+        "coastal.dispersion"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.energy",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "波能密度、能流与辐射应力",
+      "skills": [
+        "coastal.energy"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.transform",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "浅化、折射、绕射与反射",
+      "skills": [
+        "coastal.transform"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.breaking",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "破波、爬高、越浪与增水",
+      "skills": [
+        "coastal.breaking"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.random-waves",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "随机波、波谱与有效波高",
+      "skills": [
+        "coastal.random-waves"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.tides",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "天文潮、潮差、潮流与潮量",
+      "skills": [
+        "coastal.tides"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.surge-currents",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "风暴潮、近岸流、离岸流与波流作用",
+      "skills": [
+        "coastal.surge-currents"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.coast-sediment",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "波流输沙、岸滩剖面与海岸演变",
+      "skills": [
+        "coastal.coast-sediment"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.wave-loads",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "波浪荷载、Morison与绕射适用性",
+      "skills": [
+        "coastal.wave-loads"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.breakwater",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "斜坡式与直立式防波堤、稳定与消浪",
+      "skills": [
+        "coastal.breakwater"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.revetment",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "海堤、护岸、反滤与堤脚防冲",
+      "skills": [
+        "coastal.revetment"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.harbor-layout",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "港口选址、总平面与港池静稳",
+      "skills": [
+        "coastal.harbor-layout"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.navigation",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "航道水深、富裕水深、宽度与通航",
+      "skills": [
+        "coastal.navigation"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.gravity-quay",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "重力式码头、土压力与基底受力",
+      "skills": [
+        "coastal.gravity-quay"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.piled-quay",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "高桩码头、桩台与空间传力",
+      "skills": [
+        "coastal.piled-quay"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.sheet-pile",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "板桩码头、锚拉与嵌固深度",
+      "skills": [
+        "coastal.sheet-pile"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.mooring",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "系泊、靠泊能量与护舷",
+      "skills": [
+        "coastal.mooring"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.dredging",
+      "subject": "coastal",
+      "source": "port",
+      "outcome": "疏浚、回淤、工程量与维护",
+      "skills": [
+        "coastal.dredging"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.physical-models",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "河口海岸物理模型与数值模型核验",
+      "skills": [
+        "coastal.physical-models"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
+      "after": "mapped_starter_bank",
+      "teacher_reviewed": false,
+      "depth_validated": false
+    },
+    {
+      "id": "engineering.coastal.environment",
+      "subject": "coastal",
+      "source": "coastal",
+      "outcome": "河海工程生态、监测与不确定性",
+      "skills": [
+        "coastal.environment"
+      ],
+      "before": "missing",
+      "previous_version_status": "missing",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2587,6 +3885,7 @@
         "math02.composition"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2600,6 +3899,7 @@
         "math06.revolution-area"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2613,6 +3913,7 @@
         "structures.truss"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2626,6 +3927,7 @@
         "structures.distribution"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2639,6 +3941,7 @@
         "structures.algebra-bridge"
       ],
       "before": "mapped",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
@@ -2652,19 +3955,22 @@
         "structures.distribution-details"
       ],
       "before": "missing",
+      "previous_version_status": "mapped",
       "after": "mapped_starter_bank",
       "teacher_reviewed": false,
       "depth_validated": false
     }
   ],
   "counts": {
-    "checklist_entries": 195,
+    "checklist_entries": 272,
     "math_publisher_sections": 82,
     "before_mapped": 70,
     "before_partial": 52,
-    "before_missing": 73,
+    "before_missing": 150,
     "after_unmapped": 0,
-    "skills": 209,
-    "added_skills": 101
+    "skills": 286,
+    "added_skills": 77,
+    "previously_mapped_entries": 195,
+    "new_entries": 77
   }
 }

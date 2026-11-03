@@ -22,10 +22,10 @@ def add(p,key,name,teach,rows,prereq=(),aliases=(),extended=False):
         purpose=['diagnostic','diagnostic','learning','transfer','retention'][i]
         items.append({'id':sid+f'.{i+1}','skill_id':sid,'purpose':purpose,'family_id':sid+f'.family-{i+1}',
             'prompt':prompt,'answer':answer,'answer_type':kind,'requires_explanation':explanation,
-            'requires_context': p['id'] in ('theory','materials','structures') and kind in ('expression','vector'),
+            'requires_context': not p['id'].startswith('math') and kind in ('expression','vector'),
             'domain':'按题干给出的实数域、时间范围与假设；条件不足先确认',
-            'context':{'assumptions': '按题面给定的模型、坐标和边界条件作答' if p['id'] in ('theory','materials','structures') else '按题设定义域作答',
-                       'units':'数值按题干所列单位填写' if p['id'] in ('theory','materials','structures') else '按题干'},
+            'context':{'assumptions': '按题面给定的模型、坐标和边界条件作答' if not p['id'].startswith('math') else '按题设定义域作答',
+                       'units':'数值按题干所列单位填写' if not p['id'].startswith('math') else '按题干'},
             'hints':['先指出本题的对象、已知量与适用条件。',teach],
             'rubric':[answer,teach,'核对方法与适用条件；合理的其他表述由宿主复核'],
             'common_errors':['忽略条件或约定','机械套用公式，未解释当前步骤'],
@@ -364,7 +364,7 @@ x^n在[0,1/2]上一致趋0吗？~是
 仅逐点收敛是否足以保证极限函数连续？~否''',prereq=['math12.power'],extended=True)
 
 def finish():
-    manifest={'version':'0.2.0','scope_basis':'同济第八版上下册及references/syllabus-audit.json所列力学范围；逐项映射知识主题与起始题', 'courses':[],'skills':[]}
+    manifest={'version':'0.3.0','scope_basis':'同济高数、三门力学、钢结构与用户确认的河流海岸工程范围；来源与主题映射见references/syllabus-audit.json', 'courses':[],'skills':[]}
     for p in PACKS:
         filename=p['id']+'.json'
         manifest['courses'].append({'id':p['id'],'name':p['name'],'file':filename,'source':p['source'],'skill_count':len(p['skills']),'question_count':sum(len(s['items']) for s in p['skills'])})
@@ -386,6 +386,8 @@ if __name__=='__main__':
     supplemental_seeds.populate(PACKS,add)
     import coverage_seeds
     coverage_seeds.populate(PACKS,add)
+    import engineering_seeds
+    engineering_seeds.populate(pack,add)
     print(json.dumps({'modules':len(PACKS),'skills':sum(len(p['skills']) for p in PACKS),'questions':sum(len(s['items']) for p in PACKS for s in p['skills'])}))
     finish()
     import audit_syllabus

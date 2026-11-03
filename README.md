@@ -1,14 +1,14 @@
 # ahao-learn tool · 卡点侦探
 
-通过短测、证据卡、定点补习和独立新题复测，帮助大学生定位高数与力学中的学习卡点。
+通过短测、证据卡、定点补习和独立新题复测，帮助大学生定位高数、力学、钢结构与河流海岸工程中的学习卡点。
 
-0.2.0提供高数12章和理论力学、材料力学、结构力学的诊断引擎与题库，共15个数据模块、209个知识主题、1045道原创题。每主题有两道诊断、一道补习例题、一道迁移和一道后续复测。范围按知识主题组织，具体节点与前置关系见[覆盖矩阵](docs/coverage.md)。
+0.3.0提供高数12章、理论力学、材料力学、结构力学、钢结构以及水力学、河流泥沙、海岸港航，共19个模块、286个知识主题、1430道原创题。每主题包含两道诊断、一题补习、一题迁移和一题后续复测。节点及前置关系见[覆盖矩阵](docs/coverage.md)。
 
-逐项对照见[课程大纲核查](docs/syllabus-audit.md)：高数正式教材82节、结构力学详细目录67节，以及理论力学、材料力学大纲和专项补充。0.2.0新增101个节点、505道题；更新结果见[本轮覆盖检查](docs/coverage-release.md)。
+本轮新增77个节点、385题。河海工程按用户确认的“水力、泥沙、河口、波浪、港航”组织。内容、来源与验证结果见[钢结构与河海工程更新](docs/engineering-release.md)，完整映射见[课程大纲核查](docs/syllabus-audit.md)。
 
 ## 获取 Skill
 
-- 下载已打包的 [campus-gap-diagnoser-v0.2.0.zip](packages/campus-gap-diagnoser-v0.2.0.zip)。包根目录直接包含SKILL.md。
+- 下载已打包的 [campus-gap-diagnoser-v0.3.0.zip](packages/campus-gap-diagnoser-v0.3.0.zip)。包根目录直接包含SKILL.md。
 - 或使用源码目录 [skill/campus-gap-diagnoser](skill/campus-gap-diagnoser)。
 - 原始需求与创建提示词保留在 [PROMPT.md](PROMPT.md)。
 
@@ -40,6 +40,17 @@ python -X utf8 skill/campus-gap-diagnoser/scripts/diagnose.py --profile demo rep
 
 宿主可接受：“这道题看了解析还是不懂”“找出我在梁挠度哪一步卡住了”“继续上次的卡点”“复测链式法则”。课程及技能ID见[course-manifest.json](skill/campus-gap-diagnoser/references/course-manifest.json)。更多路径见[演示说明](docs/demo.md)。
 
+## 钢结构与河海工程使用示例
+
+- “我不会角焊缝计算，先检查我对有效焊喉的理解。”
+- “帮我区分钢柱整体稳定和局部屈曲。”
+- “这道水跃题怎么找共轭水深？”
+- “用Shields参数检查泥沙是否起动。”
+- “我不理解波浪浅化、折射和绕射的区别。”
+- “帮我分析高桩码头题的传力路径。”
+
+搜索时可用--course steel/hydraulics/river/coastal限定模块。数值结果吻合后仍核对专业模型、单位与边界。规范系数和经验公式使用题设输入并记录依据。
+
 ## 结果如何解释
 
 - 状态分为本轮独立完成、提示后完成、需核验或补习、尚未测试，并展示对应答题证据与下一步建议。
@@ -53,7 +64,7 @@ python -X utf8 skill/campus-gap-diagnoser/scripts/diagnose.py --profile demo rep
 
 ## 验证与质量
 
-已完成175项脚本回归测试、1045个答案格式检查、401道参考结果的另写计算核对，以及安装包解压运行检查。完整结果见[版本验证记录](docs/validation.md)和[本轮覆盖检查](docs/coverage-release.md)。
+已完成268项脚本回归测试、1430个答案格式检查、503道参考结果的另写计算核对，以及安装包解压运行检查。完整结果见[版本验证记录](docs/validation.md)和[本轮课程更新](docs/engineering-release.md)。
 
 验证按层记录：程序检查已完成；教师题库审核、真实学生效果验证和CodeArts/OfficeAce宿主实机验收待执行。内容采用知识主题粒度和教材理想化力学模型。逐题状态、范围与适用条件集中见[来源与审核说明](skill/campus-gap-diagnoser/references/sources-and-review.md)。
 
@@ -67,6 +78,6 @@ python -m pytest -q
 python tools/build_delivery.py
 ```
 
-源码题库位于tools/build_courses.py、mechanics_seeds.py、supplemental_seeds.py、coverage_seeds.py。修改后重建并核对资源；另写计算表达式在tools/oracles.py及coverage_oracles.py。build_delivery.py将发布包写入仓库外的outputs目录，可通过--output-dir指定。GitHub同步使用独立发布步骤。
+源码题库位于tools/build_courses.py、mechanics_seeds.py、supplemental_seeds.py、coverage_seeds.py、engineering_seeds.py。修改后重建并核对资源；另写计算表达式在tools/oracles.py、coverage_oracles.py与engineering_oracles.py。build_delivery.py将发布包写入仓库外的outputs目录，可通过--output-dir指定。GitHub同步使用独立发布步骤。
 
 仓库已公开，当前未设置开源许可证。演示案例标注为合成数据，真实试用另行记录。

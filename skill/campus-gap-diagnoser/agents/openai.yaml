@@ -1,4 +1,4 @@
 interface:
   display_name: "卡点侦探"
-  short_description: "通过短测和答题证据定位高数及三门力学的学习卡点，定点补习并用独立新题复测"
+  short_description: "定位高数、力学、钢结构与河海工程的学习卡点，依据作答证据补习并用新题复测"
   default_prompt: "使用 $campus-gap-diagnoser 帮我找出这道题卡在哪一步，并带我补习后独立复测。"

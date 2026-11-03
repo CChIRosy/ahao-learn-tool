@@ -1,0 +1,4761 @@
+{
+  "id": "coastal",
+  "name": "河海工程·海岸与港航",
+  "source": "https://www.icourse163.org/course/HHU-1206808802?tid=1476735446",
+  "skills": [
+    {
+      "id": "coastal.wave-linear",
+      "name": "波高周期波长与线性波理论",
+      "aliases": [
+        "波高周期波长与线性波理论",
+        "wave-linear"
+      ],
+      "prerequisites": [
+        "hydraulics.energy",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "teaching": "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.wave-linear.1",
+          "skill_id": "coastal.wave-linear",
+          "purpose": "diagnostic",
+          "family_id": "coastal.wave-linear.family-1",
+          "prompt": "波长20米，波数每米。",
+          "answer": "pi/10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。"
+          ],
+          "rubric": [
+            "pi/10",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.wave-linear.2",
+          "skill_id": "coastal.wave-linear",
+          "purpose": "diagnostic",
+          "family_id": "coastal.wave-linear.family-2",
+          "prompt": "周期4秒，角频率弧度/秒。",
+          "answer": "pi/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。"
+          ],
+          "rubric": [
+            "pi/2",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.wave-linear.3",
+          "skill_id": "coastal.wave-linear",
+          "purpose": "learning",
+          "family_id": "coastal.wave-linear.family-3",
+          "prompt": "规则波波高等于波峰到波谷的竖向距离吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。"
+          ],
+          "rubric": [
+            "是",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.wave-linear.4",
+          "skill_id": "coastal.wave-linear",
+          "purpose": "transfer",
+          "family_id": "coastal.wave-linear.family-4",
+          "prompt": "线性波理论适用于任意陡峭破碎波吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。"
+          ],
+          "rubric": [
+            "否",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.wave-linear.5",
+          "skill_id": "coastal.wave-linear",
+          "purpose": "retention",
+          "family_id": "coastal.wave-linear.family-5",
+          "prompt": "说明相位速度与水质点速度的区别。",
+          "answer": "前者为相位如波峰的传播速度，后者为局部水体运动速度，通常不可混为一谈",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。"
+          ],
+          "rubric": [
+            "前者为相位如波峰的传播速度，后者为局部水体运动速度，通常不可混为一谈",
+            "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T；线性理论需检查相对波高与水深。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "小振幅规则波按给定水深与周期求波要素，波数2*pi/L、角频率2*pi/T。",
+        "线性理论需检查相对波高与水深。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.dispersion",
+      "name": "色散、深浅水与相位群速度",
+      "aliases": [
+        "色散、深浅水与相位群速度",
+        "dispersion"
+      ],
+      "prerequisites": [
+        "coastal.wave-linear"
+      ],
+      "tier": "core",
+      "teaching": "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.dispersion.1",
+          "skill_id": "coastal.dispersion",
+          "purpose": "diagnostic",
+          "family_id": "coastal.dispersion.family-1",
+          "prompt": "浅水g=10、水深4米，相速米/秒。",
+          "answer": "2*sqrt(10)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。"
+          ],
+          "rubric": [
+            "2*sqrt(10)",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.dispersion.2",
+          "skill_id": "coastal.dispersion",
+          "purpose": "diagnostic",
+          "family_id": "coastal.dispersion.family-2",
+          "prompt": "深水g=10,T=4秒，相速米/秒。",
+          "answer": "20/pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。"
+          ],
+          "rubric": [
+            "20/pi",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.dispersion.3",
+          "skill_id": "coastal.dispersion",
+          "purpose": "learning",
+          "family_id": "coastal.dispersion.family-3",
+          "prompt": "深水线性重力波的群速为相速一半吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。"
+          ],
+          "rubric": [
+            "是",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.dispersion.4",
+          "skill_id": "coastal.dispersion",
+          "purpose": "transfer",
+          "family_id": "coastal.dispersion.family-4",
+          "prompt": "浅水极限中群速与相速近似相等吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。"
+          ],
+          "rubric": [
+            "是",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.dispersion.5",
+          "skill_id": "coastal.dispersion",
+          "purpose": "retention",
+          "family_id": "coastal.dispersion.family-5",
+          "prompt": "说明判断深浅水为何需相对水深。",
+          "answer": "应比较水深与波长或kh，单独水深数值不能确定波浪是否为深水波",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。"
+          ],
+          "rubric": [
+            "应比较水深与波长或kh，单独水深数值不能确定波浪是否为深水波",
+            "重力线性波满足omega²=g*k*tanh(k*h)；浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "重力线性波满足omega²=g*k*tanh(k*h)。",
+        "浅水c近似sqrt(g*h)，深水c=g*T/(2*pi)，群速依相对水深变化。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.energy",
+      "name": "波能密度、能流与辐射应力",
+      "aliases": [
+        "波能密度、能流与辐射应力",
+        "energy"
+      ],
+      "prerequisites": [
+        "coastal.dispersion",
+        "hydraulics.momentum"
+      ],
+      "tier": "core",
+      "teaching": "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.energy.1",
+          "skill_id": "coastal.energy",
+          "purpose": "diagnostic",
+          "family_id": "coastal.energy.family-1",
+          "prompt": "rho=1000,g=10,H=2米，规则波平均能量密度焦/平方米。",
+          "answer": "5000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。"
+          ],
+          "rubric": [
+            "5000",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.energy.2",
+          "skill_id": "coastal.energy",
+          "purpose": "diagnostic",
+          "family_id": "coastal.energy.family-2",
+          "prompt": "上述能量密度、群速3米/秒，单位峰宽能流瓦/米。",
+          "answer": "15000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。"
+          ],
+          "rubric": [
+            "15000",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.energy.3",
+          "skill_id": "coastal.energy",
+          "purpose": "learning",
+          "family_id": "coastal.energy.family-3",
+          "prompt": "波高加倍而其他相同，线性能量密度变为4倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。"
+          ],
+          "rubric": [
+            "是",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.energy.4",
+          "skill_id": "coastal.energy",
+          "purpose": "transfer",
+          "family_id": "coastal.energy.family-4",
+          "prompt": "波浪能量的传播应使用相位速度而非群速度作普遍能流公式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。"
+          ],
+          "rubric": [
+            "否",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.energy.5",
+          "skill_id": "coastal.energy",
+          "purpose": "retention",
+          "family_id": "coastal.energy.family-5",
+          "prompt": "辐射应力梯度可驱动增减水和近岸流吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。"
+          ],
+          "rubric": [
+            "是",
+            "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速；辐射应力描述波致超额动量通量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "线性规则波单位水平面积平均总能量rho*g*H²/8，能流为能量密度乘群速。",
+        "辐射应力描述波致超额动量通量。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.transform",
+      "name": "浅化、折射、绕射与反射",
+      "aliases": [
+        "浅化、折射、绕射与反射",
+        "transform"
+      ],
+      "prerequisites": [
+        "coastal.energy"
+      ],
+      "tier": "core",
+      "teaching": "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.transform.1",
+          "skill_id": "coastal.transform",
+          "purpose": "diagnostic",
+          "family_id": "coastal.transform.family-1",
+          "prompt": "给定sin(theta1)/c1=sin(theta2)/c2，c1=4,c2=2,theta1=pi/6，theta2弧度。",
+          "answer": "asin(1/4)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。"
+          ],
+          "rubric": [
+            "asin(1/4)",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.transform.2",
+          "skill_id": "coastal.transform",
+          "purpose": "diagnostic",
+          "family_id": "coastal.transform.family-2",
+          "prompt": "防波堤口后方遮蔽区仍可能因绕射存在波浪吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。"
+          ],
+          "rubric": [
+            "是",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.transform.3",
+          "skill_id": "coastal.transform",
+          "purpose": "learning",
+          "family_id": "coastal.transform.family-3",
+          "prompt": "无损一维传播中单位峰宽波能流可近似守恒吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。"
+          ],
+          "rubric": [
+            "是",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.transform.4",
+          "skill_id": "coastal.transform",
+          "purpose": "transfer",
+          "family_id": "coastal.transform.family-4",
+          "prompt": "陡变水深与反射明显时还能无条件只用缓变浅化公式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。"
+          ],
+          "rubric": [
+            "否",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.transform.5",
+          "skill_id": "coastal.transform",
+          "purpose": "retention",
+          "family_id": "coastal.transform.family-5",
+          "prompt": "说明折射、绕射与反射各主要对应什么机制。",
+          "answer": "折射由传播速度空间变化，绕射由边界或波能横向扩散，反射由波与边界相互作用产生回传分量",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。"
+          ],
+          "rubric": [
+            "折射由传播速度空间变化，绕射由边界或波能横向扩散，反射由波与边界相互作用产生回传分量",
+            "波浪变形由水深与边界引起；平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "波浪变形由水深与边界引起。",
+        "平行等深线无流近似用sin(theta)/c守恒，浅化用能流守恒并检查损耗。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.breaking",
+      "name": "破波、爬高、越浪与增水",
+      "aliases": [
+        "破波、爬高、越浪与增水",
+        "breaking"
+      ],
+      "prerequisites": [
+        "coastal.transform"
+      ],
+      "tier": "core",
+      "teaching": "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.breaking.1",
+          "skill_id": "coastal.breaking",
+          "purpose": "diagnostic",
+          "family_id": "coastal.breaking.family-1",
+          "prompt": "题给深度限制破波指标H_b/h_b=0.8，h_b=5米，H_b米。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。"
+          ],
+          "rubric": [
+            "4",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.breaking.2",
+          "skill_id": "coastal.breaking",
+          "purpose": "diagnostic",
+          "family_id": "coastal.breaking.family-2",
+          "prompt": "相同入射波浪在不同坡面与糙率下爬高一定相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。"
+          ],
+          "rubric": [
+            "否",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.breaking.3",
+          "skill_id": "coastal.breaking",
+          "purpose": "learning",
+          "family_id": "coastal.breaking.family-3",
+          "prompt": "越浪会受到堤顶相对水位影响吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。"
+          ],
+          "rubric": [
+            "是",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.breaking.4",
+          "skill_id": "coastal.breaking",
+          "purpose": "transfer",
+          "family_id": "coastal.breaking.family-4",
+          "prompt": "破波指标0.8是对所有海岸和波况严格通用常数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。"
+          ],
+          "rubric": [
+            "否",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.breaking.5",
+          "skill_id": "coastal.breaking",
+          "purpose": "retention",
+          "family_id": "coastal.breaking.family-5",
+          "prompt": "说明防护结构计算中为何需联合考虑潮位和风暴增水。",
+          "answer": "总水位改变相对水深、破波位置和堤顶超高，进而影响波力、爬高和越浪",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。"
+          ],
+          "rubric": [
+            "总水位改变相对水深、破波位置和堤顶超高，进而影响波力、爬高和越浪",
+            "破波受波陡与水深限制；破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "破波受波陡与水深限制。",
+        "破波指标、爬高和越浪为不同量，经验公式依坡面、糙率、波况和水位适用条件。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.random-waves",
+      "name": "随机波、波谱与有效波高",
+      "aliases": [
+        "随机波、波谱与有效波高",
+        "random-waves"
+      ],
+      "prerequisites": [
+        "coastal.wave-linear",
+        "math05.definition"
+      ],
+      "tier": "core",
+      "teaching": "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.random-waves.1",
+          "skill_id": "coastal.random-waves",
+          "purpose": "diagnostic",
+          "family_id": "coastal.random-waves.family-1",
+          "prompt": "给定谱零阶矩m0=0.25平方米，Hm0米。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。"
+          ],
+          "rubric": [
+            "2",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.random-waves.2",
+          "skill_id": "coastal.random-waves",
+          "purpose": "diagnostic",
+          "family_id": "coastal.random-waves.family-2",
+          "prompt": "m0加倍时Hm0变为原来的sqrt(2)倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。"
+          ],
+          "rubric": [
+            "是",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.random-waves.3",
+          "skill_id": "coastal.random-waves",
+          "purpose": "learning",
+          "family_id": "coastal.random-waves.family-3",
+          "prompt": "有效波高等于任意时段最大单个波高吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。"
+          ],
+          "rubric": [
+            "否",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.random-waves.4",
+          "skill_id": "coastal.random-waves",
+          "purpose": "transfer",
+          "family_id": "coastal.random-waves.family-4",
+          "prompt": "不同谱形可有相同Hm0但不同峰周期吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。"
+          ],
+          "rubric": [
+            "是",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.random-waves.5",
+          "skill_id": "coastal.random-waves",
+          "purpose": "retention",
+          "family_id": "coastal.random-waves.family-5",
+          "prompt": "说明使用设计波浪统计参数需记录哪些定义。",
+          "answer": "样本时段、波高统计或谱定义、周期种类、方向与水位条件，以及目标事件概率的依据",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。"
+          ],
+          "rubric": [
+            "样本时段、波高统计或谱定义、周期种类、方向与水位条件，以及目标事件概率的依据",
+            "区分时域统计波高与谱有效波高；Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "区分时域统计波高与谱有效波高。",
+        "Hm0=4*sqrt(m0)，谱形、峰周期和方向分布影响海况描述。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.tides",
+      "name": "天文潮、潮差、潮流与潮量",
+      "aliases": [
+        "天文潮、潮差、潮流与潮量",
+        "tides"
+      ],
+      "prerequisites": [
+        "hydraulics.continuity",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.tides.1",
+          "skill_id": "coastal.tides",
+          "purpose": "diagnostic",
+          "family_id": "coastal.tides.family-1",
+          "prompt": "潮位eta=2+cos(t)米，最高与最低潮位米。",
+          "answer": "3,1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。"
+          ],
+          "rubric": [
+            "3,1",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.tides.2",
+          "skill_id": "coastal.tides",
+          "purpose": "diagnostic",
+          "family_id": "coastal.tides.family-2",
+          "prompt": "同题潮差米。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。"
+          ],
+          "rubric": [
+            "2",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.tides.3",
+          "skill_id": "coastal.tides",
+          "purpose": "learning",
+          "family_id": "coastal.tides.family-3",
+          "prompt": "简化湾面积1000000平方米、潮差2米，潮量立方米。",
+          "answer": "2000000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。"
+          ],
+          "rubric": [
+            "2000000",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.tides.4",
+          "skill_id": "coastal.tides",
+          "purpose": "transfer",
+          "family_id": "coastal.tides.family-4",
+          "prompt": "高潮时每个河口位置潮流一定同时为零吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。"
+          ],
+          "rubric": [
+            "否",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.tides.5",
+          "skill_id": "coastal.tides",
+          "purpose": "retention",
+          "family_id": "coastal.tides.family-5",
+          "prompt": "潮位数据必须注明垂向基准才能和航道底高程比较吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。"
+          ],
+          "rubric": [
+            "是",
+            "潮位用统一垂向基准，潮流是水体运动；涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "潮位用统一垂向基准，潮流是水体运动。",
+        "涨落潮潮量由过口流量积分，简化封闭均匀湾可由面积乘潮差估算。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.surge-currents",
+      "name": "风暴潮、近岸流、离岸流与波流作用",
+      "aliases": [
+        "风暴潮、近岸流、离岸流与波流作用",
+        "surge-currents"
+      ],
+      "prerequisites": [
+        "coastal.energy",
+        "coastal.tides"
+      ],
+      "tier": "core",
+      "teaching": "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.surge-currents.1",
+          "skill_id": "coastal.surge-currents",
+          "purpose": "diagnostic",
+          "family_id": "coastal.surge-currents.family-1",
+          "prompt": "风暴增水与天文潮的相互作用可使简单叠加产生误差吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。"
+          ],
+          "rubric": [
+            "是",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.surge-currents.2",
+          "skill_id": "coastal.surge-currents",
+          "purpose": "diagnostic",
+          "family_id": "coastal.surge-currents.family-2",
+          "prompt": "斜向入射破波可驱动沿岸流吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。"
+          ],
+          "rubric": [
+            "是",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.surge-currents.3",
+          "skill_id": "coastal.surge-currents",
+          "purpose": "learning",
+          "family_id": "coastal.surge-currents.family-3",
+          "prompt": "离岸流是可能向海外输送水体的局地流动吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。"
+          ],
+          "rubric": [
+            "是",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.surge-currents.4",
+          "skill_id": "coastal.surge-currents",
+          "purpose": "transfer",
+          "family_id": "coastal.surge-currents.family-4",
+          "prompt": "说明波流共同作用时应重新检查哪些量。",
+          "answer": "波传播色散和折射、底边界层剪应力、破碎位置、流速及泥沙起动输移",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。"
+          ],
+          "rubric": [
+            "波传播色散和折射、底边界层剪应力、破碎位置、流速及泥沙起动输移",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.surge-currents.5",
+          "skill_id": "coastal.surge-currents",
+          "purpose": "retention",
+          "family_id": "coastal.surge-currents.family-5",
+          "prompt": "潮流存在时波浪变形完全不受影响吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。"
+          ],
+          "rubric": [
+            "否",
+            "风应力气压、岸线地形与潮波共同影响增水；波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "风应力气压、岸线地形与潮波共同影响增水。",
+        "波浪破碎动量变化可驱动沿岸流与离岸流，按时空过程分析。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.coast-sediment",
+      "name": "波流输沙、岸滩剖面与海岸演变",
+      "aliases": [
+        "波流输沙、岸滩剖面与海岸演变",
+        "coast-sediment"
+      ],
+      "prerequisites": [
+        "river.suspended",
+        "coastal.surge-currents"
+      ],
+      "tier": "core",
+      "teaching": "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.coast-sediment.1",
+          "skill_id": "coastal.coast-sediment",
+          "purpose": "diagnostic",
+          "family_id": "coastal.coast-sediment.family-1",
+          "prompt": "沿岸入沙100、出沙80立方米/天，忽略其他项，控制段净积沙立方米/天。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。"
+          ],
+          "rubric": [
+            "20",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.coast-sediment.2",
+          "skill_id": "coastal.coast-sediment",
+          "purpose": "diagnostic",
+          "family_id": "coastal.coast-sediment.family-2",
+          "prompt": "只研究沿岸输沙就一定能解释所有岸滩剖面变化吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。"
+          ],
+          "rubric": [
+            "否",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.coast-sediment.3",
+          "skill_id": "coastal.coast-sediment",
+          "purpose": "learning",
+          "family_id": "coastal.coast-sediment.family-3",
+          "prompt": "突堤拦沙可能造成下游侧供沙减少吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。"
+          ],
+          "rubric": [
+            "是",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.coast-sediment.4",
+          "skill_id": "coastal.coast-sediment",
+          "purpose": "transfer",
+          "family_id": "coastal.coast-sediment.family-4",
+          "prompt": "说明比较黏性与非黏性海岸回淤前需确认什么。",
+          "answer": "粒径与黏聚、絮凝沉速、底床固结、波流场、浓度边界和可冲蚀性",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。"
+          ],
+          "rubric": [
+            "粒径与黏聚、絮凝沉速、底床固结、波流场、浓度边界和可冲蚀性",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.coast-sediment.5",
+          "skill_id": "coastal.coast-sediment",
+          "purpose": "retention",
+          "family_id": "coastal.coast-sediment.family-5",
+          "prompt": "海滩补沙效果应兼顾粒径匹配和邻岸影响吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。"
+          ],
+          "rubric": [
+            "是",
+            "波浪起沙与平均流输运可共同作用；沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "波浪起沙与平均流输运可共同作用。",
+        "沿岸和横岸输沙分开建账，工程改变边界后检查上下游与邻岸响应。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.wave-loads",
+      "name": "波浪荷载、Morison与绕射适用性",
+      "aliases": [
+        "波浪荷载、Morison与绕射适用性",
+        "wave-loads"
+      ],
+      "prerequisites": [
+        "coastal.wave-linear",
+        "hydraulics.momentum",
+        "steel.design"
+      ],
+      "tier": "core",
+      "teaching": "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.wave-loads.1",
+          "skill_id": "coastal.wave-loads",
+          "purpose": "diagnostic",
+          "family_id": "coastal.wave-loads.family-1",
+          "prompt": "给定单位长度阻力0.5*Cd*rho*D*u²，Cd=1,rho=1000,D=1,u=2，力牛/米。",
+          "answer": "2000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。"
+          ],
+          "rubric": [
+            "2000",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.wave-loads.2",
+          "skill_id": "coastal.wave-loads",
+          "purpose": "diagnostic",
+          "family_id": "coastal.wave-loads.family-2",
+          "prompt": "给定单位长度惯性力Cm*rho*A*a，Cm=2,rho=1000,A=0.5,a=3，力牛/米。",
+          "answer": "3000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。"
+          ],
+          "rubric": [
+            "3000",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.wave-loads.3",
+          "skill_id": "coastal.wave-loads",
+          "purpose": "learning",
+          "family_id": "coastal.wave-loads.family-3",
+          "prompt": "任意大尺度沉箱都可无条件用细长构件Morison式代替绕射分析吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。"
+          ],
+          "rubric": [
+            "否",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.wave-loads.4",
+          "skill_id": "coastal.wave-loads",
+          "purpose": "transfer",
+          "family_id": "coastal.wave-loads.family-4",
+          "prompt": "流速与加速度峰值一般不必同时出现吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。"
+          ],
+          "rubric": [
+            "是",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.wave-loads.5",
+          "skill_id": "coastal.wave-loads",
+          "purpose": "retention",
+          "family_id": "coastal.wave-loads.family-5",
+          "prompt": "说明组合波浪荷载计算为何不能总把各项峰值直接相加当真实同步峰值。",
+          "answer": "阻力、惯性和其他项存在相位与方向差，需要按同一时刻或采用有依据的组合包络",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。"
+          ],
+          "rubric": [
+            "阻力、惯性和其他项存在相位与方向差，需要按同一时刻或采用有依据的组合包络",
+            "小尺度细长构件可按给定阻力与惯性模型计算；大尺度构筑物需考虑绕射，系数依工况与数据来源取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "小尺度细长构件可按给定阻力与惯性模型计算。",
+        "大尺度构筑物需考虑绕射，系数依工况与数据来源取用。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.breakwater",
+      "name": "斜坡式与直立式防波堤、稳定与消浪",
+      "aliases": [
+        "斜坡式与直立式防波堤、稳定与消浪",
+        "breakwater"
+      ],
+      "prerequisites": [
+        "coastal.breaking",
+        "coastal.wave-loads"
+      ],
+      "tier": "core",
+      "teaching": "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.breakwater.1",
+          "skill_id": "coastal.breakwater",
+          "purpose": "diagnostic",
+          "family_id": "coastal.breakwater.family-1",
+          "prompt": "题给抗滑力200千牛、滑动力100千牛，仅按两者之比的指标。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。"
+          ],
+          "rubric": [
+            "2",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.breakwater.2",
+          "skill_id": "coastal.breakwater",
+          "purpose": "diagnostic",
+          "family_id": "coastal.breakwater.family-2",
+          "prompt": "一个抗滑比值满足题设就等于所有结构与地基检查完成吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。"
+          ],
+          "rubric": [
+            "否",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.breakwater.3",
+          "skill_id": "coastal.breakwater",
+          "purpose": "learning",
+          "family_id": "coastal.breakwater.family-3",
+          "prompt": "斜坡护面块体重量与波况、坡度和块体类型有关吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。"
+          ],
+          "rubric": [
+            "是",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.breakwater.4",
+          "skill_id": "coastal.breakwater",
+          "purpose": "transfer",
+          "family_id": "coastal.breakwater.family-4",
+          "prompt": "直立防波堤可能存在反射和基床冲刷吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。"
+          ],
+          "rubric": [
+            "是",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.breakwater.5",
+          "skill_id": "coastal.breakwater",
+          "purpose": "retention",
+          "family_id": "coastal.breakwater.family-5",
+          "prompt": "说明选择防波堤型式需比较哪些输入。",
+          "answer": "波浪水位、地基水深、材料与施工、港内静稳、冲淤和维护及环境约束",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。"
+          ],
+          "rubric": [
+            "波浪水位、地基水深、材料与施工、港内静稳、冲淤和维护及环境约束",
+            "按型式区分护面块体、堤身、基床与地基作用；同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按型式区分护面块体、堤身、基床与地基作用。",
+        "同时检查波浪传播、防滑倾覆、局部稳定和冲刷等适用失效模式。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.revetment",
+      "name": "海堤、护岸、反滤与堤脚防冲",
+      "aliases": [
+        "海堤、护岸、反滤与堤脚防冲",
+        "revetment"
+      ],
+      "prerequisites": [
+        "coastal.breaking",
+        "hydraulics.seepage"
+      ],
+      "tier": "core",
+      "teaching": "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.revetment.1",
+          "skill_id": "coastal.revetment",
+          "purpose": "diagnostic",
+          "family_id": "coastal.revetment.family-1",
+          "prompt": "反滤层的目的包括防止细料流失与保持排水吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。"
+          ],
+          "rubric": [
+            "是",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.revetment.2",
+          "skill_id": "coastal.revetment",
+          "purpose": "diagnostic",
+          "family_id": "coastal.revetment.family-2",
+          "prompt": "只增大表层块石就必能解决堤后全部渗透问题吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。"
+          ],
+          "rubric": [
+            "否",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.revetment.3",
+          "skill_id": "coastal.revetment",
+          "purpose": "learning",
+          "family_id": "coastal.revetment.family-3",
+          "prompt": "堤脚冲刷可能削弱坡面护岸稳定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。"
+          ],
+          "rubric": [
+            "是",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.revetment.4",
+          "skill_id": "coastal.revetment",
+          "purpose": "transfer",
+          "family_id": "coastal.revetment.family-4",
+          "prompt": "说明海堤越浪风险评估的主要边界。",
+          "answer": "联合水位和波浪、堤顶高程及坡面构造、堤后承受条件与事件持续时间",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。"
+          ],
+          "rubric": [
+            "联合水位和波浪、堤顶高程及坡面构造、堤后承受条件与事件持续时间",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.revetment.5",
+          "skill_id": "coastal.revetment",
+          "purpose": "retention",
+          "family_id": "coastal.revetment.family-5",
+          "prompt": "排水通道堵塞可能改变护岸水压力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。"
+          ],
+          "rubric": [
+            "是",
+            "护面抵御波流，反滤控制细料流失且保持排水；堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "护面抵御波流，反滤控制细料流失且保持排水。",
+        "堤脚与坡面连接影响整体耐久，越浪与渗流共同检查。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.harbor-layout",
+      "name": "港口选址、总平面与港池静稳",
+      "aliases": [
+        "港口选址、总平面与港池静稳",
+        "harbor-layout"
+      ],
+      "prerequisites": [
+        "coastal.transform",
+        "coastal.coast-sediment"
+      ],
+      "tier": "core",
+      "teaching": "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.harbor-layout.1",
+          "skill_id": "coastal.harbor-layout",
+          "purpose": "diagnostic",
+          "family_id": "coastal.harbor-layout.family-1",
+          "prompt": "港池静稳仅由防波堤总长度一个参数决定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。"
+          ],
+          "rubric": [
+            "否",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.harbor-layout.2",
+          "skill_id": "coastal.harbor-layout",
+          "purpose": "diagnostic",
+          "family_id": "coastal.harbor-layout.family-2",
+          "prompt": "港口口门方位会影响波浪进入和船舶操纵吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。"
+          ],
+          "rubric": [
+            "是",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.harbor-layout.3",
+          "skill_id": "coastal.harbor-layout",
+          "purpose": "learning",
+          "family_id": "coastal.harbor-layout.family-3",
+          "prompt": "回旋水域与泊位布置需要结合设计船型吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。"
+          ],
+          "rubric": [
+            "是",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.harbor-layout.4",
+          "skill_id": "coastal.harbor-layout",
+          "purpose": "transfer",
+          "family_id": "coastal.harbor-layout.family-4",
+          "prompt": "说明港口选址最少应比较哪几类条件。",
+          "answer": "自然水深地基、波流潮汐泥沙、航行作业与集疏运、施工维护和环境影响",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。"
+          ],
+          "rubric": [
+            "自然水深地基、波流潮汐泥沙、航行作业与集疏运、施工维护和环境影响",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.harbor-layout.5",
+          "skill_id": "coastal.harbor-layout",
+          "purpose": "retention",
+          "family_id": "coastal.harbor-layout.family-5",
+          "prompt": "满足某一波况的静稳就可省略长期回淤分析吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。"
+          ],
+          "rubric": [
+            "否",
+            "统筹船型、作业、波流泥沙与陆域衔接；航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "统筹船型、作业、波流泥沙与陆域衔接。",
+        "航道口门布置兼顾通航、绕射波和回淤，按多目标比较方案。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.navigation",
+      "name": "航道水深、富裕水深、宽度与通航",
+      "aliases": [
+        "航道水深、富裕水深、宽度与通航",
+        "navigation"
+      ],
+      "prerequisites": [
+        "coastal.tides",
+        "hydraulics.continuity"
+      ],
+      "tier": "core",
+      "teaching": "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.navigation.1",
+          "skill_id": "coastal.navigation",
+          "purpose": "diagnostic",
+          "family_id": "coastal.navigation.family-1",
+          "prompt": "题给船舶吃水8米、下沉量0.3米、其余合计裕量0.7米，所需实际通航水深米。",
+          "answer": "9",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。"
+          ],
+          "rubric": [
+            "9",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.navigation.2",
+          "skill_id": "coastal.navigation",
+          "purpose": "diagnostic",
+          "family_id": "coastal.navigation.family-2",
+          "prompt": "题给实际水面高程2米、航道底高程-8米，同一基准，水深米。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。"
+          ],
+          "rubric": [
+            "10",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.navigation.3",
+          "skill_id": "coastal.navigation",
+          "purpose": "learning",
+          "family_id": "coastal.navigation.family-3",
+          "prompt": "任意航道富裕水深可永远固定为同一个数值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。"
+          ],
+          "rubric": [
+            "否",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.navigation.4",
+          "skill_id": "coastal.navigation",
+          "purpose": "transfer",
+          "family_id": "coastal.navigation.family-4",
+          "prompt": "弯道和会船条件可能增加航道宽度需求吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。"
+          ],
+          "rubric": [
+            "是",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.navigation.5",
+          "skill_id": "coastal.navigation",
+          "purpose": "retention",
+          "family_id": "coastal.navigation.family-5",
+          "prompt": "说明疏浚设计底高程与通航水深之间如何换算。",
+          "answer": "按统一水位基准将所需水深转换为底高程，另按题设计施工超深、回淤和测量裕量且避免重复",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。"
+          ],
+          "rubric": [
+            "按统一水位基准将所需水深转换为底高程，另按题设计施工超深、回淤和测量裕量且避免重复",
+            "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量；宽度与线形依船型、会遇、风流和操纵条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "先统一水位底高程基准，给定工况下计吃水、下沉和各项裕量。",
+        "宽度与线形依船型、会遇、风流和操纵条件。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.gravity-quay",
+      "name": "重力式码头、土压力与基底受力",
+      "aliases": [
+        "重力式码头、土压力与基底受力",
+        "gravity-quay"
+      ],
+      "prerequisites": [
+        "hydraulics.surface-pressure",
+        "structures.determinate"
+      ],
+      "tier": "core",
+      "teaching": "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.gravity-quay.1",
+          "skill_id": "coastal.gravity-quay",
+          "purpose": "diagnostic",
+          "family_id": "coastal.gravity-quay.family-1",
+          "prompt": "总竖向力1000千牛、基底面积20平方米，均匀近似平均基底压应力千帕。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。"
+          ],
+          "rubric": [
+            "50",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.gravity-quay.2",
+          "skill_id": "coastal.gravity-quay",
+          "purpose": "diagnostic",
+          "family_id": "coastal.gravity-quay.family-2",
+          "prompt": "重力式码头仅验墙身材料强度即可省略地基稳定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。"
+          ],
+          "rubric": [
+            "否",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.gravity-quay.3",
+          "skill_id": "coastal.gravity-quay",
+          "purpose": "learning",
+          "family_id": "coastal.gravity-quay.family-3",
+          "prompt": "墙后水位变化可影响土水压力与稳定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。"
+          ],
+          "rubric": [
+            "是",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.gravity-quay.4",
+          "skill_id": "coastal.gravity-quay",
+          "purpose": "transfer",
+          "family_id": "coastal.gravity-quay.family-4",
+          "prompt": "说明计算码头主动土压力前还缺哪些非现有力学输入。",
+          "answer": "土体容重、强度和地下水、墙土界面、填土与地表荷载及变形条件，需依据岩土模型",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。"
+          ],
+          "rubric": [
+            "土体容重、强度和地下水、墙土界面、填土与地表荷载及变形条件，需依据岩土模型",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.gravity-quay.5",
+          "skill_id": "coastal.gravity-quay",
+          "purpose": "retention",
+          "family_id": "coastal.gravity-quay.family-5",
+          "prompt": "排水失效可能增加墙后水压力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。"
+          ],
+          "rubric": [
+            "是",
+            "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力；排水与地基模型影响有效应力和稳定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "结构自重等提供抗滑抗倾，土水压力和使用荷载驱动受力。",
+        "排水与地基模型影响有效应力和稳定。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.piled-quay",
+      "name": "高桩码头、桩台与空间传力",
+      "aliases": [
+        "高桩码头、桩台与空间传力",
+        "piled-quay"
+      ],
+      "prerequisites": [
+        "structures.frame",
+        "coastal.gravity-quay"
+      ],
+      "tier": "core",
+      "teaching": "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.piled-quay.1",
+          "skill_id": "coastal.piled-quay",
+          "purpose": "diagnostic",
+          "family_id": "coastal.piled-quay.family-1",
+          "prompt": "高桩码头的水平力可由桩及桩土体系共同承担吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。"
+          ],
+          "rubric": [
+            "是",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.piled-quay.2",
+          "skill_id": "coastal.piled-quay",
+          "purpose": "diagnostic",
+          "family_id": "coastal.piled-quay.family-2",
+          "prompt": "四根相同桩对称仅受总竖向力400千牛且按均分假设，每桩千牛。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。"
+          ],
+          "rubric": [
+            "100",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.piled-quay.3",
+          "skill_id": "coastal.piled-quay",
+          "purpose": "learning",
+          "family_id": "coastal.piled-quay.family-3",
+          "prompt": "桩头按铰接与固接计算会影响桩弯矩吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。"
+          ],
+          "rubric": [
+            "是",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.piled-quay.4",
+          "skill_id": "coastal.piled-quay",
+          "purpose": "transfer",
+          "family_id": "coastal.piled-quay.family-4",
+          "prompt": "说明高桩平台的结构计算与基础验算如何衔接。",
+          "answer": "平台输出各桩作用与位移需求，桩土模型校核轴向侧向承载、位移和群桩效应并迭代",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。"
+          ],
+          "rubric": [
+            "平台输出各桩作用与位移需求，桩土模型校核轴向侧向承载、位移和群桩效应并迭代",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.piled-quay.5",
+          "skill_id": "coastal.piled-quay",
+          "purpose": "retention",
+          "family_id": "coastal.piled-quay.family-5",
+          "prompt": "所有桩都可按仅受轴力二力杆无条件建模吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。"
+          ],
+          "rubric": [
+            "否",
+            "上部平台把竖向水平作用传给桩基；桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "上部平台把竖向水平作用传给桩基。",
+        "桩土作用、桩头连接和空间布置影响内力位移，斜直桩按实际模型处理。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.sheet-pile",
+      "name": "板桩码头、锚拉与嵌固深度",
+      "aliases": [
+        "板桩码头、锚拉与嵌固深度",
+        "sheet-pile"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "coastal.gravity-quay"
+      ],
+      "tier": "core",
+      "teaching": "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.sheet-pile.1",
+          "skill_id": "coastal.sheet-pile",
+          "purpose": "diagnostic",
+          "family_id": "coastal.sheet-pile.family-1",
+          "prompt": "锚拉板桩码头的拉杆是主要受拉传力构件之一吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。"
+          ],
+          "rubric": [
+            "是",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.sheet-pile.2",
+          "skill_id": "coastal.sheet-pile",
+          "purpose": "diagnostic",
+          "family_id": "coastal.sheet-pile.family-2",
+          "prompt": "板桩嵌固段土体抗力可以无限大而无需模型限制吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。"
+          ],
+          "rubric": [
+            "否",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.sheet-pile.3",
+          "skill_id": "coastal.sheet-pile",
+          "purpose": "learning",
+          "family_id": "coastal.sheet-pile.family-3",
+          "prompt": "题给水平合力120千牛、按两根同向均匀拉杆分担且无其他分担，每根拉力千牛。",
+          "answer": "60",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。"
+          ],
+          "rubric": [
+            "60",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.sheet-pile.4",
+          "skill_id": "coastal.sheet-pile",
+          "purpose": "transfer",
+          "family_id": "coastal.sheet-pile.family-4",
+          "prompt": "疏浚深度增加可能改变板桩嵌固与内力条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。"
+          ],
+          "rubric": [
+            "是",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.sheet-pile.5",
+          "skill_id": "coastal.sheet-pile",
+          "purpose": "retention",
+          "family_id": "coastal.sheet-pile.family-5",
+          "prompt": "说明锚拉系统还需校核哪些部位。",
+          "answer": "板桩、围檩拉杆及连接、锚碇和锚固土体，并考虑腐蚀施工阶段及位移",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。"
+          ],
+          "rubric": [
+            "板桩、围檩拉杆及连接、锚碇和锚固土体，并考虑腐蚀施工阶段及位移",
+            "板桩通过弯曲、锚拉和土体被动抗力维持平衡；分阶段土水压力与锚固体系共同决定内力与变形。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "板桩通过弯曲、锚拉和土体被动抗力维持平衡。",
+        "分阶段土水压力与锚固体系共同决定内力与变形。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.mooring",
+      "name": "系泊、靠泊能量与护舷",
+      "aliases": [
+        "系泊、靠泊能量与护舷",
+        "mooring"
+      ],
+      "prerequisites": [
+        "theory.energy",
+        "coastal.harbor-layout"
+      ],
+      "tier": "core",
+      "teaching": "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.mooring.1",
+          "skill_id": "coastal.mooring",
+          "purpose": "diagnostic",
+          "family_id": "coastal.mooring.family-1",
+          "prompt": "题给有效质量1000000千克、法向靠泊速度0.1米/秒、其余系数1，靠泊动能焦。",
+          "answer": "5000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。"
+          ],
+          "rubric": [
+            "5000",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.mooring.2",
+          "skill_id": "coastal.mooring",
+          "purpose": "diagnostic",
+          "family_id": "coastal.mooring.family-2",
+          "prompt": "同等条件靠泊速度加倍，能量变为4倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。"
+          ],
+          "rubric": [
+            "是",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.mooring.3",
+          "skill_id": "coastal.mooring",
+          "purpose": "learning",
+          "family_id": "coastal.mooring.family-3",
+          "prompt": "护舷能量容量与最大反力是两个都需检查的指标吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。"
+          ],
+          "rubric": [
+            "是",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.mooring.4",
+          "skill_id": "coastal.mooring",
+          "purpose": "transfer",
+          "family_id": "coastal.mooring.family-4",
+          "prompt": "系泊缆力一定在所有缆绳上均匀分配吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。"
+          ],
+          "rubric": [
+            "否",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.mooring.5",
+          "skill_id": "coastal.mooring",
+          "purpose": "retention",
+          "family_id": "coastal.mooring.family-5",
+          "prompt": "说明估算靠泊能量时需明确哪些输入。",
+          "answer": "船型有效质量、法向靠泊速度、偏心与附加质量等系数、工况和护舷性能曲线",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。"
+          ],
+          "rubric": [
+            "船型有效质量、法向靠泊速度、偏心与附加质量等系数、工况和护舷性能曲线",
+            "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定；护舷、系船设备及连接按题给工况共同检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "系泊是约束船舶运动，靠泊吸能由船舶有效质量与法向速度等决定。",
+        "护舷、系船设备及连接按题给工况共同检查。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.dredging",
+      "name": "疏浚、回淤、工程量与维护",
+      "aliases": [
+        "疏浚、回淤、工程量与维护",
+        "dredging"
+      ],
+      "prerequisites": [
+        "coastal.navigation",
+        "river.sediment-continuity"
+      ],
+      "tier": "core",
+      "teaching": "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.dredging.1",
+          "skill_id": "coastal.dredging",
+          "purpose": "diagnostic",
+          "family_id": "coastal.dredging.family-1",
+          "prompt": "均匀疏浚面积500000平方米、平均挖深0.2米，原位体积立方米。",
+          "answer": "100000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。"
+          ],
+          "rubric": [
+            "100000",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.dredging.2",
+          "skill_id": "coastal.dredging",
+          "purpose": "diagnostic",
+          "family_id": "coastal.dredging.family-2",
+          "prompt": "原位实方、装舱松方与干颗粒体积能无条件等同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。"
+          ],
+          "rubric": [
+            "否",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.dredging.3",
+          "skill_id": "coastal.dredging",
+          "purpose": "learning",
+          "family_id": "coastal.dredging.family-3",
+          "prompt": "年回淤体积20000立方米，按均匀每年分四次清除，每次平均立方米。",
+          "answer": "5000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。"
+          ],
+          "rubric": [
+            "5000",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.dredging.4",
+          "skill_id": "coastal.dredging",
+          "purpose": "transfer",
+          "family_id": "coastal.dredging.family-4",
+          "prompt": "施工期潮流和含沙量会影响疏浚扩散吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。"
+          ],
+          "rubric": [
+            "是",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.dredging.5",
+          "skill_id": "coastal.dredging",
+          "purpose": "retention",
+          "family_id": "coastal.dredging.family-5",
+          "prompt": "说明比较两次测深推算回淤前需统一什么。",
+          "answer": "水平坐标垂向基准、测深与潮位改正、覆盖范围网格、测量时段和误差",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。"
+          ],
+          "rubric": [
+            "水平坐标垂向基准、测深与潮位改正、覆盖范围网格、测量时段和误差",
+            "工程量用同一高程基准下断面或网格积分；施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "工程量用同一高程基准下断面或网格积分。",
+        "施工超深、回淤和泥沙实方松方分别记录，维护与环境限制联合安排。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.physical-models",
+      "name": "河口海岸物理模型与数值模型核验",
+      "aliases": [
+        "河口海岸物理模型与数值模型核验",
+        "physical-models"
+      ],
+      "prerequisites": [
+        "hydraulics.similarity",
+        "river.entrainment",
+        "coastal.dispersion"
+      ],
+      "tier": "core",
+      "teaching": "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.physical-models.1",
+          "skill_id": "coastal.physical-models",
+          "purpose": "diagnostic",
+          "family_id": "coastal.physical-models.family-1",
+          "prompt": "原型/模型长度比25，Fr相似下时间比。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。"
+          ],
+          "rubric": [
+            "5",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.physical-models.2",
+          "skill_id": "coastal.physical-models",
+          "purpose": "diagnostic",
+          "family_id": "coastal.physical-models.family-2",
+          "prompt": "同条件长度比16，流量比。",
+          "answer": "1024",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。"
+          ],
+          "rubric": [
+            "1024",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.physical-models.3",
+          "skill_id": "coastal.physical-models",
+          "purpose": "learning",
+          "family_id": "coastal.physical-models.family-3",
+          "prompt": "满足几何与Fr相似就必严格满足全部泥沙运动相似吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。"
+          ],
+          "rubric": [
+            "否",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.physical-models.4",
+          "skill_id": "coastal.physical-models",
+          "purpose": "transfer",
+          "family_id": "coastal.physical-models.family-4",
+          "prompt": "数值模型网格加密和时间步敏感性检查有助于评估离散误差吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。"
+          ],
+          "rubric": [
+            "是",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.physical-models.5",
+          "skill_id": "coastal.physical-models",
+          "purpose": "retention",
+          "family_id": "coastal.physical-models.family-5",
+          "prompt": "说明校准和验证资料应如何区分。",
+          "answer": "校准用于选参，验证用未参与选参的独立时段或工况资料，并报告边界和观测误差",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。"
+          ],
+          "rubric": [
+            "校准用于选参，验证用未参与选参的独立时段或工况资料，并报告边界和观测误差",
+            "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应；数值模型检查守恒、网格步长与资料验证。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "自由面重力过程优先检查Fr相似，泥沙模型另核验起动沉降与尺度效应。",
+        "数值模型检查守恒、网格步长与资料验证。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "coastal.environment",
+      "name": "河海工程生态、监测与不确定性",
+      "aliases": [
+        "河海工程生态、监测与不确定性",
+        "environment"
+      ],
+      "prerequisites": [
+        "river.estuary",
+        "coastal.dredging"
+      ],
+      "tier": "core",
+      "teaching": "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "coastal.environment.1",
+          "skill_id": "coastal.environment",
+          "purpose": "diagnostic",
+          "family_id": "coastal.environment.family-1",
+          "prompt": "工程环境影响只看施工结束当天就足够吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。"
+          ],
+          "rubric": [
+            "否",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.environment.2",
+          "skill_id": "coastal.environment",
+          "purpose": "diagnostic",
+          "family_id": "coastal.environment.family-2",
+          "prompt": "浑浊度与质量含沙量的换算需当地标定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。"
+          ],
+          "rubric": [
+            "是",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.environment.3",
+          "skill_id": "coastal.environment",
+          "purpose": "learning",
+          "family_id": "coastal.environment.family-3",
+          "prompt": "多情景和敏感性分析有助于识别预测不确定性吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。"
+          ],
+          "rubric": [
+            "是",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "coastal.environment.4",
+          "skill_id": "coastal.environment",
+          "purpose": "transfer",
+          "family_id": "coastal.environment.family-4",
+          "prompt": "说明河海工程试用案例应输出哪些学习证据。",
+          "answer": "已知条件与假设、守恒和计算过程、待核验参数、结果对边界的敏感性及后续监测需求",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。"
+          ],
+          "rubric": [
+            "已知条件与假设、守恒和计算过程、待核验参数、结果对边界的敏感性及后续监测需求",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "coastal.environment.5",
+          "skill_id": "coastal.environment",
+          "purpose": "retention",
+          "family_id": "coastal.environment.family-5",
+          "prompt": "单一模型拟合良好就能保证所有未来工况预测准确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。"
+          ],
+          "rubric": [
+            "否",
+            "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化；预测给出情景、边界、误差及适用期限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "明确防洪通航与生态目标，记录水沙盐度等基线和工程后变化。",
+        "预测给出情景、边界、误差及适用期限。"
+      ],
+      "source_scope": {
+        "source": "coastal",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    }
+  ]
+}

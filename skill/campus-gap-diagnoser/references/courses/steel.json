@@ -1,0 +1,5937 @@
+{
+  "id": "steel",
+  "name": "钢结构基本原理与应用",
+  "source": "https://ce.hnu.edu.cn/info/1025/1809.htm",
+  "skills": [
+    {
+      "id": "steel.design",
+      "name": "钢结构体系、极限状态与设计原则",
+      "aliases": [
+        "钢结构体系、极限状态与设计原则",
+        "design"
+      ],
+      "prerequisites": [
+        "structures.overview",
+        "materials.design"
+      ],
+      "tier": "core",
+      "teaching": "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.design.1",
+          "skill_id": "steel.design",
+          "purpose": "diagnostic",
+          "family_id": "steel.design.family-1",
+          "prompt": "承载能力满足就一定满足变形和振动要求吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。"
+          ],
+          "rubric": [
+            "否",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.design.2",
+          "skill_id": "steel.design",
+          "purpose": "diagnostic",
+          "family_id": "steel.design.family-2",
+          "prompt": "钢结构整体稳定与截面强度是否为不同检查？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。"
+          ],
+          "rubric": [
+            "是",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.design.3",
+          "skill_id": "steel.design",
+          "purpose": "learning",
+          "family_id": "steel.design.family-3",
+          "prompt": "题给荷载效应设计值100千牛、抗力设计值125千牛，利用系数。",
+          "answer": "4/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。"
+          ],
+          "rubric": [
+            "4/5",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.design.4",
+          "skill_id": "steel.design",
+          "purpose": "transfer",
+          "family_id": "steel.design.family-4",
+          "prompt": "说明钢结构设计计算前应确认哪些模型信息。",
+          "answer": "结构体系、连接刚度、荷载与组合、支承、材料和采用的标准版本及适用条款",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。"
+          ],
+          "rubric": [
+            "结构体系、连接刚度、荷载与组合、支承、材料和采用的标准版本及适用条款",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.design.5",
+          "skill_id": "steel.design",
+          "purpose": "retention",
+          "family_id": "steel.design.family-5",
+          "prompt": "可以把不同版本规范中的系数任意混用吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。"
+          ],
+          "rubric": [
+            "否",
+            "先确定传力体系和作用，再分别检查承载能力与正常使用；设计值、组合系数与构造限值按题设给定版本和适用条件取用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "先确定传力体系和作用，再分别检查承载能力与正常使用。",
+        "设计值、组合系数与构造限值按题设给定版本和适用条件取用。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.materials",
+      "name": "钢材应力应变、韧性与疲劳性能",
+      "aliases": [
+        "钢材应力应变、韧性与疲劳性能",
+        "materials"
+      ],
+      "prerequisites": [
+        "materials.properties",
+        "materials.concentration"
+      ],
+      "tier": "core",
+      "teaching": "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.materials.1",
+          "skill_id": "steel.materials",
+          "purpose": "diagnostic",
+          "family_id": "steel.materials.family-1",
+          "prompt": "钢材弹性模量大就表示断裂韧性必高吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。"
+          ],
+          "rubric": [
+            "否",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.materials.2",
+          "skill_id": "steel.materials",
+          "purpose": "diagnostic",
+          "family_id": "steel.materials.family-2",
+          "prompt": "拉伸名义应力按原截面积计算吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。"
+          ],
+          "rubric": [
+            "是",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.materials.3",
+          "skill_id": "steel.materials",
+          "purpose": "learning",
+          "family_id": "steel.materials.family-3",
+          "prompt": "力200千牛、原面积1000平方毫米，名义应力MPa。",
+          "answer": "200",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。"
+          ],
+          "rubric": [
+            "200",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.materials.4",
+          "skill_id": "steel.materials",
+          "purpose": "transfer",
+          "family_id": "steel.materials.family-4",
+          "prompt": "钢材在低温和缺口约束下可能发生脆性破坏吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。"
+          ],
+          "rubric": [
+            "是",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.materials.5",
+          "skill_id": "steel.materials",
+          "purpose": "retention",
+          "family_id": "steel.materials.family-5",
+          "prompt": "疲劳验算只检查最大应力低于静力屈服强度就足够吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。"
+          ],
+          "rubric": [
+            "否",
+            "区分屈服、抗拉强度、塑性、韧性与焊接性能；低温、应力集中与多轴约束会影响脆性破坏风险。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "区分屈服、抗拉强度、塑性、韧性与焊接性能。",
+        "低温、应力集中与多轴约束会影响脆性破坏风险。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.selection",
+      "name": "钢材选用、厚度效应与质量保证",
+      "aliases": [
+        "钢材选用、厚度效应与质量保证",
+        "selection"
+      ],
+      "prerequisites": [
+        "steel.materials"
+      ],
+      "tier": "core",
+      "teaching": "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.selection.1",
+          "skill_id": "steel.selection",
+          "purpose": "diagnostic",
+          "family_id": "steel.selection.family-1",
+          "prompt": "名义屈服强度可在所有板厚和条件下直接当设计强度吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。"
+          ],
+          "rubric": [
+            "否",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.selection.2",
+          "skill_id": "steel.selection",
+          "purpose": "diagnostic",
+          "family_id": "steel.selection.family-2",
+          "prompt": "承受低温动力作用的焊接结构需要关注冲击韧性吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.selection.3",
+          "skill_id": "steel.selection",
+          "purpose": "learning",
+          "family_id": "steel.selection.family-3",
+          "prompt": "材料证明和复验能用于确认实际供货性能吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.selection.4",
+          "skill_id": "steel.selection",
+          "purpose": "transfer",
+          "family_id": "steel.selection.family-4",
+          "prompt": "说明钢材选择至少需记录哪些输入。",
+          "answer": "结构用途、受力与疲劳、温度、板厚、连接工艺、材料等级和设计依据",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。"
+          ],
+          "rubric": [
+            "结构用途、受力与疲劳、温度、板厚、连接工艺、材料等级和设计依据",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.selection.5",
+          "skill_id": "steel.selection",
+          "purpose": "retention",
+          "family_id": "steel.selection.family-5",
+          "prompt": "仅凭钢号数字大小就能判断焊接施工性能优劣吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。"
+          ],
+          "rubric": [
+            "否",
+            "按承载类型、工作温度、焊接条件和厚度选材；牌号、质量等级和设计强度来源分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按承载类型、工作温度、焊接条件和厚度选材。",
+        "牌号、质量等级和设计强度来源分别核对。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.welding",
+      "name": "焊缝形式、焊接缺陷与残余应力",
+      "aliases": [
+        "焊缝形式、焊接缺陷与残余应力",
+        "welding"
+      ],
+      "prerequisites": [
+        "steel.materials",
+        "materials.concentration"
+      ],
+      "tier": "core",
+      "teaching": "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.welding.1",
+          "skill_id": "steel.welding",
+          "purpose": "diagnostic",
+          "family_id": "steel.welding.family-1",
+          "prompt": "焊接后即使无外荷载仍可能有残余应力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。"
+          ],
+          "rubric": [
+            "是",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.welding.2",
+          "skill_id": "steel.welding",
+          "purpose": "diagnostic",
+          "family_id": "steel.welding.family-2",
+          "prompt": "焊缝中的裂纹能仅凭平均应力低就忽略吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。"
+          ],
+          "rubric": [
+            "否",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.welding.3",
+          "skill_id": "steel.welding",
+          "purpose": "learning",
+          "family_id": "steel.welding.family-3",
+          "prompt": "合理焊接顺序可减小部分焊接变形吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。"
+          ],
+          "rubric": [
+            "是",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.welding.4",
+          "skill_id": "steel.welding",
+          "purpose": "transfer",
+          "family_id": "steel.welding.family-4",
+          "prompt": "说明焊接节点审核时应分别检查什么。",
+          "answer": "传力、焊缝有效截面、材料匹配、质量要求、应力集中、施工可达性与检测",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。"
+          ],
+          "rubric": [
+            "传力、焊缝有效截面、材料匹配、质量要求、应力集中、施工可达性与检测",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.welding.5",
+          "skill_id": "steel.welding",
+          "purpose": "retention",
+          "family_id": "steel.welding.family-5",
+          "prompt": "焊接残余应力等同于另加一个净合力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。"
+          ],
+          "rubric": [
+            "否",
+            "识别对接、角焊及组合连接的传力；焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "识别对接、角焊及组合连接的传力。",
+        "焊接热循环引起残余应力和变形，缺陷与质量等级影响承载和疲劳。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.butt-weld",
+      "name": "对接焊缝的有效截面与验算",
+      "aliases": [
+        "对接焊缝的有效截面与验算",
+        "butt-weld"
+      ],
+      "prerequisites": [
+        "steel.welding",
+        "materials.combined"
+      ],
+      "tier": "core",
+      "teaching": "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.butt-weld.1",
+          "skill_id": "steel.butt-weld",
+          "purpose": "diagnostic",
+          "family_id": "steel.butt-weld.family-1",
+          "prompt": "轴力100千牛，有效焊缝面积1000平方毫米，平均正应力MPa。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。"
+          ],
+          "rubric": [
+            "100",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.butt-weld.2",
+          "skill_id": "steel.butt-weld",
+          "purpose": "diagnostic",
+          "family_id": "steel.butt-weld.family-2",
+          "prompt": "弯剪组合焊缝可只校核平均轴向应力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。"
+          ],
+          "rubric": [
+            "否",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.butt-weld.3",
+          "skill_id": "steel.butt-weld",
+          "purpose": "learning",
+          "family_id": "steel.butt-weld.family-3",
+          "prompt": "题给有效厚度8毫米、有效长度200毫米，有效面积平方毫米。",
+          "answer": "1600",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。"
+          ],
+          "rubric": [
+            "1600",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.butt-weld.4",
+          "skill_id": "steel.butt-weld",
+          "purpose": "transfer",
+          "family_id": "steel.butt-weld.family-4",
+          "prompt": "焊缝质量等级和受力状态会影响允许采用的强度条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。"
+          ],
+          "rubric": [
+            "是",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.butt-weld.5",
+          "skill_id": "steel.butt-weld",
+          "purpose": "retention",
+          "family_id": "steel.butt-weld.family-5",
+          "prompt": "说明对接焊缝计算长度为何要按规定确定。",
+          "answer": "起落弧、端部处理与有效受力区可能影响有效长度，按题给构造和设计依据处理",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。"
+          ],
+          "rubric": [
+            "起落弧、端部处理与有效受力区可能影响有效长度，按题给构造和设计依据处理",
+            "按题给有效厚度和有效长度求应力；拉压弯剪分别组合，质量要求和强度取值须有明确依据。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按题给有效厚度和有效长度求应力。",
+        "拉压弯剪分别组合，质量要求和强度取值须有明确依据。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.fillet-weld",
+      "name": "角焊缝有效焊喉与强度",
+      "aliases": [
+        "角焊缝有效焊喉与强度",
+        "fillet-weld"
+      ],
+      "prerequisites": [
+        "steel.welding",
+        "materials.shear"
+      ],
+      "tier": "core",
+      "teaching": "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.fillet-weld.1",
+          "skill_id": "steel.fillet-weld",
+          "purpose": "diagnostic",
+          "family_id": "steel.fillet-weld.family-1",
+          "prompt": "两条角焊缝各有效长度100毫米、有效焊喉4毫米，总有效面积平方毫米。",
+          "answer": "800",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。"
+          ],
+          "rubric": [
+            "800",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fillet-weld.2",
+          "skill_id": "steel.fillet-weld",
+          "purpose": "diagnostic",
+          "family_id": "steel.fillet-weld.family-2",
+          "prompt": "上述总面积受剪力80千牛，平均剪应力MPa。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。"
+          ],
+          "rubric": [
+            "100",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fillet-weld.3",
+          "skill_id": "steel.fillet-weld",
+          "purpose": "learning",
+          "family_id": "steel.fillet-weld.family-3",
+          "prompt": "角焊缝焊脚尺寸必等于有效焊喉厚度吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。"
+          ],
+          "rubric": [
+            "否",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fillet-weld.4",
+          "skill_id": "steel.fillet-weld",
+          "purpose": "transfer",
+          "family_id": "steel.fillet-weld.family-4",
+          "prompt": "面积800平方毫米、题给焊缝剪切设计强度160MPa，均匀纯剪容量千牛。",
+          "answer": "128",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。"
+          ],
+          "rubric": [
+            "128",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fillet-weld.5",
+          "skill_id": "steel.fillet-weld",
+          "purpose": "retention",
+          "family_id": "steel.fillet-weld.family-5",
+          "prompt": "对任意焊缝方向都可采用相同增强系数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。"
+          ],
+          "rubric": [
+            "否",
+            "用有效焊喉厚度乘有效长度计算受力面积；焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "用有效焊喉厚度乘有效长度计算受力面积。",
+        "焊脚尺寸与有效焊喉区分，方向系数只按题给条件使用。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.weld-group",
+      "name": "偏心焊缝群的力与力矩分配",
+      "aliases": [
+        "偏心焊缝群的力与力矩分配",
+        "weld-group"
+      ],
+      "prerequisites": [
+        "steel.fillet-weld",
+        "theory.force"
+      ],
+      "tier": "core",
+      "teaching": "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.weld-group.1",
+          "skill_id": "steel.weld-group",
+          "purpose": "diagnostic",
+          "family_id": "steel.weld-group.family-1",
+          "prompt": "力10千牛、偏心距0.2米，附加力矩千牛米。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。"
+          ],
+          "rubric": [
+            "2",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.weld-group.2",
+          "skill_id": "steel.weld-group",
+          "purpose": "diagnostic",
+          "family_id": "steel.weld-group.family-2",
+          "prompt": "焊缝群最危险点应按合成应力判断吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。"
+          ],
+          "rubric": [
+            "是",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.weld-group.3",
+          "skill_id": "steel.weld-group",
+          "purpose": "learning",
+          "family_id": "steel.weld-group.family-3",
+          "prompt": "扭转剪应力与直接剪应力应无条件按绝对值直接相加吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。"
+          ],
+          "rubric": [
+            "否",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.weld-group.4",
+          "skill_id": "steel.weld-group",
+          "purpose": "transfer",
+          "family_id": "steel.weld-group.family-4",
+          "prompt": "说明确定焊缝群形心和极惯性量的作用。",
+          "answer": "用于分配附加矩并求各位置应力方向和大小，再叠加直接应力",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。"
+          ],
+          "rubric": [
+            "用于分配附加矩并求各位置应力方向和大小，再叠加直接应力",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.weld-group.5",
+          "skill_id": "steel.weld-group",
+          "purpose": "retention",
+          "family_id": "steel.weld-group.family-5",
+          "prompt": "只校核焊缝群平均应力能保证偏心连接安全完整吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。"
+          ],
+          "rubric": [
+            "否",
+            "偏心力先分解成形心力和附加矩；直接应力与扭转或弯曲应力按矢量及作用位置组合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "偏心力先分解成形心力和附加矩。",
+        "直接应力与扭转或弯曲应力按矢量及作用位置组合。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.bearing-bolts",
+      "name": "普通螺栓剪切、承压与净截面",
+      "aliases": [
+        "普通螺栓剪切、承压与净截面",
+        "bearing-bolts"
+      ],
+      "prerequisites": [
+        "materials.shear",
+        "steel.design"
+      ],
+      "tier": "core",
+      "teaching": "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.bearing-bolts.1",
+          "skill_id": "steel.bearing-bolts",
+          "purpose": "diagnostic",
+          "family_id": "steel.bearing-bolts.family-1",
+          "prompt": "题给每个螺栓抗剪30千牛、承压25千牛，同等分配四个螺栓的这两项控制容量千牛。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。"
+          ],
+          "rubric": [
+            "100",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.bearing-bolts.2",
+          "skill_id": "steel.bearing-bolts",
+          "purpose": "diagnostic",
+          "family_id": "steel.bearing-bolts.family-2",
+          "prompt": "螺栓自身抗剪通过就无需检查连接板承压吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。"
+          ],
+          "rubric": [
+            "否",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bearing-bolts.3",
+          "skill_id": "steel.bearing-bolts",
+          "purpose": "learning",
+          "family_id": "steel.bearing-bolts.family-3",
+          "prompt": "板毛面积1000、螺栓孔扣除200平方毫米，净面积。",
+          "answer": "800",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。"
+          ],
+          "rubric": [
+            "800",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.bearing-bolts.4",
+          "skill_id": "steel.bearing-bolts",
+          "purpose": "transfer",
+          "family_id": "steel.bearing-bolts.family-4",
+          "prompt": "双剪螺栓的剪切面数在相应理想连接中为2吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。"
+          ],
+          "rubric": [
+            "是",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bearing-bolts.5",
+          "skill_id": "steel.bearing-bolts",
+          "purpose": "retention",
+          "family_id": "steel.bearing-bolts.family-5",
+          "prompt": "孔径可未经依据直接等于螺栓公称直径吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。"
+          ],
+          "rubric": [
+            "否",
+            "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂；多排连接按实际传力和题给分配模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "螺栓连接分别检查螺杆剪切、孔壁承压、板件净截面及撕裂。",
+        "多排连接按实际传力和题给分配模型。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.friction-bolts",
+      "name": "高强螺栓摩擦型、承压型与预拉力",
+      "aliases": [
+        "高强螺栓摩擦型、承压型与预拉力",
+        "friction-bolts"
+      ],
+      "prerequisites": [
+        "steel.bearing-bolts"
+      ],
+      "tier": "core",
+      "teaching": "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.friction-bolts.1",
+          "skill_id": "steel.friction-bolts",
+          "purpose": "diagnostic",
+          "family_id": "steel.friction-bolts.family-1",
+          "prompt": "摩擦型连接与承压型连接的控制状态相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。"
+          ],
+          "rubric": [
+            "否",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.friction-bolts.2",
+          "skill_id": "steel.friction-bolts",
+          "purpose": "diagnostic",
+          "family_id": "steel.friction-bolts.family-2",
+          "prompt": "题给单栓抗滑移式R=0.9*mu*n*P，mu=0.4,n=2,P=100千牛，R千牛。",
+          "answer": "72",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。"
+          ],
+          "rubric": [
+            "72",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.friction-bolts.3",
+          "skill_id": "steel.friction-bolts",
+          "purpose": "learning",
+          "family_id": "steel.friction-bolts.family-3",
+          "prompt": "预拉力施工和摩擦面处理会影响抗滑移性能吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。"
+          ],
+          "rubric": [
+            "是",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.friction-bolts.4",
+          "skill_id": "steel.friction-bolts",
+          "purpose": "transfer",
+          "family_id": "steel.friction-bolts.family-4",
+          "prompt": "同题系数不变、摩擦面数减半，题给抗滑移容量也减半吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。"
+          ],
+          "rubric": [
+            "是",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.friction-bolts.5",
+          "skill_id": "steel.friction-bolts",
+          "purpose": "retention",
+          "family_id": "steel.friction-bolts.family-5",
+          "prompt": "摩擦型连接计算可省略构件和板件的强度检查吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。"
+          ],
+          "rubric": [
+            "否",
+            "区分以滑移控制和以极限承压剪切控制的连接；摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "区分以滑移控制和以极限承压剪切控制的连接。",
+        "摩擦容量与预拉力、抗滑移系数、摩擦面数及题给系数相关。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.bolt-group",
+      "name": "受拉与偏心螺栓群、连接撬力",
+      "aliases": [
+        "受拉与偏心螺栓群、连接撬力",
+        "bolt-group"
+      ],
+      "prerequisites": [
+        "steel.bearing-bolts",
+        "steel.weld-group"
+      ],
+      "tier": "core",
+      "teaching": "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.bolt-group.1",
+          "skill_id": "steel.bolt-group",
+          "purpose": "diagnostic",
+          "family_id": "steel.bolt-group.family-1",
+          "prompt": "四栓完全对称均匀受拉、总拉力80千牛且无撬力，每栓拉力千牛。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。"
+          ],
+          "rubric": [
+            "20",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.bolt-group.2",
+          "skill_id": "steel.bolt-group",
+          "purpose": "diagnostic",
+          "family_id": "steel.bolt-group.family-2",
+          "prompt": "偏心连接中最远螺栓一般可能承担较大附加力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。"
+          ],
+          "rubric": [
+            "是",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bolt-group.3",
+          "skill_id": "steel.bolt-group",
+          "purpose": "learning",
+          "family_id": "steel.bolt-group.family-3",
+          "prompt": "考虑板件柔性后撬力可能增加螺栓拉力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。"
+          ],
+          "rubric": [
+            "是",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bolt-group.4",
+          "skill_id": "steel.bolt-group",
+          "purpose": "transfer",
+          "family_id": "steel.bolt-group.family-4",
+          "prompt": "拉剪共同作用可不检查相应交互条件吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。"
+          ],
+          "rubric": [
+            "否",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bolt-group.5",
+          "skill_id": "steel.bolt-group",
+          "purpose": "retention",
+          "family_id": "steel.bolt-group.family-5",
+          "prompt": "说明采用刚性端板分配假设前需核验什么。",
+          "answer": "端板相对刚度、接触与受压区、螺栓布置、偏心方向及是否需要计入撬力",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。"
+          ],
+          "rubric": [
+            "端板相对刚度、接触与受压区、螺栓布置、偏心方向及是否需要计入撬力",
+            "按连接刚度和题给假设分配拉剪及偏心矩；端板变形可能引起撬力，需核对螺栓和板件共同受力。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按连接刚度和题给假设分配拉剪及偏心矩。",
+        "端板变形可能引起撬力，需核对螺栓和板件共同受力。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.tension",
+      "name": "轴心受拉构件、剪滞与块体剪切",
+      "aliases": [
+        "轴心受拉构件、剪滞与块体剪切",
+        "tension"
+      ],
+      "prerequisites": [
+        "steel.bearing-bolts",
+        "materials.axial"
+      ],
+      "tier": "core",
+      "teaching": "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.tension.1",
+          "skill_id": "steel.tension",
+          "purpose": "diagnostic",
+          "family_id": "steel.tension.family-1",
+          "prompt": "拉力120千牛、净面积800平方毫米，平均净截面应力MPa。",
+          "answer": "150",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。"
+          ],
+          "rubric": [
+            "150",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.tension.2",
+          "skill_id": "steel.tension",
+          "purpose": "diagnostic",
+          "family_id": "steel.tension.family-2",
+          "prompt": "受拉构件只要毛截面强度满足就无需检查净截面吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。"
+          ],
+          "rubric": [
+            "否",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.tension.3",
+          "skill_id": "steel.tension",
+          "purpose": "learning",
+          "family_id": "steel.tension.family-3",
+          "prompt": "块体剪切属于连接区可能的破坏模式吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。"
+          ],
+          "rubric": [
+            "是",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.tension.4",
+          "skill_id": "steel.tension",
+          "purpose": "transfer",
+          "family_id": "steel.tension.family-4",
+          "prompt": "题给有效净面积为净面积的0.8，净面积1000平方毫米，有效净面积。",
+          "answer": "800",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。"
+          ],
+          "rubric": [
+            "800",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.tension.5",
+          "skill_id": "steel.tension",
+          "purpose": "retention",
+          "family_id": "steel.tension.family-5",
+          "prompt": "受拉构件的刚度与长细比也可能有构造要求吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。"
+          ],
+          "rubric": [
+            "是",
+            "按毛截面屈服、净截面断裂及连接区破坏分别检查；部分截面传力可能出现剪滞，受力孔扣除按依据确定。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按毛截面屈服、净截面断裂及连接区破坏分别检查。",
+        "部分截面传力可能出现剪滞，受力孔扣除按依据确定。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.column",
+      "name": "轴心受压构件、整体稳定与柱曲线",
+      "aliases": [
+        "轴心受压构件、整体稳定与柱曲线",
+        "column"
+      ],
+      "prerequisites": [
+        "materials.stability-design",
+        "steel.materials"
+      ],
+      "tier": "core",
+      "teaching": "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.column.1",
+          "skill_id": "steel.column",
+          "purpose": "diagnostic",
+          "family_id": "steel.column.family-1",
+          "prompt": "N=200千牛，phi=0.8,A=2000平方毫米，稳定验算应力MPa。",
+          "answer": "125",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。"
+          ],
+          "rubric": [
+            "125",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.column.2",
+          "skill_id": "steel.column",
+          "purpose": "diagnostic",
+          "family_id": "steel.column.family-2",
+          "prompt": "有效长度3000毫米、回转半径30毫米，长细比。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。"
+          ],
+          "rubric": [
+            "100",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.column.3",
+          "skill_id": "steel.column",
+          "purpose": "learning",
+          "family_id": "steel.column.family-3",
+          "prompt": "受压钢柱所有柔度范围都能直接按理想欧拉杆承载力设计吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。"
+          ],
+          "rubric": [
+            "否",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.column.4",
+          "skill_id": "steel.column",
+          "purpose": "transfer",
+          "family_id": "steel.column.family-4",
+          "prompt": "截面两个主方向稳定都需检查吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。"
+          ],
+          "rubric": [
+            "是",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.column.5",
+          "skill_id": "steel.column",
+          "purpose": "retention",
+          "family_id": "steel.column.family-5",
+          "prompt": "说明稳定系数查取需要哪些信息。",
+          "answer": "截面类型、屈曲方向、长细比或无量纲柔度、材料强度和采用的设计依据",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。"
+          ],
+          "rubric": [
+            "截面类型、屈曲方向、长细比或无量纲柔度、材料强度和采用的设计依据",
+            "确定有效长度与回转半径；残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "确定有效长度与回转半径。",
+        "残余应力、初弯曲及截面类型影响稳定系数，按题给系数验算N/(phi*A)。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.builtup",
+      "name": "格构柱、缀条缀板与分肢稳定",
+      "aliases": [
+        "格构柱、缀条缀板与分肢稳定",
+        "builtup"
+      ],
+      "prerequisites": [
+        "steel.column",
+        "structures.truss-methods"
+      ],
+      "tier": "core",
+      "teaching": "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.builtup.1",
+          "skill_id": "steel.builtup",
+          "purpose": "diagnostic",
+          "family_id": "steel.builtup.family-1",
+          "prompt": "格构柱整体稳定满足就可省略分肢稳定检查吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。"
+          ],
+          "rubric": [
+            "否",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.builtup.2",
+          "skill_id": "steel.builtup",
+          "purpose": "diagnostic",
+          "family_id": "steel.builtup.family-2",
+          "prompt": "缀条或缀板承担保持各分肢共同工作的横向联系作用吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。"
+          ],
+          "rubric": [
+            "是",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.builtup.3",
+          "skill_id": "steel.builtup",
+          "purpose": "learning",
+          "family_id": "steel.builtup.family-3",
+          "prompt": "截面总面积由两根各1000平方毫米分肢组成，面积合计。",
+          "answer": "2000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。"
+          ],
+          "rubric": [
+            "2000",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.builtup.4",
+          "skill_id": "steel.builtup",
+          "purpose": "transfer",
+          "family_id": "steel.builtup.family-4",
+          "prompt": "格构柱换算长细比能无条件用实腹柱公式替代吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。"
+          ],
+          "rubric": [
+            "否",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.builtup.5",
+          "skill_id": "steel.builtup",
+          "purpose": "retention",
+          "family_id": "steel.builtup.family-5",
+          "prompt": "说明格构柱虚轴与实轴的计算差别。",
+          "answer": "绕虚轴变形受缀材剪切柔度影响，需采用相应换算柔度并检查分肢和缀材",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。"
+          ],
+          "rubric": [
+            "绕虚轴变形受缀材剪切柔度影响，需采用相应换算柔度并检查分肢和缀材",
+            "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "整体受压还需考虑剪切变形修正柔度，分肢与缀材分别验算，节点和构造保证共同工作。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.local-buckling",
+      "name": "板件局部屈曲、宽厚比与有效截面",
+      "aliases": [
+        "板件局部屈曲、宽厚比与有效截面",
+        "local-buckling"
+      ],
+      "prerequisites": [
+        "steel.column",
+        "materials.basics"
+      ],
+      "tier": "core",
+      "teaching": "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.local-buckling.1",
+          "skill_id": "steel.local-buckling",
+          "purpose": "diagnostic",
+          "family_id": "steel.local-buckling.family-1",
+          "prompt": "板宽200毫米、厚8毫米，宽厚比。",
+          "answer": "25",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。"
+          ],
+          "rubric": [
+            "25",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.local-buckling.2",
+          "skill_id": "steel.local-buckling",
+          "purpose": "diagnostic",
+          "family_id": "steel.local-buckling.family-2",
+          "prompt": "局部屈曲与整根柱整体侧弯是同一模式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。"
+          ],
+          "rubric": [
+            "否",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.local-buckling.3",
+          "skill_id": "steel.local-buckling",
+          "purpose": "learning",
+          "family_id": "steel.local-buckling.family-3",
+          "prompt": "受压翼缘的支承边条件会影响局部稳定限值吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。"
+          ],
+          "rubric": [
+            "是",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.local-buckling.4",
+          "skill_id": "steel.local-buckling",
+          "purpose": "transfer",
+          "family_id": "steel.local-buckling.family-4",
+          "prompt": "加劲肋可改变腹板分格与局部稳定条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。"
+          ],
+          "rubric": [
+            "是",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.local-buckling.5",
+          "skill_id": "steel.local-buckling",
+          "purpose": "retention",
+          "family_id": "steel.local-buckling.family-5",
+          "prompt": "宽厚比超限就能任意取全截面有效进行强度计算吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。"
+          ],
+          "rubric": [
+            "否",
+            "受压板件局部屈曲与整体屈曲区分；边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "受压板件局部屈曲与整体屈曲区分。",
+        "边界、应力分布和宽厚比影响临界应力，超限按相应有效截面方法。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.beam-strength",
+      "name": "钢梁抗弯、抗剪、局压与正常使用",
+      "aliases": [
+        "钢梁抗弯、抗剪、局压与正常使用",
+        "beam-strength"
+      ],
+      "prerequisites": [
+        "materials.bending",
+        "steel.design"
+      ],
+      "tier": "core",
+      "teaching": "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.beam-strength.1",
+          "skill_id": "steel.beam-strength",
+          "purpose": "diagnostic",
+          "family_id": "steel.beam-strength.family-1",
+          "prompt": "弯矩100千牛米、弹性截面模量1000000立方毫米，弯曲应力MPa。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。"
+          ],
+          "rubric": [
+            "100",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.beam-strength.2",
+          "skill_id": "steel.beam-strength",
+          "purpose": "diagnostic",
+          "family_id": "steel.beam-strength.family-2",
+          "prompt": "梁支承或集中力附近可能需要局部承压检查吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。"
+          ],
+          "rubric": [
+            "是",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-strength.3",
+          "skill_id": "steel.beam-strength",
+          "purpose": "learning",
+          "family_id": "steel.beam-strength.family-3",
+          "prompt": "矩形截面弹性与全塑性抗弯模量一般相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。"
+          ],
+          "rubric": [
+            "否",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-strength.4",
+          "skill_id": "steel.beam-strength",
+          "purpose": "transfer",
+          "family_id": "steel.beam-strength.family-4",
+          "prompt": "简支梁跨度4米、题给允许挠跨比1/400，允许挠度毫米。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。"
+          ],
+          "rubric": [
+            "10",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.beam-strength.5",
+          "skill_id": "steel.beam-strength",
+          "purpose": "retention",
+          "family_id": "steel.beam-strength.family-5",
+          "prompt": "弯矩最大位置一定同时是剪应力最大的控制位置吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。"
+          ],
+          "rubric": [
+            "否",
+            "按危险截面核对弯剪和局部承压；弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按危险截面核对弯剪和局部承压。",
+        "弹性与塑性截面抗力按题给条件选用，挠度振动另作正常使用检查。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.beam-stability",
+      "name": "钢梁侧扭屈曲与侧向支承",
+      "aliases": [
+        "钢梁侧扭屈曲与侧向支承",
+        "beam-stability"
+      ],
+      "prerequisites": [
+        "steel.local-buckling",
+        "structures.elastic-stability"
+      ],
+      "tier": "core",
+      "teaching": "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.beam-stability.1",
+          "skill_id": "steel.beam-stability",
+          "purpose": "diagnostic",
+          "family_id": "steel.beam-stability.family-1",
+          "prompt": "增设可靠侧向支承可缩短受压翼缘无支承长度吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。"
+          ],
+          "rubric": [
+            "是",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-stability.2",
+          "skill_id": "steel.beam-stability",
+          "purpose": "diagnostic",
+          "family_id": "steel.beam-stability.family-2",
+          "prompt": "仅提高钢材屈服强度就必同比提高长细钢梁侧扭稳定承载力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。"
+          ],
+          "rubric": [
+            "否",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-stability.3",
+          "skill_id": "steel.beam-stability",
+          "purpose": "learning",
+          "family_id": "steel.beam-stability.family-3",
+          "prompt": "题给稳定系数0.8、截面模量1000000立方毫米、设计强度200MPa，按给定乘积式容量千牛米。",
+          "answer": "160",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。"
+          ],
+          "rubric": [
+            "160",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.beam-stability.4",
+          "skill_id": "steel.beam-stability",
+          "purpose": "transfer",
+          "family_id": "steel.beam-stability.family-4",
+          "prompt": "受拉翼缘任意一个点被约束就必保证受压翼缘全长侧向稳定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。"
+          ],
+          "rubric": [
+            "否",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-stability.5",
+          "skill_id": "steel.beam-stability",
+          "purpose": "retention",
+          "family_id": "steel.beam-stability.family-5",
+          "prompt": "说明梁侧扭失稳计算需确认的约束。",
+          "answer": "侧移和扭转约束、端部翘曲约束、侧向支撑可靠性、荷载作用点与弯矩分布",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。"
+          ],
+          "rubric": [
+            "侧移和扭转约束、端部翘曲约束、侧向支撑可靠性、荷载作用点与弯矩分布",
+            "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳；侧向支承间距、荷载位置与端部约束影响临界值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "受弯梁受压翼缘的侧移与扭转耦合产生整体失稳。",
+        "侧向支承间距、荷载位置与端部约束影响临界值。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.plate-girder",
+      "name": "组合钢梁腹板、加劲肋与拼接",
+      "aliases": [
+        "组合钢梁腹板、加劲肋与拼接",
+        "plate-girder"
+      ],
+      "prerequisites": [
+        "steel.beam-strength",
+        "steel.local-buckling"
+      ],
+      "tier": "core",
+      "teaching": "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.plate-girder.1",
+          "skill_id": "steel.plate-girder",
+          "purpose": "diagnostic",
+          "family_id": "steel.plate-girder.family-1",
+          "prompt": "组合工字梁翼缘主要承担弯曲正应力、腹板主要承担剪力是常见分析近似吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.plate-girder.2",
+          "skill_id": "steel.plate-girder",
+          "purpose": "diagnostic",
+          "family_id": "steel.plate-girder.family-2",
+          "prompt": "支承加劲肋有助于传递集中反力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.plate-girder.3",
+          "skill_id": "steel.plate-girder",
+          "purpose": "learning",
+          "family_id": "steel.plate-girder.family-3",
+          "prompt": "腹板高1000毫米、厚10毫米，高厚比。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。"
+          ],
+          "rubric": [
+            "100",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.plate-girder.4",
+          "skill_id": "steel.plate-girder",
+          "purpose": "transfer",
+          "family_id": "steel.plate-girder.family-4",
+          "prompt": "翼腹连接只要焊缝外观连续就可省略剪流传递计算吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。"
+          ],
+          "rubric": [
+            "否",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.plate-girder.5",
+          "skill_id": "steel.plate-girder",
+          "purpose": "retention",
+          "family_id": "steel.plate-girder.family-5",
+          "prompt": "说明梁拼接需要保持哪些内力的连续传递。",
+          "answer": "轴力、弯矩、剪力及题设存在的扭矩，结合施工分段与连接刚度校核",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。"
+          ],
+          "rubric": [
+            "轴力、弯矩、剪力及题设存在的扭矩，结合施工分段与连接刚度校核",
+            "焊接或栓接板梁协调翼缘和腹板传力；腹板受剪局部稳定、支承加劲和翼腹连接分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "焊接或栓接板梁协调翼缘和腹板传力。",
+        "腹板受剪局部稳定、支承加劲和翼腹连接分别核对。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.beam-column",
+      "name": "拉弯压弯、二阶效应与双向受力",
+      "aliases": [
+        "拉弯压弯、二阶效应与双向受力",
+        "beam-column"
+      ],
+      "prerequisites": [
+        "steel.column",
+        "steel.beam-strength",
+        "structures.sway"
+      ],
+      "tier": "core",
+      "teaching": "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.beam-column.1",
+          "skill_id": "steel.beam-column",
+          "purpose": "diagnostic",
+          "family_id": "steel.beam-column.family-1",
+          "prompt": "某截面轴压应力-60MPa、同点弯曲正应力+100MPa，总应力MPa。",
+          "answer": "40",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。"
+          ],
+          "rubric": [
+            "40",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.beam-column.2",
+          "skill_id": "steel.beam-column",
+          "purpose": "diagnostic",
+          "family_id": "steel.beam-column.family-2",
+          "prompt": "压弯构件能仅用线性应力叠加代替全部稳定验算吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。"
+          ],
+          "rubric": [
+            "否",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-column.3",
+          "skill_id": "steel.beam-column",
+          "purpose": "learning",
+          "family_id": "steel.beam-column.family-3",
+          "prompt": "P-delta与P-Delta分别可用于描述构件局部弯曲和框架整体侧移二阶效应吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。"
+          ],
+          "rubric": [
+            "是",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-column.4",
+          "skill_id": "steel.beam-column",
+          "purpose": "transfer",
+          "family_id": "steel.beam-column.family-4",
+          "prompt": "双向弯矩作用下需要明确两个主方向及危险点吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。"
+          ],
+          "rubric": [
+            "是",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.beam-column.5",
+          "skill_id": "steel.beam-column",
+          "purpose": "retention",
+          "family_id": "steel.beam-column.family-5",
+          "prompt": "说明初始缺陷在压弯分析中的作用。",
+          "answer": "初弯曲与初倾斜引起附加弯矩并影响稳定响应，按选用分析或设计方法一致处理",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。"
+          ],
+          "rubric": [
+            "初弯曲与初倾斜引起附加弯矩并影响稳定响应，按选用分析或设计方法一致处理",
+            "按轴力和弯矩叠加求截面应力；压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按轴力和弯矩叠加求截面应力。",
+        "压弯需计整体稳定和必要二阶放大，框架侧移与构件弯曲分开识别。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.truss",
+      "name": "钢屋架、腹杆弦杆与支撑体系",
+      "aliases": [
+        "钢屋架、腹杆弦杆与支撑体系",
+        "truss"
+      ],
+      "prerequisites": [
+        "structures.truss-methods",
+        "steel.tension",
+        "steel.column"
+      ],
+      "tier": "core",
+      "teaching": "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.truss.1",
+          "skill_id": "steel.truss",
+          "purpose": "diagnostic",
+          "family_id": "steel.truss.family-1",
+          "prompt": "理想铰接且节点加载屋架杆可按二力杆分析吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。"
+          ],
+          "rubric": [
+            "是",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.truss.2",
+          "skill_id": "steel.truss",
+          "purpose": "diagnostic",
+          "family_id": "steel.truss.family-2",
+          "prompt": "上弦杆受压时其面外计算长度可能由侧向支撑控制吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。"
+          ],
+          "rubric": [
+            "是",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.truss.3",
+          "skill_id": "steel.truss",
+          "purpose": "learning",
+          "family_id": "steel.truss.family-3",
+          "prompt": "忽略所有节点偏心与非节点荷载总能得到足够准确杆力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。"
+          ],
+          "rubric": [
+            "否",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.truss.4",
+          "skill_id": "steel.truss",
+          "purpose": "transfer",
+          "family_id": "steel.truss.family-4",
+          "prompt": "说明屋盖纵向支撑的基本作用。",
+          "answer": "提供空间稳定、约束构件面外变形并传递纵向水平作用与安装阶段作用",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。"
+          ],
+          "rubric": [
+            "提供空间稳定、约束构件面外变形并传递纵向水平作用与安装阶段作用",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.truss.5",
+          "skill_id": "steel.truss",
+          "purpose": "retention",
+          "family_id": "steel.truss.family-5",
+          "prompt": "屋架各杆均按受拉构件设计合理吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。"
+          ],
+          "rubric": [
+            "否",
+            "先建荷载到檩条、屋架、支撑及柱的传力路径；杆件按实际连接与偏心选择轴力或弯轴模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "先建荷载到檩条、屋架、支撑及柱的传力路径。",
+        "杆件按实际连接与偏心选择轴力或弯轴模型。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.joints",
+      "name": "梁柱节点、节点板与连接刚度",
+      "aliases": [
+        "梁柱节点、节点板与连接刚度",
+        "joints"
+      ],
+      "prerequisites": [
+        "steel.bolt-group",
+        "steel.weld-group",
+        "structures.frame"
+      ],
+      "tier": "core",
+      "teaching": "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.joints.1",
+          "skill_id": "steel.joints",
+          "purpose": "diagnostic",
+          "family_id": "steel.joints.family-1",
+          "prompt": "整体分析采用刚接模型时，节点应有相应转动刚度和传矩能力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。"
+          ],
+          "rubric": [
+            "是",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.joints.2",
+          "skill_id": "steel.joints",
+          "purpose": "diagnostic",
+          "family_id": "steel.joints.family-2",
+          "prompt": "节点板可以只检查连接件而不检查板件自身吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。"
+          ],
+          "rubric": [
+            "否",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.joints.3",
+          "skill_id": "steel.joints",
+          "purpose": "learning",
+          "family_id": "steel.joints.family-3",
+          "prompt": "刚接与铰接节点的转角约束假设相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。"
+          ],
+          "rubric": [
+            "否",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.joints.4",
+          "skill_id": "steel.joints",
+          "purpose": "transfer",
+          "family_id": "steel.joints.family-4",
+          "prompt": "说明半刚接节点进入整体分析时应提供什么关系。",
+          "answer": "节点弯矩-转角关系或经验证的等效转动刚度与承载能力范围",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。"
+          ],
+          "rubric": [
+            "节点弯矩-转角关系或经验证的等效转动刚度与承载能力范围",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.joints.5",
+          "skill_id": "steel.joints",
+          "purpose": "retention",
+          "family_id": "steel.joints.family-5",
+          "prompt": "节点域剪切变形可能影响框架响应吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。"
+          ],
+          "rubric": [
+            "是",
+            "节点传递的力与矩应与整体模型一致；刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "节点传递的力与矩应与整体模型一致。",
+        "刚接、铰接和半刚接按刚度与承载能力区分，节点域与节点板也需检查。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.bases",
+      "name": "柱脚、底板承压与锚栓",
+      "aliases": [
+        "柱脚、底板承压与锚栓",
+        "bases"
+      ],
+      "prerequisites": [
+        "steel.beam-column",
+        "steel.bolt-group"
+      ],
+      "tier": "core",
+      "teaching": "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.bases.1",
+          "skill_id": "steel.bases",
+          "purpose": "diagnostic",
+          "family_id": "steel.bases.family-1",
+          "prompt": "轴压力200千牛、假设全接触底板面积40000平方毫米，平均压应力MPa。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。"
+          ],
+          "rubric": [
+            "5",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.bases.2",
+          "skill_id": "steel.bases",
+          "purpose": "diagnostic",
+          "family_id": "steel.bases.family-2",
+          "prompt": "柱脚有弯矩时底板压应力一定仍均匀吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。"
+          ],
+          "rubric": [
+            "否",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bases.3",
+          "skill_id": "steel.bases",
+          "purpose": "learning",
+          "family_id": "steel.bases.family-3",
+          "prompt": "出现抗拔需求时需要核对锚栓及锚固传力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。"
+          ],
+          "rubric": [
+            "是",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bases.4",
+          "skill_id": "steel.bases",
+          "purpose": "transfer",
+          "family_id": "steel.bases.family-4",
+          "prompt": "柱脚刚度假设会影响上部框架计算吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。"
+          ],
+          "rubric": [
+            "是",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.bases.5",
+          "skill_id": "steel.bases",
+          "purpose": "retention",
+          "family_id": "steel.bases.family-5",
+          "prompt": "说明基础埋置及土体承载应如何与柱脚计算衔接。",
+          "answer": "柱脚输出作用与构造需求，再由对应基础与岩土模型检验承压、抗拔、滑移及整体稳定",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。"
+          ],
+          "rubric": [
+            "柱脚输出作用与构造需求，再由对应基础与岩土模型检验承压、抗拔、滑移及整体稳定",
+            "柱底轴力弯矩剪力通过底板、锚栓和基础传递；按接触区和是否抗拔分析，基础与土体验算另接相应课程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "柱底轴力弯矩剪力通过底板、锚栓和基础传递。",
+        "按接触区和是否抗拔分析，基础与土体验算另接相应课程。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.industrial",
+      "name": "单层厂房、吊车梁与空间支撑",
+      "aliases": [
+        "单层厂房、吊车梁与空间支撑",
+        "industrial"
+      ],
+      "prerequisites": [
+        "steel.truss",
+        "steel.plate-girder"
+      ],
+      "tier": "core",
+      "teaching": "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.industrial.1",
+          "skill_id": "steel.industrial",
+          "purpose": "diagnostic",
+          "family_id": "steel.industrial.family-1",
+          "prompt": "吊车梁仅承受恒定竖向静载而无其他作用吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。"
+          ],
+          "rubric": [
+            "否",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.industrial.2",
+          "skill_id": "steel.industrial",
+          "purpose": "diagnostic",
+          "family_id": "steel.industrial.family-2",
+          "prompt": "吊车反复运行可能使疲劳成为控制条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。"
+          ],
+          "rubric": [
+            "是",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.industrial.3",
+          "skill_id": "steel.industrial",
+          "purpose": "learning",
+          "family_id": "steel.industrial.family-3",
+          "prompt": "柱间支撑承担部分纵向水平作用吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。"
+          ],
+          "rubric": [
+            "是",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.industrial.4",
+          "skill_id": "steel.industrial",
+          "purpose": "transfer",
+          "family_id": "steel.industrial.family-4",
+          "prompt": "说明厂房空间体系中屋盖支撑和柱间支撑如何配合。",
+          "answer": "屋盖传递水平作用并维持屋架面外稳定，柱间支撑把相应纵向作用传至基础",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。"
+          ],
+          "rubric": [
+            "屋盖传递水平作用并维持屋架面外稳定，柱间支撑把相应纵向作用传至基础",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.industrial.5",
+          "skill_id": "steel.industrial",
+          "purpose": "retention",
+          "family_id": "steel.industrial.family-5",
+          "prompt": "吊车梁轨道偏心可引起额外扭转吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。"
+          ],
+          "rubric": [
+            "是",
+            "区别竖向、横向和纵向作用路径；吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "区别竖向、横向和纵向作用路径。",
+        "吊车作用涉及局部承压、疲劳和水平作用，支撑与连接形成整体体系。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.portal",
+      "name": "门式刚架、檩条与围护协同",
+      "aliases": [
+        "门式刚架、檩条与围护协同",
+        "portal"
+      ],
+      "prerequisites": [
+        "steel.beam-column",
+        "steel.local-buckling"
+      ],
+      "tier": "core",
+      "teaching": "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.portal.1",
+          "skill_id": "steel.portal",
+          "purpose": "diagnostic",
+          "family_id": "steel.portal.family-1",
+          "prompt": "门式刚架梁柱可以存在弯矩与轴力共同作用吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。"
+          ],
+          "rubric": [
+            "是",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.portal.2",
+          "skill_id": "steel.portal",
+          "purpose": "diagnostic",
+          "family_id": "steel.portal.family-2",
+          "prompt": "檩条与屋面连接能否作为可靠侧向约束需核验吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。"
+          ],
+          "rubric": [
+            "是",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.portal.3",
+          "skill_id": "steel.portal",
+          "purpose": "learning",
+          "family_id": "steel.portal.family-3",
+          "prompt": "冷弯薄壁构件可无条件按全截面塑性能力设计吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。"
+          ],
+          "rubric": [
+            "否",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.portal.4",
+          "skill_id": "steel.portal",
+          "purpose": "transfer",
+          "family_id": "steel.portal.family-4",
+          "prompt": "说明屋面板对檩条约束如何进入计算。",
+          "answer": "按连接布置、刚度和试验或设计依据确认侧移与转动约束，避免假定完全约束",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。"
+          ],
+          "rubric": [
+            "按连接布置、刚度和试验或设计依据确认侧移与转动约束，避免假定完全约束",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.portal.5",
+          "skill_id": "steel.portal",
+          "purpose": "retention",
+          "family_id": "steel.portal.family-5",
+          "prompt": "安装阶段缺少完整支撑时也需检查稳定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。"
+          ],
+          "rubric": [
+            "是",
+            "明确刚架与围护的荷载分配、节点和侧向约束；冷弯薄壁檩条按相应有效截面和稳定方法处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "明确刚架与围护的荷载分配、节点和侧向约束。",
+        "冷弯薄壁檩条按相应有效截面和稳定方法处理。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.fatigue",
+      "name": "钢结构疲劳、细节分类与断裂",
+      "aliases": [
+        "钢结构疲劳、细节分类与断裂",
+        "fatigue"
+      ],
+      "prerequisites": [
+        "materials.fatigue-detail",
+        "steel.welding"
+      ],
+      "tier": "core",
+      "teaching": "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.fatigue.1",
+          "skill_id": "steel.fatigue",
+          "purpose": "diagnostic",
+          "family_id": "steel.fatigue.family-1",
+          "prompt": "最大应力80MPa、最小应力-20MPa，应力范围MPa。",
+          "answer": "100",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。"
+          ],
+          "rubric": [
+            "100",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fatigue.2",
+          "skill_id": "steel.fatigue",
+          "purpose": "diagnostic",
+          "family_id": "steel.fatigue.family-2",
+          "prompt": "同一应力范围下不同焊接细节的疲劳强度可不同吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。"
+          ],
+          "rubric": [
+            "是",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fatigue.3",
+          "skill_id": "steel.fatigue",
+          "purpose": "learning",
+          "family_id": "steel.fatigue.family-3",
+          "prompt": "疲劳裂纹扩展与瞬时静力屈服是同一种检查吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。"
+          ],
+          "rubric": [
+            "否",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fatigue.4",
+          "skill_id": "steel.fatigue",
+          "purpose": "transfer",
+          "family_id": "steel.fatigue.family-4",
+          "prompt": "说明疲劳数据应至少记录哪些量。",
+          "answer": "应力历程或范围、循环数、细节类别、环境和采用的疲劳方法",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。"
+          ],
+          "rubric": [
+            "应力历程或范围、循环数、细节类别、环境和采用的疲劳方法",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fatigue.5",
+          "skill_id": "steel.fatigue",
+          "purpose": "retention",
+          "family_id": "steel.fatigue.family-5",
+          "prompt": "焊缝磨平处理必能无条件使所有细节达到母材疲劳性能吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。"
+          ],
+          "rubric": [
+            "否",
+            "按连接细节和应力范围、循环次数核验；焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "按连接细节和应力范围、循环次数核验。",
+        "焊接细节的几何和缺陷影响疲劳，静力应力合格不替代疲劳。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.fire-corrosion",
+      "name": "钢结构防火、防腐与全寿命维护",
+      "aliases": [
+        "钢结构防火、防腐与全寿命维护",
+        "fire-corrosion"
+      ],
+      "prerequisites": [
+        "steel.materials",
+        "steel.design"
+      ],
+      "tier": "core",
+      "teaching": "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.fire-corrosion.1",
+          "skill_id": "steel.fire-corrosion",
+          "purpose": "diagnostic",
+          "family_id": "steel.fire-corrosion.family-1",
+          "prompt": "钢材不可燃就表示高温下强度不降低吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。"
+          ],
+          "rubric": [
+            "否",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fire-corrosion.2",
+          "skill_id": "steel.fire-corrosion",
+          "purpose": "diagnostic",
+          "family_id": "steel.fire-corrosion.family-2",
+          "prompt": "腐蚀导致净截面积减少时应重新评估承载性能吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。"
+          ],
+          "rubric": [
+            "是",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fire-corrosion.3",
+          "skill_id": "steel.fire-corrosion",
+          "purpose": "learning",
+          "family_id": "steel.fire-corrosion.family-3",
+          "prompt": "原厚度10毫米、实测剩余8毫米，厚度损失比例。",
+          "answer": "1/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。"
+          ],
+          "rubric": [
+            "1/5",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fire-corrosion.4",
+          "skill_id": "steel.fire-corrosion",
+          "purpose": "transfer",
+          "family_id": "steel.fire-corrosion.family-4",
+          "prompt": "防火时限与涂层构造应有相应试验或设计依据吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。"
+          ],
+          "rubric": [
+            "是",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fire-corrosion.5",
+          "skill_id": "steel.fire-corrosion",
+          "purpose": "retention",
+          "family_id": "steel.fire-corrosion.family-5",
+          "prompt": "说明维护检查中连接区域需关注什么。",
+          "answer": "腐蚀、松动、疲劳裂纹、焊缝状态、防护层与积水等，并记录位置与变化",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。"
+          ],
+          "rubric": [
+            "腐蚀、松动、疲劳裂纹、焊缝状态、防护层与积水等，并记录位置与变化",
+            "温升会改变材料强度刚度；腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "温升会改变材料强度刚度。",
+        "腐蚀削弱截面并改变连接，防护体系按环境、耐久目标和可核验标准设计。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "steel.fabrication",
+      "name": "制造安装、误差、检验与临时稳定",
+      "aliases": [
+        "制造安装、误差、检验与临时稳定",
+        "fabrication"
+      ],
+      "prerequisites": [
+        "steel.welding",
+        "steel.truss"
+      ],
+      "tier": "core",
+      "teaching": "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "steel.fabrication.1",
+          "skill_id": "steel.fabrication",
+          "purpose": "diagnostic",
+          "family_id": "steel.fabrication.family-1",
+          "prompt": "安装中的临时体系与建成体系可能有不同稳定性吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。"
+          ],
+          "rubric": [
+            "是",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fabrication.2",
+          "skill_id": "steel.fabrication",
+          "purpose": "diagnostic",
+          "family_id": "steel.fabrication.family-2",
+          "prompt": "焊缝无损检测可以完全替代传力设计吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。"
+          ],
+          "rubric": [
+            "否",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fabrication.3",
+          "skill_id": "steel.fabrication",
+          "purpose": "learning",
+          "family_id": "steel.fabrication.family-3",
+          "prompt": "安装误差和初始倾斜可能影响二阶响应吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。"
+          ],
+          "rubric": [
+            "是",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "steel.fabrication.4",
+          "skill_id": "steel.fabrication",
+          "purpose": "transfer",
+          "family_id": "steel.fabrication.family-4",
+          "prompt": "说明构件进场与连接验收的基本证据。",
+          "answer": "材料与连接件证明、尺寸实测、焊接及紧固记录、必要检测和设计要求的对应关系",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。"
+          ],
+          "rubric": [
+            "材料与连接件证明、尺寸实测、焊接及紧固记录、必要检测和设计要求的对应关系",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "steel.fabrication.5",
+          "skill_id": "steel.fabrication",
+          "purpose": "retention",
+          "family_id": "steel.fabrication.family-5",
+          "prompt": "拆除临时支撑前应确认永久稳定体系已形成吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。"
+          ],
+          "rubric": [
+            "是",
+            "施工顺序、尺寸偏差和临时支撑改变阶段受力；按图纸与适用验收依据检查连接和防护，保存实测与检测记录。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "施工顺序、尺寸偏差和临时支撑改变阶段受力。",
+        "按图纸与适用验收依据检查连接和防护，保存实测与检测记录。"
+      ],
+      "source_scope": {
+        "source": "steel",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    }
+  ]
+}

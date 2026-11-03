@@ -1,6 +1,7 @@
 """Explicit syllabus-to-resource mapping. Counts describe mapped starter resources."""
 import json
 from pathlib import Path
+from engineering_seeds import SOURCES as ENGINEERING_SOURCES
 
 BASE=Path(__file__).resolve().parents[1]
 REF=BASE/'skill/campus-gap-diagnoser/references'
@@ -107,16 +108,20 @@ MATERIALS=r'''
 
 
 def build():
+    SOURCES.update(ENGINEERING_SOURCES)
     manifest=json.loads((REF/'course-manifest.json').read_text(encoding='utf-8'))
+    version=manifest['version']
     nodes={}
     for c in manifest['courses']:
         for n in json.loads((REF/'courses'/c['file']).read_text(encoding='utf-8'))['skills']:nodes[n['id']]=n
     rows=[]
     def row(key,subject,source,label,ids):
         assert ids and all(s in nodes for s in ids),(key,ids)
-        old=[s for s in ids if nodes[s].get('introduced_version')!='0.2.0']
+        old=[s for s in ids if not nodes[s].get('introduced_version')]
+        previous=[s for s in ids if nodes[s].get('introduced_version')!='0.3.0']
         rows.append({'id':key,'subject':subject,'source':source,'outcome':label,'skills':ids,
                      'before':'mapped' if len(old)==len(ids) else 'partial' if old else 'missing',
+                     'previous_version_status':'mapped' if len(previous)==len(ids) else 'partial' if previous else 'missing',
                      'after':'mapped_starter_bank','teacher_reviewed':False,'depth_validated':False})
     for chapter,mapping in MATH.items():
         labels=MATH_LABELS[chapter].split(';');sections=mapping.split(';')
@@ -131,6 +136,12 @@ def build():
         for index,line in enumerate(data.strip().splitlines(),1):
             label,keys=line.split('|')
             row(f'{subject}.unit.{index}',subject,subject,label,[subject+'.'+k for k in keys.split()])
+    port_keys={'harbor-layout','navigation','gravity-quay','piled-quay','sheet-pile','mooring','dredging'}
+    for sid,n in nodes.items():
+        if n.get('introduced_version')!='0.3.0':continue
+        subject,key=sid.split('.',1)
+        source='port' if subject=='coastal' and key in port_keys else subject
+        row('engineering.'+sid,subject,source,n['name'],[sid])
     # All remaining specialist nodes get a visible mapping, rather than disappearing from the audit.
     mapped={s for r in rows for s in r['skills']}
     for sid,n in nodes.items():
@@ -138,19 +149,21 @@ def build():
         course=sid.split('.')[0]
         source='math-upper' if course.startswith('math') and int(course[4:])<=7 else 'math-lower' if course.startswith('math') else course
         row('specialist.'+sid,'math' if course.startswith('math') else course,source,'专项补充：'+n['name'],[sid])
-    result={'version':'0.2.0','checked_at':'2026-11-03','basis':'出版社逐节目录及所列高校大纲的知识主题映射；星号节纳入，题型深度逐项保留审核状态',
+    result={'version':version,'previous_version':'0.2.0','checked_at':'2026-11-03','basis':'原课程目录映射加钢结构与用户确认的水力、泥沙、河口、波浪、港航主题；题型深度独立审核',
             'sources':SOURCES,'entries':rows,
             'counts':{'checklist_entries':len(rows),'math_publisher_sections':sum(r['id'].startswith('math.') for r in rows),
                       'before_mapped':sum(r['before']=='mapped' for r in rows),'before_partial':sum(r['before']=='partial' for r in rows),
                       'before_missing':sum(r['before']=='missing' for r in rows),'after_unmapped':0,'skills':len(nodes),
-                      'added_skills':sum(n.get('introduced_version')=='0.2.0' for n in nodes.values())}}
+                      'added_skills':sum(n.get('introduced_version')=='0.3.0' for n in nodes.values()),
+                      'previously_mapped_entries':sum(r['previous_version_status']=='mapped' for r in rows),
+                      'new_entries':sum(r['previous_version_status']=='missing' for r in rows)}}
     (REF/'syllabus-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    lines=['# 课程逐项覆盖核查（0.2.0）','','按出版社目录与高校公开大纲核查知识主题、讲解、前置关系与五阶段起始题。高数含上下册全部82节（含星号节）。力学按以下来源和专项补充逐项映射。','',
+    lines=[f'# 课程逐项覆盖核查（{version}）','','按出版社目录与高校公开大纲核查知识主题、讲解、前置关系与五阶段起始题。高数含上下册全部82节（含星号节）。力学按以下来源和专项补充逐项映射。钢结构与河海部分按用户确认范围建立主题级资源。','',
            '“已映射起始题库”表示该清单项有可检索节点、讲解与题目。教师对题型深度、逐个定理证明和教学效果的验收单独记录。','',
            '## 基准来源','']
     lines += [f"- [{v['name']}]({v['url']})：{v['scope']}。" for v in SOURCES.values()]
-    lines += ['','## 核查统计','', '```json',json.dumps(result['counts'],ensure_ascii=False,indent=2),'```','','## 逐项映射','','|清单项|知识要求|节点|0.1.1回查|0.2.0|','|---|---|---|---|---|']
-    for r in rows:lines.append('|'+ '|'.join([r['id'],r['outcome'],'、'.join(r['skills']),{'mapped':'已有对应节点','partial':'原有节点需补充','missing':'缺独立节点'}[r['before']],'已映射起始题库'])+'|')
+    lines += ['','## 核查统计','', '```json',json.dumps(result['counts'],ensure_ascii=False,indent=2),'```','','## 逐项映射','','|清单项|知识要求|节点|0.2.0回查|'+version+'|','|---|---|---|---|---|']
+    for r in rows:lines.append('|'+ '|'.join([r['id'],r['outcome'],'、'.join(r['skills']),{'mapped':'已有对应节点','partial':'原有节点需补充','missing':'新增课程主题'}[r['previous_version_status']],'已映射起始题库'])+'|')
     lines+=['','## 资源深度与验收','','每节点包含两道诊断题、一道补习题、一条迁移与一条后续复测。开放推导、实验方案、复杂图形题由宿主按评分要点复核。所有teacher_reviewed与student_validated保留false，计算核对数量独立统计。',
             '','学校自选章节、教材附录、完整实验操作流程和研究生专题会因课程而异；本报告以已列目录和大纲为验收基准。需要某校逐周对齐时使用该校正式大纲扩展清单。']
     (BASE/'docs/syllabus-audit.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')

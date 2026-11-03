@@ -1,15 +1,107 @@
 {
   "version": 1,
   "relations": [
-    {"from": "math08.products", "to": "theory.force", "type": "application", "reason": "向量积与力矩"},
-    {"from": "math06.physics", "to": "theory.balance", "type": "application", "reason": "分布荷载合力及作用点"},
-    {"from": "math02.rules", "to": "theory.point", "type": "prerequisite", "reason": "位置、速度与加速度的导数关系"},
-    {"from": "math10.applications", "to": "materials.geometry", "type": "application", "reason": "截面几何矩与积分"},
-    {"from": "math04.primitive", "to": "materials.deflection", "type": "prerequisite", "reason": "积分与积分常数"},
-    {"from": "materials.boundary", "to": "materials.deflection", "type": "prerequisite", "reason": "挠度与转角边界条件"},
-    {"from": "materials.deflection", "to": "structures.virtual", "type": "prerequisite", "reason": "梁变形与单位荷载位移"},
-    {"from": "structures.algebra-bridge", "to": "structures.matrix", "type": "prerequisite", "reason": "矩阵方程和自由度对应；不等于完整线性代数课程"},
-    {"from": "math07.order", "to": "structures.dynamics", "type": "prerequisite", "reason": "运动微分方程"},
-    {"from": "materials.stability", "to": "structures.stability", "type": "prerequisite", "reason": "压杆稳定到结构稳定"}
+    {
+      "from": "math08.products",
+      "to": "theory.force",
+      "type": "application",
+      "reason": "向量积与力矩"
+    },
+    {
+      "from": "math06.physics",
+      "to": "theory.balance",
+      "type": "application",
+      "reason": "分布荷载合力及作用点"
+    },
+    {
+      "from": "math02.rules",
+      "to": "theory.point",
+      "type": "prerequisite",
+      "reason": "位置、速度与加速度的导数关系"
+    },
+    {
+      "from": "math10.applications",
+      "to": "materials.geometry",
+      "type": "application",
+      "reason": "截面几何矩与积分"
+    },
+    {
+      "from": "math04.primitive",
+      "to": "materials.deflection",
+      "type": "prerequisite",
+      "reason": "积分与积分常数"
+    },
+    {
+      "from": "materials.boundary",
+      "to": "materials.deflection",
+      "type": "prerequisite",
+      "reason": "挠度与转角边界条件"
+    },
+    {
+      "from": "materials.deflection",
+      "to": "structures.virtual",
+      "type": "prerequisite",
+      "reason": "梁变形与单位荷载位移"
+    },
+    {
+      "from": "structures.algebra-bridge",
+      "to": "structures.matrix",
+      "type": "prerequisite",
+      "reason": "矩阵方程和自由度对应；不等于完整线性代数课程"
+    },
+    {
+      "from": "math07.order",
+      "to": "structures.dynamics",
+      "type": "prerequisite",
+      "reason": "运动微分方程"
+    },
+    {
+      "from": "materials.stability",
+      "to": "structures.stability",
+      "type": "prerequisite",
+      "reason": "压杆稳定到结构稳定"
+    },
+    {
+      "from": "materials.shear",
+      "to": "steel.fillet-weld",
+      "type": "prerequisite",
+      "reason": "剪切面积与连接承载"
+    },
+    {
+      "from": "materials.stability-design",
+      "to": "steel.column",
+      "type": "prerequisite",
+      "reason": "柔度与柱稳定"
+    },
+    {
+      "from": "structures.sway",
+      "to": "steel.beam-column",
+      "type": "prerequisite",
+      "reason": "侧移与压弯二阶效应"
+    },
+    {
+      "from": "hydraulics.energy",
+      "to": "coastal.wave-linear",
+      "type": "prerequisite",
+      "reason": "水流能量与波浪基础"
+    },
+    {
+      "from": "hydraulics.open-uniform",
+      "to": "river.bed-shear",
+      "type": "prerequisite",
+      "reason": "水力半径与床面切应力"
+    },
+    {
+      "from": "river.sediment-continuity",
+      "to": "coastal.dredging",
+      "type": "prerequisite",
+      "reason": "水沙守恒与回淤"
+    },
+    {
+      "from": "steel.design",
+      "to": "coastal.wave-loads",
+      "type": "prerequisite",
+      "reason": "荷载模型与结构极限状态"
+    }
   ]
 }

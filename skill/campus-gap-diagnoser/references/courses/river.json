@@ -1,0 +1,2721 @@
+{
+  "id": "river",
+  "name": "河海工程·河流与泥沙",
+  "source": "https://www.icourse163.org/spoc/course/HHU-1461704163?tid=1462484444",
+  "skills": [
+    {
+      "id": "river.sediment-properties",
+      "name": "泥沙粒径、密度、级配与床沙孔隙",
+      "aliases": [
+        "泥沙粒径、密度、级配与床沙孔隙",
+        "sediment-properties"
+      ],
+      "prerequisites": [
+        "hydraulics.properties"
+      ],
+      "tier": "core",
+      "teaching": "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.sediment-properties.1",
+          "skill_id": "river.sediment-properties",
+          "purpose": "diagnostic",
+          "family_id": "river.sediment-properties.family-1",
+          "prompt": "颗粒密度2650千克/立方米，孔隙率0.4，床沙干体积密度千克/立方米。",
+          "answer": "1590",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。"
+          ],
+          "rubric": [
+            "1590",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.sediment-properties.2",
+          "skill_id": "river.sediment-properties",
+          "purpose": "diagnostic",
+          "family_id": "river.sediment-properties.family-2",
+          "prompt": "d50的解释需要说明按质量还是其他分布加权吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。"
+          ],
+          "rubric": [
+            "是",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.sediment-properties.3",
+          "skill_id": "river.sediment-properties",
+          "purpose": "learning",
+          "family_id": "river.sediment-properties.family-3",
+          "prompt": "颗粒密度与含孔隙的床沙干体积密度必相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。"
+          ],
+          "rubric": [
+            "否",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.sediment-properties.4",
+          "skill_id": "river.sediment-properties",
+          "purpose": "transfer",
+          "family_id": "river.sediment-properties.family-4",
+          "prompt": "说明黏性泥沙与清洁非黏性砂在起动模型上的差异。",
+          "answer": "黏性泥沙受絮凝固结和黏聚作用影响，不能仅按单颗粒重力与水动力平衡判定",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。"
+          ],
+          "rubric": [
+            "黏性泥沙受絮凝固结和黏聚作用影响，不能仅按单颗粒重力与水动力平衡判定",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.sediment-properties.5",
+          "skill_id": "river.sediment-properties",
+          "purpose": "retention",
+          "family_id": "river.sediment-properties.family-5",
+          "prompt": "0.001立方米实颗粒、密度2650，其干质量千克。",
+          "answer": "53/20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。"
+          ],
+          "rubric": [
+            "53/20",
+            "区分颗粒密度、干容重、干体积密度及含沙量定义；d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "区分颗粒密度、干容重、干体积密度及含沙量定义。",
+        "d50按规定的累计粒径分布读取，黏性与非黏性泥沙分别建模。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.settling",
+      "name": "泥沙沉速、颗粒雷诺数与絮凝",
+      "aliases": [
+        "泥沙沉速、颗粒雷诺数与絮凝",
+        "settling"
+      ],
+      "prerequisites": [
+        "river.sediment-properties",
+        "hydraulics.resistance"
+      ],
+      "tier": "core",
+      "teaching": "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.settling.1",
+          "skill_id": "river.settling",
+          "purpose": "diagnostic",
+          "family_id": "river.settling.family-1",
+          "prompt": "给定球形细颗粒rho_s=2800,rho=1000,g=10,d=0.00001米、动力黏度0.001，按Stokes式沉速米/秒。",
+          "answer": "1/10000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。"
+          ],
+          "rubric": [
+            "1/10000",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.settling.2",
+          "skill_id": "river.settling",
+          "purpose": "diagnostic",
+          "family_id": "river.settling.family-2",
+          "prompt": "上述w=0.0001,d=0.00001,nu=0.000001，颗粒Re。",
+          "answer": "1/1000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。"
+          ],
+          "rubric": [
+            "1/1000",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.settling.3",
+          "skill_id": "river.settling",
+          "purpose": "learning",
+          "family_id": "river.settling.family-3",
+          "prompt": "Stokes公式可无条件用于所有粗砂砾石吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。"
+          ],
+          "rubric": [
+            "否",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.settling.4",
+          "skill_id": "river.settling",
+          "purpose": "transfer",
+          "family_id": "river.settling.family-4",
+          "prompt": "絮凝可能改变黏性泥沙有效沉速吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。"
+          ],
+          "rubric": [
+            "是",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.settling.5",
+          "skill_id": "river.settling",
+          "purpose": "retention",
+          "family_id": "river.settling.family-5",
+          "prompt": "说明沉速试验应记录哪些流体与颗粒条件。",
+          "answer": "温度黏度、密度与盐度、粒径形状、浓度以及是否存在絮凝或群体沉降",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。"
+          ],
+          "rubric": [
+            "温度黏度、密度与盐度、粒径形状、浓度以及是否存在絮凝或群体沉降",
+            "Stokes沉降仅用于低颗粒雷诺数等条件；沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "Stokes沉降仅用于低颗粒雷诺数等条件。",
+        "沉速由浮重与阻力平衡，黏性絮凝及群体沉降另按相应模型。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.bed-shear",
+      "name": "床面切应力、摩阻流速与Shields参数",
+      "aliases": [
+        "床面切应力、摩阻流速与Shields参数",
+        "bed-shear"
+      ],
+      "prerequisites": [
+        "hydraulics.open-uniform",
+        "river.sediment-properties"
+      ],
+      "tier": "core",
+      "teaching": "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.bed-shear.1",
+          "skill_id": "river.bed-shear",
+          "purpose": "diagnostic",
+          "family_id": "river.bed-shear.family-1",
+          "prompt": "tau=10Pa,rho=1000，摩阻流速米/秒。",
+          "answer": "1/10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。"
+          ],
+          "rubric": [
+            "1/10",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.bed-shear.2",
+          "skill_id": "river.bed-shear",
+          "purpose": "diagnostic",
+          "family_id": "river.bed-shear.family-2",
+          "prompt": "tau=1Pa,rho_s-rho=1000,g=10,d=0.001米，Shields参数。",
+          "answer": "1/10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。"
+          ],
+          "rubric": [
+            "1/10",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.bed-shear.3",
+          "skill_id": "river.bed-shear",
+          "purpose": "learning",
+          "family_id": "river.bed-shear.family-3",
+          "prompt": "Shields参数有长度量纲吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。"
+          ],
+          "rubric": [
+            "否",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.bed-shear.4",
+          "skill_id": "river.bed-shear",
+          "purpose": "transfer",
+          "family_id": "river.bed-shear.family-4",
+          "prompt": "rho=1000,g=10,R=2米,S=0.0001，床面切应力Pa。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。"
+          ],
+          "rubric": [
+            "2",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.bed-shear.5",
+          "skill_id": "river.bed-shear",
+          "purpose": "retention",
+          "family_id": "river.bed-shear.family-5",
+          "prompt": "宽浅近似与水力半径条件应在使用底切应力公式前确认吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。"
+          ],
+          "rubric": [
+            "是",
+            "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)；Shields以浮重尺度归一切应力，按颗粒和床况判据解释。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "近似均匀宽浅流用tau=rho*g*R*S，摩阻流速sqrt(tau/rho)。",
+        "Shields以浮重尺度归一切应力，按颗粒和床况判据解释。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.entrainment",
+      "name": "泥沙起动、临界切应力与起动流速",
+      "aliases": [
+        "泥沙起动、临界切应力与起动流速",
+        "entrainment"
+      ],
+      "prerequisites": [
+        "river.bed-shear"
+      ],
+      "tier": "core",
+      "teaching": "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.entrainment.1",
+          "skill_id": "river.entrainment",
+          "purpose": "diagnostic",
+          "family_id": "river.entrainment.family-1",
+          "prompt": "题给临界Shields=0.05，密度差1000,g=10,d=0.002米，临界切应力Pa。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。"
+          ],
+          "rubric": [
+            "1",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.entrainment.2",
+          "skill_id": "river.entrainment",
+          "purpose": "diagnostic",
+          "family_id": "river.entrainment.family-2",
+          "prompt": "相同平均流速在不同水深和糙率下底部起动条件一定相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。"
+          ],
+          "rubric": [
+            "否",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.entrainment.3",
+          "skill_id": "river.entrainment",
+          "purpose": "learning",
+          "family_id": "river.entrainment.family-3",
+          "prompt": "混合沙的遮蔽暴露会影响不同粒级起动吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。"
+          ],
+          "rubric": [
+            "是",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.entrainment.4",
+          "skill_id": "river.entrainment",
+          "purpose": "transfer",
+          "family_id": "river.entrainment.family-4",
+          "prompt": "题给临界切应力2Pa、实际1Pa，按本题阈值是否达到起动？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。"
+          ],
+          "rubric": [
+            "否",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.entrainment.5",
+          "skill_id": "river.entrainment",
+          "purpose": "retention",
+          "family_id": "river.entrainment.family-5",
+          "prompt": "说明“起动”观测判定为何需说明统计口径。",
+          "answer": "零星颗粒、持续运动或普遍运动的判据不同，会改变观测到的临界条件",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。"
+          ],
+          "rubric": [
+            "零星颗粒、持续运动或普遍运动的判据不同，会改变观测到的临界条件",
+            "从床面受力和无量纲临界条件分析起动；颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "从床面受力和无量纲临界条件分析起动。",
+        "颗粒排列、遮蔽暴露及黏性固结会影响临界值，床面切应力与断面流速区别处理。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.bedload",
+      "name": "推移质、单宽输沙率与经验适用域",
+      "aliases": [
+        "推移质、单宽输沙率与经验适用域",
+        "bedload"
+      ],
+      "prerequisites": [
+        "river.entrainment"
+      ],
+      "tier": "core",
+      "teaching": "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.bedload.1",
+          "skill_id": "river.bedload",
+          "purpose": "diagnostic",
+          "family_id": "river.bedload.family-1",
+          "prompt": "实颗粒体积输沙率0.002立方米/秒、颗粒密度2500，质量输沙率千克/秒。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。"
+          ],
+          "rubric": [
+            "5",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.bedload.2",
+          "skill_id": "river.bedload",
+          "purpose": "diagnostic",
+          "family_id": "river.bedload.family-2",
+          "prompt": "单宽输沙率0.01平方米/秒、均匀河宽20米，总实颗粒体积输沙率立方米/秒。",
+          "answer": "1/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。"
+          ],
+          "rubric": [
+            "1/5",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.bedload.3",
+          "skill_id": "river.bedload",
+          "purpose": "learning",
+          "family_id": "river.bedload.family-3",
+          "prompt": "所有推移质公式都能跨粒径与床形范围直接通用吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。"
+          ],
+          "rubric": [
+            "否",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.bedload.4",
+          "skill_id": "river.bedload",
+          "purpose": "transfer",
+          "family_id": "river.bedload.family-4",
+          "prompt": "推移质与悬移质分类和颗粒运动状态有关吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。"
+          ],
+          "rubric": [
+            "是",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.bedload.5",
+          "skill_id": "river.bedload",
+          "purpose": "retention",
+          "family_id": "river.bedload.family-5",
+          "prompt": "说明比较两条输沙公式前应统一哪些量。",
+          "answer": "质量或体积、单宽或总量、是否含孔隙、粒级范围、单位和适用水沙条件",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。"
+          ],
+          "rubric": [
+            "质量或体积、单宽或总量、是否含孔隙、粒级范围、单位和适用水沙条件",
+            "推移质以床面附近滚动滑动跳跃为主；质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "推移质以床面附近滚动滑动跳跃为主。",
+        "质量率与实颗粒体积率用颗粒密度换算，经验输沙式须确认颗粒流态范围。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.suspended",
+      "name": "悬移质、含沙量、扩散与Rouse分布",
+      "aliases": [
+        "悬移质、含沙量、扩散与Rouse分布",
+        "suspended"
+      ],
+      "prerequisites": [
+        "river.settling",
+        "river.bed-shear"
+      ],
+      "tier": "core",
+      "teaching": "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.suspended.1",
+          "skill_id": "river.suspended",
+          "purpose": "diagnostic",
+          "family_id": "river.suspended.family-1",
+          "prompt": "沉速0.01米/秒,kappa=0.4,摩阻流速0.1米/秒，Rouse数w/(kappa*ustar)。",
+          "answer": "1/4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。"
+          ],
+          "rubric": [
+            "1/4",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.suspended.2",
+          "skill_id": "river.suspended",
+          "purpose": "diagnostic",
+          "family_id": "river.suspended.family-2",
+          "prompt": "平均质量浓度2千克/立方米、流量10立方米/秒，均匀近似质量输沙率千克/秒。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。"
+          ],
+          "rubric": [
+            "20",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.suspended.3",
+          "skill_id": "river.suspended",
+          "purpose": "learning",
+          "family_id": "river.suspended.family-3",
+          "prompt": "仅增大沉速而保持其他条件时，Rouse数增大吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。"
+          ],
+          "rubric": [
+            "是",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.suspended.4",
+          "skill_id": "river.suspended",
+          "purpose": "transfer",
+          "family_id": "river.suspended.family-4",
+          "prompt": "悬沙垂线分布对任意非恒定非平衡流都严格服从平衡Rouse式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。"
+          ],
+          "rubric": [
+            "否",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.suspended.5",
+          "skill_id": "river.suspended",
+          "purpose": "retention",
+          "family_id": "river.suspended.family-5",
+          "prompt": "说明求断面输沙率为何一般需积分流速与浓度的乘积。",
+          "answer": "流速与含沙量沿断面不均匀且可相关，平均量相乘仅在相应近似条件下适用",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。"
+          ],
+          "rubric": [
+            "流速与含沙量沿断面不均匀且可相关，平均量相乘仅在相应近似条件下适用",
+            "悬沙由向下沉降与紊动扩散共同控制；平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "悬沙由向下沉降与紊动扩散共同控制。",
+        "平衡Rouse分布有稳态均匀等前提，含沙量质量浓度与体积浓度区分。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.sediment-continuity",
+      "name": "泥沙连续、Exner方程与冲淤",
+      "aliases": [
+        "泥沙连续、Exner方程与冲淤",
+        "sediment-continuity"
+      ],
+      "prerequisites": [
+        "river.bedload",
+        "river.suspended",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "teaching": "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.sediment-continuity.1",
+          "skill_id": "river.sediment-continuity",
+          "purpose": "diagnostic",
+          "family_id": "river.sediment-continuity.family-1",
+          "prompt": "一河段入沙20千克/秒、出沙10千克/秒，忽略悬沙储量变化，床沙干质量增加率千克/秒。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。"
+          ],
+          "rubric": [
+            "10",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.sediment-continuity.2",
+          "skill_id": "river.sediment-continuity",
+          "purpose": "diagnostic",
+          "family_id": "river.sediment-continuity.family-2",
+          "prompt": "题给(1-p)*eta_t+q_s,x=0，p=0.4,q_s,x=0.000006米/秒，eta_t米/秒。",
+          "answer": "-1/100000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。"
+          ],
+          "rubric": [
+            "-1/100000",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.sediment-continuity.3",
+          "skill_id": "river.sediment-continuity",
+          "purpose": "learning",
+          "family_id": "river.sediment-continuity.family-3",
+          "prompt": "输沙体积率是否含孔隙会影响床面高程换算吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。"
+          ],
+          "rubric": [
+            "是",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.sediment-continuity.4",
+          "skill_id": "river.sediment-continuity",
+          "purpose": "transfer",
+          "family_id": "river.sediment-continuity.family-4",
+          "prompt": "固定边界且其他不变时，出沙大于入沙倾向净冲刷吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。"
+          ],
+          "rubric": [
+            "是",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.sediment-continuity.5",
+          "skill_id": "river.sediment-continuity",
+          "purpose": "retention",
+          "family_id": "river.sediment-continuity.family-5",
+          "prompt": "说明数值冲淤计算应首先检查哪类守恒。",
+          "answer": "水量与泥沙质量或实颗粒体积守恒，统一边界通量、床沙孔隙率及悬沙储量",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。"
+          ],
+          "rubric": [
+            "水量与泥沙质量或实颗粒体积守恒，统一边界通量、床沙孔隙率及悬沙储量",
+            "以实颗粒体积输沙率列床沙守恒并计孔隙率；纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "以实颗粒体积输沙率列床沙守恒并计孔隙率。",
+        "纵向输沙率梯度正代表输出增加而倾向冲刷，悬沙储量单独计入。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.bedforms",
+      "name": "沙纹沙垄、平床与水沙阻力",
+      "aliases": [
+        "沙纹沙垄、平床与水沙阻力",
+        "bedforms"
+      ],
+      "prerequisites": [
+        "river.bedload",
+        "hydraulics.resistance"
+      ],
+      "tier": "core",
+      "teaching": "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.bedforms.1",
+          "skill_id": "river.bedforms",
+          "purpose": "diagnostic",
+          "family_id": "river.bedforms.family-1",
+          "prompt": "床形改变可能影响相同流量下的水位吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。"
+          ],
+          "rubric": [
+            "是",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.bedforms.2",
+          "skill_id": "river.bedforms",
+          "purpose": "diagnostic",
+          "family_id": "river.bedforms.family-2",
+          "prompt": "有沙垄的总床阻力必等于只由颗粒粗糙度产生的阻力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。"
+          ],
+          "rubric": [
+            "否",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.bedforms.3",
+          "skill_id": "river.bedforms",
+          "purpose": "learning",
+          "family_id": "river.bedforms.family-3",
+          "prompt": "沙垄迁移与局部床面冲淤有关吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。"
+          ],
+          "rubric": [
+            "是",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.bedforms.4",
+          "skill_id": "river.bedforms",
+          "purpose": "transfer",
+          "family_id": "river.bedforms.family-4",
+          "prompt": "说明应用床沙输沙公式时为何要区分颗粒剪应力与总剪应力。",
+          "answer": "部分总阻力用于床形压力阻力，不一定全部直接作用于颗粒起动与运动",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。"
+          ],
+          "rubric": [
+            "部分总阻力用于床形压力阻力，不一定全部直接作用于颗粒起动与运动",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.bedforms.5",
+          "skill_id": "river.bedforms",
+          "purpose": "retention",
+          "family_id": "river.bedforms.family-5",
+          "prompt": "床形只有粒径决定而与流速水深无关吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。"
+          ],
+          "rubric": [
+            "否",
+            "床形与流态和输沙状态共同变化；总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "床形与流态和输沙状态共同变化。",
+        "总阻力可分颗粒和床形贡献，形态阻力会反过来改变水位和输沙。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.channel-evolution",
+      "name": "河床演变、弯道、分汊与河型",
+      "aliases": [
+        "河床演变、弯道、分汊与河型",
+        "channel-evolution"
+      ],
+      "prerequisites": [
+        "river.sediment-continuity",
+        "river.bedforms"
+      ],
+      "tier": "core",
+      "teaching": "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.channel-evolution.1",
+          "skill_id": "river.channel-evolution",
+          "purpose": "diagnostic",
+          "family_id": "river.channel-evolution.family-1",
+          "prompt": "天然河流弯道次生流可影响泥沙横向输移吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。"
+          ],
+          "rubric": [
+            "是",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.channel-evolution.2",
+          "skill_id": "river.channel-evolution",
+          "purpose": "diagnostic",
+          "family_id": "river.channel-evolution.family-2",
+          "prompt": "分汊口的分流比与分沙比必严格相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。"
+          ],
+          "rubric": [
+            "否",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.channel-evolution.3",
+          "skill_id": "river.channel-evolution",
+          "purpose": "learning",
+          "family_id": "river.channel-evolution.family-3",
+          "prompt": "改变上游供沙可使下游床面调整吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。"
+          ],
+          "rubric": [
+            "是",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.channel-evolution.4",
+          "skill_id": "river.channel-evolution",
+          "purpose": "transfer",
+          "family_id": "river.channel-evolution.family-4",
+          "prompt": "说明分析河道演变需收集哪些边界资料。",
+          "answer": "流量水位过程、来沙组成与输沙量、河床地形和岸性、下游控制及历史工程变化",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。"
+          ],
+          "rubric": [
+            "流量水位过程、来沙组成与输沙量、河床地形和岸性、下游控制及历史工程变化",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.channel-evolution.5",
+          "skill_id": "river.channel-evolution",
+          "purpose": "retention",
+          "family_id": "river.channel-evolution.family-5",
+          "prompt": "单一瞬时断面足以唯一预测长期河型演变吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。"
+          ],
+          "rubric": [
+            "否",
+            "水沙边界与岸床条件共同控制平面和纵向演变；弯道次生流、分流分沙与岸坡响应需联合分析。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "水沙边界与岸床条件共同控制平面和纵向演变。",
+        "弯道次生流、分流分沙与岸坡响应需联合分析。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.regulation",
+      "name": "河道整治、护岸、丁坝与桥墩冲刷",
+      "aliases": [
+        "河道整治、护岸、丁坝与桥墩冲刷",
+        "regulation"
+      ],
+      "prerequisites": [
+        "river.channel-evolution",
+        "hydraulics.gradually-varied"
+      ],
+      "tier": "core",
+      "teaching": "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.regulation.1",
+          "skill_id": "river.regulation",
+          "purpose": "diagnostic",
+          "family_id": "river.regulation.family-1",
+          "prompt": "丁坝改变局部水流后可能在坝头形成冲刷吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。"
+          ],
+          "rubric": [
+            "是",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.regulation.2",
+          "skill_id": "river.regulation",
+          "purpose": "diagnostic",
+          "family_id": "river.regulation.family-2",
+          "prompt": "桥墩局部冲刷可以仅由平均河床高程变化替代吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。"
+          ],
+          "rubric": [
+            "否",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.regulation.3",
+          "skill_id": "river.regulation",
+          "purpose": "learning",
+          "family_id": "river.regulation.family-3",
+          "prompt": "护岸应兼顾岸坡脚部冲刷和排水吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。"
+          ],
+          "rubric": [
+            "是",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.regulation.4",
+          "skill_id": "river.regulation",
+          "purpose": "transfer",
+          "family_id": "river.regulation.family-4",
+          "prompt": "说明整治方案比较应检查哪些上下游影响。",
+          "answer": "水位壅高、流向流速、冲淤、岸线稳定、通航和生态连通，并考虑洪枯过程",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。"
+          ],
+          "rubric": [
+            "水位壅高、流向流速、冲淤、岸线稳定、通航和生态连通，并考虑洪枯过程",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.regulation.5",
+          "skill_id": "river.regulation",
+          "purpose": "retention",
+          "family_id": "river.regulation.family-5",
+          "prompt": "只使某一局部流速下降就必全面改善河段防洪通航吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。"
+          ],
+          "rubric": [
+            "否",
+            "整治先明确防洪通航生态目标；构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "整治先明确防洪通航生态目标。",
+        "构筑物改变流速剪应力和输沙，局部冲刷与整体河床变化应分别评估。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.density-current",
+      "name": "异重流、分层、掺混与水库泥沙",
+      "aliases": [
+        "异重流、分层、掺混与水库泥沙",
+        "density-current"
+      ],
+      "prerequisites": [
+        "hydraulics.momentum",
+        "river.suspended"
+      ],
+      "tier": "core",
+      "teaching": "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.density-current.1",
+          "skill_id": "river.density-current",
+          "purpose": "diagnostic",
+          "family_id": "river.density-current.family-1",
+          "prompt": "按g'=g*(rho2-rho1)/rho1，g=10,rho2=1010,rho1=1000，g'米/秒²。",
+          "answer": "1/10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。"
+          ],
+          "rubric": [
+            "1/10",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.density-current.2",
+          "skill_id": "river.density-current",
+          "purpose": "diagnostic",
+          "family_id": "river.density-current.family-2",
+          "prompt": "含沙量差可形成密度差驱动的异重流吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。"
+          ],
+          "rubric": [
+            "是",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.density-current.3",
+          "skill_id": "river.density-current",
+          "purpose": "learning",
+          "family_id": "river.density-current.family-3",
+          "prompt": "异重流中的泥沙沉降会影响其密度和运动吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。"
+          ],
+          "rubric": [
+            "是",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.density-current.4",
+          "skill_id": "river.density-current",
+          "purpose": "transfer",
+          "family_id": "river.density-current.family-4",
+          "prompt": "说明水库排沙分析为何需联合考虑异重流和出流口位置。",
+          "answer": "异重流沿底传播和淤积，其厚度与水位决定出流口是否能捕获高含沙流及排沙效率",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。"
+          ],
+          "rubric": [
+            "异重流沿底传播和淤积，其厚度与水位决定出流口是否能捕获高含沙流及排沙效率",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.density-current.5",
+          "skill_id": "river.density-current",
+          "purpose": "retention",
+          "family_id": "river.density-current.family-5",
+          "prompt": "所有密度流都能忽略环境水掺混吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。"
+          ],
+          "rubric": [
+            "否",
+            "密度差产生浮力驱动，含沙异重流与温盐分层区分；约化重力按题给参考密度定义，掺混和沉降影响传播。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "密度差产生浮力驱动，含沙异重流与温盐分层区分。",
+        "约化重力按题给参考密度定义，掺混和沉降影响传播。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    },
+    {
+      "id": "river.estuary",
+      "name": "河口径流潮汐、盐水入侵与最大浑浊带",
+      "aliases": [
+        "河口径流潮汐、盐水入侵与最大浑浊带",
+        "estuary"
+      ],
+      "prerequisites": [
+        "river.density-current",
+        "river.channel-evolution"
+      ],
+      "tier": "core",
+      "teaching": "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "river.estuary.1",
+          "skill_id": "river.estuary",
+          "purpose": "diagnostic",
+          "family_id": "river.estuary.family-1",
+          "prompt": "河口水沙运动只由上游径流决定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。"
+          ],
+          "rubric": [
+            "否",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.estuary.2",
+          "skill_id": "river.estuary",
+          "purpose": "diagnostic",
+          "family_id": "river.estuary.family-2",
+          "prompt": "涨落潮非对称可能影响净输沙方向吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。"
+          ],
+          "rubric": [
+            "是",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.estuary.3",
+          "skill_id": "river.estuary",
+          "purpose": "learning",
+          "family_id": "river.estuary.family-3",
+          "prompt": "河口最大浑浊带位置会随径流与潮汐改变吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。"
+          ],
+          "rubric": [
+            "是",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "river.estuary.4",
+          "skill_id": "river.estuary",
+          "purpose": "transfer",
+          "family_id": "river.estuary.family-4",
+          "prompt": "说明河口盐水入侵调查应记录哪些量。",
+          "answer": "径流潮位流速盐度的时空过程、断面地形及分层掺混特征，考虑大小潮和季节",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。"
+          ],
+          "rubric": [
+            "径流潮位流速盐度的时空过程、断面地形及分层掺混特征，考虑大小潮和季节",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "river.estuary.5",
+          "skill_id": "river.estuary",
+          "purpose": "retention",
+          "family_id": "river.estuary.family-5",
+          "prompt": "盐度单点一次测量足以代表整个河口的长期入侵边界吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题面给定的模型、坐标和边界条件作答",
+            "units": "数值按题干所列单位填写"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。"
+          ],
+          "rubric": [
+            "否",
+            "河口受径流、潮汐、波浪与密度差共同作用；盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      },
+      "introduced_version": "0.3.0",
+      "learning_steps": [
+        "河口受径流、潮汐、波浪与密度差共同作用。",
+        "盐水入侵和最大浑浊带受分层掺混及输沙反馈影响。"
+      ],
+      "source_scope": {
+        "source": "river",
+        "mapping": "topic_starter_bank",
+        "teacher_reviewed": false
+      }
+    }
+  ]
+}

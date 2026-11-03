@@ -1,5 +1,7 @@
 # 版本验证记录
 
+0.3.0新增钢结构、水力学、河流泥沙、海岸港航四个模块。当前286节点、1430题；268项测试通过，完整结果见[engineering-release.md](engineering-release.md)。
+
 日期：2026-11-03。环境：Windows、Python 3.13、SymPy 1.14.0、pytest 9.2.0。本页记录本地程序与合成流程检查；本轮改动和最终结果见[review-report.md](review-report.md)。
 
 0.2.0课程覆盖扩展结果见[coverage-release.md](coverage-release.md)：209个节点、1045题、175项测试通过。0.1.1语言与运行修复记录保留在review-report.md。
