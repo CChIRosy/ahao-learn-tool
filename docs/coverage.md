@@ -1,0 +1,126 @@
+# 课程覆盖矩阵
+
+范围基准：同济第八版上下册及references/sources-and-review.md所列高校大纲。分母为本项目拆分的主题节点，不等于教材每页、每道例题或所有学校的教学要求。
+
+实际数据：15个模块、108个主题、540道原创题；每主题2道诊断、1道补习、1道迁移、1道后续复测。
+
+每个题ID均可由diagnose.py inspect --skill读取。教师审核及真实学生验证均未完成。合成流程测试按模块执行，不表示每个节点都完成真实交互验证。
+
+|模块|技能ID与主题|层级|前置|诊断题|补习/迁移/后续复测|独立计算核对题数|教师/学生验证|
+|---|---|---|---|---|---|---|---|
+|函数与极限|math01.function 映射、函数与定义域|core|本包未指定|math01.function.1,math01.function.2|math01.function.3,math01.function.4,math01.function.5|1|未审核/未验证|
+|函数与极限|math01.sequence 数列极限与夹逼|core|本包未指定|math01.sequence.1,math01.sequence.2|math01.sequence.3,math01.sequence.4,math01.sequence.5|2|未审核/未验证|
+|函数与极限|math01.limit 函数极限与左右极限|core|本包未指定|math01.limit.1,math01.limit.2|math01.limit.3,math01.limit.4,math01.limit.5|4|未审核/未验证|
+|函数与极限|math01.infinitesimal 无穷小比较与等价替换|core|本包未指定|math01.infinitesimal.1,math01.infinitesimal.2|math01.infinitesimal.3,math01.infinitesimal.4,math01.infinitesimal.5|3|未审核/未验证|
+|函数与极限|math01.continuity 连续、间断与闭区间性质|core|math01.limit|math01.continuity.1,math01.continuity.2|math01.continuity.3,math01.continuity.4,math01.continuity.5|0|未审核/未验证|
+|函数与极限|math01.inverse 反函数、复合定义域与初等函数|core|math01.function|math01.inverse.1,math01.inverse.2|math01.inverse.3,math01.inverse.4,math01.inverse.5|2|未审核/未验证|
+|导数与微分|math02.definition 导数定义与可导性|core|math01.limit、math01.continuity|math02.definition.1,math02.definition.2|math02.definition.3,math02.definition.4,math02.definition.5|2|未审核/未验证|
+|导数与微分|math02.basic 基本函数求导|core|math02.definition|math02.basic.1,math02.basic.2|math02.basic.3,math02.basic.4,math02.basic.5|5|未审核/未验证|
+|导数与微分|math02.composition 复合函数结构识别|core|math01.function|math02.composition.1,math02.composition.2|math02.composition.3,math02.composition.4,math02.composition.5|1|未审核/未验证|
+|导数与微分|math02.chain 链式法则|core|math02.basic、math02.composition|math02.chain.1,math02.chain.2|math02.chain.3,math02.chain.4,math02.chain.5|5|未审核/未验证|
+|导数与微分|math02.rules 和差、乘积与商求导|core|math02.basic|math02.rules.1,math02.rules.2|math02.rules.3,math02.rules.4,math02.rules.5|5|未审核/未验证|
+|导数与微分|math02.higher 高阶导数|core|math02.chain、math02.rules|math02.higher.1,math02.higher.2|math02.higher.3,math02.higher.4,math02.higher.5|5|未审核/未验证|
+|导数与微分|math02.implicit 隐函数、参数方程与微分|core|math02.chain、math02.rules|math02.implicit.1,math02.implicit.2|math02.implicit.3,math02.implicit.4,math02.implicit.5|5|未审核/未验证|
+|微分中值定理与导数应用|math03.mvt 罗尔、拉格朗日与柯西中值定理|core|math02.definition|math03.mvt.1,math03.mvt.2|math03.mvt.3,math03.mvt.4,math03.mvt.5|2|未审核/未验证|
+|微分中值定理与导数应用|math03.lhopital 洛必达法则与不定式|core|math02.basic、math01.limit|math03.lhopital.1,math03.lhopital.2|math03.lhopital.3,math03.lhopital.4,math03.lhopital.5|3|未审核/未验证|
+|微分中值定理与导数应用|math03.taylor 泰勒公式与余项|core|math02.higher|math03.taylor.1,math03.taylor.2|math03.taylor.3,math03.taylor.4,math03.taylor.5|4|未审核/未验证|
+|微分中值定理与导数应用|math03.extrema 单调、极值、最值与图形|core|math02.rules|math03.extrema.1,math03.extrema.2|math03.extrema.3,math03.extrema.4,math03.extrema.5|2|未审核/未验证|
+|微分中值定理与导数应用|math03.curvature 凹凸、拐点与曲率|core|math02.higher|math03.curvature.1,math03.curvature.2|math03.curvature.3,math03.curvature.4,math03.curvature.5|3|未审核/未验证|
+|微分中值定理与导数应用|math03.proof 中值定理条件与证明诊断|core|math03.mvt、math03.extrema|math03.proof.1,math03.proof.2|math03.proof.3,math03.proof.4,math03.proof.5|0|未审核/未验证|
+|微分中值定理与导数应用|math03.asymptote 渐近线、优化建模与近似|core|math03.extrema、math01.limit|math03.asymptote.1,math03.asymptote.2|math03.asymptote.3,math03.asymptote.4,math03.asymptote.5|3|未审核/未验证|
+|不定积分|math04.primitive 原函数与基本积分|core|math02.basic|math04.primitive.1,math04.primitive.2|math04.primitive.3,math04.primitive.4,math04.primitive.5|4|未审核/未验证|
+|不定积分|math04.substitution 第一、第二换元积分|core|math02.chain、math04.primitive|math04.substitution.1,math04.substitution.2|math04.substitution.3,math04.substitution.4,math04.substitution.5|4|未审核/未验证|
+|不定积分|math04.parts 分部积分|core|math02.rules、math04.primitive|math04.parts.1,math04.parts.2|math04.parts.3,math04.parts.4,math04.parts.5|4|未审核/未验证|
+|不定积分|math04.rational 有理函数与三角代换|core|math04.substitution|math04.rational.1,math04.rational.2|math04.rational.3,math04.rational.4,math04.rational.5|3|未审核/未验证|
+|定积分|math05.definition 定积分概念、性质与估值|core|math01.continuity|math05.definition.1,math05.definition.2|math05.definition.3,math05.definition.4,math05.definition.5|3|未审核/未验证|
+|定积分|math05.ftc 微积分基本定理与变上限函数|core|math02.chain、math04.primitive|math05.ftc.1,math05.ftc.2|math05.ftc.3,math05.ftc.4,math05.ftc.5|5|未审核/未验证|
+|定积分|math05.methods 定积分换元与分部|core|math04.substitution、math04.parts、math05.ftc|math05.methods.1,math05.methods.2|math05.methods.3,math05.methods.4,math05.methods.5|4|未审核/未验证|
+|定积分|math05.improper 无穷区间与无界函数反常积分|core|math01.limit、math05.ftc|math05.improper.1,math05.improper.2|math05.improper.3,math05.improper.4,math05.improper.5|3|未审核/未验证|
+|定积分应用|math06.area 微元法与平面面积|core|math05.definition、math05.ftc|math06.area.1,math06.area.2|math06.area.3,math06.area.4,math06.area.5|3|未审核/未验证|
+|定积分应用|math06.volume 旋转体与截面体积|core|math06.area|math06.volume.1,math06.volume.2|math06.volume.3,math06.volume.4,math06.volume.5|4|未审核/未验证|
+|定积分应用|math06.arc 平面曲线弧长|core|math02.rules、math05.ftc|math06.arc.1,math06.arc.2|math06.arc.3,math06.arc.4,math06.arc.5|4|未审核/未验证|
+|定积分应用|math06.physics 功、压力与引力积分|core|math06.area、math05.ftc|math06.physics.1,math06.physics.2|math06.physics.3,math06.physics.4,math06.physics.5|3|未审核/未验证|
+|微分方程|math07.concept 阶、通解、特解与初值|core|math02.higher|math07.concept.1,math07.concept.2|math07.concept.3,math07.concept.4,math07.concept.5|0|未审核/未验证|
+|微分方程|math07.separable 可分离变量与齐次一阶方程|core|math04.primitive、math07.concept|math07.separable.1,math07.separable.2|math07.separable.3,math07.separable.4,math07.separable.5|0|未审核/未验证|
+|微分方程|math07.linear 一阶线性方程|core|math07.separable|math07.linear.1,math07.linear.2|math07.linear.3,math07.linear.4,math07.linear.5|0|未审核/未验证|
+|微分方程|math07.order 降阶与高阶常系数线性方程|core|math07.linear、math02.higher|math07.order.1,math07.order.2|math07.order.3,math07.order.4,math07.order.5|0|未审核/未验证|
+|微分方程|math07.exact-euler 全微分方程与欧拉方程|extension|math07.order|math07.exact-euler.1,math07.exact-euler.2|math07.exact-euler.3,math07.exact-euler.4,math07.exact-euler.5|0|未审核/未验证|
+|微分方程|math07.nonhomogeneous 非齐次高阶方程与共振特解|core|math07.order|math07.nonhomogeneous.1,math07.nonhomogeneous.2|math07.nonhomogeneous.3,math07.nonhomogeneous.4,math07.nonhomogeneous.5|0|未审核/未验证|
+|向量代数与空间解析几何|math08.vectors 向量线性运算、模与投影|core|本包未指定|math08.vectors.1,math08.vectors.2|math08.vectors.3,math08.vectors.4,math08.vectors.5|5|未审核/未验证|
+|向量代数与空间解析几何|math08.products 数量积、向量积与混合积|core|math08.vectors|math08.products.1,math08.products.2|math08.products.3,math08.products.4,math08.products.5|4|未审核/未验证|
+|向量代数与空间解析几何|math08.planes 平面方程、直线及夹角|core|math08.products|math08.planes.1,math08.planes.2|math08.planes.3,math08.planes.4,math08.planes.5|0|未审核/未验证|
+|向量代数与空间解析几何|math08.surfaces 曲面、二次曲面与空间曲线投影|core|math08.planes|math08.surfaces.1,math08.surfaces.2|math08.surfaces.3,math08.surfaces.4,math08.surfaces.5|0|未审核/未验证|
+|向量代数与空间解析几何|math08.mixed 混合积、空间夹角与投影消元|core|math08.products、math08.planes|math08.mixed.1,math08.mixed.2|math08.mixed.3,math08.mixed.4,math08.mixed.5|2|未审核/未验证|
+|多元函数微分法及其应用|math09.limits 多元极限、连续与平面点集|core|math01.limit|math09.limits.1,math09.limits.2|math09.limits.3,math09.limits.4,math09.limits.5|1|未审核/未验证|
+|多元函数微分法及其应用|math09.partial 偏导、高阶偏导与全微分|core|math02.chain、math09.limits|math09.partial.1,math09.partial.2|math09.partial.3,math09.partial.4,math09.partial.5|3|未审核/未验证|
+|多元函数微分法及其应用|math09.chain 多元链式法则与隐函数|core|math09.partial、math02.chain|math09.chain.1,math09.chain.2|math09.chain.3,math09.chain.4,math09.chain.5|4|未审核/未验证|
+|多元函数微分法及其应用|math09.geometry 切平面、法线、方向导数与梯度|core|math09.partial、math08.vectors|math09.geometry.1,math09.geometry.2|math09.geometry.3,math09.geometry.4,math09.geometry.5|3|未审核/未验证|
+|多元函数微分法及其应用|math09.extrema 多元极值与拉格朗日乘数|core|math09.partial|math09.extrema.1,math09.extrema.2|math09.extrema.3,math09.extrema.4,math09.extrema.5|3|未审核/未验证|
+|多元函数微分法及其应用|math09.normal 法线、隐函数条件与全微分近似|core|math09.chain、math09.geometry|math09.normal.1,math09.normal.2|math09.normal.3,math09.normal.4,math09.normal.5|1|未审核/未验证|
+|重积分|math10.double 二重积分、区域与换序|core|math05.ftc|math10.double.1,math10.double.2|math10.double.3,math10.double.4,math10.double.5|3|未审核/未验证|
+|重积分|math10.polar 极坐标与一般变量代换|core|math10.double、math08.surfaces|math10.polar.1,math10.polar.2|math10.polar.3,math10.polar.4,math10.polar.5|4|未审核/未验证|
+|重积分|math10.triple 三重积分与柱球坐标|core|math10.polar|math10.triple.1,math10.triple.2|math10.triple.3,math10.triple.4,math10.triple.5|3|未审核/未验证|
+|重积分|math10.applications 重积分质量、质心与转动惯量|core|math10.double|math10.applications.1,math10.applications.2|math10.applications.3,math10.applications.4,math10.applications.5|4|未审核/未验证|
+|曲线积分与曲面积分|math11.line1 第一类曲线积分|core|math06.arc|math11.line1.1,math11.line1.2|math11.line1.3,math11.line1.4,math11.line1.5|3|未审核/未验证|
+|曲线积分与曲面积分|math11.line2 第二类曲线积分与格林公式|core|math10.double、math11.line1|math11.line2.1,math11.line2.2|math11.line2.3,math11.line2.4,math11.line2.5|3|未审核/未验证|
+|曲线积分与曲面积分|math11.potential 路径无关与全微分|core|math09.partial、math11.line2|math11.potential.1,math11.potential.2|math11.potential.3,math11.potential.4,math11.potential.5|2|未审核/未验证|
+|曲线积分与曲面积分|math11.surface1 第一类曲面积分|core|math09.partial、math08.products|math11.surface1.1,math11.surface1.2|math11.surface1.3,math11.surface1.4,math11.surface1.5|4|未审核/未验证|
+|曲线积分与曲面积分|math11.gauss 第二类曲面积分、高斯公式与散度|core|math10.triple、math11.surface1|math11.gauss.1,math11.gauss.2|math11.gauss.3,math11.gauss.4,math11.gauss.5|3|未审核/未验证|
+|曲线积分与曲面积分|math11.stokes 斯托克斯公式、环流与旋度|core|math11.line2、math11.gauss|math11.stokes.1,math11.stokes.2|math11.stokes.3,math11.stokes.4,math11.stokes.5|2|未审核/未验证|
+|无穷级数|math12.series 级数概念与必要条件|core|math01.sequence|math12.series.1,math12.series.2|math12.series.3,math12.series.4,math12.series.5|1|未审核/未验证|
+|无穷级数|math12.positive 正项级数比较、比值与根值审敛|core|math12.series、math05.improper|math12.positive.1,math12.positive.2|math12.positive.3,math12.positive.4,math12.positive.5|1|未审核/未验证|
+|无穷级数|math12.alternating 交错、绝对与条件收敛|core|math12.positive|math12.alternating.1,math12.alternating.2|math12.alternating.3,math12.alternating.4,math12.alternating.5|0|未审核/未验证|
+|无穷级数|math12.power 幂级数收敛半径、端点与运算|core|math12.positive|math12.power.1,math12.power.2|math12.power.3,math12.power.4,math12.power.5|0|未审核/未验证|
+|无穷级数|math12.expansion 幂级数展开及应用|core|math03.taylor、math12.power|math12.expansion.1,math12.expansion.2|math12.expansion.3,math12.expansion.4,math12.expansion.5|4|未审核/未验证|
+|无穷级数|math12.fourier 傅里叶级数、正交与一般周期|core|math05.methods、math12.series|math12.fourier.1,math12.fourier.2|math12.fourier.3,math12.fourier.4,math12.fourier.5|3|未审核/未验证|
+|无穷级数|math12.uniform 函数项级数一致收敛|extension|math12.power|math12.uniform.1,math12.uniform.2|math12.uniform.3,math12.uniform.4,math12.uniform.5|0|未审核/未验证|
+|理论力学|theory.model 约束、受力图与计算模型|core|本包未指定|theory.model.1,theory.model.2|theory.model.3,theory.model.4,theory.model.5|0|未审核/未验证|
+|理论力学|theory.force 力矩、力偶与力系等效|core|math08.products、theory.model|theory.force.1,theory.force.2|theory.force.3,theory.force.4,theory.force.5|2|未审核/未验证|
+|理论力学|theory.balance 平衡方程与支反力|core|theory.model、theory.force、math06.physics|theory.balance.1,theory.balance.2|theory.balance.3,theory.balance.4,theory.balance.5|2|未审核/未验证|
+|理论力学|theory.friction 摩擦与平衡临界|core|theory.balance|theory.friction.1,theory.friction.2|theory.friction.3,theory.friction.4,theory.friction.5|2|未审核/未验证|
+|理论力学|theory.point 点的运动学|core|math02.rules、math03.curvature|theory.point.1,theory.point.2|theory.point.3,theory.point.4,theory.point.5|4|未审核/未验证|
+|理论力学|theory.rigid 刚体平动、定轴转动与平面运动|core|theory.point|theory.rigid.1,theory.rigid.2|theory.rigid.3,theory.rigid.4,theory.rigid.5|2|未审核/未验证|
+|理论力学|theory.relative 点的合成运动|core|theory.rigid、math08.products|theory.relative.1,theory.relative.2|theory.relative.3,theory.relative.4,theory.relative.5|2|未审核/未验证|
+|理论力学|theory.newton 质点与质点系动力学|core|theory.balance、theory.point|theory.newton.1,theory.newton.2|theory.newton.3,theory.newton.4,theory.newton.5|2|未审核/未验证|
+|理论力学|theory.momentum 动量与冲量|core|theory.newton、math05.ftc|theory.momentum.1,theory.momentum.2|theory.momentum.3,theory.momentum.4,theory.momentum.5|3|未审核/未验证|
+|理论力学|theory.angular 动量矩与刚体定轴动力学|core|theory.force、theory.newton、math10.applications|theory.angular.1,theory.angular.2|theory.angular.3,theory.angular.4,theory.angular.5|1|未审核/未验证|
+|理论力学|theory.energy 动能定理与机械能|core|theory.newton、math06.physics|theory.energy.1,theory.energy.2|theory.energy.3,theory.energy.4,theory.energy.5|3|未审核/未验证|
+|理论力学|theory.dalembert 达朗贝尔原理与虚位移|extension|theory.newton、theory.energy|theory.dalembert.1,theory.dalembert.2|theory.dalembert.3,theory.dalembert.4,theory.dalembert.5|1|未审核/未验证|
+|理论力学|theory.analytical 广义坐标、拉格朗日与振动基础|extension|theory.energy、math07.order|theory.analytical.1,theory.analytical.2|theory.analytical.3,theory.analytical.4,theory.analytical.5|1|未审核/未验证|
+|材料力学|materials.section 截面法、轴力与内力|core|theory.model、theory.balance|materials.section.1,materials.section.2|materials.section.3,materials.section.4,materials.section.5|2|未审核/未验证|
+|材料力学|materials.axial 轴向拉压、应力应变与虎克定律|core|materials.section|materials.axial.1,materials.axial.2|materials.axial.3,materials.axial.4,materials.axial.5|2|未审核/未验证|
+|材料力学|materials.shear 剪切与挤压实用计算|core|materials.axial|materials.shear.1,materials.shear.2|materials.shear.3,materials.shear.4,materials.shear.5|1|未审核/未验证|
+|材料力学|materials.geometry 截面几何、惯性矩与平行轴|core|math10.applications|materials.geometry.1,materials.geometry.2|materials.geometry.3,materials.geometry.4,materials.geometry.5|2|未审核/未验证|
+|材料力学|materials.torsion 圆轴扭转、扭矩图与刚度|core|materials.geometry、materials.shear|materials.torsion.1,materials.torsion.2|materials.torsion.3,materials.torsion.4,materials.torsion.5|2|未审核/未验证|
+|材料力学|materials.moment 弯曲内力、剪力图与弯矩图|core|theory.balance、materials.section|materials.moment.1,materials.moment.2|materials.moment.3,materials.moment.4,materials.moment.5|2|未审核/未验证|
+|材料力学|materials.bending 弯曲正应力、剪应力与强度|core|materials.moment、materials.geometry|materials.bending.1,materials.bending.2|materials.bending.3,materials.bending.4,materials.bending.5|1|未审核/未验证|
+|材料力学|materials.deflection 梁的挠度、转角与边界条件|core|theory.balance、materials.moment、materials.axial、math04.primitive、math07.concept、materials.boundary|materials.deflection.1,materials.deflection.2|materials.deflection.3,materials.deflection.4,materials.deflection.5|0|未审核/未验证|
+|材料力学|materials.stress 应力状态、主应力与广义虎克定律|core|materials.axial、materials.shear|materials.stress.1,materials.stress.2|materials.stress.3,materials.stress.4,materials.stress.5|0|未审核/未验证|
+|材料力学|materials.combined 强度理论与组合变形|core|materials.stress、materials.bending、materials.torsion|materials.combined.1,materials.combined.2|materials.combined.3,materials.combined.4,materials.combined.5|1|未审核/未验证|
+|材料力学|materials.energy 应变能、能量法与叠加|core|materials.axial、math09.partial|materials.energy.1,materials.energy.2|materials.energy.3,materials.energy.4,materials.energy.5|1|未审核/未验证|
+|材料力学|materials.indeterminate 简单超静定与变形协调|core|materials.axial、materials.energy、theory.balance|materials.indeterminate.1,materials.indeterminate.2|materials.indeterminate.3,materials.indeterminate.4,materials.indeterminate.5|1|未审核/未验证|
+|材料力学|materials.stability 压杆稳定、欧拉公式与适用范围|core|materials.geometry、materials.axial、math07.order|materials.stability.1,materials.stability.2|materials.stability.3,materials.stability.4,materials.stability.5|2|未审核/未验证|
+|材料力学|materials.fatigue 冲击、疲劳与循环特征|extension|materials.energy、materials.combined|materials.fatigue.1,materials.fatigue.2|materials.fatigue.3,materials.fatigue.4,materials.fatigue.5|2|未审核/未验证|
+|材料力学|materials.boundary 梁的边界条件与连续协调|core|theory.model、math04.primitive|materials.boundary.1,materials.boundary.2|materials.boundary.3,materials.boundary.4,materials.boundary.5|0|未审核/未验证|
+|结构力学|structures.geometry 几何组成、约束与计算简图|core|theory.model、theory.balance|structures.geometry.1,structures.geometry.2|structures.geometry.3,structures.geometry.4,structures.geometry.5|1|未审核/未验证|
+|结构力学|structures.determinate 静定梁、刚架与内力校核|core|structures.geometry、materials.moment|structures.determinate.1,structures.determinate.2|structures.determinate.3,structures.determinate.4,structures.determinate.5|1|未审核/未验证|
+|结构力学|structures.truss 桁架与拱|core|structures.determinate、theory.balance|structures.truss.1,structures.truss.2|structures.truss.3,structures.truss.4,structures.truss.5|0|未审核/未验证|
+|结构力学|structures.virtual 虚功、位移计算与互等定理|core|materials.deflection、materials.energy、math05.ftc|structures.virtual.1,structures.virtual.2|structures.virtual.3,structures.virtual.4,structures.virtual.5|0|未审核/未验证|
+|结构力学|structures.force 力法、基本体系与协调方程|core|structures.virtual、materials.indeterminate|structures.force.1,structures.force.2|structures.force.3,structures.force.4,structures.force.5|2|未审核/未验证|
+|结构力学|structures.displacement 位移法与转角位移方程|core|structures.determinate、materials.deflection|structures.displacement.1,structures.displacement.2|structures.displacement.3,structures.displacement.4,structures.displacement.5|1|未审核/未验证|
+|结构力学|structures.distribution 力矩分配、分配系数与传递|core|structures.displacement|structures.distribution.1,structures.distribution.2|structures.distribution.3,structures.distribution.4,structures.distribution.5|3|未审核/未验证|
+|结构力学|structures.influence 影响线、移动荷载与包络|core|structures.determinate|structures.influence.1,structures.influence.2|structures.influence.3,structures.influence.4,structures.influence.5|1|未审核/未验证|
+|结构力学|structures.matrix 矩阵位移法与线性代数桥接|core|structures.displacement、structures.algebra-bridge|structures.matrix.1,structures.matrix.2|structures.matrix.3,structures.matrix.4,structures.matrix.5|1|未审核/未验证|
+|结构力学|structures.loads 温度、支座移动与非荷载作用|core|structures.force、materials.axial|structures.loads.1,structures.loads.2|structures.loads.3,structures.loads.4,structures.loads.5|0|未审核/未验证|
+|结构力学|structures.dynamics 结构动力与单自由度响应|extension|theory.analytical、math07.order、structures.matrix|structures.dynamics.1,structures.dynamics.2|structures.dynamics.3,structures.dynamics.4,structures.dynamics.5|1|未审核/未验证|
+|结构力学|structures.stability 结构稳定与临界荷载|extension|materials.stability、structures.geometry|structures.stability.1,structures.stability.2|structures.stability.3,structures.stability.4,structures.stability.5|0|未审核/未验证|
+|结构力学|structures.plastic 极限荷载与塑性机构|extension|structures.force、materials.combined|structures.plastic.1,structures.plastic.2|structures.plastic.3,structures.plastic.4,structures.plastic.5|0|未审核/未验证|
+|结构力学|structures.algebra-bridge 矩阵方程桥接基础|core|本包未指定|structures.algebra-bridge.1,structures.algebra-bridge.2|structures.algebra-bridge.3,structures.algebra-bridge.4,structures.algebra-bridge.5|2|未审核/未验证|
+
+## 深度缺口与后续工作
+
+- 主题均有起始题池，但全书逐小节/定理/题型映射尚未由教师验收；每主题五题不等于穷尽全部难度。
+- 证明与论述自动评分不支持；需宿主按评分要点复核。
+- 跨题根因诊断为可解释启发式，尚未用真实学生数据校准。
+- 已实现全部模块的流程验收；尚无真实学生迁移、保持或学习成效数据。
+- 高等数学选学、三门力学进阶主题有明确层级，复杂空间结构与非线性工程分析未纳入自动核验。

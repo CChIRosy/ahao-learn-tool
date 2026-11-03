@@ -1,0 +1,1486 @@
+{
+  "id": "math03",
+  "name": "微分中值定理与导数应用",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math03.mvt",
+      "name": "罗尔、拉格朗日与柯西中值定理",
+      "aliases": [
+        "mvt"
+      ],
+      "prerequisites": [
+        "math02.definition"
+      ],
+      "tier": "core",
+      "teaching": "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.mvt.1",
+          "skill_id": "math03.mvt",
+          "purpose": "diagnostic",
+          "family_id": "math03.mvt.family-1",
+          "prompt": "f(x)=x²在[0,2]应用拉格朗日定理，求c。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。"
+          ],
+          "rubric": [
+            "1",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.mvt.2",
+          "skill_id": "math03.mvt",
+          "purpose": "diagnostic",
+          "family_id": "math03.mvt.family-2",
+          "prompt": "罗尔定理需要两端函数值相等吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。"
+          ],
+          "rubric": [
+            "是",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.mvt.3",
+          "skill_id": "math03.mvt",
+          "purpose": "learning",
+          "family_id": "math03.mvt.family-3",
+          "prompt": "f(x)=x²-1在[-1,1]的罗尔点c。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。"
+          ],
+          "rubric": [
+            "0",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.mvt.4",
+          "skill_id": "math03.mvt",
+          "purpose": "transfer",
+          "family_id": "math03.mvt.family-4",
+          "prompt": "|x|在[-1,1]满足罗尔定理全部条件吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。"
+          ],
+          "rubric": [
+            "否",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.mvt.5",
+          "skill_id": "math03.mvt",
+          "purpose": "retention",
+          "family_id": "math03.mvt.family-5",
+          "prompt": "柯西中值定理可在未核验分母导数条件时任意写导数比吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。"
+          ],
+          "rubric": [
+            "否",
+            "先检查闭区间连续、开区间可导及端点条件；结论是存在性，不要求唯一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math03.lhopital",
+      "name": "洛必达法则与不定式",
+      "aliases": [
+        "lhopital"
+      ],
+      "prerequisites": [
+        "math02.basic",
+        "math01.limit"
+      ],
+      "tier": "core",
+      "teaching": "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.lhopital.1",
+          "skill_id": "math03.lhopital",
+          "purpose": "diagnostic",
+          "family_id": "math03.lhopital.family-1",
+          "prompt": "x趋于0时(exp(x)-1)/x极限。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。"
+          ],
+          "rubric": [
+            "1",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.lhopital.2",
+          "skill_id": "math03.lhopital",
+          "purpose": "diagnostic",
+          "family_id": "math03.lhopital.family-2",
+          "prompt": "x趋于0时sin(x)/x可满足洛必达的适用条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。"
+          ],
+          "rubric": [
+            "是",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.lhopital.3",
+          "skill_id": "math03.lhopital",
+          "purpose": "learning",
+          "family_id": "math03.lhopital.family-3",
+          "prompt": "x趋于正无穷时log(x)/x极限。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。"
+          ],
+          "rubric": [
+            "0",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.lhopital.4",
+          "skill_id": "math03.lhopital",
+          "purpose": "transfer",
+          "family_id": "math03.lhopital.family-4",
+          "prompt": "x趋于0时(log(1+x)-x)/x²极限。",
+          "answer": "-1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。"
+          ],
+          "rubric": [
+            "-1/2",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.lhopital.5",
+          "skill_id": "math03.lhopital",
+          "purpose": "retention",
+          "family_id": "math03.lhopital.family-5",
+          "prompt": "分子分母极限分别为1和2时，能直接用导数比替代原比吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。"
+          ],
+          "rubric": [
+            "否",
+            "先确认0/0或无穷比无穷型及可导等条件；不能直接用于任意比值。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math03.taylor",
+      "name": "泰勒公式与余项",
+      "aliases": [
+        "taylor"
+      ],
+      "prerequisites": [
+        "math02.higher"
+      ],
+      "tier": "core",
+      "teaching": "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.taylor.1",
+          "skill_id": "math03.taylor",
+          "purpose": "diagnostic",
+          "family_id": "math03.taylor.family-1",
+          "prompt": "exp(x)在0处二阶泰勒多项式。",
+          "answer": "1+x+x**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。"
+          ],
+          "rubric": [
+            "1+x+x**2/2",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.taylor.2",
+          "skill_id": "math03.taylor",
+          "purpose": "diagnostic",
+          "family_id": "math03.taylor.family-2",
+          "prompt": "sin(x)在0处三阶泰勒多项式。",
+          "answer": "x-x**3/6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。"
+          ],
+          "rubric": [
+            "x-x**3/6",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.taylor.3",
+          "skill_id": "math03.taylor",
+          "purpose": "learning",
+          "family_id": "math03.taylor.family-3",
+          "prompt": "cos(x)在0处二阶多项式。",
+          "answer": "1-x**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。"
+          ],
+          "rubric": [
+            "1-x**2/2",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.taylor.4",
+          "skill_id": "math03.taylor",
+          "purpose": "transfer",
+          "family_id": "math03.taylor.family-4",
+          "prompt": "log(1+x)在0处二阶多项式。",
+          "answer": "x-x**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。"
+          ],
+          "rubric": [
+            "x-x**2/2",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.taylor.5",
+          "skill_id": "math03.taylor",
+          "purpose": "retention",
+          "family_id": "math03.taylor.family-5",
+          "prompt": "泰勒截断多项式对所有x都等于原函数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。"
+          ],
+          "rubric": [
+            "否",
+            "展开中心、阶数和余项必须匹配；近似计算与精确等式要区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math03.extrema",
+      "name": "单调、极值、最值与图形",
+      "aliases": [
+        "extrema"
+      ],
+      "prerequisites": [
+        "math02.rules"
+      ],
+      "tier": "core",
+      "teaching": "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.extrema.1",
+          "skill_id": "math03.extrema",
+          "purpose": "diagnostic",
+          "family_id": "math03.extrema.family-1",
+          "prompt": "x³-3x的正驻点是多少？",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。"
+          ],
+          "rubric": [
+            "1",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.extrema.2",
+          "skill_id": "math03.extrema",
+          "purpose": "diagnostic",
+          "family_id": "math03.extrema.family-2",
+          "prompt": "导数等于0的点必为极值点吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。"
+          ],
+          "rubric": [
+            "否",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.extrema.3",
+          "skill_id": "math03.extrema",
+          "purpose": "learning",
+          "family_id": "math03.extrema.family-3",
+          "prompt": "x²在[-1,2]的最大值。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。"
+          ],
+          "rubric": [
+            "4",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.extrema.4",
+          "skill_id": "math03.extrema",
+          "purpose": "transfer",
+          "family_id": "math03.extrema.family-4",
+          "prompt": "x³在0处有极值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。"
+          ],
+          "rubric": [
+            "否",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.extrema.5",
+          "skill_id": "math03.extrema",
+          "purpose": "retention",
+          "family_id": "math03.extrema.family-5",
+          "prompt": "1/x在正半轴上单调递减吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。"
+          ],
+          "rubric": [
+            "是",
+            "驻点只是候选；最值还要比较区间端点，图形分析需结合定义域和渐近行为。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math03.curvature",
+      "name": "凹凸、拐点与曲率",
+      "aliases": [
+        "曲率",
+        "凹凸",
+        "拐点",
+        "curvature"
+      ],
+      "prerequisites": [
+        "math02.higher"
+      ],
+      "tier": "core",
+      "teaching": "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.curvature.1",
+          "skill_id": "math03.curvature",
+          "purpose": "diagnostic",
+          "family_id": "math03.curvature.family-1",
+          "prompt": "y=x³的拐点横坐标。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。"
+          ],
+          "rubric": [
+            "0",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.curvature.2",
+          "skill_id": "math03.curvature",
+          "purpose": "diagnostic",
+          "family_id": "math03.curvature.family-2",
+          "prompt": "y=x^4在0处二阶导为0，所以0一定是拐点吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。"
+          ],
+          "rubric": [
+            "否",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.curvature.3",
+          "skill_id": "math03.curvature",
+          "purpose": "learning",
+          "family_id": "math03.curvature.family-3",
+          "prompt": "y=x²在0处的曲率。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。"
+          ],
+          "rubric": [
+            "2",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.curvature.4",
+          "skill_id": "math03.curvature",
+          "purpose": "transfer",
+          "family_id": "math03.curvature.family-4",
+          "prompt": "y=2x的曲率。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。"
+          ],
+          "rubric": [
+            "0",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.curvature.5",
+          "skill_id": "math03.curvature",
+          "purpose": "retention",
+          "family_id": "math03.curvature.family-5",
+          "prompt": "y''=0是否足以判定拐点？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。"
+          ],
+          "rubric": [
+            "否",
+            "凹凸用二阶导数符号；拐点要求凹凸改变。曲率分母为(1+y′²)^(3/2)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math03.proof",
+      "name": "中值定理条件与证明诊断",
+      "aliases": [
+        "proof"
+      ],
+      "prerequisites": [
+        "math03.mvt",
+        "math03.extrema"
+      ],
+      "tier": "core",
+      "teaching": "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.proof.1",
+          "skill_id": "math03.proof",
+          "purpose": "diagnostic",
+          "family_id": "math03.proof.family-1",
+          "prompt": "解释为什么|x|在[-1,1]不能使用罗尔定理。",
+          "answer": "在0处不可导；端值相等不能补足可导条件",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。"
+          ],
+          "rubric": [
+            "在0处不可导；端值相等不能补足可导条件",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.proof.2",
+          "skill_id": "math03.proof",
+          "purpose": "diagnostic",
+          "family_id": "math03.proof.family-2",
+          "prompt": "证明f在区间内处处导数为0则f为常数，应调用什么并给关键一步？",
+          "answer": "任取两点应用拉格朗日中值定理，函数值差等于区间长度乘某点导数，故差为0",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。"
+          ],
+          "rubric": [
+            "任取两点应用拉格朗日中值定理，函数值差等于区间长度乘某点导数，故差为0",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.proof.3",
+          "skill_id": "math03.proof",
+          "purpose": "learning",
+          "family_id": "math03.proof.family-3",
+          "prompt": "用f(x)=x³说明驻点不是极值的充分条件。",
+          "answer": "0处导数0，但函数在其左右均递增，未发生单调性改变",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。"
+          ],
+          "rubric": [
+            "0处导数0，但函数在其左右均递增，未发生单调性改变",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.proof.4",
+          "skill_id": "math03.proof",
+          "purpose": "transfer",
+          "family_id": "math03.proof.family-4",
+          "prompt": "有人由f'(c)=0推出罗尔定理的假设成立，说明推理问题。",
+          "answer": "把充分条件倒置；某个驻点存在不能推出端值相等和整个区间的连续可导",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。"
+          ],
+          "rubric": [
+            "把充分条件倒置；某个驻点存在不能推出端值相等和整个区间的连续可导",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.proof.5",
+          "skill_id": "math03.proof",
+          "purpose": "retention",
+          "family_id": "math03.proof.family-5",
+          "prompt": "说明闭区间连续与开区间可导在拉格朗日定理中分别在哪里需要。",
+          "answer": "定理假设必须覆盖端点连续及内部可导；不能由有限样本或图像代替这些条件",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。"
+          ],
+          "rubric": [
+            "定理假设必须覆盖端点连续及内部可导；不能由有限样本或图像代替这些条件",
+            "证明先列假设，再构造辅助函数并解释定理适用；结论正确不等于论证完整。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math03.asymptote",
+      "name": "渐近线、优化建模与近似",
+      "aliases": [
+        "asymptote"
+      ],
+      "prerequisites": [
+        "math03.extrema",
+        "math01.limit"
+      ],
+      "tier": "core",
+      "teaching": "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math03.asymptote.1",
+          "skill_id": "math03.asymptote",
+          "purpose": "diagnostic",
+          "family_id": "math03.asymptote.family-1",
+          "prompt": "f(x)=1/x的水平渐近线y值。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。"
+          ],
+          "rubric": [
+            "0",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.asymptote.2",
+          "skill_id": "math03.asymptote",
+          "purpose": "diagnostic",
+          "family_id": "math03.asymptote.family-2",
+          "prompt": "f(x)=x+1/x在正无穷的斜渐近线是y=x吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。"
+          ],
+          "rubric": [
+            "是",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math03.asymptote.3",
+          "skill_id": "math03.asymptote",
+          "purpose": "learning",
+          "family_id": "math03.asymptote.family-3",
+          "prompt": "周长固定为8的矩形，最大面积。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。"
+          ],
+          "rubric": [
+            "4",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.asymptote.4",
+          "skill_id": "math03.asymptote",
+          "purpose": "transfer",
+          "family_id": "math03.asymptote.family-4",
+          "prompt": "用微分近似sqrt(4.04)，近似值。",
+          "answer": "2.01",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。"
+          ],
+          "rubric": [
+            "2.01",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math03.asymptote.5",
+          "skill_id": "math03.asymptote",
+          "purpose": "retention",
+          "family_id": "math03.asymptote.family-5",
+          "prompt": "函数图像与渐近线绝不能相交吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。"
+          ],
+          "rubric": [
+            "否",
+            "渐近线用差值极限判断；优化先建可行域，再比较驻点和边界；微分近似需局部误差意识。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

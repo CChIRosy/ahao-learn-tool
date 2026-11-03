@@ -1,0 +1,3302 @@
+{
+  "id": "materials",
+  "name": "材料力学",
+  "source": "https://me.sjtu.edu.cn/bkjx/upload/file/20220926/20220926103825.pdf",
+  "skills": [
+    {
+      "id": "materials.section",
+      "name": "截面法、轴力与内力",
+      "aliases": [
+        "section"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "teaching": "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.section.1",
+          "skill_id": "materials.section",
+          "purpose": "diagnostic",
+          "family_id": "materials.section.family-1",
+          "prompt": "杆端受10牛轴向拉力，忽略自重，杆内轴力拉为正的数值。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。"
+          ],
+          "rubric": [
+            "10",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.section.2",
+          "skill_id": "materials.section",
+          "purpose": "diagnostic",
+          "family_id": "materials.section.family-2",
+          "prompt": "内力是研究对象内部相互作用，在截开的局部图中可作为外力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。"
+          ],
+          "rubric": [
+            "是",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.section.3",
+          "skill_id": "materials.section",
+          "purpose": "learning",
+          "family_id": "materials.section.family-3",
+          "prompt": "轴向受压5牛，拉为正时轴力数值。",
+          "answer": "-5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。"
+          ],
+          "rubric": [
+            "-5",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.section.4",
+          "skill_id": "materials.section",
+          "purpose": "transfer",
+          "family_id": "materials.section.family-4",
+          "prompt": "截面法必须同时把左右两侧都保留在同一自由体上吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。"
+          ],
+          "rubric": [
+            "否",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.section.5",
+          "skill_id": "materials.section",
+          "purpose": "retention",
+          "family_id": "materials.section.family-5",
+          "prompt": "集中轴向力作用位置可能使轴力图跳变吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。"
+          ],
+          "rubric": [
+            "是",
+            "先截开并保留一侧，内力由该侧平衡确定；采用拉为正等约定后保持一致。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.axial",
+      "name": "轴向拉压、应力应变与虎克定律",
+      "aliases": [
+        "本构",
+        "刚度",
+        "拉压",
+        "axial"
+      ],
+      "prerequisites": [
+        "materials.section"
+      ],
+      "tier": "core",
+      "teaching": "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.axial.1",
+          "skill_id": "materials.axial",
+          "purpose": "diagnostic",
+          "family_id": "materials.axial.family-1",
+          "prompt": "N=100牛,A=10平方毫米，平均正应力数值（MPa）。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。"
+          ],
+          "rubric": [
+            "10",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "MPa"
+        },
+        {
+          "id": "materials.axial.2",
+          "skill_id": "materials.axial",
+          "purpose": "diagnostic",
+          "family_id": "materials.axial.family-2",
+          "prompt": "线弹性单轴应力下epsilon=sigma/E吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。"
+          ],
+          "rubric": [
+            "是",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.axial.3",
+          "skill_id": "materials.axial",
+          "purpose": "learning",
+          "family_id": "materials.axial.family-3",
+          "prompt": "N=1000牛,L=1000毫米,E=200000MPa,A=100平方毫米，伸长量（毫米）。",
+          "answer": "1/20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。"
+          ],
+          "rubric": [
+            "1/20",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "mm"
+        },
+        {
+          "id": "materials.axial.4",
+          "skill_id": "materials.axial",
+          "purpose": "transfer",
+          "family_id": "materials.axial.family-4",
+          "prompt": "同一均匀杆轴力加倍、其他不变，弹性伸长加倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。"
+          ],
+          "rubric": [
+            "是",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.axial.5",
+          "skill_id": "materials.axial",
+          "purpose": "retention",
+          "family_id": "materials.axial.family-5",
+          "prompt": "超过线弹性范围仍可无条件采用常数E的虎克定律吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。"
+          ],
+          "rubric": [
+            "否",
+            "均匀轴向线弹性杆用sigma=N/A、epsilon=sigma/E、delta=NL/(EA)，注意单位一致与适用范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.shear",
+      "name": "剪切与挤压实用计算",
+      "aliases": [
+        "shear"
+      ],
+      "prerequisites": [
+        "materials.axial"
+      ],
+      "tier": "core",
+      "teaching": "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.shear.1",
+          "skill_id": "materials.shear",
+          "purpose": "diagnostic",
+          "family_id": "materials.shear.family-1",
+          "prompt": "单剪连接F=100牛、有效面积20平方毫米，平均剪应力MPa。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。"
+          ],
+          "rubric": [
+            "5",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "MPa"
+        },
+        {
+          "id": "materials.shear.2",
+          "skill_id": "materials.shear",
+          "purpose": "diagnostic",
+          "family_id": "materials.shear.family-2",
+          "prompt": "双剪、两个相同剪切面，每面面积10，F=100时每面平均剪应力为5吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。"
+          ],
+          "rubric": [
+            "是",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.shear.3",
+          "skill_id": "materials.shear",
+          "purpose": "learning",
+          "family_id": "materials.shear.family-3",
+          "prompt": "把挤压面积永远取为螺栓圆截面积正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。"
+          ],
+          "rubric": [
+            "否",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.shear.4",
+          "skill_id": "materials.shear",
+          "purpose": "transfer",
+          "family_id": "materials.shear.family-4",
+          "prompt": "线弹性纯剪切时tau=G*gamma吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。"
+          ],
+          "rubric": [
+            "是",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.shear.5",
+          "skill_id": "materials.shear",
+          "purpose": "retention",
+          "family_id": "materials.shear.family-5",
+          "prompt": "同一点互相垂直截面的对应剪应力满足互等关系吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。"
+          ],
+          "rubric": [
+            "是",
+            "平均剪应力按有效剪切面计算；挤压面积与接触投影有关，不自动等于剪切面积。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.geometry",
+      "name": "截面几何、惯性矩与平行轴",
+      "aliases": [
+        "geometry"
+      ],
+      "prerequisites": [
+        "math10.applications"
+      ],
+      "tier": "core",
+      "teaching": "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.geometry.1",
+          "skill_id": "materials.geometry",
+          "purpose": "diagnostic",
+          "family_id": "materials.geometry.family-1",
+          "prompt": "矩形b=2,h=3，对形心水平轴I数值。",
+          "answer": "9/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。"
+          ],
+          "rubric": [
+            "9/2",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.geometry.2",
+          "skill_id": "materials.geometry",
+          "purpose": "diagnostic",
+          "family_id": "materials.geometry.family-2",
+          "prompt": "面积A平移距离d，惯性矩增加A*d²吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。"
+          ],
+          "rubric": [
+            "是",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.geometry.3",
+          "skill_id": "materials.geometry",
+          "purpose": "learning",
+          "family_id": "materials.geometry.family-3",
+          "prompt": "圆实心截面对直径轴I=pi*r^4/4吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。"
+          ],
+          "rubric": [
+            "是",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.geometry.4",
+          "skill_id": "materials.geometry",
+          "purpose": "transfer",
+          "family_id": "materials.geometry.family-4",
+          "prompt": "面积2、形心惯性矩3、平行轴距离4，关于该轴I。",
+          "answer": "35",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。"
+          ],
+          "rubric": [
+            "35",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.geometry.5",
+          "skill_id": "materials.geometry",
+          "purpose": "retention",
+          "family_id": "materials.geometry.family-5",
+          "prompt": "极惯性矩等于同一点两正交平面轴惯性矩之和吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。"
+          ],
+          "rubric": [
+            "是",
+            "矩形I=b*h³/12须指明过形心且平行于宽的轴；平行轴增加A*d²。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.torsion",
+      "name": "圆轴扭转、扭矩图与刚度",
+      "aliases": [
+        "torsion"
+      ],
+      "prerequisites": [
+        "materials.geometry",
+        "materials.shear"
+      ],
+      "tier": "core",
+      "teaching": "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.torsion.1",
+          "skill_id": "materials.torsion",
+          "purpose": "diagnostic",
+          "family_id": "materials.torsion.family-1",
+          "prompt": "实心圆轴Jp=pi*r^4/2吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。"
+          ],
+          "rubric": [
+            "是",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.torsion.2",
+          "skill_id": "materials.torsion",
+          "purpose": "diagnostic",
+          "family_id": "materials.torsion.family-2",
+          "prompt": "T=10牛米,r=0.01米,Jp=0.0000001米^4，最大剪应力数值（Pa）。",
+          "answer": "1000000",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。"
+          ],
+          "rubric": [
+            "1000000",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "Pa"
+        },
+        {
+          "id": "materials.torsion.3",
+          "skill_id": "materials.torsion",
+          "purpose": "learning",
+          "family_id": "materials.torsion.family-3",
+          "prompt": "其他不变时等截面轴长度加倍、扭转角加倍吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。"
+          ],
+          "rubric": [
+            "是",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.torsion.4",
+          "skill_id": "materials.torsion",
+          "purpose": "transfer",
+          "family_id": "materials.torsion.family-4",
+          "prompt": "非圆截面轴可不考虑翘曲直接套tau=T*r/Jp吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。"
+          ],
+          "rubric": [
+            "否",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.torsion.5",
+          "skill_id": "materials.torsion",
+          "purpose": "retention",
+          "family_id": "materials.torsion.family-5",
+          "prompt": "圆轴中心处扭转剪应力数值。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。"
+          ],
+          "rubric": [
+            "0",
+            "等截面圆轴在线弹性小变形下tau=T*r/Jp、phi=T*L/(G*Jp)，非圆轴不能直接套圆轴公式。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.moment",
+      "name": "弯曲内力、剪力图与弯矩图",
+      "aliases": [
+        "弯矩",
+        "剪力图",
+        "moment"
+      ],
+      "prerequisites": [
+        "theory.balance",
+        "materials.section"
+      ],
+      "tier": "core",
+      "teaching": "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.moment.1",
+          "skill_id": "materials.moment",
+          "purpose": "diagnostic",
+          "family_id": "materials.moment.family-1",
+          "prompt": "简支梁L=4米，跨中向下P=10牛，最大弯矩大小（牛米）。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。"
+          ],
+          "rubric": [
+            "10",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "N*m"
+        },
+        {
+          "id": "materials.moment.2",
+          "skill_id": "materials.moment",
+          "purpose": "diagnostic",
+          "family_id": "materials.moment.family-2",
+          "prompt": "无分布荷载区间的剪力图为常值吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。"
+          ],
+          "rubric": [
+            "是",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.moment.3",
+          "skill_id": "materials.moment",
+          "purpose": "learning",
+          "family_id": "materials.moment.family-3",
+          "prompt": "集中力偶可能使弯矩图跳变吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。"
+          ],
+          "rubric": [
+            "是",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.moment.4",
+          "skill_id": "materials.moment",
+          "purpose": "transfer",
+          "family_id": "materials.moment.family-4",
+          "prompt": "简支梁L=4、均布向下q=2，跨中正弯矩大小。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。"
+          ],
+          "rubric": [
+            "4",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "N*m"
+        },
+        {
+          "id": "materials.moment.5",
+          "skill_id": "materials.moment",
+          "purpose": "retention",
+          "family_id": "materials.moment.family-5",
+          "prompt": "把剪力最大处一律判为弯矩最大处正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。"
+          ],
+          "rubric": [
+            "否",
+            "明确正号约定，分段列平衡；集中力引起剪力跳变，集中力偶可引起弯矩跳变。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.bending",
+      "name": "弯曲正应力、剪应力与强度",
+      "aliases": [
+        "bending"
+      ],
+      "prerequisites": [
+        "materials.moment",
+        "materials.geometry"
+      ],
+      "tier": "core",
+      "teaching": "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.bending.1",
+          "skill_id": "materials.bending",
+          "purpose": "diagnostic",
+          "family_id": "materials.bending.family-1",
+          "prompt": "线弹性对称纯弯曲时中性轴处弯曲正应力为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。"
+          ],
+          "rubric": [
+            "是",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.bending.2",
+          "skill_id": "materials.bending",
+          "purpose": "diagnostic",
+          "family_id": "materials.bending.family-2",
+          "prompt": "M=10牛毫米,y=2毫米,I=5毫米^4，正应力绝对值MPa。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。"
+          ],
+          "rubric": [
+            "4",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "unit": "MPa"
+        },
+        {
+          "id": "materials.bending.3",
+          "skill_id": "materials.bending",
+          "purpose": "learning",
+          "family_id": "materials.bending.family-3",
+          "prompt": "截面模量W=I/y_max，最大正应力绝对值为|M|/W吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。"
+          ],
+          "rubric": [
+            "是",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.bending.4",
+          "skill_id": "materials.bending",
+          "purpose": "transfer",
+          "family_id": "materials.bending.family-4",
+          "prompt": "矩形截面剪应力沿高度处处均匀吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。"
+          ],
+          "rubric": [
+            "否",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.bending.5",
+          "skill_id": "materials.bending",
+          "purpose": "retention",
+          "family_id": "materials.bending.family-5",
+          "prompt": "截面抗弯模量加倍、弯矩不变，最大正应力减半吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。"
+          ],
+          "rubric": [
+            "是",
+            "纯弯曲正应力沿距中性轴距离线性变化；梁剪应力公式需相应模型，危险截面不只看弯矩大小。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.deflection",
+      "name": "梁的挠度、转角与边界条件",
+      "aliases": [
+        "梁挠度",
+        "边界条件",
+        "积分常数",
+        "deflection"
+      ],
+      "prerequisites": [
+        "theory.balance",
+        "materials.moment",
+        "materials.axial",
+        "math04.primitive",
+        "math07.concept",
+        "materials.boundary"
+      ],
+      "tier": "core",
+      "teaching": "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.deflection.1",
+          "skill_id": "materials.deflection",
+          "purpose": "diagnostic",
+          "family_id": "materials.deflection.family-1",
+          "prompt": "小变形Euler-Bernoulli梁中挠度二阶导数与弯矩的正负关系需要先定符号吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.deflection.2",
+          "skill_id": "materials.deflection",
+          "purpose": "diagnostic",
+          "family_id": "materials.deflection.family-2",
+          "prompt": "简支梁两端的挠度都为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.deflection.3",
+          "skill_id": "materials.deflection",
+          "purpose": "learning",
+          "family_id": "materials.deflection.family-3",
+          "prompt": "简支梁两端转角一定都为0吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。"
+          ],
+          "rubric": [
+            "否",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.deflection.4",
+          "skill_id": "materials.deflection",
+          "purpose": "transfer",
+          "family_id": "materials.deflection.family-4",
+          "prompt": "悬臂梁自由端向下力P，端挠度绝对值表达式（EI常量）。",
+          "answer": "P*L**3/(3*E*I)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。"
+          ],
+          "rubric": [
+            "P*L**3/(3*E*I)",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.deflection.5",
+          "skill_id": "materials.deflection",
+          "purpose": "retention",
+          "family_id": "materials.deflection.family-5",
+          "prompt": "同一线弹性梁E加倍、其他不变，挠度绝对值减半吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。"
+          ],
+          "rubric": [
+            "是",
+            "确认坐标和符号后建立EI与曲率关系；支座反力、分段弯矩、积分常数和边界条件分别核对。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.stress",
+      "name": "应力状态、主应力与广义虎克定律",
+      "aliases": [
+        "stress"
+      ],
+      "prerequisites": [
+        "materials.axial",
+        "materials.shear"
+      ],
+      "tier": "core",
+      "teaching": "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.stress.1",
+          "skill_id": "materials.stress",
+          "purpose": "diagnostic",
+          "family_id": "materials.stress.family-1",
+          "prompt": "平面应力sigma_x=10,sigma_y=0,tau=0，最大主应力。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。"
+          ],
+          "rubric": [
+            "10",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.stress.2",
+          "skill_id": "materials.stress",
+          "purpose": "diagnostic",
+          "family_id": "materials.stress.family-2",
+          "prompt": "纯剪tau=5的两个面内主应力为5与-5吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。"
+          ],
+          "rubric": [
+            "是",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stress.3",
+          "skill_id": "materials.stress",
+          "purpose": "learning",
+          "family_id": "materials.stress.family-3",
+          "prompt": "主平面上的剪应力为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。"
+          ],
+          "rubric": [
+            "是",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stress.4",
+          "skill_id": "materials.stress",
+          "purpose": "transfer",
+          "family_id": "materials.stress.family-4",
+          "prompt": "单轴拉伸下泊松比为正，横向应变通常为负吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。"
+          ],
+          "rubric": [
+            "是",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stress.5",
+          "skill_id": "materials.stress",
+          "purpose": "retention",
+          "family_id": "materials.stress.family-5",
+          "prompt": "最大剪应力总等于最大主应力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。"
+          ],
+          "rubric": [
+            "否",
+            "平面应力主应力来自应力张量特征值；弹性应变还包含泊松效应。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.combined",
+      "name": "强度理论与组合变形",
+      "aliases": [
+        "combined"
+      ],
+      "prerequisites": [
+        "materials.stress",
+        "materials.bending",
+        "materials.torsion"
+      ],
+      "tier": "core",
+      "teaching": "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.combined.1",
+          "skill_id": "materials.combined",
+          "purpose": "diagnostic",
+          "family_id": "materials.combined.family-1",
+          "prompt": "线弹性小变形下，轴向拉压与弯曲的正应力可代数叠加吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。"
+          ],
+          "rubric": [
+            "是",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.combined.2",
+          "skill_id": "materials.combined",
+          "purpose": "diagnostic",
+          "family_id": "materials.combined.family-2",
+          "prompt": "延性材料采用von Mises时，单轴应力sigma的等效应力为|sigma|吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。"
+          ],
+          "rubric": [
+            "是",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.combined.3",
+          "skill_id": "materials.combined",
+          "purpose": "learning",
+          "family_id": "materials.combined.family-3",
+          "prompt": "纯剪tau=2时von Mises等效应力数值。",
+          "answer": "2*sqrt(3)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。"
+          ],
+          "rubric": [
+            "2*sqrt(3)",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.combined.4",
+          "skill_id": "materials.combined",
+          "purpose": "transfer",
+          "family_id": "materials.combined.family-4",
+          "prompt": "偏心拉压可等效为轴力加弯矩吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。"
+          ],
+          "rubric": [
+            "是",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.combined.5",
+          "skill_id": "materials.combined",
+          "purpose": "retention",
+          "family_id": "materials.combined.family-5",
+          "prompt": "只计算一个应力分量就足以处理所有弯扭组合强度问题吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。"
+          ],
+          "rubric": [
+            "否",
+            "先叠加适用线弹性应力分量，再按材料、应力状态和规定准则评价；准则不能任意混用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.energy",
+      "name": "应变能、能量法与叠加",
+      "aliases": [
+        "energy"
+      ],
+      "prerequisites": [
+        "materials.axial",
+        "math09.partial"
+      ],
+      "tier": "core",
+      "teaching": "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.energy.1",
+          "skill_id": "materials.energy",
+          "purpose": "diagnostic",
+          "family_id": "materials.energy.family-1",
+          "prompt": "线弹性轴杆应变能为N²L/(2EA)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。"
+          ],
+          "rubric": [
+            "是",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.energy.2",
+          "skill_id": "materials.energy",
+          "purpose": "diagnostic",
+          "family_id": "materials.energy.family-2",
+          "prompt": "弹簧刚度k=2、变形x=3，应变能数值。",
+          "answer": "9",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。"
+          ],
+          "rubric": [
+            "9",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.energy.3",
+          "skill_id": "materials.energy",
+          "purpose": "learning",
+          "family_id": "materials.energy.family-3",
+          "prompt": "线性系统载荷加倍，应变能加倍吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。"
+          ],
+          "rubric": [
+            "否",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.energy.4",
+          "skill_id": "materials.energy",
+          "purpose": "transfer",
+          "family_id": "materials.energy.family-4",
+          "prompt": "线弹性固定体系内，位移可用对应荷载的应变能偏导得到吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。"
+          ],
+          "rubric": [
+            "是",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.energy.5",
+          "skill_id": "materials.energy",
+          "purpose": "retention",
+          "family_id": "materials.energy.family-5",
+          "prompt": "不同支承条件的解可以不调整约束直接叠加吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。"
+          ],
+          "rubric": [
+            "否",
+            "轴杆应变能N²L/(2EA)；卡氏定理等需对应弹性与载荷条件，叠加以线性为前提。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.indeterminate",
+      "name": "简单超静定与变形协调",
+      "aliases": [
+        "indeterminate"
+      ],
+      "prerequisites": [
+        "materials.axial",
+        "materials.energy",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "teaching": "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.indeterminate.1",
+          "skill_id": "materials.indeterminate",
+          "purpose": "diagnostic",
+          "family_id": "materials.indeterminate.family-1",
+          "prompt": "两端固定均匀杆升温、无外载时，热变形约束可引起内力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。"
+          ],
+          "rubric": [
+            "是",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.indeterminate.2",
+          "skill_id": "materials.indeterminate",
+          "purpose": "diagnostic",
+          "family_id": "materials.indeterminate.family-2",
+          "prompt": "超静定问题只靠刚体平衡方程总能唯一求解吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。"
+          ],
+          "rubric": [
+            "否",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.indeterminate.3",
+          "skill_id": "materials.indeterminate",
+          "purpose": "learning",
+          "family_id": "materials.indeterminate.family-3",
+          "prompt": "并联两根等长杆、轴向刚度相同、共同承担100牛，单杆力大小。",
+          "answer": "50",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。"
+          ],
+          "rubric": [
+            "50",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.indeterminate.4",
+          "skill_id": "materials.indeterminate",
+          "purpose": "transfer",
+          "family_id": "materials.indeterminate.family-4",
+          "prompt": "超静定杆件受力分配可能依赖EA吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。"
+          ],
+          "rubric": [
+            "是",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.indeterminate.5",
+          "skill_id": "materials.indeterminate",
+          "purpose": "retention",
+          "family_id": "materials.indeterminate.family-5",
+          "prompt": "变形协调可替代本构关系而不需要任何材料性质吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。"
+          ],
+          "rubric": [
+            "否",
+            "未知反力超过独立平衡方程时，补充变形协调和本构关系；不是任意增加平衡方程。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.stability",
+      "name": "压杆稳定、欧拉公式与适用范围",
+      "aliases": [
+        "stability"
+      ],
+      "prerequisites": [
+        "materials.geometry",
+        "materials.axial",
+        "math07.order"
+      ],
+      "tier": "core",
+      "teaching": "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.stability.1",
+          "skill_id": "materials.stability",
+          "purpose": "diagnostic",
+          "family_id": "materials.stability.family-1",
+          "prompt": "两端理想铰支细长杆有效长度系数mu。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。"
+          ],
+          "rubric": [
+            "1",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.stability.2",
+          "skill_id": "materials.stability",
+          "purpose": "diagnostic",
+          "family_id": "materials.stability.family-2",
+          "prompt": "其他不变时有效长度加倍，欧拉临界力变为原来的1/4吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。"
+          ],
+          "rubric": [
+            "是",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stability.3",
+          "skill_id": "materials.stability",
+          "purpose": "learning",
+          "family_id": "materials.stability.family-3",
+          "prompt": "理想固定-自由杆有效长度系数。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。"
+          ],
+          "rubric": [
+            "2",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.stability.4",
+          "skill_id": "materials.stability",
+          "purpose": "transfer",
+          "family_id": "materials.stability.family-4",
+          "prompt": "欧拉公式可无条件用于所有短粗压杆吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。"
+          ],
+          "rubric": [
+            "否",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.stability.5",
+          "skill_id": "materials.stability",
+          "purpose": "retention",
+          "family_id": "materials.stability.family-5",
+          "prompt": "截面回转半径i=sqrt(I/A)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。"
+          ],
+          "rubric": [
+            "是",
+            "细长线弹性杆的欧拉临界力pi²EI/(mu*L)²，长度系数随约束变化；短粗杆不能机械套用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.fatigue",
+      "name": "冲击、疲劳与循环特征",
+      "aliases": [
+        "fatigue"
+      ],
+      "prerequisites": [
+        "materials.energy",
+        "materials.combined"
+      ],
+      "tier": "extension",
+      "teaching": "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.fatigue.1",
+          "skill_id": "materials.fatigue",
+          "purpose": "diagnostic",
+          "family_id": "materials.fatigue.family-1",
+          "prompt": "对称交变应力的循环特征R。",
+          "answer": "-1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。"
+          ],
+          "rubric": [
+            "-1",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.fatigue.2",
+          "skill_id": "materials.fatigue",
+          "purpose": "diagnostic",
+          "family_id": "materials.fatigue.family-2",
+          "prompt": "脉动应力sigma_min=0,sigma_max>0时R。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。"
+          ],
+          "rubric": [
+            "0",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "materials.fatigue.3",
+          "skill_id": "materials.fatigue",
+          "purpose": "learning",
+          "family_id": "materials.fatigue.family-3",
+          "prompt": "应力幅等于(sigma_max-sigma_min)/2吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。"
+          ],
+          "rubric": [
+            "是",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.fatigue.4",
+          "skill_id": "materials.fatigue",
+          "purpose": "transfer",
+          "family_id": "materials.fatigue.family-4",
+          "prompt": "平均应力为0就意味着不会疲劳破坏吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。"
+          ],
+          "rubric": [
+            "否",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.fatigue.5",
+          "skill_id": "materials.fatigue",
+          "purpose": "retention",
+          "family_id": "materials.fatigue.family-5",
+          "prompt": "相同最大应力下，冲击效应可不加分析直接等同静载吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。"
+          ],
+          "rubric": [
+            "否",
+            "区分静载、冲击和交变载荷；循环特征R=sigma_min/sigma_max需分母非零，疲劳不能仅按静强度判断。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "materials.boundary",
+      "name": "梁的边界条件与连续协调",
+      "aliases": [
+        "boundary"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "math04.primitive"
+      ],
+      "tier": "core",
+      "teaching": "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "materials.boundary.1",
+          "skill_id": "materials.boundary",
+          "purpose": "diagnostic",
+          "family_id": "materials.boundary.family-1",
+          "prompt": "理想悬臂梁固定端的挠度与转角均为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.boundary.2",
+          "skill_id": "materials.boundary",
+          "purpose": "diagnostic",
+          "family_id": "materials.boundary.family-2",
+          "prompt": "理想简支梁端部只有挠度为0，就能推断该端转角也为0吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。"
+          ],
+          "rubric": [
+            "否",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.boundary.3",
+          "skill_id": "materials.boundary",
+          "purpose": "learning",
+          "family_id": "materials.boundary.family-3",
+          "prompt": "求梁挠度的两次积分产生的常数应由边界或连续协调条件确定吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.boundary.4",
+          "skill_id": "materials.boundary",
+          "purpose": "transfer",
+          "family_id": "materials.boundary.family-4",
+          "prompt": "简支梁无外加端力偶时端弯矩为0，但端部转角一般不为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "materials.boundary.5",
+          "skill_id": "materials.boundary",
+          "purpose": "retention",
+          "family_id": "materials.boundary.family-5",
+          "prompt": "自由端无集中力与力偶时应优先用剪力和弯矩条件，而非直接假设挠度为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想悬臂固定端挠度和转角为零；简支端挠度为零但通常不固定转角；连接处需按实际连接确认连续条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

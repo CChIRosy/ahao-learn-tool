@@ -1,0 +1,1289 @@
+{
+  "id": "math09",
+  "name": "多元函数微分法及其应用",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
+  "skills": [
+    {
+      "id": "math09.limits",
+      "name": "多元极限、连续与平面点集",
+      "aliases": [
+        "limits"
+      ],
+      "prerequisites": [
+        "math01.limit"
+      ],
+      "tier": "core",
+      "teaching": "不同路径结果不等可否定极限，有限条路径相等不能证明存在。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.limits.1",
+          "skill_id": "math09.limits",
+          "purpose": "diagnostic",
+          "family_id": "math09.limits.family-1",
+          "prompt": "xy/(x²+y²)在原点有极限吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。"
+          ],
+          "rubric": [
+            "否",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.limits.2",
+          "skill_id": "math09.limits",
+          "purpose": "diagnostic",
+          "family_id": "math09.limits.family-2",
+          "prompt": "x²+y²在原点的极限。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。"
+          ],
+          "rubric": [
+            "0",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.limits.3",
+          "skill_id": "math09.limits",
+          "purpose": "learning",
+          "family_id": "math09.limits.family-3",
+          "prompt": "只沿x轴、y轴趋近得到相同值就能证明二元极限存在吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。"
+          ],
+          "rubric": [
+            "否",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.limits.4",
+          "skill_id": "math09.limits",
+          "purpose": "transfer",
+          "family_id": "math09.limits.family-4",
+          "prompt": "闭圆盘x²+y²<=1包含边界吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。"
+          ],
+          "rubric": [
+            "是",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.limits.5",
+          "skill_id": "math09.limits",
+          "purpose": "retention",
+          "family_id": "math09.limits.family-5",
+          "prompt": "f(x,y)=x+y在整个平面连续吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。"
+          ],
+          "rubric": [
+            "是",
+            "不同路径结果不等可否定极限，有限条路径相等不能证明存在。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math09.partial",
+      "name": "偏导、高阶偏导与全微分",
+      "aliases": [
+        "partial"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math09.limits"
+      ],
+      "tier": "core",
+      "teaching": "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.partial.1",
+          "skill_id": "math09.partial",
+          "purpose": "diagnostic",
+          "family_id": "math09.partial.family-1",
+          "prompt": "f=x²y，求f_x。",
+          "answer": "2*x*y",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。"
+          ],
+          "rubric": [
+            "2*x*y",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.partial.2",
+          "skill_id": "math09.partial",
+          "purpose": "diagnostic",
+          "family_id": "math09.partial.family-2",
+          "prompt": "f=sin(xy)，求f_y。",
+          "answer": "x*cos(x*y)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。"
+          ],
+          "rubric": [
+            "x*cos(x*y)",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.partial.3",
+          "skill_id": "math09.partial",
+          "purpose": "learning",
+          "family_id": "math09.partial.family-3",
+          "prompt": "f=x²+y²在(1,2)处全微分为2dx+4dy吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。"
+          ],
+          "rubric": [
+            "是",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.partial.4",
+          "skill_id": "math09.partial",
+          "purpose": "transfer",
+          "family_id": "math09.partial.family-4",
+          "prompt": "f=x²y³，求f_xy。",
+          "answer": "6*x*y**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。"
+          ],
+          "rubric": [
+            "6*x*y**2",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.partial.5",
+          "skill_id": "math09.partial",
+          "purpose": "retention",
+          "family_id": "math09.partial.family-5",
+          "prompt": "某点两个一阶偏导存在足以保证该点可微吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。"
+          ],
+          "rubric": [
+            "否",
+            "求偏导时其他自变量固定；偏导存在不保证全微分存在，连续偏导是充分条件之一。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math09.chain",
+      "name": "多元链式法则与隐函数",
+      "aliases": [
+        "chain"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "math02.chain"
+      ],
+      "tier": "core",
+      "teaching": "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.chain.1",
+          "skill_id": "math09.chain",
+          "purpose": "diagnostic",
+          "family_id": "math09.chain.family-1",
+          "prompt": "z=x²+y²,x=t,y=2t，求dz/dt。",
+          "answer": "10*t",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。"
+          ],
+          "rubric": [
+            "10*t",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.chain.2",
+          "skill_id": "math09.chain",
+          "purpose": "diagnostic",
+          "family_id": "math09.chain.family-2",
+          "prompt": "z=xy,x=t²,y=t，求dz/dt。",
+          "answer": "3*t**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。"
+          ],
+          "rubric": [
+            "3*t**2",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.chain.3",
+          "skill_id": "math09.chain",
+          "purpose": "learning",
+          "family_id": "math09.chain.family-3",
+          "prompt": "F=x²+y²+z²-1=0,z不为0，求z_x。",
+          "answer": "-x/z",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。"
+          ],
+          "rubric": [
+            "-x/z",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.chain.4",
+          "skill_id": "math09.chain",
+          "purpose": "transfer",
+          "family_id": "math09.chain.family-4",
+          "prompt": "z=f(x,y),x=x(t),y=y(t)，总导数只包含f_x*x'吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。"
+          ],
+          "rubric": [
+            "否",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.chain.5",
+          "skill_id": "math09.chain",
+          "purpose": "retention",
+          "family_id": "math09.chain.family-5",
+          "prompt": "z=exp(x+y),x=t,y=-t，求dz/dt。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。"
+          ],
+          "rubric": [
+            "0",
+            "列清依赖路径，沿每条路径相乘再求和；隐函数求导检查相应偏导非零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math09.geometry",
+      "name": "切平面、法线、方向导数与梯度",
+      "aliases": [
+        "geometry"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "math08.vectors"
+      ],
+      "tier": "core",
+      "teaching": "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.geometry.1",
+          "skill_id": "math09.geometry",
+          "purpose": "diagnostic",
+          "family_id": "math09.geometry.family-1",
+          "prompt": "f=x²+y²在(1,2)处梯度。",
+          "answer": "2,4",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。"
+          ],
+          "rubric": [
+            "2,4",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.geometry.2",
+          "skill_id": "math09.geometry",
+          "purpose": "diagnostic",
+          "family_id": "math09.geometry.family-2",
+          "prompt": "f=x+y在方向(1,1)上的单位方向导数。",
+          "answer": "sqrt(2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。"
+          ],
+          "rubric": [
+            "sqrt(2)",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.geometry.3",
+          "skill_id": "math09.geometry",
+          "purpose": "learning",
+          "family_id": "math09.geometry.family-3",
+          "prompt": "曲面z=x²+y²在(1,0)处切平面z=2x-1吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。"
+          ],
+          "rubric": [
+            "是",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.geometry.4",
+          "skill_id": "math09.geometry",
+          "purpose": "transfer",
+          "family_id": "math09.geometry.family-4",
+          "prompt": "f=x²+y²在(0,0)梯度为零，任意单位方向导数均为零吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。"
+          ],
+          "rubric": [
+            "是",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.geometry.5",
+          "skill_id": "math09.geometry",
+          "purpose": "retention",
+          "family_id": "math09.geometry.family-5",
+          "prompt": "求f=3x+4y在单位方向上的最大方向导数。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。"
+          ],
+          "rubric": [
+            "5",
+            "方向导数使用单位方向；梯度给出局部最快增加方向，切平面以偏导构造。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math09.extrema",
+      "name": "多元极值与拉格朗日乘数",
+      "aliases": [
+        "extrema"
+      ],
+      "prerequisites": [
+        "math09.partial"
+      ],
+      "tier": "core",
+      "teaching": "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.extrema.1",
+          "skill_id": "math09.extrema",
+          "purpose": "diagnostic",
+          "family_id": "math09.extrema.family-1",
+          "prompt": "x²+y²在平面上的最小值。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。"
+          ],
+          "rubric": [
+            "0",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.extrema.2",
+          "skill_id": "math09.extrema",
+          "purpose": "diagnostic",
+          "family_id": "math09.extrema.family-2",
+          "prompt": "f=x²-y²在原点为局部极小吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。"
+          ],
+          "rubric": [
+            "否",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.extrema.3",
+          "skill_id": "math09.extrema",
+          "purpose": "learning",
+          "family_id": "math09.extrema.family-3",
+          "prompt": "x+y=2约束下x²+y²的最小值。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。"
+          ],
+          "rubric": [
+            "2",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.extrema.4",
+          "skill_id": "math09.extrema",
+          "purpose": "transfer",
+          "family_id": "math09.extrema.family-4",
+          "prompt": "单位圆上x+y的最大值。",
+          "answer": "sqrt(2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。"
+          ],
+          "rubric": [
+            "sqrt(2)",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.extrema.5",
+          "skill_id": "math09.extrema",
+          "purpose": "retention",
+          "family_id": "math09.extrema.family-5",
+          "prompt": "拉格朗日方程解出候选点后可不检查约束直接接受吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。"
+          ],
+          "rubric": [
+            "否",
+            "驻点需分类；条件极值核对约束及异常点，紧集最值还考虑边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math09.normal",
+      "name": "法线、隐函数条件与全微分近似",
+      "aliases": [
+        "normal"
+      ],
+      "prerequisites": [
+        "math09.chain",
+        "math09.geometry"
+      ],
+      "tier": "core",
+      "teaching": "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math09.normal.1",
+          "skill_id": "math09.normal",
+          "purpose": "diagnostic",
+          "family_id": "math09.normal.family-1",
+          "prompt": "球面x²+y²+z²=1在(1,0,0)处法线方向可取(1,0,0)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。"
+          ],
+          "rubric": [
+            "是",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.normal.2",
+          "skill_id": "math09.normal",
+          "purpose": "diagnostic",
+          "family_id": "math09.normal.family-2",
+          "prompt": "F(x,y)=0在F_y=0时，隐函数定理是否仍自动保证y(x)？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。"
+          ],
+          "rubric": [
+            "否",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.normal.3",
+          "skill_id": "math09.normal",
+          "purpose": "learning",
+          "family_id": "math09.normal.family-3",
+          "prompt": "f=x²+y²在(1,1)处dx=0.01,dy=-0.01，全微分值。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。"
+          ],
+          "rubric": [
+            "0",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math09.normal.4",
+          "skill_id": "math09.normal",
+          "purpose": "transfer",
+          "family_id": "math09.normal.family-4",
+          "prompt": "梯度为零的隐曲面点能不加分析直接用梯度作非零法向吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。"
+          ],
+          "rubric": [
+            "否",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math09.normal.5",
+          "skill_id": "math09.normal",
+          "purpose": "retention",
+          "family_id": "math09.normal.family-5",
+          "prompt": "z=xy在(2,3)处全微分为3dx+2dy吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。"
+          ],
+          "rubric": [
+            "是",
+            "隐曲面法线可用梯度；梯度非零等条件必须检查，微分是局部线性近似。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

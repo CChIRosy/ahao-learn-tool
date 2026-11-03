@@ -1,0 +1,1461 @@
+{
+  "id": "math02",
+  "name": "导数与微分",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math02.definition",
+      "name": "导数定义与可导性",
+      "aliases": [
+        "definition"
+      ],
+      "prerequisites": [
+        "math01.limit",
+        "math01.continuity"
+      ],
+      "tier": "core",
+      "teaching": "导数是差商极限；可导必连续，连续未必可导。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.definition.1",
+          "skill_id": "math02.definition",
+          "purpose": "diagnostic",
+          "family_id": "math02.definition.family-1",
+          "prompt": "用定义求x²在x=2处导数。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "导数是差商极限；可导必连续，连续未必可导。"
+          ],
+          "rubric": [
+            "4",
+            "导数是差商极限；可导必连续，连续未必可导。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.definition.2",
+          "skill_id": "math02.definition",
+          "purpose": "diagnostic",
+          "family_id": "math02.definition.family-2",
+          "prompt": "|x|在x=0可导吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "导数是差商极限；可导必连续，连续未必可导。"
+          ],
+          "rubric": [
+            "否",
+            "导数是差商极限；可导必连续，连续未必可导。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.definition.3",
+          "skill_id": "math02.definition",
+          "purpose": "learning",
+          "family_id": "math02.definition.family-3",
+          "prompt": "可导函数在该点必连续吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "导数是差商极限；可导必连续，连续未必可导。"
+          ],
+          "rubric": [
+            "是",
+            "导数是差商极限；可导必连续，连续未必可导。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.definition.4",
+          "skill_id": "math02.definition",
+          "purpose": "transfer",
+          "family_id": "math02.definition.family-4",
+          "prompt": "f(x)=x³，求f在x=1处导数。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "导数是差商极限；可导必连续，连续未必可导。"
+          ],
+          "rubric": [
+            "3",
+            "导数是差商极限；可导必连续，连续未必可导。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.definition.5",
+          "skill_id": "math02.definition",
+          "purpose": "retention",
+          "family_id": "math02.definition.family-5",
+          "prompt": "函数连续是否足以保证可导？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "导数是差商极限；可导必连续，连续未必可导。"
+          ],
+          "rubric": [
+            "否",
+            "导数是差商极限；可导必连续，连续未必可导。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math02.basic",
+      "name": "基本函数求导",
+      "aliases": [
+        "基本求导",
+        "basic"
+      ],
+      "prerequisites": [
+        "math02.definition"
+      ],
+      "tier": "core",
+      "teaching": "核对函数和求导变量；三角、指数、对数的基本公式分别适用。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.basic.1",
+          "skill_id": "math02.basic",
+          "purpose": "diagnostic",
+          "family_id": "math02.basic.family-1",
+          "prompt": "sin(u)对u求导。",
+          "answer": "cos(u)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。"
+          ],
+          "rubric": [
+            "cos(u)",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.basic.2",
+          "skill_id": "math02.basic",
+          "purpose": "diagnostic",
+          "family_id": "math02.basic.family-2",
+          "prompt": "x²对x求导。",
+          "answer": "2*x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。"
+          ],
+          "rubric": [
+            "2*x",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.basic.3",
+          "skill_id": "math02.basic",
+          "purpose": "learning",
+          "family_id": "math02.basic.family-3",
+          "prompt": "log(x)在x>0上求导。",
+          "answer": "1/x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。"
+          ],
+          "rubric": [
+            "1/x",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.basic.4",
+          "skill_id": "math02.basic",
+          "purpose": "transfer",
+          "family_id": "math02.basic.family-4",
+          "prompt": "exp(x)对x求导。",
+          "answer": "exp(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。"
+          ],
+          "rubric": [
+            "exp(x)",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.basic.5",
+          "skill_id": "math02.basic",
+          "purpose": "retention",
+          "family_id": "math02.basic.family-5",
+          "prompt": "cos(x)对x求导。",
+          "answer": "-sin(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。"
+          ],
+          "rubric": [
+            "-sin(x)",
+            "核对函数和求导变量；三角、指数、对数的基本公式分别适用。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math02.composition",
+      "name": "复合函数结构识别",
+      "aliases": [
+        "内外层",
+        "复合结构",
+        "composition"
+      ],
+      "prerequisites": [
+        "math01.function"
+      ],
+      "tier": "core",
+      "teaching": "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.composition.1",
+          "skill_id": "math02.composition",
+          "purpose": "diagnostic",
+          "family_id": "math02.composition.family-1",
+          "prompt": "sin(x²)的内层可取x²吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。"
+          ],
+          "rubric": [
+            "是",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.composition.2",
+          "skill_id": "math02.composition",
+          "purpose": "diagnostic",
+          "family_id": "math02.composition.family-2",
+          "prompt": "exp(3x)的外层是exp(u)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。"
+          ],
+          "rubric": [
+            "是",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math02.composition.3",
+          "skill_id": "math02.composition",
+          "purpose": "learning",
+          "family_id": "math02.composition.family-3",
+          "prompt": "解释log(1+x²)的内层和外层。",
+          "answer": "内层u=1+x²，外层log(u)",
+          "answer_type": "open",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。"
+          ],
+          "rubric": [
+            "内层u=1+x²，外层log(u)",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.composition.4",
+          "skill_id": "math02.composition",
+          "purpose": "transfer",
+          "family_id": "math02.composition.family-4",
+          "prompt": "(2x+1)^4的内层导数是多少？",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。"
+          ],
+          "rubric": [
+            "2",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.composition.5",
+          "skill_id": "math02.composition",
+          "purpose": "retention",
+          "family_id": "math02.composition.family-5",
+          "prompt": "sin(cos(x))的最外层是sin(u)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。"
+          ],
+          "rubric": [
+            "是",
+            "先把表达式拆成外层函数和内层变量；识别结构不等同于已会链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math02.chain",
+      "name": "链式法则",
+      "aliases": [
+        "复合求导",
+        "链式求导",
+        "chain"
+      ],
+      "prerequisites": [
+        "math02.basic",
+        "math02.composition"
+      ],
+      "tier": "core",
+      "teaching": "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.chain.1",
+          "skill_id": "math02.chain",
+          "purpose": "diagnostic",
+          "family_id": "math02.chain.family-1",
+          "prompt": "求sin(x²)对x的导数。",
+          "answer": "2*x*cos(x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。"
+          ],
+          "rubric": [
+            "2*x*cos(x**2)",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.chain.2",
+          "skill_id": "math02.chain",
+          "purpose": "diagnostic",
+          "family_id": "math02.chain.family-2",
+          "prompt": "求cos(3x)对x的导数。",
+          "answer": "-3*sin(3*x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。"
+          ],
+          "rubric": [
+            "-3*sin(3*x)",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.chain.3",
+          "skill_id": "math02.chain",
+          "purpose": "learning",
+          "family_id": "math02.chain.family-3",
+          "prompt": "求exp(2x)对x的导数。",
+          "answer": "2*exp(2*x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。"
+          ],
+          "rubric": [
+            "2*exp(2*x)",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.chain.4",
+          "skill_id": "math02.chain",
+          "purpose": "transfer",
+          "family_id": "math02.chain.family-4",
+          "prompt": "求(3x-1)^4的导数，并说明内层因子来源。",
+          "answer": "12*(3*x-1)**3",
+          "answer_type": "expression",
+          "requires_explanation": true,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。"
+          ],
+          "rubric": [
+            "12*(3*x-1)**3",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.chain.5",
+          "skill_id": "math02.chain",
+          "purpose": "retention",
+          "family_id": "math02.chain.family-5",
+          "prompt": "求log(1+x²)的导数。",
+          "answer": "2*x/(1+x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。"
+          ],
+          "rubric": [
+            "2*x/(1+x**2)",
+            "外层对内层求导，再乘内层对自变量的导数；这是变化率的复合。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math02.rules",
+      "name": "和差、乘积与商求导",
+      "aliases": [
+        "rules"
+      ],
+      "prerequisites": [
+        "math02.basic"
+      ],
+      "tier": "core",
+      "teaching": "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.rules.1",
+          "skill_id": "math02.rules",
+          "purpose": "diagnostic",
+          "family_id": "math02.rules.family-1",
+          "prompt": "求x*sin(x)的导数。",
+          "answer": "sin(x)+x*cos(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。"
+          ],
+          "rubric": [
+            "sin(x)+x*cos(x)",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.rules.2",
+          "skill_id": "math02.rules",
+          "purpose": "diagnostic",
+          "family_id": "math02.rules.family-2",
+          "prompt": "求x/(1+x)的导数，x不等于-1。",
+          "answer": "1/(1+x)**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。"
+          ],
+          "rubric": [
+            "1/(1+x)**2",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.rules.3",
+          "skill_id": "math02.rules",
+          "purpose": "learning",
+          "family_id": "math02.rules.family-3",
+          "prompt": "求x²+sin(x)的导数。",
+          "answer": "2*x+cos(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。"
+          ],
+          "rubric": [
+            "2*x+cos(x)",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.rules.4",
+          "skill_id": "math02.rules",
+          "purpose": "transfer",
+          "family_id": "math02.rules.family-4",
+          "prompt": "求x²*exp(x)的导数。",
+          "answer": "exp(x)*(2*x+x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。"
+          ],
+          "rubric": [
+            "exp(x)*(2*x+x**2)",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.rules.5",
+          "skill_id": "math02.rules",
+          "purpose": "retention",
+          "family_id": "math02.rules.family-5",
+          "prompt": "求sin(x)/x的导数，x不为0。",
+          "answer": "(x*cos(x)-sin(x))/x**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。"
+          ],
+          "rubric": [
+            "(x*cos(x)-sin(x))/x**2",
+            "乘积导数有两项；商法则的分母为原分母平方，先确认分母不为零。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math02.higher",
+      "name": "高阶导数",
+      "aliases": [
+        "higher"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "teaching": "高阶导数是重复求导；注意链式系数每次都会出现。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.higher.1",
+          "skill_id": "math02.higher",
+          "purpose": "diagnostic",
+          "family_id": "math02.higher.family-1",
+          "prompt": "求x³的二阶导数。",
+          "answer": "6*x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "高阶导数是重复求导；注意链式系数每次都会出现。"
+          ],
+          "rubric": [
+            "6*x",
+            "高阶导数是重复求导；注意链式系数每次都会出现。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.higher.2",
+          "skill_id": "math02.higher",
+          "purpose": "diagnostic",
+          "family_id": "math02.higher.family-2",
+          "prompt": "求sin(x)的二阶导数。",
+          "answer": "-sin(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "高阶导数是重复求导；注意链式系数每次都会出现。"
+          ],
+          "rubric": [
+            "-sin(x)",
+            "高阶导数是重复求导；注意链式系数每次都会出现。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.higher.3",
+          "skill_id": "math02.higher",
+          "purpose": "learning",
+          "family_id": "math02.higher.family-3",
+          "prompt": "求exp(2x)的二阶导数。",
+          "answer": "4*exp(2*x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "高阶导数是重复求导；注意链式系数每次都会出现。"
+          ],
+          "rubric": [
+            "4*exp(2*x)",
+            "高阶导数是重复求导；注意链式系数每次都会出现。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.higher.4",
+          "skill_id": "math02.higher",
+          "purpose": "transfer",
+          "family_id": "math02.higher.family-4",
+          "prompt": "求x^4的三阶导数。",
+          "answer": "24*x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "高阶导数是重复求导；注意链式系数每次都会出现。"
+          ],
+          "rubric": [
+            "24*x",
+            "高阶导数是重复求导；注意链式系数每次都会出现。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.higher.5",
+          "skill_id": "math02.higher",
+          "purpose": "retention",
+          "family_id": "math02.higher.family-5",
+          "prompt": "求cos(2x)的二阶导数。",
+          "answer": "-4*cos(2*x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "高阶导数是重复求导；注意链式系数每次都会出现。"
+          ],
+          "rubric": [
+            "-4*cos(2*x)",
+            "高阶导数是重复求导；注意链式系数每次都会出现。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math02.implicit",
+      "name": "隐函数、参数方程与微分",
+      "aliases": [
+        "implicit"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math02.rules"
+      ],
+      "tier": "core",
+      "teaching": "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math02.implicit.1",
+          "skill_id": "math02.implicit",
+          "purpose": "diagnostic",
+          "family_id": "math02.implicit.family-1",
+          "prompt": "x²+y²=1，在y不为0处求dy/dx。",
+          "answer": "-x/y",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。"
+          ],
+          "rubric": [
+            "-x/y",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.implicit.2",
+          "skill_id": "math02.implicit",
+          "purpose": "diagnostic",
+          "family_id": "math02.implicit.family-2",
+          "prompt": "x=t²,y=t³且t不为0，求dy/dx。",
+          "answer": "3*t/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。"
+          ],
+          "rubric": [
+            "3*t/2",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.implicit.3",
+          "skill_id": "math02.implicit",
+          "purpose": "learning",
+          "family_id": "math02.implicit.family-3",
+          "prompt": "y=x²，在x=2、dx=0.01时求dy。",
+          "answer": "0.04",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。"
+          ],
+          "rubric": [
+            "0.04",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.implicit.4",
+          "skill_id": "math02.implicit",
+          "purpose": "transfer",
+          "family_id": "math02.implicit.family-4",
+          "prompt": "x+y+y²=0，在1+2y不为0处求y'。",
+          "answer": "-1/(1+2*y)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。"
+          ],
+          "rubric": [
+            "-1/(1+2*y)",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math02.implicit.5",
+          "skill_id": "math02.implicit",
+          "purpose": "retention",
+          "family_id": "math02.implicit.family-5",
+          "prompt": "x=exp(t),y=t，求dy/dx。",
+          "answer": "exp(-t)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。"
+          ],
+          "rubric": [
+            "exp(-t)",
+            "隐式求导时y是x的函数；参数方程dy/dx=(dy/dt)/(dx/dt)，分母须非零；微分为导数乘增量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

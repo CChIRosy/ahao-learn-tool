@@ -1,0 +1,1061 @@
+{
+  "id": "math08",
+  "name": "向量代数与空间解析几何",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
+  "skills": [
+    {
+      "id": "math08.vectors",
+      "name": "向量线性运算、模与投影",
+      "aliases": [
+        "vectors"
+      ],
+      "prerequisites": [],
+      "tier": "core",
+      "teaching": "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math08.vectors.1",
+          "skill_id": "math08.vectors",
+          "purpose": "diagnostic",
+          "family_id": "math08.vectors.family-1",
+          "prompt": "向量(3,4,0)的模。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。"
+          ],
+          "rubric": [
+            "5",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.vectors.2",
+          "skill_id": "math08.vectors",
+          "purpose": "diagnostic",
+          "family_id": "math08.vectors.family-2",
+          "prompt": "(1,2,3)+(2,0,-1)的分量，用逗号分隔。",
+          "answer": "3,2,2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。"
+          ],
+          "rubric": [
+            "3,2,2",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.vectors.3",
+          "skill_id": "math08.vectors",
+          "purpose": "learning",
+          "family_id": "math08.vectors.family-3",
+          "prompt": "(3,4,0)在x轴正向的标量投影。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。"
+          ],
+          "rubric": [
+            "3",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.vectors.4",
+          "skill_id": "math08.vectors",
+          "purpose": "transfer",
+          "family_id": "math08.vectors.family-4",
+          "prompt": "单位向量的模等于多少？",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。"
+          ],
+          "rubric": [
+            "1",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.vectors.5",
+          "skill_id": "math08.vectors",
+          "purpose": "retention",
+          "family_id": "math08.vectors.family-5",
+          "prompt": "与(0,0,2)同向的单位向量。",
+          "answer": "0,0,1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。"
+          ],
+          "rubric": [
+            "0,0,1",
+            "分量运算与几何方向对应；投影需要指定方向及是否为有向标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math08.products",
+      "name": "数量积、向量积与混合积",
+      "aliases": [
+        "products"
+      ],
+      "prerequisites": [
+        "math08.vectors"
+      ],
+      "tier": "core",
+      "teaching": "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math08.products.1",
+          "skill_id": "math08.products",
+          "purpose": "diagnostic",
+          "family_id": "math08.products.family-1",
+          "prompt": "(1,2,0)点乘(3,0,0)。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。"
+          ],
+          "rubric": [
+            "3",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.products.2",
+          "skill_id": "math08.products",
+          "purpose": "diagnostic",
+          "family_id": "math08.products.family-2",
+          "prompt": "(1,0,0)叉乘(0,1,0)。",
+          "answer": "0,0,1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。"
+          ],
+          "rubric": [
+            "0,0,1",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.products.3",
+          "skill_id": "math08.products",
+          "purpose": "learning",
+          "family_id": "math08.products.family-3",
+          "prompt": "非零向量垂直时点积为多少？",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。"
+          ],
+          "rubric": [
+            "0",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.products.4",
+          "skill_id": "math08.products",
+          "purpose": "transfer",
+          "family_id": "math08.products.family-4",
+          "prompt": "交换叉积顺序，结果变号吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。"
+          ],
+          "rubric": [
+            "是",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.products.5",
+          "skill_id": "math08.products",
+          "purpose": "retention",
+          "family_id": "math08.products.family-5",
+          "prompt": "标准基i,j,k的混合积。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。"
+          ],
+          "rubric": [
+            "1",
+            "点积输出标量，叉积输出向量并遵守右手规则；混合积检验共面。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math08.planes",
+      "name": "平面方程、直线及夹角",
+      "aliases": [
+        "planes"
+      ],
+      "prerequisites": [
+        "math08.products"
+      ],
+      "tier": "core",
+      "teaching": "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math08.planes.1",
+          "skill_id": "math08.planes",
+          "purpose": "diagnostic",
+          "family_id": "math08.planes.family-1",
+          "prompt": "平面2x+3y-z=1的一个法向量。",
+          "answer": "2,3,-1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。"
+          ],
+          "rubric": [
+            "2,3,-1",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.planes.2",
+          "skill_id": "math08.planes",
+          "purpose": "diagnostic",
+          "family_id": "math08.planes.family-2",
+          "prompt": "直线(x,y,z)=(1,0,0)+t(2,1,0)的方向向量。",
+          "answer": "2,1,0",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。"
+          ],
+          "rubric": [
+            "2,1,0",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.planes.3",
+          "skill_id": "math08.planes",
+          "purpose": "learning",
+          "family_id": "math08.planes.family-3",
+          "prompt": "点(0,0,3)到平面z=0的距离。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。"
+          ],
+          "rubric": [
+            "3",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.planes.4",
+          "skill_id": "math08.planes",
+          "purpose": "transfer",
+          "family_id": "math08.planes.family-4",
+          "prompt": "直线方向与平面法向量平行，直线和平面垂直吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。"
+          ],
+          "rubric": [
+            "是",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.planes.5",
+          "skill_id": "math08.planes",
+          "purpose": "retention",
+          "family_id": "math08.planes.family-5",
+          "prompt": "两个平面法向量平行则两平面一定重合吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。"
+          ],
+          "rubric": [
+            "否",
+            "平面法向量与直线方向向量不同；夹角公式明确取锐角或有向角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math08.surfaces",
+      "name": "曲面、二次曲面与空间曲线投影",
+      "aliases": [
+        "surfaces"
+      ],
+      "prerequisites": [
+        "math08.planes"
+      ],
+      "tier": "core",
+      "teaching": "方程先判定几何对象；投影需消元并保留实数可行范围。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math08.surfaces.1",
+          "skill_id": "math08.surfaces",
+          "purpose": "diagnostic",
+          "family_id": "math08.surfaces.family-1",
+          "prompt": "x²+y²+z²=4的球半径。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。"
+          ],
+          "rubric": [
+            "2",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.surfaces.2",
+          "skill_id": "math08.surfaces",
+          "purpose": "diagnostic",
+          "family_id": "math08.surfaces.family-2",
+          "prompt": "x²+y²=1在三维中是圆柱面吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。"
+          ],
+          "rubric": [
+            "是",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.surfaces.3",
+          "skill_id": "math08.surfaces",
+          "purpose": "learning",
+          "family_id": "math08.surfaces.family-3",
+          "prompt": "曲线x²+y²=1,z=x投影到xy面为单位圆吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。"
+          ],
+          "rubric": [
+            "是",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.surfaces.4",
+          "skill_id": "math08.surfaces",
+          "purpose": "transfer",
+          "family_id": "math08.surfaces.family-4",
+          "prompt": "z=x²+y²是双曲抛物面吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。"
+          ],
+          "rubric": [
+            "否",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.surfaces.5",
+          "skill_id": "math08.surfaces",
+          "purpose": "retention",
+          "family_id": "math08.surfaces.family-5",
+          "prompt": "曲线x=cos(t),y=sin(t),z=t位于单位圆柱面上吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。"
+          ],
+          "rubric": [
+            "是",
+            "方程先判定几何对象；投影需消元并保留实数可行范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math08.mixed",
+      "name": "混合积、空间夹角与投影消元",
+      "aliases": [
+        "mixed"
+      ],
+      "prerequisites": [
+        "math08.products",
+        "math08.planes"
+      ],
+      "tier": "core",
+      "teaching": "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math08.mixed.1",
+          "skill_id": "math08.mixed",
+          "purpose": "diagnostic",
+          "family_id": "math08.mixed.family-1",
+          "prompt": "三向量(1,0,0),(0,2,0),(0,0,3)张成平行六面体体积。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。"
+          ],
+          "rubric": [
+            "6",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.mixed.2",
+          "skill_id": "math08.mixed",
+          "purpose": "diagnostic",
+          "family_id": "math08.mixed.family-2",
+          "prompt": "三个非零向量的混合积为0能判断共面吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。"
+          ],
+          "rubric": [
+            "是",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.mixed.3",
+          "skill_id": "math08.mixed",
+          "purpose": "learning",
+          "family_id": "math08.mixed.family-3",
+          "prompt": "方向(1,0,0)与平面x=0垂直吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。"
+          ],
+          "rubric": [
+            "是",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math08.mixed.4",
+          "skill_id": "math08.mixed",
+          "purpose": "transfer",
+          "family_id": "math08.mixed.family-4",
+          "prompt": "直线方向(1,1,0)与x轴夹角的余弦。",
+          "answer": "1/sqrt(2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。"
+          ],
+          "rubric": [
+            "1/sqrt(2)",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math08.mixed.5",
+          "skill_id": "math08.mixed",
+          "purpose": "retention",
+          "family_id": "math08.mixed.family-5",
+          "prompt": "空间曲线投影消去一个变量后还须保留原方程允许的范围吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。"
+          ],
+          "rubric": [
+            "是",
+            "混合积绝对值是平行六面体体积；用方向与法向量区分线线、线面、面面角。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "id": "math06",
+  "name": "定积分应用",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math06.area",
+      "name": "微元法与平面面积",
+      "aliases": [
+        "area"
+      ],
+      "prerequisites": [
+        "math05.definition",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "面积以非负微元累积；先确定交点、上下曲线及是否分段。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math06.area.1",
+          "skill_id": "math06.area",
+          "purpose": "diagnostic",
+          "family_id": "math06.area.family-1",
+          "prompt": "x与x²在[0,1]围成的面积。",
+          "answer": "1/6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。"
+          ],
+          "rubric": [
+            "1/6",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.area.2",
+          "skill_id": "math06.area",
+          "purpose": "diagnostic",
+          "family_id": "math06.area.family-2",
+          "prompt": "对有交叉的上下曲线，可以不分段直接积分差并当面积吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。"
+          ],
+          "rubric": [
+            "否",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math06.area.3",
+          "skill_id": "math06.area",
+          "purpose": "learning",
+          "family_id": "math06.area.family-3",
+          "prompt": "y=2与x轴在x=0到3间的面积。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。"
+          ],
+          "rubric": [
+            "6",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.area.4",
+          "skill_id": "math06.area",
+          "purpose": "transfer",
+          "family_id": "math06.area.family-4",
+          "prompt": "y=x²在[0,2]与x轴围成面积。",
+          "answer": "8/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。"
+          ],
+          "rubric": [
+            "8/3",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.area.5",
+          "skill_id": "math06.area",
+          "purpose": "retention",
+          "family_id": "math06.area.family-5",
+          "prompt": "面积微元(上-下)dx要求先判断上、下关系吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。"
+          ],
+          "rubric": [
+            "是",
+            "面积以非负微元累积；先确定交点、上下曲线及是否分段。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math06.volume",
+      "name": "旋转体与截面体积",
+      "aliases": [
+        "volume"
+      ],
+      "prerequisites": [
+        "math06.area"
+      ],
+      "tier": "core",
+      "teaching": "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math06.volume.1",
+          "skill_id": "math06.volume",
+          "purpose": "diagnostic",
+          "family_id": "math06.volume.family-1",
+          "prompt": "y=x在[0,1]绕x轴旋转体积。",
+          "answer": "pi/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。"
+          ],
+          "rubric": [
+            "pi/3",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.volume.2",
+          "skill_id": "math06.volume",
+          "purpose": "diagnostic",
+          "family_id": "math06.volume.family-2",
+          "prompt": "半径2、高3的圆柱体积。",
+          "answer": "12*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。"
+          ],
+          "rubric": [
+            "12*pi",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.volume.3",
+          "skill_id": "math06.volume",
+          "purpose": "learning",
+          "family_id": "math06.volume.family-3",
+          "prompt": "圆盘法的微元是pi*y² dx吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。"
+          ],
+          "rubric": [
+            "是",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math06.volume.4",
+          "skill_id": "math06.volume",
+          "purpose": "transfer",
+          "family_id": "math06.volume.family-4",
+          "prompt": "y=sqrt(x)在[0,2]绕x轴旋转体积。",
+          "answer": "2*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。"
+          ],
+          "rubric": [
+            "2*pi",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.volume.5",
+          "skill_id": "math06.volume",
+          "purpose": "retention",
+          "family_id": "math06.volume.family-5",
+          "prompt": "截面面积恒为5、长度为4的棱柱体积。",
+          "answer": "20",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。"
+          ],
+          "rubric": [
+            "20",
+            "圆盘法用pi乘半径平方；壳层法与圆盘法对应不同微元。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math06.arc",
+      "name": "平面曲线弧长",
+      "aliases": [
+        "arc"
+      ],
+      "prerequisites": [
+        "math02.rules",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math06.arc.1",
+          "skill_id": "math06.arc",
+          "purpose": "diagnostic",
+          "family_id": "math06.arc.family-1",
+          "prompt": "y=x在[0,1]的弧长。",
+          "answer": "sqrt(2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。"
+          ],
+          "rubric": [
+            "sqrt(2)",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.arc.2",
+          "skill_id": "math06.arc",
+          "purpose": "diagnostic",
+          "family_id": "math06.arc.family-2",
+          "prompt": "参数x=3t,y=4t，t从0到2的弧长。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。"
+          ],
+          "rubric": [
+            "10",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.arc.3",
+          "skill_id": "math06.arc",
+          "purpose": "learning",
+          "family_id": "math06.arc.family-3",
+          "prompt": "单位圆上从0到pi的半圆弧长。",
+          "answer": "pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。"
+          ],
+          "rubric": [
+            "pi",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.arc.4",
+          "skill_id": "math06.arc",
+          "purpose": "transfer",
+          "family_id": "math06.arc.family-4",
+          "prompt": "y=2x在[0,3]的弧长。",
+          "answer": "3*sqrt(5)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。"
+          ],
+          "rubric": [
+            "3*sqrt(5)",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.arc.5",
+          "skill_id": "math06.arc",
+          "purpose": "retention",
+          "family_id": "math06.arc.family-5",
+          "prompt": "弧长能用∫y dx直接计算吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。"
+          ],
+          "rubric": [
+            "否",
+            "弧长微元sqrt(1+y′²)dx；参数曲线使用速度向量模。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math06.physics",
+      "name": "功、压力与引力积分",
+      "aliases": [
+        "physics"
+      ],
+      "prerequisites": [
+        "math06.area",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math06.physics.1",
+          "skill_id": "math06.physics",
+          "purpose": "diagnostic",
+          "family_id": "math06.physics.family-1",
+          "prompt": "F(x)=2x牛，沿x从0到3米，功的数值（焦）。",
+          "answer": "9",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。"
+          ],
+          "rubric": [
+            "9",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.physics.2",
+          "skill_id": "math06.physics",
+          "purpose": "diagnostic",
+          "family_id": "math06.physics.family-2",
+          "prompt": "弹簧k=10牛/米，从0拉到0.2米，功（焦）。",
+          "answer": "1/5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。"
+          ],
+          "rubric": [
+            "1/5",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.physics.3",
+          "skill_id": "math06.physics",
+          "purpose": "learning",
+          "family_id": "math06.physics.family-3",
+          "prompt": "竖直矩形闸门上缘在水面，宽b高h，流体密度r，重力加速度取a，合力表达式。",
+          "answer": "r*a*b*h**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。"
+          ],
+          "rubric": [
+            "r*a*b*h**2/2",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math06.physics.4",
+          "skill_id": "math06.physics",
+          "purpose": "transfer",
+          "family_id": "math06.physics.family-4",
+          "prompt": "质点引力的方向分解在对称体积分中可以省略而不说明吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。"
+          ],
+          "rubric": [
+            "否",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math06.physics.5",
+          "skill_id": "math06.physics",
+          "purpose": "retention",
+          "family_id": "math06.physics.family-5",
+          "prompt": "沿位移方向恒力5牛作用2米的功（焦）。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。"
+          ],
+          "rubric": [
+            "10",
+            "先给出物理模型和单位，再写微元；静水压力按深度变化，引力按距离与方向分解。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

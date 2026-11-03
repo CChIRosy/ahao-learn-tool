@@ -1,0 +1,1282 @@
+{
+  "id": "math11",
+  "name": "曲线积分与曲面积分",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
+  "skills": [
+    {
+      "id": "math11.line1",
+      "name": "第一类曲线积分",
+      "aliases": [
+        "line1"
+      ],
+      "prerequisites": [
+        "math06.arc"
+      ],
+      "tier": "core",
+      "teaching": "ds是非负弧长元；第一类积分通常与行进方向无关。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.line1.1",
+          "skill_id": "math11.line1",
+          "purpose": "diagnostic",
+          "family_id": "math11.line1.family-1",
+          "prompt": "沿单位圆一周∫1 ds。",
+          "answer": "2*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。"
+          ],
+          "rubric": [
+            "2*pi",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line1.2",
+          "skill_id": "math11.line1",
+          "purpose": "diagnostic",
+          "family_id": "math11.line1.family-2",
+          "prompt": "反转曲线方向会使∫1 ds变号吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。"
+          ],
+          "rubric": [
+            "否",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.line1.3",
+          "skill_id": "math11.line1",
+          "purpose": "learning",
+          "family_id": "math11.line1.family-3",
+          "prompt": "线段(0,0)到(3,4)上∫2 ds。",
+          "answer": "10",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。"
+          ],
+          "rubric": [
+            "10",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line1.4",
+          "skill_id": "math11.line1",
+          "purpose": "transfer",
+          "family_id": "math11.line1.family-4",
+          "prompt": "单位上半圆∫1 ds。",
+          "answer": "pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。"
+          ],
+          "rubric": [
+            "pi",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line1.5",
+          "skill_id": "math11.line1",
+          "purpose": "retention",
+          "family_id": "math11.line1.family-5",
+          "prompt": "将ds直接写成dx而不考虑曲线斜率正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。"
+          ],
+          "rubric": [
+            "否",
+            "ds是非负弧长元；第一类积分通常与行进方向无关。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math11.line2",
+      "name": "第二类曲线积分与格林公式",
+      "aliases": [
+        "line2"
+      ],
+      "prerequisites": [
+        "math10.double",
+        "math11.line1"
+      ],
+      "tier": "core",
+      "teaching": "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.line2.1",
+          "skill_id": "math11.line2",
+          "purpose": "diagnostic",
+          "family_id": "math11.line2.family-1",
+          "prompt": "逆时针单位圆上∮(-y dx+x dy)。",
+          "answer": "2*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。"
+          ],
+          "rubric": [
+            "2*pi",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line2.2",
+          "skill_id": "math11.line2",
+          "purpose": "diagnostic",
+          "family_id": "math11.line2.family-2",
+          "prompt": "反向曲线积分∫Pdx+Qdy一般变号吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。"
+          ],
+          "rubric": [
+            "是",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.line2.3",
+          "skill_id": "math11.line2",
+          "purpose": "learning",
+          "family_id": "math11.line2.family-3",
+          "prompt": "单位正方形正向边界∮x dy。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。"
+          ],
+          "rubric": [
+            "1",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line2.4",
+          "skill_id": "math11.line2",
+          "purpose": "transfer",
+          "family_id": "math11.line2.family-4",
+          "prompt": "沿x轴从0到2的∫x dx。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。"
+          ],
+          "rubric": [
+            "2",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.line2.5",
+          "skill_id": "math11.line2",
+          "purpose": "retention",
+          "family_id": "math11.line2.family-5",
+          "prompt": "格林公式可不检查内部奇点直接用于穿孔场吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。"
+          ],
+          "rubric": [
+            "否",
+            "Pdx+Qdy依赖方向；格林公式需区域、边界正向和光滑性等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math11.potential",
+      "name": "路径无关与全微分",
+      "aliases": [
+        "potential"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "math11.line2"
+      ],
+      "tier": "core",
+      "teaching": "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.potential.1",
+          "skill_id": "math11.potential",
+          "purpose": "diagnostic",
+          "family_id": "math11.potential.family-1",
+          "prompt": "场(2x,2y)的势函数可取x²+y²吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。"
+          ],
+          "rubric": [
+            "是",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.potential.2",
+          "skill_id": "math11.potential",
+          "purpose": "diagnostic",
+          "family_id": "math11.potential.family-2",
+          "prompt": "∫(2x dx+2y dy)从(0,0)到(1,2)。",
+          "answer": "5",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。"
+          ],
+          "rubric": [
+            "5",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.potential.3",
+          "skill_id": "math11.potential",
+          "purpose": "learning",
+          "family_id": "math11.potential.family-3",
+          "prompt": "单连通区域内光滑场满足Q_x=P_y，可推出路径无关吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。"
+          ],
+          "rubric": [
+            "是",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.potential.4",
+          "skill_id": "math11.potential",
+          "purpose": "transfer",
+          "family_id": "math11.potential.family-4",
+          "prompt": "穿孔平面上旋度零必然存在全局单值势函数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。"
+          ],
+          "rubric": [
+            "否",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.potential.5",
+          "skill_id": "math11.potential",
+          "purpose": "retention",
+          "family_id": "math11.potential.family-5",
+          "prompt": "梯度场沿闭合曲线的积分。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。"
+          ],
+          "rubric": [
+            "0",
+            "势函数存在可推出路径无关；仅旋度为零还需核对区域拓扑等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math11.surface1",
+      "name": "第一类曲面积分",
+      "aliases": [
+        "surface1"
+      ],
+      "prerequisites": [
+        "math09.partial",
+        "math08.products"
+      ],
+      "tier": "core",
+      "teaching": "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.surface1.1",
+          "skill_id": "math11.surface1",
+          "purpose": "diagnostic",
+          "family_id": "math11.surface1.family-1",
+          "prompt": "单位球面上∬1 dS。",
+          "answer": "4*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。"
+          ],
+          "rubric": [
+            "4*pi",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.surface1.2",
+          "skill_id": "math11.surface1",
+          "purpose": "diagnostic",
+          "family_id": "math11.surface1.family-2",
+          "prompt": "平面z=0上单位正方形∬2 dS。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。"
+          ],
+          "rubric": [
+            "2",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.surface1.3",
+          "skill_id": "math11.surface1",
+          "purpose": "learning",
+          "family_id": "math11.surface1.family-3",
+          "prompt": "曲面翻转法向会改变第一类曲面积分吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。"
+          ],
+          "rubric": [
+            "否",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.surface1.4",
+          "skill_id": "math11.surface1",
+          "purpose": "transfer",
+          "family_id": "math11.surface1.family-4",
+          "prompt": "z=x+y在单位正方形上方的面积。",
+          "answer": "sqrt(3)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。"
+          ],
+          "rubric": [
+            "sqrt(3)",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.surface1.5",
+          "skill_id": "math11.surface1",
+          "purpose": "retention",
+          "family_id": "math11.surface1.family-5",
+          "prompt": "半径2球面的面积。",
+          "answer": "16*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。"
+          ],
+          "rubric": [
+            "16*pi",
+            "曲面面积元按参数叉积模或图形sqrt(1+z_x²+z_y²)计算。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math11.gauss",
+      "name": "第二类曲面积分、高斯公式与散度",
+      "aliases": [
+        "gauss"
+      ],
+      "prerequisites": [
+        "math10.triple",
+        "math11.surface1"
+      ],
+      "tier": "core",
+      "teaching": "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.gauss.1",
+          "skill_id": "math11.gauss",
+          "purpose": "diagnostic",
+          "family_id": "math11.gauss.family-1",
+          "prompt": "F=(x,y,z)的散度。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。"
+          ],
+          "rubric": [
+            "3",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.gauss.2",
+          "skill_id": "math11.gauss",
+          "purpose": "diagnostic",
+          "family_id": "math11.gauss.family-2",
+          "prompt": "F=(x,y,z)穿出单位球的通量。",
+          "answer": "4*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。"
+          ],
+          "rubric": [
+            "4*pi",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.gauss.3",
+          "skill_id": "math11.gauss",
+          "purpose": "learning",
+          "family_id": "math11.gauss.family-3",
+          "prompt": "翻转法向时通量变号吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。"
+          ],
+          "rubric": [
+            "是",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.gauss.4",
+          "skill_id": "math11.gauss",
+          "purpose": "transfer",
+          "family_id": "math11.gauss.family-4",
+          "prompt": "F=(0,0,2)穿过z=0单位正方形向上的通量。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。"
+          ],
+          "rubric": [
+            "2",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.gauss.5",
+          "skill_id": "math11.gauss",
+          "purpose": "retention",
+          "family_id": "math11.gauss.family-5",
+          "prompt": "高斯公式可忽略曲面内部场的奇点吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。"
+          ],
+          "rubric": [
+            "否",
+            "通量需选法向；高斯公式连接闭曲面外向通量与体积分，检查场内部光滑性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math11.stokes",
+      "name": "斯托克斯公式、环流与旋度",
+      "aliases": [
+        "stokes"
+      ],
+      "prerequisites": [
+        "math11.line2",
+        "math11.gauss"
+      ],
+      "tier": "core",
+      "teaching": "边界方向与法向按右手规则一致；旋度为向量，散度为标量。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math11.stokes.1",
+          "skill_id": "math11.stokes",
+          "purpose": "diagnostic",
+          "family_id": "math11.stokes.family-1",
+          "prompt": "F=(-y,x,0)的旋度。",
+          "answer": "0,0,2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。"
+          ],
+          "rubric": [
+            "0,0,2",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.stokes.2",
+          "skill_id": "math11.stokes",
+          "purpose": "diagnostic",
+          "family_id": "math11.stokes.family-2",
+          "prompt": "单位圆从z正向看逆时针，对应法向向上吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。"
+          ],
+          "rubric": [
+            "是",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.stokes.3",
+          "skill_id": "math11.stokes",
+          "purpose": "learning",
+          "family_id": "math11.stokes.family-3",
+          "prompt": "F=(-y,x,0)沿单位圆正向环流。",
+          "answer": "2*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。"
+          ],
+          "rubric": [
+            "2*pi",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math11.stokes.4",
+          "skill_id": "math11.stokes",
+          "purpose": "transfer",
+          "family_id": "math11.stokes.family-4",
+          "prompt": "将曲面法向反转却保持边界方向不变仍可直接用斯托克斯吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。"
+          ],
+          "rubric": [
+            "否",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math11.stokes.5",
+          "skill_id": "math11.stokes",
+          "purpose": "retention",
+          "family_id": "math11.stokes.family-5",
+          "prompt": "光滑梯度场的旋度为零向量吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。"
+          ],
+          "rubric": [
+            "是",
+            "边界方向与法向按右手规则一致；旋度为向量，散度为标量。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

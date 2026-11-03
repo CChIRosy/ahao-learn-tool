@@ -1,0 +1,839 @@
+{
+  "id": "math05",
+  "name": "定积分",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math05.definition",
+      "name": "定积分概念、性质与估值",
+      "aliases": [
+        "definition"
+      ],
+      "prerequisites": [
+        "math01.continuity"
+      ],
+      "tier": "core",
+      "teaching": "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.definition.1",
+          "skill_id": "math05.definition",
+          "purpose": "diagnostic",
+          "family_id": "math05.definition.family-1",
+          "prompt": "∫从0到1的2x dx。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。"
+          ],
+          "rubric": [
+            "1",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.definition.2",
+          "skill_id": "math05.definition",
+          "purpose": "diagnostic",
+          "family_id": "math05.definition.family-2",
+          "prompt": "∫从1到0的2x dx。",
+          "answer": "-1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。"
+          ],
+          "rubric": [
+            "-1",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.definition.3",
+          "skill_id": "math05.definition",
+          "purpose": "learning",
+          "family_id": "math05.definition.family-3",
+          "prompt": "奇函数在[-a,a]可积，其积分为多少？",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。"
+          ],
+          "rubric": [
+            "0",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.definition.4",
+          "skill_id": "math05.definition",
+          "purpose": "transfer",
+          "family_id": "math05.definition.family-4",
+          "prompt": "∫从0到2的3 dx。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。"
+          ],
+          "rubric": [
+            "6",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.definition.5",
+          "skill_id": "math05.definition",
+          "purpose": "retention",
+          "family_id": "math05.definition.family-5",
+          "prompt": "定积分一定非负吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。"
+          ],
+          "rubric": [
+            "否",
+            "定积分是带符号累积量；反向上下限变号，积分存在与原函数存在不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math05.ftc",
+      "name": "微积分基本定理与变上限函数",
+      "aliases": [
+        "ftc"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math04.primitive"
+      ],
+      "tier": "core",
+      "teaching": "连续被积函数下，变上限积分求导用基本定理再用链式法则。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.ftc.1",
+          "skill_id": "math05.ftc",
+          "purpose": "diagnostic",
+          "family_id": "math05.ftc.family-1",
+          "prompt": "对∫从0到x的sin(t)dt求导。",
+          "answer": "sin(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。"
+          ],
+          "rubric": [
+            "sin(x)",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.ftc.2",
+          "skill_id": "math05.ftc",
+          "purpose": "diagnostic",
+          "family_id": "math05.ftc.family-2",
+          "prompt": "对∫从0到x²的exp(t)dt求导。",
+          "answer": "2*x*exp(x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。"
+          ],
+          "rubric": [
+            "2*x*exp(x**2)",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.ftc.3",
+          "skill_id": "math05.ftc",
+          "purpose": "learning",
+          "family_id": "math05.ftc.family-3",
+          "prompt": "∫从0到1的3x² dx。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。"
+          ],
+          "rubric": [
+            "1",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.ftc.4",
+          "skill_id": "math05.ftc",
+          "purpose": "transfer",
+          "family_id": "math05.ftc.family-4",
+          "prompt": "对∫从x到1的t²dt求导。",
+          "answer": "-x**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。"
+          ],
+          "rubric": [
+            "-x**2",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.ftc.5",
+          "skill_id": "math05.ftc",
+          "purpose": "retention",
+          "family_id": "math05.ftc.family-5",
+          "prompt": "∫从0到pi的sin(x)dx。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。"
+          ],
+          "rubric": [
+            "2",
+            "连续被积函数下，变上限积分求导用基本定理再用链式法则。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math05.methods",
+      "name": "定积分换元与分部",
+      "aliases": [
+        "methods"
+      ],
+      "prerequisites": [
+        "math04.substitution",
+        "math04.parts",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "换元后上下限应换成新变量值；分部积分包含边界项。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.methods.1",
+          "skill_id": "math05.methods",
+          "purpose": "diagnostic",
+          "family_id": "math05.methods.family-1",
+          "prompt": "∫从0到1的2x*exp(x²)dx。",
+          "answer": "exp(1)-1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元后上下限应换成新变量值；分部积分包含边界项。"
+          ],
+          "rubric": [
+            "exp(1)-1",
+            "换元后上下限应换成新变量值；分部积分包含边界项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.methods.2",
+          "skill_id": "math05.methods",
+          "purpose": "diagnostic",
+          "family_id": "math05.methods.family-2",
+          "prompt": "∫从0到1的x*exp(x)dx。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元后上下限应换成新变量值；分部积分包含边界项。"
+          ],
+          "rubric": [
+            "1",
+            "换元后上下限应换成新变量值；分部积分包含边界项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.methods.3",
+          "skill_id": "math05.methods",
+          "purpose": "learning",
+          "family_id": "math05.methods.family-3",
+          "prompt": "∫从0到pi/2的sin(x)dx。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元后上下限应换成新变量值；分部积分包含边界项。"
+          ],
+          "rubric": [
+            "1",
+            "换元后上下限应换成新变量值；分部积分包含边界项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.methods.4",
+          "skill_id": "math05.methods",
+          "purpose": "transfer",
+          "family_id": "math05.methods.family-4",
+          "prompt": "∫从0到1的x*cos(x²)dx。",
+          "answer": "sin(1)/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元后上下限应换成新变量值；分部积分包含边界项。"
+          ],
+          "rubric": [
+            "sin(1)/2",
+            "换元后上下限应换成新变量值；分部积分包含边界项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.methods.5",
+          "skill_id": "math05.methods",
+          "purpose": "retention",
+          "family_id": "math05.methods.family-5",
+          "prompt": "换元后仍保留原变量上下限而直接代新原函数正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元后上下限应换成新变量值；分部积分包含边界项。"
+          ],
+          "rubric": [
+            "否",
+            "换元后上下限应换成新变量值；分部积分包含边界项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math05.improper",
+      "name": "无穷区间与无界函数反常积分",
+      "aliases": [
+        "improper"
+      ],
+      "prerequisites": [
+        "math01.limit",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math05.improper.1",
+          "skill_id": "math05.improper",
+          "purpose": "diagnostic",
+          "family_id": "math05.improper.family-1",
+          "prompt": "∫从1到无穷的1/x² dx。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。"
+          ],
+          "rubric": [
+            "1",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.improper.2",
+          "skill_id": "math05.improper",
+          "purpose": "diagnostic",
+          "family_id": "math05.improper.family-2",
+          "prompt": "∫从1到无穷的1/x dx收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。"
+          ],
+          "rubric": [
+            "否",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math05.improper.3",
+          "skill_id": "math05.improper",
+          "purpose": "learning",
+          "family_id": "math05.improper.family-3",
+          "prompt": "∫从0到1的1/sqrt(x) dx。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。"
+          ],
+          "rubric": [
+            "2",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math05.improper.4",
+          "skill_id": "math05.improper",
+          "purpose": "transfer",
+          "family_id": "math05.improper.family-4",
+          "prompt": "∫从0到1的1/x² dx收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。"
+          ],
+          "rubric": [
+            "否",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math05.improper.5",
+          "skill_id": "math05.improper",
+          "purpose": "retention",
+          "family_id": "math05.improper.family-5",
+          "prompt": "∫从1到无穷的exp(-x)dx。",
+          "answer": "exp(-1)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。"
+          ],
+          "rubric": [
+            "exp(-1)",
+            "将奇点或无穷端点定义为极限；多个奇点逐个检查，主值不等同于通常收敛。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

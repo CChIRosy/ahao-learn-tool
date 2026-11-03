@@ -1,0 +1,3083 @@
+{
+  "id": "structures",
+  "name": "结构力学",
+  "source": "https://cec.hrbeu.edu.cn/_upload/article/files/4a/00/2bbccea0465ea0f94fe98f8a1a6a/3a639add-0f08-449e-ad50-1bbf1b9c19f4.pdf",
+  "skills": [
+    {
+      "id": "structures.geometry",
+      "name": "几何组成、约束与计算简图",
+      "aliases": [
+        "geometry"
+      ],
+      "prerequisites": [
+        "theory.model",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "teaching": "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.geometry.1",
+          "skill_id": "structures.geometry",
+          "purpose": "diagnostic",
+          "family_id": "structures.geometry.family-1",
+          "prompt": "仅靠自由度计数为0就能断定体系几何不变吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。"
+          ],
+          "rubric": [
+            "否",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.geometry.2",
+          "skill_id": "structures.geometry",
+          "purpose": "diagnostic",
+          "family_id": "structures.geometry.family-2",
+          "prompt": "平面刚片一般有几个刚体自由度？",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。"
+          ],
+          "rubric": [
+            "3",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.geometry.3",
+          "skill_id": "structures.geometry",
+          "purpose": "learning",
+          "family_id": "structures.geometry.family-3",
+          "prompt": "一个理想铰在两个平面刚片间通常约束两个相对平移吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。"
+          ],
+          "rubric": [
+            "是",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.geometry.4",
+          "skill_id": "structures.geometry",
+          "purpose": "transfer",
+          "family_id": "structures.geometry.family-4",
+          "prompt": "三根共线链杆连接刚片时，能忽略退化直接判稳定吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。"
+          ],
+          "rubric": [
+            "否",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.geometry.5",
+          "skill_id": "structures.geometry",
+          "purpose": "retention",
+          "family_id": "structures.geometry.family-5",
+          "prompt": "几何可变体系可以不改变模型直接当稳定线弹性结构求位移吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。"
+          ],
+          "rubric": [
+            "否",
+            "先分析几何不变性，再数约束；计数满足只是必要条件之一，要检查瞬变、共线或平行等退化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.determinate",
+      "name": "静定梁、刚架与内力校核",
+      "aliases": [
+        "determinate"
+      ],
+      "prerequisites": [
+        "structures.geometry",
+        "materials.moment"
+      ],
+      "tier": "core",
+      "teaching": "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.determinate.1",
+          "skill_id": "structures.determinate",
+          "purpose": "diagnostic",
+          "family_id": "structures.determinate.family-1",
+          "prompt": "静定结构内力在载荷与几何不变时一般不依赖杆件刚度吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。"
+          ],
+          "rubric": [
+            "是",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.determinate.2",
+          "skill_id": "structures.determinate",
+          "purpose": "diagnostic",
+          "family_id": "structures.determinate.family-2",
+          "prompt": "简支梁L=6米、跨中向下P=8牛，最大正弯矩大小。",
+          "answer": "12",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。"
+          ],
+          "rubric": [
+            "12",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.determinate.3",
+          "skill_id": "structures.determinate",
+          "purpose": "learning",
+          "family_id": "structures.determinate.family-3",
+          "prompt": "无外力矩的理想内铰两侧截面弯矩应为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。"
+          ],
+          "rubric": [
+            "是",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.determinate.4",
+          "skill_id": "structures.determinate",
+          "purpose": "transfer",
+          "family_id": "structures.determinate.family-4",
+          "prompt": "节点有外力偶时，所有相连杆端弯矩仍必须各自为0吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。"
+          ],
+          "rubric": [
+            "否",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.determinate.5",
+          "skill_id": "structures.determinate",
+          "purpose": "retention",
+          "family_id": "structures.determinate.family-5",
+          "prompt": "刚架内力图可只检查整体平衡而完全不检查节点平衡吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。"
+          ],
+          "rubric": [
+            "否",
+            "静定结构用平衡确定内力；分段、节点平衡和支座条件用于校核。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.truss",
+      "name": "桁架与拱",
+      "aliases": [
+        "truss"
+      ],
+      "prerequisites": [
+        "structures.determinate",
+        "theory.balance"
+      ],
+      "tier": "core",
+      "teaching": "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.truss.1",
+          "skill_id": "structures.truss",
+          "purpose": "diagnostic",
+          "family_id": "structures.truss.family-1",
+          "prompt": "理想桁架节点只有两根不共线杆、无外载，该两杆是否零杆？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.truss.2",
+          "skill_id": "structures.truss",
+          "purpose": "diagnostic",
+          "family_id": "structures.truss.family-2",
+          "prompt": "理想桁架受力节点存在三杆，其中两杆共线且无外载，第三杆是否零杆？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.truss.3",
+          "skill_id": "structures.truss",
+          "purpose": "learning",
+          "family_id": "structures.truss.family-3",
+          "prompt": "三铰拱第三个铰的弯矩为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.truss.4",
+          "skill_id": "structures.truss",
+          "purpose": "transfer",
+          "family_id": "structures.truss.family-4",
+          "prompt": "理想桁架杆件在节点荷载模型下主要承受轴力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。"
+          ],
+          "rubric": [
+            "是",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.truss.5",
+          "skill_id": "structures.truss",
+          "purpose": "retention",
+          "family_id": "structures.truss.family-5",
+          "prompt": "把拱直接视为无水平反力的简支直梁一般正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。"
+          ],
+          "rubric": [
+            "否",
+            "理想铰接桁架、节点荷载下杆件按二力杆；拱可能有水平推力，三铰拱可用铰处弯矩条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.virtual",
+      "name": "虚功、位移计算与互等定理",
+      "aliases": [
+        "virtual"
+      ],
+      "prerequisites": [
+        "materials.deflection",
+        "materials.energy",
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.virtual.1",
+          "skill_id": "structures.virtual",
+          "purpose": "diagnostic",
+          "family_id": "structures.virtual.family-1",
+          "prompt": "单位荷载法中虚拟单位力应作用在所求位移方向吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。"
+          ],
+          "rubric": [
+            "是",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.virtual.2",
+          "skill_id": "structures.virtual",
+          "purpose": "diagnostic",
+          "family_id": "structures.virtual.family-2",
+          "prompt": "弯曲主导梁位移积分含M*m/(EI)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。"
+          ],
+          "rubric": [
+            "是",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.virtual.3",
+          "skill_id": "structures.virtual",
+          "purpose": "learning",
+          "family_id": "structures.virtual.family-3",
+          "prompt": "线性弹性结构满足位移互等需相应条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。"
+          ],
+          "rubric": [
+            "是",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.virtual.4",
+          "skill_id": "structures.virtual",
+          "purpose": "transfer",
+          "family_id": "structures.virtual.family-4",
+          "prompt": "只考虑弯曲能时是否默认所有结构轴向变形都严格为0？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。"
+          ],
+          "rubric": [
+            "否",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.virtual.5",
+          "skill_id": "structures.virtual",
+          "purpose": "retention",
+          "family_id": "structures.virtual.family-5",
+          "prompt": "简支梁跨中点载P的跨中挠度绝对值。",
+          "answer": "P*L**3/(48*E*I)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。"
+          ],
+          "rubric": [
+            "P*L**3/(48*E*I)",
+            "单位荷载法使用真实内力与虚拟内力；线弹性小变形和同一结构条件需满足。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.force",
+      "name": "力法、基本体系与协调方程",
+      "aliases": [
+        "force"
+      ],
+      "prerequisites": [
+        "structures.virtual",
+        "materials.indeterminate"
+      ],
+      "tier": "core",
+      "teaching": "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.force.1",
+          "skill_id": "structures.force",
+          "purpose": "diagnostic",
+          "family_id": "structures.force.family-1",
+          "prompt": "一次超静定结构的力法基本未知量通常有几个？",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。"
+          ],
+          "rubric": [
+            "1",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.force.2",
+          "skill_id": "structures.force",
+          "purpose": "diagnostic",
+          "family_id": "structures.force.family-2",
+          "prompt": "释放冗余约束后的基本体系可任意选成几何可变体系吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。"
+          ],
+          "rubric": [
+            "否",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.force.3",
+          "skill_id": "structures.force",
+          "purpose": "learning",
+          "family_id": "structures.force.family-3",
+          "prompt": "力法方程delta11*X1+Delta1P=0，delta11=2,Delta1P=-6，求X1。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。"
+          ],
+          "rubric": [
+            "3",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.force.4",
+          "skill_id": "structures.force",
+          "purpose": "transfer",
+          "family_id": "structures.force.family-4",
+          "prompt": "支座沉降和温度变化可能进入力法协调方程右端吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。"
+          ],
+          "rubric": [
+            "是",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.force.5",
+          "skill_id": "structures.force",
+          "purpose": "retention",
+          "family_id": "structures.force.family-5",
+          "prompt": "力法系数delta_ij在互等条件下满足delta_ij=delta_ji吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。"
+          ],
+          "rubric": [
+            "是",
+            "选择冗余力为基本未知量，释放后基本体系须几何不变；协调方程表达原约束恢复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.displacement",
+      "name": "位移法与转角位移方程",
+      "aliases": [
+        "displacement"
+      ],
+      "prerequisites": [
+        "structures.determinate",
+        "materials.deflection"
+      ],
+      "tier": "core",
+      "teaching": "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.displacement.1",
+          "skill_id": "structures.displacement",
+          "purpose": "diagnostic",
+          "family_id": "structures.displacement.family-1",
+          "prompt": "位移法的基本未知量主要是独立节点位移吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。"
+          ],
+          "rubric": [
+            "是",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.displacement.2",
+          "skill_id": "structures.displacement",
+          "purpose": "diagnostic",
+          "family_id": "structures.displacement.family-2",
+          "prompt": "在约束充分线性结构中，位移求出后可由杆端关系恢复内力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。"
+          ],
+          "rubric": [
+            "是",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.displacement.3",
+          "skill_id": "structures.displacement",
+          "purpose": "learning",
+          "family_id": "structures.displacement.family-3",
+          "prompt": "方程4*theta=8的解。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。"
+          ],
+          "rubric": [
+            "2",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.displacement.4",
+          "skill_id": "structures.displacement",
+          "purpose": "transfer",
+          "family_id": "structures.displacement.family-4",
+          "prompt": "侧移自由度存在时可以不说明就忽略吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。"
+          ],
+          "rubric": [
+            "否",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.displacement.5",
+          "skill_id": "structures.displacement",
+          "purpose": "retention",
+          "family_id": "structures.displacement.family-5",
+          "prompt": "杆端弯矩约定不同，可直接不换号比较公式吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。"
+          ],
+          "rubric": [
+            "否",
+            "以独立节点位移为未知，利用杆件关系与节点平衡组方程；刚体位移和约束需处理。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.distribution",
+      "name": "力矩分配、分配系数与传递",
+      "aliases": [
+        "distribution"
+      ],
+      "prerequisites": [
+        "structures.displacement"
+      ],
+      "tier": "core",
+      "teaching": "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.distribution.1",
+          "skill_id": "structures.distribution",
+          "purpose": "diagnostic",
+          "family_id": "structures.distribution.family-1",
+          "prompt": "两杆在节点的转动刚度分别2和6，第一杆分配系数。",
+          "answer": "1/4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。"
+          ],
+          "rubric": [
+            "1/4",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.distribution.2",
+          "skill_id": "structures.distribution",
+          "purpose": "diagnostic",
+          "family_id": "structures.distribution.family-2",
+          "prompt": "同一未锁定节点各杆分配系数之和。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。"
+          ],
+          "rubric": [
+            "1",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.distribution.3",
+          "skill_id": "structures.distribution",
+          "purpose": "learning",
+          "family_id": "structures.distribution.family-3",
+          "prompt": "等截面杆远端固定时，经典弯矩传递系数为1/2吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。"
+          ],
+          "rubric": [
+            "是",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.distribution.4",
+          "skill_id": "structures.distribution",
+          "purpose": "transfer",
+          "family_id": "structures.distribution.family-4",
+          "prompt": "远端为铰时仍无条件使用1/2传递系数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。"
+          ],
+          "rubric": [
+            "否",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.distribution.5",
+          "skill_id": "structures.distribution",
+          "purpose": "retention",
+          "family_id": "structures.distribution.family-5",
+          "prompt": "节点不平衡力矩为8、两杆分配系数各1/2，分配平衡力矩每杆大小。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。"
+          ],
+          "rubric": [
+            "4",
+            "分配系数按相应杆端转动刚度归一；传递系数随远端约束变化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.influence",
+      "name": "影响线、移动荷载与包络",
+      "aliases": [
+        "influence"
+      ],
+      "prerequisites": [
+        "structures.determinate"
+      ],
+      "tier": "core",
+      "teaching": "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.influence.1",
+          "skill_id": "structures.influence",
+          "purpose": "diagnostic",
+          "family_id": "structures.influence.family-1",
+          "prompt": "简支梁跨度L，单位向下荷载位于距左端x处，左反力影响线值。",
+          "answer": "1-x/L",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。"
+          ],
+          "rubric": [
+            "1-x/L",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.influence.2",
+          "skill_id": "structures.influence",
+          "purpose": "diagnostic",
+          "family_id": "structures.influence.family-2",
+          "prompt": "同一截面弯矩影响线与弯矩图概念相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。"
+          ],
+          "rubric": [
+            "否",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.influence.3",
+          "skill_id": "structures.influence",
+          "purpose": "learning",
+          "family_id": "structures.influence.family-3",
+          "prompt": "简支梁L=4，跨中截面弯矩影响线在跨中纵标。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。"
+          ],
+          "rubric": [
+            "1",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.influence.4",
+          "skill_id": "structures.influence",
+          "purpose": "transfer",
+          "family_id": "structures.influence.family-4",
+          "prompt": "若影响线正负区域都有，均布活载最不利布置要考虑加载范围吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。"
+          ],
+          "rubric": [
+            "是",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.influence.5",
+          "skill_id": "structures.influence",
+          "purpose": "retention",
+          "family_id": "structures.influence.family-5",
+          "prompt": "移动集中力P作用位置影响线纵标为y，对应响应为P*y吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。"
+          ],
+          "rubric": [
+            "是",
+            "影响线表示单位移动荷载位置变化时某固定响应；与固定荷载下全结构内力图不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.matrix",
+      "name": "矩阵位移法与线性代数桥接",
+      "aliases": [
+        "矩阵位移",
+        "单元刚度",
+        "线性代数",
+        "matrix"
+      ],
+      "prerequisites": [
+        "structures.displacement",
+        "structures.algebra-bridge"
+      ],
+      "tier": "core",
+      "teaching": "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.matrix.1",
+          "skill_id": "structures.matrix",
+          "purpose": "diagnostic",
+          "family_id": "structures.matrix.family-1",
+          "prompt": "未施加必要约束时整体刚度矩阵可能因刚体模态而奇异吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。"
+          ],
+          "rubric": [
+            "是",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.matrix.2",
+          "skill_id": "structures.matrix",
+          "purpose": "diagnostic",
+          "family_id": "structures.matrix.family-2",
+          "prompt": "单元组装时共享节点同一自由度需要累加贡献吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。"
+          ],
+          "rubric": [
+            "是",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.matrix.3",
+          "skill_id": "structures.matrix",
+          "purpose": "learning",
+          "family_id": "structures.matrix.family-3",
+          "prompt": "K=[2,0;0,4],F=[6,8]，位移向量。",
+          "answer": "3,2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。"
+          ],
+          "rubric": [
+            "3,2",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.matrix.4",
+          "skill_id": "structures.matrix",
+          "purpose": "transfer",
+          "family_id": "structures.matrix.family-4",
+          "prompt": "刚度矩阵的行列编号可以与荷载/位移向量任意不对应吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。"
+          ],
+          "rubric": [
+            "否",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.matrix.5",
+          "skill_id": "structures.matrix",
+          "purpose": "retention",
+          "family_id": "structures.matrix.family-5",
+          "prompt": "在线性保守且采用一致自由度约定时，刚度矩阵通常对称吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。"
+          ],
+          "rubric": [
+            "是",
+            "按自由度、局部坐标、坐标变换、单元组装、约束处理和荷载向量建立K*u=F。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.loads",
+      "name": "温度、支座移动与非荷载作用",
+      "aliases": [
+        "loads"
+      ],
+      "prerequisites": [
+        "structures.force",
+        "materials.axial"
+      ],
+      "tier": "core",
+      "teaching": "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.loads.1",
+          "skill_id": "structures.loads",
+          "purpose": "diagnostic",
+          "family_id": "structures.loads.family-1",
+          "prompt": "无约束均匀直杆均匀升温可自由伸长而不产生热应力吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。"
+          ],
+          "rubric": [
+            "是",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.loads.2",
+          "skill_id": "structures.loads",
+          "purpose": "diagnostic",
+          "family_id": "structures.loads.family-2",
+          "prompt": "理想静定结构发生容许的小支座位移，必然产生与超静定结构同样的附加内力吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。"
+          ],
+          "rubric": [
+            "否",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.loads.3",
+          "skill_id": "structures.loads",
+          "purpose": "learning",
+          "family_id": "structures.loads.family-3",
+          "prompt": "温度线性梯度可能导致梁曲率变化吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。"
+          ],
+          "rubric": [
+            "是",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.loads.4",
+          "skill_id": "structures.loads",
+          "purpose": "transfer",
+          "family_id": "structures.loads.family-4",
+          "prompt": "力法处理中支座位移需要进入位移协调条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。"
+          ],
+          "rubric": [
+            "是",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.loads.5",
+          "skill_id": "structures.loads",
+          "purpose": "retention",
+          "family_id": "structures.loads.family-5",
+          "prompt": "分析温度作用可以不考虑热膨胀系数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。"
+          ],
+          "rubric": [
+            "否",
+            "约束与协调决定非荷载作用是否产生内力；静定与超静定反应应区分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.dynamics",
+      "name": "结构动力与单自由度响应",
+      "aliases": [
+        "dynamics"
+      ],
+      "prerequisites": [
+        "theory.analytical",
+        "math07.order",
+        "structures.matrix"
+      ],
+      "tier": "extension",
+      "teaching": "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.dynamics.1",
+          "skill_id": "structures.dynamics",
+          "purpose": "diagnostic",
+          "family_id": "structures.dynamics.family-1",
+          "prompt": "m=4,k=16，无阻尼固有角频率。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。"
+          ],
+          "rubric": [
+            "2",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.dynamics.2",
+          "skill_id": "structures.dynamics",
+          "purpose": "diagnostic",
+          "family_id": "structures.dynamics.family-2",
+          "prompt": "无阻尼单自由度在固有频率简谐持续激励下可出现共振吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。"
+          ],
+          "rubric": [
+            "是",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.dynamics.3",
+          "skill_id": "structures.dynamics",
+          "purpose": "learning",
+          "family_id": "structures.dynamics.family-3",
+          "prompt": "固定k，质量增加4倍，固有角频率减半吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。"
+          ],
+          "rubric": [
+            "是",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.dynamics.4",
+          "skill_id": "structures.dynamics",
+          "purpose": "transfer",
+          "family_id": "structures.dynamics.family-4",
+          "prompt": "忽略阻尼时静位移可直接代表所有激励频率下的动力位移吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。"
+          ],
+          "rubric": [
+            "否",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.dynamics.5",
+          "skill_id": "structures.dynamics",
+          "purpose": "retention",
+          "family_id": "structures.dynamics.family-5",
+          "prompt": "多自由度振型分析通常涉及(K-omega²*M)phi=0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。"
+          ],
+          "rubric": [
+            "是",
+            "建立质量、阻尼、刚度与激励模型；线性单自由度无阻尼频率sqrt(k/m)，动力放大依频率比与阻尼。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.stability",
+      "name": "结构稳定与临界荷载",
+      "aliases": [
+        "stability"
+      ],
+      "prerequisites": [
+        "materials.stability",
+        "structures.geometry"
+      ],
+      "tier": "extension",
+      "teaching": "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.stability.1",
+          "skill_id": "structures.stability",
+          "purpose": "diagnostic",
+          "family_id": "structures.stability.family-1",
+          "prompt": "轴向受压结构即使材料应力低于屈服也可能失稳吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。"
+          ],
+          "rubric": [
+            "是",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.stability.2",
+          "skill_id": "structures.stability",
+          "purpose": "diagnostic",
+          "family_id": "structures.stability.family-2",
+          "prompt": "不同侧向约束会改变结构临界荷载吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。"
+          ],
+          "rubric": [
+            "是",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.stability.3",
+          "skill_id": "structures.stability",
+          "purpose": "learning",
+          "family_id": "structures.stability.family-3",
+          "prompt": "仅做线性静力平衡就能覆盖所有屈曲稳定问题吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。"
+          ],
+          "rubric": [
+            "否",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.stability.4",
+          "skill_id": "structures.stability",
+          "purpose": "transfer",
+          "family_id": "structures.stability.family-4",
+          "prompt": "理想铰支细长柱长度加倍、其他相同，临界力变为1/4吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。"
+          ],
+          "rubric": [
+            "是",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.stability.5",
+          "skill_id": "structures.stability",
+          "purpose": "retention",
+          "family_id": "structures.stability.family-5",
+          "prompt": "初始缺陷对实际压杆稳定承载可能有影响吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。"
+          ],
+          "rubric": [
+            "是",
+            "区分材料强度失效和几何失稳；临界条件依约束、几何、刚度及分析模型。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.plastic",
+      "name": "极限荷载与塑性机构",
+      "aliases": [
+        "plastic"
+      ],
+      "prerequisites": [
+        "structures.force",
+        "materials.combined"
+      ],
+      "tier": "extension",
+      "teaching": "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.plastic.1",
+          "skill_id": "structures.plastic",
+          "purpose": "diagnostic",
+          "family_id": "structures.plastic.family-1",
+          "prompt": "形成一个塑性铰是否必然使任意超静定结构立即成为机构？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。"
+          ],
+          "rubric": [
+            "否",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.plastic.2",
+          "skill_id": "structures.plastic",
+          "purpose": "diagnostic",
+          "family_id": "structures.plastic.family-2",
+          "prompt": "塑性极限分析需要材料塑性模型和塑性弯矩等数据吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。"
+          ],
+          "rubric": [
+            "是",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.plastic.3",
+          "skill_id": "structures.plastic",
+          "purpose": "learning",
+          "family_id": "structures.plastic.family-3",
+          "prompt": "静力下限定理要求平衡与屈服条件满足吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。"
+          ],
+          "rubric": [
+            "是",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.plastic.4",
+          "skill_id": "structures.plastic",
+          "purpose": "transfer",
+          "family_id": "structures.plastic.family-4",
+          "prompt": "运动上限定理的机构必须满足运动学条件吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。"
+          ],
+          "rubric": [
+            "是",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.plastic.5",
+          "skill_id": "structures.plastic",
+          "purpose": "retention",
+          "family_id": "structures.plastic.family-5",
+          "prompt": "弹性初屈服荷载与塑性极限荷载永远相同吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。"
+          ],
+          "rubric": [
+            "否",
+            "理想塑性分析区分静力许可与运动许可；塑性铰形成不必立刻产生整体机构。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "structures.algebra-bridge",
+      "name": "矩阵方程桥接基础",
+      "aliases": [
+        "algebra-bridge"
+      ],
+      "prerequisites": [],
+      "tier": "core",
+      "teaching": "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "structures.algebra-bridge.1",
+          "skill_id": "structures.algebra-bridge",
+          "purpose": "diagnostic",
+          "family_id": "structures.algebra-bridge.family-1",
+          "prompt": "2u+v=5,u-v=1，按(u,v)给出解。",
+          "answer": "2,1",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。"
+          ],
+          "rubric": [
+            "2,1",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.algebra-bridge.2",
+          "skill_id": "structures.algebra-bridge",
+          "purpose": "diagnostic",
+          "family_id": "structures.algebra-bridge.family-2",
+          "prompt": "矩阵[1,2;2,4]可逆吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。"
+          ],
+          "rubric": [
+            "否",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.algebra-bridge.3",
+          "skill_id": "structures.algebra-bridge",
+          "purpose": "learning",
+          "family_id": "structures.algebra-bridge.family-3",
+          "prompt": "矩阵乘法AB一般等于BA吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。"
+          ],
+          "rubric": [
+            "否",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "structures.algebra-bridge.4",
+          "skill_id": "structures.algebra-bridge",
+          "purpose": "transfer",
+          "family_id": "structures.algebra-bridge.family-4",
+          "prompt": "对角矩阵[3,0;0,5]的行列式。",
+          "answer": "15",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": true,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。"
+          ],
+          "rubric": [
+            "15",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "structures.algebra-bridge.5",
+          "skill_id": "structures.algebra-bridge",
+          "purpose": "retention",
+          "family_id": "structures.algebra-bridge.family-5",
+          "prompt": "对线性方程组任意交换方程行时，右端也须同步交换吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": " 只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "units": "数值题按题干单位输入，单位与模型由宿主复核"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。"
+          ],
+          "rubric": [
+            "是",
+            "只提供矩阵位移法需要的线性代数补习，不代表完整线性代数课程；先核对自由度对应和方程独立性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

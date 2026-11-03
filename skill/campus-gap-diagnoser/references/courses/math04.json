@@ -1,0 +1,841 @@
+{
+  "id": "math04",
+  "name": "不定积分",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math04.primitive",
+      "name": "原函数与基本积分",
+      "aliases": [
+        "primitive"
+      ],
+      "prerequisites": [
+        "math02.basic"
+      ],
+      "tier": "core",
+      "teaching": "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math04.primitive.1",
+          "skill_id": "math04.primitive",
+          "purpose": "diagnostic",
+          "family_id": "math04.primitive.family-1",
+          "prompt": "忽略积分常数，求∫2x dx。",
+          "answer": "x**2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。"
+          ],
+          "rubric": [
+            "x**2",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.primitive.2",
+          "skill_id": "math04.primitive",
+          "purpose": "diagnostic",
+          "family_id": "math04.primitive.family-2",
+          "prompt": "忽略常数，求∫cos(x) dx。",
+          "answer": "sin(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。"
+          ],
+          "rubric": [
+            "sin(x)",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.primitive.3",
+          "skill_id": "math04.primitive",
+          "purpose": "learning",
+          "family_id": "math04.primitive.family-3",
+          "prompt": "两个原函数在同一区间上必相差常数吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。"
+          ],
+          "rubric": [
+            "是",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math04.primitive.4",
+          "skill_id": "math04.primitive",
+          "purpose": "transfer",
+          "family_id": "math04.primitive.family-4",
+          "prompt": "忽略常数，在x>0上求∫1/x dx。",
+          "answer": "log(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。"
+          ],
+          "rubric": [
+            "log(x)",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.primitive.5",
+          "skill_id": "math04.primitive",
+          "purpose": "retention",
+          "family_id": "math04.primitive.family-5",
+          "prompt": "忽略常数，求∫exp(x) dx。",
+          "answer": "exp(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。"
+          ],
+          "rubric": [
+            "exp(x)",
+            "不定积分是一族原函数；未写任意常数的标准化答案只用于题目明确要求时。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math04.substitution",
+      "name": "第一、第二换元积分",
+      "aliases": [
+        "substitution"
+      ],
+      "prerequisites": [
+        "math02.chain",
+        "math04.primitive"
+      ],
+      "tier": "core",
+      "teaching": "换元要同步改变微分；定积分还需同步改变上下限。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math04.substitution.1",
+          "skill_id": "math04.substitution",
+          "purpose": "diagnostic",
+          "family_id": "math04.substitution.family-1",
+          "prompt": "忽略常数，求∫2x*cos(x²) dx。",
+          "answer": "sin(x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元要同步改变微分；定积分还需同步改变上下限。"
+          ],
+          "rubric": [
+            "sin(x**2)",
+            "换元要同步改变微分；定积分还需同步改变上下限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.substitution.2",
+          "skill_id": "math04.substitution",
+          "purpose": "diagnostic",
+          "family_id": "math04.substitution.family-2",
+          "prompt": "忽略常数，求∫exp(3x) dx。",
+          "answer": "exp(3*x)/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元要同步改变微分；定积分还需同步改变上下限。"
+          ],
+          "rubric": [
+            "exp(3*x)/3",
+            "换元要同步改变微分；定积分还需同步改变上下限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.substitution.3",
+          "skill_id": "math04.substitution",
+          "purpose": "learning",
+          "family_id": "math04.substitution.family-3",
+          "prompt": "忽略常数，求∫2x/(1+x²) dx。",
+          "answer": "log(1+x**2)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元要同步改变微分；定积分还需同步改变上下限。"
+          ],
+          "rubric": [
+            "log(1+x**2)",
+            "换元要同步改变微分；定积分还需同步改变上下限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.substitution.4",
+          "skill_id": "math04.substitution",
+          "purpose": "transfer",
+          "family_id": "math04.substitution.family-4",
+          "prompt": "忽略常数，求∫cos(2x) dx。",
+          "answer": "sin(2*x)/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元要同步改变微分；定积分还需同步改变上下限。"
+          ],
+          "rubric": [
+            "sin(2*x)/2",
+            "换元要同步改变微分；定积分还需同步改变上下限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.substitution.5",
+          "skill_id": "math04.substitution",
+          "purpose": "retention",
+          "family_id": "math04.substitution.family-5",
+          "prompt": "用x=sin(t)代换时dx等于dt吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "换元要同步改变微分；定积分还需同步改变上下限。"
+          ],
+          "rubric": [
+            "否",
+            "换元要同步改变微分；定积分还需同步改变上下限。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math04.parts",
+      "name": "分部积分",
+      "aliases": [
+        "parts"
+      ],
+      "prerequisites": [
+        "math02.rules",
+        "math04.primitive"
+      ],
+      "tier": "core",
+      "teaching": "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math04.parts.1",
+          "skill_id": "math04.parts",
+          "purpose": "diagnostic",
+          "family_id": "math04.parts.family-1",
+          "prompt": "忽略常数，求∫x*exp(x) dx。",
+          "answer": "(x-1)*exp(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。"
+          ],
+          "rubric": [
+            "(x-1)*exp(x)",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.parts.2",
+          "skill_id": "math04.parts",
+          "purpose": "diagnostic",
+          "family_id": "math04.parts.family-2",
+          "prompt": "忽略常数，x>0时求∫log(x) dx。",
+          "answer": "x*log(x)-x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。"
+          ],
+          "rubric": [
+            "x*log(x)-x",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.parts.3",
+          "skill_id": "math04.parts",
+          "purpose": "learning",
+          "family_id": "math04.parts.family-3",
+          "prompt": "忽略常数，求∫x*cos(x) dx。",
+          "answer": "x*sin(x)+cos(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。"
+          ],
+          "rubric": [
+            "x*sin(x)+cos(x)",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.parts.4",
+          "skill_id": "math04.parts",
+          "purpose": "transfer",
+          "family_id": "math04.parts.family-4",
+          "prompt": "忽略常数，求∫x*sin(x) dx。",
+          "answer": "-x*cos(x)+sin(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。"
+          ],
+          "rubric": [
+            "-x*cos(x)+sin(x)",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.parts.5",
+          "skill_id": "math04.parts",
+          "purpose": "retention",
+          "family_id": "math04.parts.family-5",
+          "prompt": "分部积分公式中uv后应减去∫v du吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。"
+          ],
+          "rubric": [
+            "是",
+            "用∫u dv=uv-∫v du；选择u时考虑求导后能否简化。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math04.rational",
+      "name": "有理函数与三角代换",
+      "aliases": [
+        "rational"
+      ],
+      "prerequisites": [
+        "math04.substitution"
+      ],
+      "tier": "core",
+      "teaching": "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math04.rational.1",
+          "skill_id": "math04.rational",
+          "purpose": "diagnostic",
+          "family_id": "math04.rational.family-1",
+          "prompt": "忽略常数，求∫1/(1+x²) dx。",
+          "answer": "atan(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。"
+          ],
+          "rubric": [
+            "atan(x)",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.rational.2",
+          "skill_id": "math04.rational",
+          "purpose": "diagnostic",
+          "family_id": "math04.rational.family-2",
+          "prompt": "1/(x(x+1))等于1/x-1/(x+1)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。"
+          ],
+          "rubric": [
+            "是",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math04.rational.3",
+          "skill_id": "math04.rational",
+          "purpose": "learning",
+          "family_id": "math04.rational.family-3",
+          "prompt": "忽略常数，在x>0求∫(1+1/x) dx。",
+          "answer": "x+log(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。"
+          ],
+          "rubric": [
+            "x+log(x)",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.rational.4",
+          "skill_id": "math04.rational",
+          "purpose": "transfer",
+          "family_id": "math04.rational.family-4",
+          "prompt": "忽略常数，在x>1求∫1/(x²-1) dx。",
+          "answer": "log((x-1)/(x+1))/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。"
+          ],
+          "rubric": [
+            "log((x-1)/(x+1))/2",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math04.rational.5",
+          "skill_id": "math04.rational",
+          "purpose": "retention",
+          "family_id": "math04.rational.family-5",
+          "prompt": "对sqrt(1-x²)采用x=sin(t)时需要限制t区间以确定根号符号吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。"
+          ],
+          "rubric": [
+            "是",
+            "先比较分子分母次数，再分解因式；部分分式及三角代换需保留定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,844 @@
+{
+  "id": "math10",
+  "name": "重积分",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
+  "skills": [
+    {
+      "id": "math10.double",
+      "name": "二重积分、区域与换序",
+      "aliases": [
+        "double"
+      ],
+      "prerequisites": [
+        "math05.ftc"
+      ],
+      "tier": "core",
+      "teaching": "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math10.double.1",
+          "skill_id": "math10.double",
+          "purpose": "diagnostic",
+          "family_id": "math10.double.family-1",
+          "prompt": "单位正方形上∬(x+y)dA。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。"
+          ],
+          "rubric": [
+            "1",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.double.2",
+          "skill_id": "math10.double",
+          "purpose": "diagnostic",
+          "family_id": "math10.double.family-2",
+          "prompt": "区域0<=y<=x<=1的面积。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。"
+          ],
+          "rubric": [
+            "1/2",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.double.3",
+          "skill_id": "math10.double",
+          "purpose": "learning",
+          "family_id": "math10.double.family-3",
+          "prompt": "区域0<=y<=x<=1换序后可写0<=y<=1,y<=x<=1吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。"
+          ],
+          "rubric": [
+            "是",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.double.4",
+          "skill_id": "math10.double",
+          "purpose": "transfer",
+          "family_id": "math10.double.family-4",
+          "prompt": "矩形0<=x<=2,0<=y<=3上∬xy dA。",
+          "answer": "9",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。"
+          ],
+          "rubric": [
+            "9",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.double.5",
+          "skill_id": "math10.double",
+          "purpose": "retention",
+          "family_id": "math10.double.family-5",
+          "prompt": "任意非常数区域都能不改上下限交换积分次序吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。"
+          ],
+          "rubric": [
+            "否",
+            "先描述积分区域，再决定内外积分变量；换序通常需要重写边界。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math10.polar",
+      "name": "极坐标与一般变量代换",
+      "aliases": [
+        "polar"
+      ],
+      "prerequisites": [
+        "math10.double",
+        "math08.surfaces"
+      ],
+      "tier": "core",
+      "teaching": "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math10.polar.1",
+          "skill_id": "math10.polar",
+          "purpose": "diagnostic",
+          "family_id": "math10.polar.family-1",
+          "prompt": "半径2圆盘上∬1 dA。",
+          "answer": "4*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。"
+          ],
+          "rubric": [
+            "4*pi",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.polar.2",
+          "skill_id": "math10.polar",
+          "purpose": "diagnostic",
+          "family_id": "math10.polar.family-2",
+          "prompt": "极坐标面积元可以只写dr dtheta吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。"
+          ],
+          "rubric": [
+            "否",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.polar.3",
+          "skill_id": "math10.polar",
+          "purpose": "learning",
+          "family_id": "math10.polar.family-3",
+          "prompt": "单位圆盘上∬(x²+y²)dA。",
+          "answer": "pi/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。"
+          ],
+          "rubric": [
+            "pi/2",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.polar.4",
+          "skill_id": "math10.polar",
+          "purpose": "transfer",
+          "family_id": "math10.polar.family-4",
+          "prompt": "x=2u,y=3v的面积雅可比绝对值。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。"
+          ],
+          "rubric": [
+            "6",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.polar.5",
+          "skill_id": "math10.polar",
+          "purpose": "retention",
+          "family_id": "math10.polar.family-5",
+          "prompt": "单位圆盘第一象限的面积。",
+          "answer": "pi/4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。"
+          ],
+          "rubric": [
+            "pi/4",
+            "面积元要乘雅可比绝对值；极坐标为r dr dtheta，范围需覆盖且避免重复。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math10.triple",
+      "name": "三重积分与柱球坐标",
+      "aliases": [
+        "triple"
+      ],
+      "prerequisites": [
+        "math10.polar"
+      ],
+      "tier": "core",
+      "teaching": "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math10.triple.1",
+          "skill_id": "math10.triple",
+          "purpose": "diagnostic",
+          "family_id": "math10.triple.family-1",
+          "prompt": "单位立方体上∭1 dV。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。"
+          ],
+          "rubric": [
+            "1",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.triple.2",
+          "skill_id": "math10.triple",
+          "purpose": "diagnostic",
+          "family_id": "math10.triple.family-2",
+          "prompt": "半径1球体的体积。",
+          "answer": "4*pi/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。"
+          ],
+          "rubric": [
+            "4*pi/3",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.triple.3",
+          "skill_id": "math10.triple",
+          "purpose": "learning",
+          "family_id": "math10.triple.family-3",
+          "prompt": "柱坐标体积元含径向因子r吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。"
+          ],
+          "rubric": [
+            "是",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.triple.4",
+          "skill_id": "math10.triple",
+          "purpose": "transfer",
+          "family_id": "math10.triple.family-4",
+          "prompt": "半径2、高3的圆柱上∭1 dV。",
+          "answer": "12*pi",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。"
+          ],
+          "rubric": [
+            "12*pi",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.triple.5",
+          "skill_id": "math10.triple",
+          "purpose": "retention",
+          "family_id": "math10.triple.family-5",
+          "prompt": "球坐标体积元通常含r²*sin(phi)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。"
+          ],
+          "rubric": [
+            "是",
+            "体积元取雅可比；球坐标约定极角和方位角，不能漏r²sin(phi)。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math10.applications",
+      "name": "重积分质量、质心与转动惯量",
+      "aliases": [
+        "applications"
+      ],
+      "prerequisites": [
+        "math10.double"
+      ],
+      "tier": "core",
+      "teaching": "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math10.applications.1",
+          "skill_id": "math10.applications",
+          "purpose": "diagnostic",
+          "family_id": "math10.applications.family-1",
+          "prompt": "单位正方形均匀薄片的质心坐标。",
+          "answer": "1/2,1/2",
+          "answer_type": "vector",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。"
+          ],
+          "rubric": [
+            "1/2,1/2",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.applications.2",
+          "skill_id": "math10.applications",
+          "purpose": "diagnostic",
+          "family_id": "math10.applications.family-2",
+          "prompt": "面积3、面密度2的薄片质量。",
+          "answer": "6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。"
+          ],
+          "rubric": [
+            "6",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.applications.3",
+          "skill_id": "math10.applications",
+          "purpose": "learning",
+          "family_id": "math10.applications.family-3",
+          "prompt": "矩形[0,2]×[0,1]单位面密度，对y轴转动惯量。",
+          "answer": "8/3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。"
+          ],
+          "rubric": [
+            "8/3",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math10.applications.4",
+          "skill_id": "math10.applications",
+          "purpose": "transfer",
+          "family_id": "math10.applications.family-4",
+          "prompt": "关于y轴对称、质量非零的薄片，其质心x坐标为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。"
+          ],
+          "rubric": [
+            "是",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math10.applications.5",
+          "skill_id": "math10.applications",
+          "purpose": "retention",
+          "family_id": "math10.applications.family-5",
+          "prompt": "质量2的质点距轴3，其转动惯量数值。",
+          "answer": "18",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。"
+          ],
+          "rubric": [
+            "18",
+            "密度乘面积元或体积元得到质量；质心用一阶矩除总质量，惯量用到轴距离平方。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

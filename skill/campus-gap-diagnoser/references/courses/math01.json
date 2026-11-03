@@ -1,0 +1,1286 @@
+{
+  "id": "math01",
+  "name": "函数与极限",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math01.function",
+      "name": "映射、函数与定义域",
+      "aliases": [
+        "定义域",
+        "复合函数",
+        "映射",
+        "function"
+      ],
+      "prerequisites": [],
+      "tier": "core",
+      "teaching": "先明确自变量集合；复合时同时满足内外层定义域。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.function.1",
+          "skill_id": "math01.function",
+          "purpose": "diagnostic",
+          "family_id": "math01.function.family-1",
+          "prompt": "sqrt(x-1)的实数定义域是x>=1吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先明确自变量集合；复合时同时满足内外层定义域。"
+          ],
+          "rubric": [
+            "是",
+            "先明确自变量集合；复合时同时满足内外层定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.function.2",
+          "skill_id": "math01.function",
+          "purpose": "diagnostic",
+          "family_id": "math01.function.family-2",
+          "prompt": "log(x)能在x=0取实值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先明确自变量集合；复合时同时满足内外层定义域。"
+          ],
+          "rubric": [
+            "否",
+            "先明确自变量集合；复合时同时满足内外层定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.function.3",
+          "skill_id": "math01.function",
+          "purpose": "learning",
+          "family_id": "math01.function.family-3",
+          "prompt": "f(x)=x²，求f(-2)。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先明确自变量集合；复合时同时满足内外层定义域。"
+          ],
+          "rubric": [
+            "4",
+            "先明确自变量集合；复合时同时满足内外层定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.function.4",
+          "skill_id": "math01.function",
+          "purpose": "transfer",
+          "family_id": "math01.function.family-4",
+          "prompt": "f(x)=1/(x-2)，x=2属于定义域吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先明确自变量集合；复合时同时满足内外层定义域。"
+          ],
+          "rubric": [
+            "否",
+            "先明确自变量集合；复合时同时满足内外层定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.function.5",
+          "skill_id": "math01.function",
+          "purpose": "retention",
+          "family_id": "math01.function.family-5",
+          "prompt": "g(x)=sqrt(1-x²)，x=2时有实数函数值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先明确自变量集合；复合时同时满足内外层定义域。"
+          ],
+          "rubric": [
+            "否",
+            "先明确自变量集合；复合时同时满足内外层定义域。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math01.sequence",
+      "name": "数列极限与夹逼",
+      "aliases": [
+        "sequence"
+      ],
+      "prerequisites": [],
+      "tier": "core",
+      "teaching": "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.sequence.1",
+          "skill_id": "math01.sequence",
+          "purpose": "diagnostic",
+          "family_id": "math01.sequence.family-1",
+          "prompt": "求n趋于无穷时1/n的极限。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。"
+          ],
+          "rubric": [
+            "0",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.sequence.2",
+          "skill_id": "math01.sequence",
+          "purpose": "diagnostic",
+          "family_id": "math01.sequence.family-2",
+          "prompt": "数列(-1)^n有极限吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。"
+          ],
+          "rubric": [
+            "否",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.sequence.3",
+          "skill_id": "math01.sequence",
+          "purpose": "learning",
+          "family_id": "math01.sequence.family-3",
+          "prompt": "单调递增且有上界的实数列必收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。"
+          ],
+          "rubric": [
+            "是",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.sequence.4",
+          "skill_id": "math01.sequence",
+          "purpose": "transfer",
+          "family_id": "math01.sequence.family-4",
+          "prompt": "求n趋于无穷时(3n+1)/(n+2)的极限。",
+          "answer": "3",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。"
+          ],
+          "rubric": [
+            "3",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.sequence.5",
+          "skill_id": "math01.sequence",
+          "purpose": "retention",
+          "family_id": "math01.sequence.family-5",
+          "prompt": "若|a_n|<=1/n，a_n的极限为多少？",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。"
+          ],
+          "rubric": [
+            "0",
+            "数列收敛要求单一有限极限；单调有界可保证收敛，不能由有界单独推出。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math01.limit",
+      "name": "函数极限与左右极限",
+      "aliases": [
+        "两个重要极限",
+        "左右极限",
+        "limit"
+      ],
+      "prerequisites": [],
+      "tier": "core",
+      "teaching": "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.limit.1",
+          "skill_id": "math01.limit",
+          "purpose": "diagnostic",
+          "family_id": "math01.limit.family-1",
+          "prompt": "x趋于0时sin(x)/x极限为多少？",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。"
+          ],
+          "rubric": [
+            "1",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.limit.2",
+          "skill_id": "math01.limit",
+          "purpose": "diagnostic",
+          "family_id": "math01.limit.family-2",
+          "prompt": "x趋于0时|x|/x的双侧极限存在吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。"
+          ],
+          "rubric": [
+            "否",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.limit.3",
+          "skill_id": "math01.limit",
+          "purpose": "learning",
+          "family_id": "math01.limit.family-3",
+          "prompt": "x趋于1时(x²-1)/(x-1)的极限。",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。"
+          ],
+          "rubric": [
+            "2",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.limit.4",
+          "skill_id": "math01.limit",
+          "purpose": "transfer",
+          "family_id": "math01.limit.family-4",
+          "prompt": "x趋于0时(1-cos(x))/x²的极限。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。"
+          ],
+          "rubric": [
+            "1/2",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.limit.5",
+          "skill_id": "math01.limit",
+          "purpose": "retention",
+          "family_id": "math01.limit.family-5",
+          "prompt": "x趋于2时(x²-4)/(x-2)的极限。",
+          "answer": "4",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。"
+          ],
+          "rubric": [
+            "4",
+            "双侧极限存在需要左右极限相等；极限与函数在该点是否定义不同。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math01.infinitesimal",
+      "name": "无穷小比较与等价替换",
+      "aliases": [
+        "infinitesimal"
+      ],
+      "prerequisites": [],
+      "tier": "core",
+      "teaching": "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.infinitesimal.1",
+          "skill_id": "math01.infinitesimal",
+          "purpose": "diagnostic",
+          "family_id": "math01.infinitesimal.family-1",
+          "prompt": "x趋于0时sin(x)与x等价吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。"
+          ],
+          "rubric": [
+            "是",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.infinitesimal.2",
+          "skill_id": "math01.infinitesimal",
+          "purpose": "diagnostic",
+          "family_id": "math01.infinitesimal.family-2",
+          "prompt": "x趋于0时1-cos(x)与x等价吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。"
+          ],
+          "rubric": [
+            "否",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.infinitesimal.3",
+          "skill_id": "math01.infinitesimal",
+          "purpose": "learning",
+          "family_id": "math01.infinitesimal.family-3",
+          "prompt": "x趋于0时log(1+x)/x的极限。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。"
+          ],
+          "rubric": [
+            "1",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.infinitesimal.4",
+          "skill_id": "math01.infinitesimal",
+          "purpose": "transfer",
+          "family_id": "math01.infinitesimal.family-4",
+          "prompt": "x趋于0时(exp(x)-1-x)/x²的极限。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。"
+          ],
+          "rubric": [
+            "1/2",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.infinitesimal.5",
+          "skill_id": "math01.infinitesimal",
+          "purpose": "retention",
+          "family_id": "math01.infinitesimal.family-5",
+          "prompt": "x趋于0时tan(x)/x的极限。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。"
+          ],
+          "rubric": [
+            "1",
+            "等价替换常用于乘除结构；加减中须保留足够阶数，不能分别替换后消去主项。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math01.continuity",
+      "name": "连续、间断与闭区间性质",
+      "aliases": [
+        "continuity"
+      ],
+      "prerequisites": [
+        "math01.limit"
+      ],
+      "tier": "core",
+      "teaching": "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.continuity.1",
+          "skill_id": "math01.continuity",
+          "purpose": "diagnostic",
+          "family_id": "math01.continuity.family-1",
+          "prompt": "f(x)=sin(x)/x在0处补为多少才连续？",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。"
+          ],
+          "rubric": [
+            "1",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.continuity.2",
+          "skill_id": "math01.continuity",
+          "purpose": "diagnostic",
+          "family_id": "math01.continuity.family-2",
+          "prompt": "左右极限有限但不等属于可去间断吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。"
+          ],
+          "rubric": [
+            "否",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.continuity.3",
+          "skill_id": "math01.continuity",
+          "purpose": "learning",
+          "family_id": "math01.continuity.family-3",
+          "prompt": "闭区间上连续函数必取到最大值吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。"
+          ],
+          "rubric": [
+            "是",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.continuity.4",
+          "skill_id": "math01.continuity",
+          "purpose": "transfer",
+          "family_id": "math01.continuity.family-4",
+          "prompt": "连续函数f在[a,b]满足f(a)f(b)<0，区间内必有零点吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。"
+          ],
+          "rubric": [
+            "是",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.continuity.5",
+          "skill_id": "math01.continuity",
+          "purpose": "retention",
+          "family_id": "math01.continuity.family-5",
+          "prompt": "在开区间连续就一定取到最大值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。"
+          ],
+          "rubric": [
+            "否",
+            "点处连续要求极限等于函数值；闭区间连续函数有界并取得最大最小值，零点判断需异号等条件。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math01.inverse",
+      "name": "反函数、复合定义域与初等函数",
+      "aliases": [
+        "inverse"
+      ],
+      "prerequisites": [
+        "math01.function"
+      ],
+      "tier": "core",
+      "teaching": "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math01.inverse.1",
+          "skill_id": "math01.inverse",
+          "purpose": "diagnostic",
+          "family_id": "math01.inverse.family-1",
+          "prompt": "f(x)=2x+1的反函数表达式。",
+          "answer": "(x-1)/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。"
+          ],
+          "rubric": [
+            "(x-1)/2",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.inverse.2",
+          "skill_id": "math01.inverse",
+          "purpose": "diagnostic",
+          "family_id": "math01.inverse.family-2",
+          "prompt": "f(x)=x²在全体实数上有单值反函数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。"
+          ],
+          "rubric": [
+            "否",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.inverse.3",
+          "skill_id": "math01.inverse",
+          "purpose": "learning",
+          "family_id": "math01.inverse.family-3",
+          "prompt": "x²限制x>=0后反函数为sqrt(x)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。"
+          ],
+          "rubric": [
+            "是",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math01.inverse.4",
+          "skill_id": "math01.inverse",
+          "purpose": "transfer",
+          "family_id": "math01.inverse.family-4",
+          "prompt": "f(x)=exp(x)的实数反函数。",
+          "answer": "log(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。"
+          ],
+          "rubric": [
+            "log(x)",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math01.inverse.5",
+          "skill_id": "math01.inverse",
+          "purpose": "retention",
+          "family_id": "math01.inverse.family-5",
+          "prompt": "反函数f^(-1)(x)永远等于1/f(x)吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。"
+          ],
+          "rubric": [
+            "否",
+            "反函数存在需在所选集合上单射；反函数不等于倒数，限制定义域后再求逆。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,1527 @@
+{
+  "id": "math12",
+  "name": "无穷级数",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=62bc8b97938b7cc2960eebb7",
+  "skills": [
+    {
+      "id": "math12.series",
+      "name": "级数概念与必要条件",
+      "aliases": [
+        "series"
+      ],
+      "prerequisites": [
+        "math01.sequence"
+      ],
+      "tier": "core",
+      "teaching": "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.series.1",
+          "skill_id": "math12.series",
+          "purpose": "diagnostic",
+          "family_id": "math12.series.family-1",
+          "prompt": "级数∑从n=1到无穷的1/2^n的和。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。"
+          ],
+          "rubric": [
+            "1",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.series.2",
+          "skill_id": "math12.series",
+          "purpose": "diagnostic",
+          "family_id": "math12.series.family-2",
+          "prompt": "∑1/n的通项趋于0，所以级数收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。"
+          ],
+          "rubric": [
+            "否",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.series.3",
+          "skill_id": "math12.series",
+          "purpose": "learning",
+          "family_id": "math12.series.family-3",
+          "prompt": "收敛级数的通项必趋于0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。"
+          ],
+          "rubric": [
+            "是",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.series.4",
+          "skill_id": "math12.series",
+          "purpose": "transfer",
+          "family_id": "math12.series.family-4",
+          "prompt": "改变有限项会改变级数敛散性吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。"
+          ],
+          "rubric": [
+            "否",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.series.5",
+          "skill_id": "math12.series",
+          "purpose": "retention",
+          "family_id": "math12.series.family-5",
+          "prompt": "公比绝对值小于1的几何级数必收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。"
+          ],
+          "rubric": [
+            "是",
+            "级数收敛看部分和极限；通项趋零必要但不充分，有限项改动不改变敛散性。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math12.positive",
+      "name": "正项级数比较、比值与根值审敛",
+      "aliases": [
+        "positive"
+      ],
+      "prerequisites": [
+        "math12.series",
+        "math05.improper"
+      ],
+      "tier": "core",
+      "teaching": "先确认正项；比值或根值极限为1时不能据此判敛散。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.positive.1",
+          "skill_id": "math12.positive",
+          "purpose": "diagnostic",
+          "family_id": "math12.positive.family-1",
+          "prompt": "∑1/n²收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。"
+          ],
+          "rubric": [
+            "是",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.positive.2",
+          "skill_id": "math12.positive",
+          "purpose": "diagnostic",
+          "family_id": "math12.positive.family-2",
+          "prompt": "比值判别极限为1就一定发散吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。"
+          ],
+          "rubric": [
+            "否",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.positive.3",
+          "skill_id": "math12.positive",
+          "purpose": "learning",
+          "family_id": "math12.positive.family-3",
+          "prompt": "∑从n=1到无穷的1/3^n的和。",
+          "answer": "1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。"
+          ],
+          "rubric": [
+            "1/2",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.positive.4",
+          "skill_id": "math12.positive",
+          "purpose": "transfer",
+          "family_id": "math12.positive.family-4",
+          "prompt": "∑1/sqrt(n)收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。"
+          ],
+          "rubric": [
+            "否",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.positive.5",
+          "skill_id": "math12.positive",
+          "purpose": "retention",
+          "family_id": "math12.positive.family-5",
+          "prompt": "正项级数通项最终小于某收敛正项级数通项，可判收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。"
+          ],
+          "rubric": [
+            "是",
+            "先确认正项；比值或根值极限为1时不能据此判敛散。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math12.alternating",
+      "name": "交错、绝对与条件收敛",
+      "aliases": [
+        "alternating"
+      ],
+      "prerequisites": [
+        "math12.positive"
+      ],
+      "tier": "core",
+      "teaching": "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.alternating.1",
+          "skill_id": "math12.alternating",
+          "purpose": "diagnostic",
+          "family_id": "math12.alternating.family-1",
+          "prompt": "∑(-1)^(n-1)/n收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。"
+          ],
+          "rubric": [
+            "是",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.alternating.2",
+          "skill_id": "math12.alternating",
+          "purpose": "diagnostic",
+          "family_id": "math12.alternating.family-2",
+          "prompt": "该交错调和级数绝对收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。"
+          ],
+          "rubric": [
+            "否",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.alternating.3",
+          "skill_id": "math12.alternating",
+          "purpose": "learning",
+          "family_id": "math12.alternating.family-3",
+          "prompt": "绝对收敛必收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。"
+          ],
+          "rubric": [
+            "是",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.alternating.4",
+          "skill_id": "math12.alternating",
+          "purpose": "transfer",
+          "family_id": "math12.alternating.family-4",
+          "prompt": "∑(-1)^n/n²绝对收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。"
+          ],
+          "rubric": [
+            "是",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.alternating.5",
+          "skill_id": "math12.alternating",
+          "purpose": "retention",
+          "family_id": "math12.alternating.family-5",
+          "prompt": "把条件收敛级数任意重排仍必保和吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。"
+          ],
+          "rubric": [
+            "否",
+            "莱布尼茨条件含单调趋零；绝对收敛推出收敛，反向不成立。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math12.power",
+      "name": "幂级数收敛半径、端点与运算",
+      "aliases": [
+        "power"
+      ],
+      "prerequisites": [
+        "math12.positive"
+      ],
+      "tier": "core",
+      "teaching": "先求半径，再分别检查端点；逐项求导积分需处于合法范围。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.power.1",
+          "skill_id": "math12.power",
+          "purpose": "diagnostic",
+          "family_id": "math12.power.family-1",
+          "prompt": "∑从n=0到无穷的x^n的收敛半径。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。"
+          ],
+          "rubric": [
+            "1",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.power.2",
+          "skill_id": "math12.power",
+          "purpose": "diagnostic",
+          "family_id": "math12.power.family-2",
+          "prompt": "∑x^n在x=1收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。"
+          ],
+          "rubric": [
+            "否",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.power.3",
+          "skill_id": "math12.power",
+          "purpose": "learning",
+          "family_id": "math12.power.family-3",
+          "prompt": "∑x^n/n!的收敛半径有限吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。"
+          ],
+          "rubric": [
+            "否",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.power.4",
+          "skill_id": "math12.power",
+          "purpose": "transfer",
+          "family_id": "math12.power.family-4",
+          "prompt": "∑从n=1到无穷的x^n/n在x=-1收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。"
+          ],
+          "rubric": [
+            "是",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.power.5",
+          "skill_id": "math12.power",
+          "purpose": "retention",
+          "family_id": "math12.power.family-5",
+          "prompt": "只算收敛半径就能确定两个端点都收敛吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。"
+          ],
+          "rubric": [
+            "否",
+            "先求半径，再分别检查端点；逐项求导积分需处于合法范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math12.expansion",
+      "name": "幂级数展开及应用",
+      "aliases": [
+        "expansion"
+      ],
+      "prerequisites": [
+        "math03.taylor",
+        "math12.power"
+      ],
+      "tier": "core",
+      "teaching": "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.expansion.1",
+          "skill_id": "math12.expansion",
+          "purpose": "diagnostic",
+          "family_id": "math12.expansion.family-1",
+          "prompt": "1/(1-x)在0展开的x³系数。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。"
+          ],
+          "rubric": [
+            "1",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.expansion.2",
+          "skill_id": "math12.expansion",
+          "purpose": "diagnostic",
+          "family_id": "math12.expansion.family-2",
+          "prompt": "exp(x)在0展开的x³系数。",
+          "answer": "1/6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。"
+          ],
+          "rubric": [
+            "1/6",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.expansion.3",
+          "skill_id": "math12.expansion",
+          "purpose": "learning",
+          "family_id": "math12.expansion.family-3",
+          "prompt": "sin(x)在0展开的x³系数。",
+          "answer": "-1/6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。"
+          ],
+          "rubric": [
+            "-1/6",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.expansion.4",
+          "skill_id": "math12.expansion",
+          "purpose": "transfer",
+          "family_id": "math12.expansion.family-4",
+          "prompt": "log(1+x)在0展开的x²系数。",
+          "answer": "-1/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。"
+          ],
+          "rubric": [
+            "-1/2",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.expansion.5",
+          "skill_id": "math12.expansion",
+          "purpose": "retention",
+          "family_id": "math12.expansion.family-5",
+          "prompt": "函数有任意阶导数就必等于其泰勒级数吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。"
+          ],
+          "rubric": [
+            "否",
+            "函数等于其泰勒级数需要余项趋零或相应条件；写清展开中心及收敛范围。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math12.fourier",
+      "name": "傅里叶级数、正交与一般周期",
+      "aliases": [
+        "fourier"
+      ],
+      "prerequisites": [
+        "math05.methods",
+        "math12.series"
+      ],
+      "tier": "core",
+      "teaching": "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.fourier.1",
+          "skill_id": "math12.fourier",
+          "purpose": "diagnostic",
+          "family_id": "math12.fourier.family-1",
+          "prompt": "2pi周期函数f(x)=1，按a0/2约定，其a0是多少？",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。"
+          ],
+          "rubric": [
+            "2",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.fourier.2",
+          "skill_id": "math12.fourier",
+          "purpose": "diagnostic",
+          "family_id": "math12.fourier.family-2",
+          "prompt": "在[-pi,pi]上奇函数的余弦系数均为0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。"
+          ],
+          "rubric": [
+            "是",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.fourier.3",
+          "skill_id": "math12.fourier",
+          "purpose": "learning",
+          "family_id": "math12.fourier.family-3",
+          "prompt": "∫从-pi到pi的sin(x)cos(x)dx。",
+          "answer": "0",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。"
+          ],
+          "rubric": [
+            "0",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.fourier.4",
+          "skill_id": "math12.fourier",
+          "purpose": "transfer",
+          "family_id": "math12.fourier.family-4",
+          "prompt": "周期为2L时基频角频率。",
+          "answer": "pi/L",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。"
+          ],
+          "rubric": [
+            "pi/L",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math12.fourier.5",
+          "skill_id": "math12.fourier",
+          "purpose": "retention",
+          "family_id": "math12.fourier.family-5",
+          "prompt": "跳跃点左右极限为1和3，满足狄利克雷条件时傅里叶和为多少？",
+          "answer": "2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。"
+          ],
+          "rubric": [
+            "2",
+            "明确周期、区间及系数约定；跳跃点在满足条件时收敛到左右极限平均。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": true,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math12.uniform",
+      "name": "函数项级数一致收敛",
+      "aliases": [
+        "uniform"
+      ],
+      "prerequisites": [
+        "math12.power"
+      ],
+      "tier": "extension",
+      "teaching": "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math12.uniform.1",
+          "skill_id": "math12.uniform",
+          "purpose": "diagnostic",
+          "family_id": "math12.uniform.family-1",
+          "prompt": "x^n在[0,1)逐点趋0，是否在该区间一致收敛？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。"
+          ],
+          "rubric": [
+            "否",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.uniform.2",
+          "skill_id": "math12.uniform",
+          "purpose": "diagnostic",
+          "family_id": "math12.uniform.family-2",
+          "prompt": "x^n在[0,1/2]上一致趋0吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。"
+          ],
+          "rubric": [
+            "是",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.uniform.3",
+          "skill_id": "math12.uniform",
+          "purpose": "learning",
+          "family_id": "math12.uniform.family-3",
+          "prompt": "若|f_n(x)|<=1/2^n，∑f_n可由M判别法判一致收敛吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。"
+          ],
+          "rubric": [
+            "是",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.uniform.4",
+          "skill_id": "math12.uniform",
+          "purpose": "transfer",
+          "family_id": "math12.uniform.family-4",
+          "prompt": "连续函数列一致收敛的极限函数连续吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。"
+          ],
+          "rubric": [
+            "是",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math12.uniform.5",
+          "skill_id": "math12.uniform",
+          "purpose": "retention",
+          "family_id": "math12.uniform.family-5",
+          "prompt": "仅逐点收敛是否足以保证极限函数连续？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。"
+          ],
+          "rubric": [
+            "否",
+            "一致收敛需要对整个集合统一控制余项；逐点收敛不足以交换极限或积分。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}

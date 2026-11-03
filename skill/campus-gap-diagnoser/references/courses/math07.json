@@ -1,0 +1,1291 @@
+{
+  "id": "math07",
+  "name": "微分方程",
+  "source": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=63af1979938b7cc2960ef745",
+  "skills": [
+    {
+      "id": "math07.concept",
+      "name": "阶、通解、特解与初值",
+      "aliases": [
+        "concept"
+      ],
+      "prerequisites": [
+        "math02.higher"
+      ],
+      "tier": "core",
+      "teaching": "阶由最高阶导数决定；把候选解代回方程与初值分别核验。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.concept.1",
+          "skill_id": "math07.concept",
+          "purpose": "diagnostic",
+          "family_id": "math07.concept.family-1",
+          "prompt": "y''+y=0是二阶方程吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。"
+          ],
+          "rubric": [
+            "是",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.concept.2",
+          "skill_id": "math07.concept",
+          "purpose": "diagnostic",
+          "family_id": "math07.concept.family-2",
+          "prompt": "y=exp(x)满足y'=y吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。"
+          ],
+          "rubric": [
+            "是",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.concept.3",
+          "skill_id": "math07.concept",
+          "purpose": "learning",
+          "family_id": "math07.concept.family-3",
+          "prompt": "y'=2x且y(0)=1，求y。",
+          "answer": "x**2+1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。"
+          ],
+          "rubric": [
+            "x**2+1",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.concept.4",
+          "skill_id": "math07.concept",
+          "purpose": "transfer",
+          "family_id": "math07.concept.family-4",
+          "prompt": "y=0是y'=y的解吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。"
+          ],
+          "rubric": [
+            "是",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.concept.5",
+          "skill_id": "math07.concept",
+          "purpose": "retention",
+          "family_id": "math07.concept.family-5",
+          "prompt": "满足微分方程的函数一定满足指定初值吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。"
+          ],
+          "rubric": [
+            "否",
+            "阶由最高阶导数决定；把候选解代回方程与初值分别核验。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math07.separable",
+      "name": "可分离变量与齐次一阶方程",
+      "aliases": [
+        "separable"
+      ],
+      "prerequisites": [
+        "math04.primitive",
+        "math07.concept"
+      ],
+      "tier": "core",
+      "teaching": "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.separable.1",
+          "skill_id": "math07.separable",
+          "purpose": "diagnostic",
+          "family_id": "math07.separable.family-1",
+          "prompt": "y'=2y且y(0)=1，求y。",
+          "answer": "exp(2*x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。"
+          ],
+          "rubric": [
+            "exp(2*x)",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.separable.2",
+          "skill_id": "math07.separable",
+          "purpose": "diagnostic",
+          "family_id": "math07.separable.family-2",
+          "prompt": "y'=y²，分离时除以y²会遗漏零解吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。"
+          ],
+          "rubric": [
+            "是",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.separable.3",
+          "skill_id": "math07.separable",
+          "purpose": "learning",
+          "family_id": "math07.separable.family-3",
+          "prompt": "y'=x且y(0)=0，求y。",
+          "answer": "x**2/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。"
+          ],
+          "rubric": [
+            "x**2/2",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.separable.4",
+          "skill_id": "math07.separable",
+          "purpose": "transfer",
+          "family_id": "math07.separable.family-4",
+          "prompt": "y'=1+y/x是否为y'=F(y/x)型？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。"
+          ],
+          "rubric": [
+            "是",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.separable.5",
+          "skill_id": "math07.separable",
+          "purpose": "retention",
+          "family_id": "math07.separable.family-5",
+          "prompt": "y'=3x²且y(0)=2，求y。",
+          "answer": "x**3+2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。"
+          ],
+          "rubric": [
+            "x**3+2",
+            "分离变量前注意被除函数为零的特殊解；齐次型y′=F(y/x)可令y=ux。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math07.linear",
+      "name": "一阶线性方程",
+      "aliases": [
+        "linear"
+      ],
+      "prerequisites": [
+        "math07.separable"
+      ],
+      "tier": "core",
+      "teaching": "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.linear.1",
+          "skill_id": "math07.linear",
+          "purpose": "diagnostic",
+          "family_id": "math07.linear.family-1",
+          "prompt": "y'+y=0且y(0)=2，求y。",
+          "answer": "2*exp(-x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。"
+          ],
+          "rubric": [
+            "2*exp(-x)",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.linear.2",
+          "skill_id": "math07.linear",
+          "purpose": "diagnostic",
+          "family_id": "math07.linear.family-2",
+          "prompt": "y'+2y=4且y(0)=0，求y。",
+          "answer": "2-2*exp(-2*x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。"
+          ],
+          "rubric": [
+            "2-2*exp(-2*x)",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.linear.3",
+          "skill_id": "math07.linear",
+          "purpose": "learning",
+          "family_id": "math07.linear.family-3",
+          "prompt": "y'+y=1的常数特解。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。"
+          ],
+          "rubric": [
+            "1",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.linear.4",
+          "skill_id": "math07.linear",
+          "purpose": "transfer",
+          "family_id": "math07.linear.family-4",
+          "prompt": "y'-y=0且y(0)=3，求y。",
+          "answer": "3*exp(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。"
+          ],
+          "rubric": [
+            "3*exp(x)",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.linear.5",
+          "skill_id": "math07.linear",
+          "purpose": "retention",
+          "family_id": "math07.linear.family-5",
+          "prompt": "一阶线性非齐次通解可写为齐次通解加一个特解吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。"
+          ],
+          "rubric": [
+            "是",
+            "识别y′+P(x)y=Q(x)；积分因子由P决定，并保留初值求常数。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math07.order",
+      "name": "降阶与高阶常系数线性方程",
+      "aliases": [
+        "order"
+      ],
+      "prerequisites": [
+        "math07.linear",
+        "math02.higher"
+      ],
+      "tier": "core",
+      "teaching": "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.order.1",
+          "skill_id": "math07.order",
+          "purpose": "diagnostic",
+          "family_id": "math07.order.family-1",
+          "prompt": "y''=0且y(0)=1,y'(0)=2，求y。",
+          "answer": "1+2*x",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。"
+          ],
+          "rubric": [
+            "1+2*x",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.order.2",
+          "skill_id": "math07.order",
+          "purpose": "diagnostic",
+          "family_id": "math07.order.family-2",
+          "prompt": "y''-3y'+2y=0的特征根是1和2吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。"
+          ],
+          "rubric": [
+            "是",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.order.3",
+          "skill_id": "math07.order",
+          "purpose": "learning",
+          "family_id": "math07.order.family-3",
+          "prompt": "y''+y=0且y(0)=0,y'(0)=1，求y。",
+          "answer": "sin(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。"
+          ],
+          "rubric": [
+            "sin(x)",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.order.4",
+          "skill_id": "math07.order",
+          "purpose": "transfer",
+          "family_id": "math07.order.family-4",
+          "prompt": "y''-2y'+y=0在重根1时，第二个独立解可取x*exp(x)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。"
+          ],
+          "rubric": [
+            "是",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.order.5",
+          "skill_id": "math07.order",
+          "purpose": "retention",
+          "family_id": "math07.order.family-5",
+          "prompt": "y''+y=sin(x)可直接试A*sin(x)+B*cos(x)作特解吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。"
+          ],
+          "rubric": [
+            "否",
+            "缺y或缺x的方程可尝试降阶；常系数线性方程先解特征方程，再处理重根和共振。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math07.exact-euler",
+      "name": "全微分方程与欧拉方程",
+      "aliases": [
+        "exact-euler"
+      ],
+      "prerequisites": [
+        "math07.order"
+      ],
+      "tier": "extension",
+      "teaching": "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.exact-euler.1",
+          "skill_id": "math07.exact-euler",
+          "purpose": "diagnostic",
+          "family_id": "math07.exact-euler.family-1",
+          "prompt": "2x dx+2y dy=0的势函数可取x²+y²吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。"
+          ],
+          "rubric": [
+            "是",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.exact-euler.2",
+          "skill_id": "math07.exact-euler",
+          "purpose": "diagnostic",
+          "family_id": "math07.exact-euler.family-2",
+          "prompt": "M=y,N=x，M_y=N_x吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。"
+          ],
+          "rubric": [
+            "是",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.exact-euler.3",
+          "skill_id": "math07.exact-euler",
+          "purpose": "learning",
+          "family_id": "math07.exact-euler.family-3",
+          "prompt": "x²y''+xy'-y=0试y=x^m，特征根是1和-1吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。"
+          ],
+          "rubric": [
+            "是",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.exact-euler.4",
+          "skill_id": "math07.exact-euler",
+          "purpose": "transfer",
+          "family_id": "math07.exact-euler.family-4",
+          "prompt": "y dx+2x dy=0直接视为全微分d(xy)=0正确吗？",
+          "answer": "否",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。"
+          ],
+          "rubric": [
+            "否",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.exact-euler.5",
+          "skill_id": "math07.exact-euler",
+          "purpose": "retention",
+          "family_id": "math07.exact-euler.family-5",
+          "prompt": "x²y''+xy'=0在x>0时log(x)是解吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。"
+          ],
+          "rubric": [
+            "是",
+            "恰当性检查偏导相等和区域条件；欧拉方程在x>0上可试x^m。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    },
+    {
+      "id": "math07.nonhomogeneous",
+      "name": "非齐次高阶方程与共振特解",
+      "aliases": [
+        "nonhomogeneous"
+      ],
+      "prerequisites": [
+        "math07.order"
+      ],
+      "tier": "core",
+      "teaching": "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。",
+      "misconceptions": [
+        "需通过两条独立证据区分偶发失误与规则理解问题"
+      ],
+      "items": [
+        {
+          "id": "math07.nonhomogeneous.1",
+          "skill_id": "math07.nonhomogeneous",
+          "purpose": "diagnostic",
+          "family_id": "math07.nonhomogeneous.family-1",
+          "prompt": "y''-y=0且y(0)=1,y'(0)=0，求y。",
+          "answer": "(exp(x)+exp(-x))/2",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。"
+          ],
+          "rubric": [
+            "(exp(x)+exp(-x))/2",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.nonhomogeneous.2",
+          "skill_id": "math07.nonhomogeneous",
+          "purpose": "diagnostic",
+          "family_id": "math07.nonhomogeneous.family-2",
+          "prompt": "y''+y=1的一个常数特解。",
+          "answer": "1",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。"
+          ],
+          "rubric": [
+            "1",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.nonhomogeneous.3",
+          "skill_id": "math07.nonhomogeneous",
+          "purpose": "learning",
+          "family_id": "math07.nonhomogeneous.family-3",
+          "prompt": "y''-y=exp(x)可试A*x*exp(x)而非A*exp(x)吗？",
+          "answer": "是",
+          "answer_type": "choice",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。"
+          ],
+          "rubric": [
+            "是",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 1,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          },
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "id": "math07.nonhomogeneous.4",
+          "skill_id": "math07.nonhomogeneous",
+          "purpose": "transfer",
+          "family_id": "math07.nonhomogeneous.family-4",
+          "prompt": "y''+y=0且y(0)=1,y'(0)=0，求y。",
+          "answer": "cos(x)",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。"
+          ],
+          "rubric": [
+            "cos(x)",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        },
+        {
+          "id": "math07.nonhomogeneous.5",
+          "skill_id": "math07.nonhomogeneous",
+          "purpose": "retention",
+          "family_id": "math07.nonhomogeneous.family-5",
+          "prompt": "y''=x且y(0)=y'(0)=0，求y。",
+          "answer": "x**3/6",
+          "answer_type": "expression",
+          "requires_explanation": false,
+          "requires_context": false,
+          "domain": "按题干给出的实数域、时间范围与假设；条件不足先确认",
+          "context": {
+            "assumptions": "按题设定义域；不以数值抽样代替等价证明",
+            "units": "按题干"
+          },
+          "hints": [
+            "先指出本题的对象、已知量与适用条件。",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。"
+          ],
+          "rubric": [
+            "x**3/6",
+            "非齐次解等于齐次通解加特解；试探特解与齐次解重复时乘足够次x。",
+            "核对方法与适用条件；合理的其他表述由宿主复核"
+          ],
+          "common_errors": [
+            "忽略条件或约定",
+            "机械套用公式，未解释当前步骤"
+          ],
+          "difficulty": 2,
+          "verification": {
+            "key_parsed": true,
+            "independent_oracle": false,
+            "teacher_reviewed": false,
+            "student_validated": false
+          }
+        }
+      ],
+      "quality": {
+        "scope_mapped": true,
+        "bank_available": true,
+        "teacher_reviewed": false,
+        "student_validated": false
+      }
+    }
+  ]
+}
